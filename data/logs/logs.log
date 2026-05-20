@@ -1,103 +1,83 @@
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Anzahl Gefundener Dateien: 4
 INFO:root:Programm endet
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Anzahl Gefundener Dateien: 4
 INFO:root:Programm endet
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Anzahl Gefundener Dateien: 4
 INFO:root:Programm endet
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Client wurde geladen
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Client wurde geladen
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Client wurde geladen
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Client wurde geladen
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Client wurde geladen
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Client wurde geladen
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Client wurde geladen
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Client wurde geladen
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Client wurde geladen
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Client wurde geladen
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Client wurde geladen
-INFO:root:Anzahl Gefundener Dateien: 4
-INFO:root:Programm endet
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Anzahl Gefundener Dateien: 4
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
 INFO:root:Programm endet
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Anzahl Gefundener Dateien: 4
+INFO:root:Anzahl Gefundener Dateien: 1
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
 INFO:root:Programm endet
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Anzahl Gefundener Dateien: 4
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
 INFO:root:Programm endet
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Anzahl Gefundener Dateien: 4
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Es gab ein Fehler bei der Antwort-Datei erstellung:
+
+ERROR:root:object of type 'WindowsPath' has no len()
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Es gab ein Fehler bei der Antwort-Datei erstellung:
+
+ERROR:root:unsupported operand type(s) for /: 'str' and 'str'
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Es gab ein Fehler bei der Antwort-Datei erstellung:
+
+ERROR:root:object of type 'WindowsPath' has no len()
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Es gab ein Fehler bei der Antwort-Datei erstellung:
+
+ERROR:root:unsupported operand type(s) for /: 'str' and 'str'
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Es gab ein Fehler bei der Antwort-Datei erstellung:
+
+ERROR:root:unsupported operand type(s) for /: 'str' and 'str'
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Es gab ein Fehler bei der Antwort-Datei erstellung:
+
+ERROR:root:unsupported operand type(s) for +: 'builtin_function_or_method' and 'int'
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
 INFO:root:Programm endet

@@ -21,16 +21,18 @@ def get_model_env():
 
     return gptmodel
 
-def einfache_anfrage():
+def KI_anfrage(inhalt):
     try:
         client = get_client()
 
         response = client.responses.create(
             model=get_model_env(),
-            input="Dies ist eine Testanfrage. Wenn alles funktioniert hat, gebe einen Witz aus"
+            instructions="Du sollst den Inhalt zusammenfassen. Erfinde dabei nichts sondern halte alles bei, was auch in der gegeben Datei steht. Wichtig ist das du nichts dazu schreiben darf. Schreibe die zusammenfassung immer Sätzen, die unterinenander geschrieben werden sollen. Für jede zeile soll es ein minus als Zeilenstart geben",
+            input=inhalt
         )
 
         return response.output_text
+    
     except Exception as f:
         print("Es gab ein Fehler bei dem OpenAI API Aufruf:\n")
         logging.error("Es gab ein Fehler bei dem OpenAI-API Aufruf\n")
