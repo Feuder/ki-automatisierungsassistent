@@ -1,12 +1,25 @@
-#KI-Automatisierungsassistent
+# KI-Automatisierungsassistent
 
-##Ziel
+# Ziel:
+Am Ende existiert ein lokaler Assistent, der:
 
-##Projektstruktur
+Ordner und Dateien analysieren kann.
+Berichte erzeugt.
+Texte mit KI zusammenfasst.
+Aufgaben aus Texten extrahiert.
+strukturierte JSON-Ergebnisse speichert.
+sichere Automatisierungsaktionen vorbereitet.
+später definierte lokale Tools über KI ansteuern kann.
 
-##Aktuelle Stand
+# Projektstruktur
+
+# Aktuelle Stand
 Phase 1 ist abgeschlossen
 Phase 2 abgeschlossen: Das Projekt kann einen lokalen Eingabeordner prüfen, Dateien erkennen, Dateiendungen und Dateigrößen auslesen und einen einfachen Ordnerbericht im Terminal ausgeben.
 Phase 3 abgeschlossen: Zentrale Konfiguration, Ausgabeordner, einfacher Logordner, Fehlerbehandlung und eine einheitliche Terminal-Ausgabe wurden umgesetzt.
+Phase 4 abgeschlossen: Hier habe ich die OpenAI anbindung gemacht
+Phase 5 abgeschlossen.
+Phase 6 abgeschlossen: Das Projekt kann aus einer lokalen Notizdatei per KI Aufgaben extrahieren, Prioritäten und Status vergeben, die Aufgaben als JSON speichern und im Terminal strukturiert anzeigen.
 
-##Geplante Phasen
+# Geplante Phasen
+Phase 7 – Strukturierte KI-Ausgaben mit JSON
