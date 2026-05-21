@@ -4,6 +4,8 @@ from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_
 from ai.ai_client import KI_anfrage, ki_task_erstellen
 from utils.text_reader import datei_inhalt
 
+
+
 #-------Hier wird überprüft ob die Pfade alle in Ordnung sind-------
 LOG_ORDNER.mkdir(parents=True, exist_ok=True)
 AUSGABE_ORDNER.mkdir(parents=True, exist_ok=True)
@@ -20,6 +22,11 @@ ki_response = None
 logging.basicConfig(filename=LOG_DATEI, level=logging.INFO, encoding="utf-8")
 logging.info("Programm startet")
 logging.info("Ausgabe wurde geprüft, oder erstellt")
+
+if not pfad.exists() or not pfad.is_dir():
+    print("Es gibt ein Problem mit dem Pfad der input Dateien.")
+    logging.error("Der Input Pfad wurde nicht gefunden")
+    raise SystemExit
 #---------------------------------------------
 
 print("Was möchtest du machen?:\n" \
@@ -37,25 +44,12 @@ while True:
     else:
         print("Bitte gebe eine gültige Zahl ein!")
 
-if not pfad.is_dir():
-    print("Der Pfad existiert nicht oder ist kein Ordner.")
-    logging.error("Der Eingabeordner existiert nicht oder ist kein Ordner.")
-    raise SystemExit
-
 dateien = [f for f in pfad.iterdir() if f.is_file()]
 dateianzahl = []
 
 if userstartwahl == "1":
     #Ab hier wird geguckt was es für Dateien gibt und wie diese heißen.
     bericht = []
-    fehlerbericht = []
-
-    if not pfad.is_dir():
-        print("Der Zielpfad existiert nicht oder ist kein Ordner.")
-        logging.error("Der Eingabe Ordner existiert nicht")
-        fehlerbericht.append("Der Eingabe Ordner existiert nicht")
-        raise SystemExit
-
 
     logging.info(f"Anzahl Gefundener Dateien: {len(dateien)}")
 
@@ -82,24 +76,37 @@ if userstartwahl == "1":
 
 elif userstartwahl == "2" or userstartwahl == "3":
 
+    if not dateien:
+        print("Es wurden keine Dateien im Eingabeordner gefunden.")
+        logging.info("Keine Dateien im Eingabeordner gefunden.")
+        raise SystemExit
+
     for i in range(1, len(dateien) +1):
         dateianzahl.append(i)
 
-    if dateien:
-        print("")
-        print("------------------------------------------")
-        for i, f in enumerate(dateien, start=1):
-            print(f"{i}. {f.name}")
-        print("------------------------------------------")
-        print("")
+    print("")
+    print("------------------------------------------")
+    for i, f in enumerate(dateien, start=1):
+        print(f"{i}. {f.name}")
+    print("------------------------------------------")
+    print("")
     
     while True:
-        userinput = input(f"Wähle eine Zahl zwischen 1 und {len(dateien)} aus\n")
+        try:
+            userinput = int(input(f"Wähle eine Zahl zwischen 1 und {len(dateien)} aus\n"))
+            
+            if userinput in dateianzahl:
+                break
+            else:
+                print("Gebe nur gültige Zahlen an!")
 
-        if userinput in dateianzahl:
-            break
-        else:
+        except ValueError:
             print("Gebe nur gültige Zahlen an!")
+            pass
+        except Exception:
+            print("Es gab einen Fehler bei der Dateiaussuche")
+            logging.error("Es gab einen Fehler bei der Dateiaussuche")
+            raise SystemExit
 
     ausgedatei = dateien[userinput -1]
 
