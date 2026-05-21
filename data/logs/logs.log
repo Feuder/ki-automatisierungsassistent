@@ -99,3 +99,19 @@ INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:root:Programm endet
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+ERROR:root:Es konnte kein API-KEY gefunden werden.
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+ERROR:root:Es konnte das GPT Modell nicht sauber aufgerufen werden!
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+ERROR:root:Es konnte das GPT Modell nicht sauber aufgerufen werden!
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Programm endet

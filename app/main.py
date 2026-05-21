@@ -1,17 +1,19 @@
 import logging
-from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER
-from ai.ai_client import KI_anfrage
+from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER
+from ai.ai_client import KI_anfrage, ki_task_erstellen
 from utils.text_reader import datei_inhalt
 
 #-------Hier wird überprüft ob die Pfade alle in Ordnung sind-------
 LOG_ORDNER.mkdir(parents=True, exist_ok=True)
 AUSGABE_ORDNER.mkdir(parents=True, exist_ok=True)
 SUMMARY_ORDNER.mkdir(parents=True, exist_ok=True)
+TASK_ORDNER.mkdir(parents=True, exist_ok=True)
 
 LOG_DATEI = LOG_ORDNER / "logs.log"
 
 pfad = EINGABE_ORDNER
 zusammenfassung_ordner = SUMMARY_ORDNER
+aufgaben_order = TASK_ORDNER
 ki_response = None
 
 logging.basicConfig(filename=LOG_DATEI, level=logging.INFO, encoding="utf-8")
@@ -21,14 +23,15 @@ logging.info("Ausgabe wurde geprüft, oder erstellt")
 
 print("Was möchtest du machen?:\n" \
 "1. Metadaten aller Dateien anzeigen\n" \
-"2. Den Inhalt einer Datei zusammenfassen\n")
+"2. Den Inhalt einer Datei zusammenfassen\n" \
+"3. Aufgaben erstellen")
 
-print("Gebe eine Zahl von 1 bis 2 ein:\n")
+print("Gebe eine Zahl von 1 bis 3 ein:\n")
 
 while True:
     userstartwahl = input()
 
-    if userstartwahl == "1" or userstartwahl == "2":
+    if userstartwahl == "1" or userstartwahl == "2" or userstartwahl == "3":
         break
     else:
         print("Bitte gebe eine gültige Zahl ein!")
@@ -75,6 +78,7 @@ if userstartwahl == "1":
 
     for b in bericht:
         print(b)
+
 elif userstartwahl == "2":
 
     for i in range(1, len(dateien) +1):
@@ -100,28 +104,54 @@ elif userstartwahl == "2":
 
     inhalt = datei_inhalt(ausgedatei)
 
-    ki_response = KI_anfrage(inhalt)
+    if userstartwahl == "2":
+        ki_response = KI_anfrage(inhalt)
+    elif userstartwahl == "3":
+        ki_response = ki_task_erstellen(inhalt)
+    
 
 if ki_response is not None:
     #Ab hier wird die KI Anfrage aufgerufen und ausgegeben
 
-    anzahl_dateien = [1 for f in zusammenfassung_ordner.iterdir() if f.is_file()]
+    if userstartwahl == "2":
 
-    try:
+        anzahl_dateien = [1 for f in zusammenfassung_ordner.iterdir() if f.is_file()]
 
-        with open(zusammenfassung_ordner / f"summary des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
-            antwortdatei.write("-----------------------------\n")
-            antwortdatei.write("KI Antwort:\n")
-            antwortdatei.write(f"{ki_response}\n")
-            antwortdatei.write("-----------------------------\n")
+        try:
 
-    except Exception as fehler:
-        print("")
-        print("Es gab ein Fehler bei der Antwort-Datei erstellung:\n")
-        logging.error("Es gab ein Fehler bei der Antwort-Datei erstellung:\n")
-        print(fehler)
-        logging.error(fehler)
-        raise SystemExit
+            with open(zusammenfassung_ordner / f"summary des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
+                antwortdatei.write("-----------------------------\n")
+                antwortdatei.write("KI Antwort:\n")
+                antwortdatei.write(f"{ki_response}\n")
+                antwortdatei.write("-----------------------------\n")
+
+        except Exception as fehler:
+            print("")
+            print("Es gab ein Fehler bei der Antwort-Datei erstellung:\n")
+            logging.error("Es gab ein Fehler bei der Antwort-Datei erstellung:\n")
+            print(fehler)
+            logging.error(fehler)
+            raise SystemExit
+    
+    elif userstartwahl == "3":
+
+        anzahl_dateien = [1 for f in aufgaben_order.iterdir() if f.is_file()]
+
+        try:
+
+            with open(aufgaben_order / f"Aufgaben des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
+                antwortdatei.write("-----------------------------\n")
+                antwortdatei.write("KI Antwort:\n")
+                antwortdatei.write(f"{ki_response}\n")
+                antwortdatei.write("-----------------------------\n")
+
+        except Exception as fehler:
+            print("")
+            print("Es gab ein Fehler bei der Task-erstellungsdatei erstellung:\n")
+            logging.error("Es gab ein Fehler bei der Task-erstellungsdatei erstellung:\n")
+            print(fehler)
+            logging.error(fehler)
+            raise SystemExit
 
     print("")
     print("------------------------------------------")

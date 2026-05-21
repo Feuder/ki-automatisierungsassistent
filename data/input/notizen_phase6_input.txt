@@ -1,0 +1,16 @@
+Projekt-Notiz für Phase 6
+
+Heute soll die neue Aufgabenextraktion vorbereitet werden. Zuerst muss geprüft werden, ob der neue Ordner data/output/tasks/ korrekt angelegt wird. Danach sollte im Menü ein weiterer Punkt ergänzt werden, damit man Aufgaben aus einer Notizdatei extrahieren kann.
+
+Außerdem muss kontrolliert werden, ob leere Dateien sauber abgefangen werden. Falls eine Datei keinen Inhalt hat, soll das Programm eine verständliche Meldung anzeigen und den Vorgang abbrechen.
+
+Der Prompt für die KI soll so aufgebaut werden, dass konkrete Aufgaben erkannt werden. Jede Aufgabe soll eine Priorität bekommen. Neue Aufgaben sollen standardmäßig den Status offen erhalten.
+
+Später wäre es sinnvoll, die Aufgaben als JSON zu speichern, aber das gehört noch nicht in diese Phase. Für Phase 6 reicht eine gut lesbare Markdown-Ausgabe.
+
+Offene Punkte:
+- Speicherort für Aufgabenlisten festlegen
+- Ergebnisdatei eindeutig benennen
+- Fehler beim Speichern loggen
+- Ausgabe im Terminal prüfen
+- Test mit einer Notiz ohne Aufgaben durchführen

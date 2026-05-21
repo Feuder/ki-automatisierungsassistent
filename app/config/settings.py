@@ -7,6 +7,7 @@ EINGABE_ORDNER = Path("data/input/")
 AUSGABE_ORDNER = Path("data/output/")
 LOG_ORDNER = Path("data/logs/")
 SUMMARY_ORDNER = Path("data/output/summaries")
+TASK_ORDNER = Path("data/output/tasks")
 
 BERICHT_DATEINAME = "ordnerbericht.txt"
 BERICHT_DATEIPFAD = AUSGABE_ORDNER / BERICHT_DATEINAME
