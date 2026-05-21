@@ -1,0 +1,15 @@
+[
+  ["Ordner data/output/tasks/ korrekt anlegen und prüfen", "hoch", "offen"],
+  ["Im Menü einen Punkt ergänzen, um Aufgaben aus einer Notizdatei zu extrahieren", "hoch", "offen"],
+  ["Behandlung leerer Dateien implementieren: verständliche Meldung anzeigen und Vorgang abbrechen", "hoch", "offen"],
+  ["Prompt für die KI so aufbauen, dass konkrete Aufgaben erkannt werden", "hoch", "offen"],
+  ["Sicherstellen, dass jede erkannte Aufgabe eine Priorität erhält", "hoch", "offen"],
+  ["Gut lesbare Markdown-Ausgabe für Phase 6 implementieren", "hoch", "offen"],
+  ["Standardstatus ‚offen‘ für neue Aufgaben sicherstellen", "mittel", "offen"],
+  ["Speicherort für Aufgabenlisten festlegen", "mittel", "offen"],
+  ["Ergebnisdatei eindeutig benennen", "mittel", "offen"],
+  ["Fehler beim Speichern loggen", "mittel", "offen"],
+  ["Ausgabe im Terminal prüfen", "mittel", "offen"],
+  ["Test mit einer Notiz ohne Aufgaben durchführen", "mittel", "offen"],
+  ["Abfangen leerer Dateien prüfen (Testfall: Datei ohne Inhalt)", "mittel", "offen"]
+]

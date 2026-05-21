@@ -1,4 +1,5 @@
 import logging
+import json
 from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER
 from ai.ai_client import KI_anfrage, ki_task_erstellen
 from utils.text_reader import datei_inhalt
@@ -13,7 +14,7 @@ LOG_DATEI = LOG_ORDNER / "logs.log"
 
 pfad = EINGABE_ORDNER
 zusammenfassung_ordner = SUMMARY_ORDNER
-aufgaben_order = TASK_ORDNER
+aufgaben_ordner = TASK_ORDNER
 ki_response = None
 
 logging.basicConfig(filename=LOG_DATEI, level=logging.INFO, encoding="utf-8")
@@ -79,7 +80,7 @@ if userstartwahl == "1":
     for b in bericht:
         print(b)
 
-elif userstartwahl == "2":
+elif userstartwahl == "2" or userstartwahl == "3":
 
     for i in range(1, len(dateien) +1):
         dateianzahl.append(i)
@@ -93,7 +94,7 @@ elif userstartwahl == "2":
         print("")
     
     while True:
-        userinput = int(input(f"Wähle eine Zahl zwischen 1 und {len(dateien)} aus\n"))
+        userinput = input(f"Wähle eine Zahl zwischen 1 und {len(dateien)} aus\n")
 
         if userinput in dateianzahl:
             break
@@ -135,15 +136,26 @@ if ki_response is not None:
     
     elif userstartwahl == "3":
 
-        anzahl_dateien = [1 for f in aufgaben_order.iterdir() if f.is_file()]
+        anzahl_dateien = [1 for f in aufgaben_ordner.iterdir() if f.is_file()]
 
         try:
 
-            with open(aufgaben_order / f"Aufgaben des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
-                antwortdatei.write("-----------------------------\n")
-                antwortdatei.write("KI Antwort:\n")
+            with open(aufgaben_ordner / f"Aufgaben des durchlauf {len(anzahl_dateien) +1}.json", "a", encoding="utf-8") as antwortdatei:
                 antwortdatei.write(f"{ki_response}\n")
-                antwortdatei.write("-----------------------------\n")
+
+
+            aufgaben = json.loads(ki_response)
+
+            print("")
+            print("-----------------------------------------------------")
+            for i in aufgaben:
+                print("")
+                print("Aufgabenbeschreibung:" + i["aufgabe"])
+                print("Priorität:" + i["priorität"])
+                print("Status:" + i["status"])
+                print("")
+                print("-----------------------------------------------------")
+            print("")
 
         except Exception as fehler:
             print("")
@@ -153,10 +165,11 @@ if ki_response is not None:
             logging.error(fehler)
             raise SystemExit
 
-    print("")
-    print("------------------------------------------")
-    print(ki_response)
-    print("------------------------------------------")
+    if not userstartwahl == "3":
+        print("")
+        print("------------------------------------------")
+        print(ki_response)
+        print("------------------------------------------")
 
 
 logging.info("Programm endet")

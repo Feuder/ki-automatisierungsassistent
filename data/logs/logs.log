@@ -3,20 +3,6 @@ INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:root:Programm endet
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Anzahl Gefundener Dateien: 1
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
 INFO:root:Programm endet
 INFO:root:Programm startet
@@ -30,45 +16,74 @@ INFO:root:Programm endet
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-ERROR:root:Es gab ein Fehler bei der Antwort-Datei erstellung:
+ERROR:root:Es gab ein Fehler bei der Task-erstellungsdatei erstellung:
 
-ERROR:root:object of type 'WindowsPath' has no len()
+ERROR:root:Expecting property name enclosed in double quotes: line 3 column 5 (char 10)
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-ERROR:root:Es gab ein Fehler bei der Antwort-Datei erstellung:
+ERROR:root:Es gab ein Fehler bei der Task-erstellungsdatei erstellung:
 
-ERROR:root:unsupported operand type(s) for /: 'str' and 'str'
+ERROR:root:Expecting property name enclosed in double quotes: line 3 column 5 (char 10)
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-ERROR:root:Es gab ein Fehler bei der Antwort-Datei erstellung:
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+ERROR:root:Es gab ein Fehler bei dem OpenAI-API Aufruf
 
-ERROR:root:object of type 'WindowsPath' has no len()
+ERROR:root:Object of type function is not JSON serializable
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-ERROR:root:Es gab ein Fehler bei der Antwort-Datei erstellung:
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+ERROR:root:Es gab ein Fehler bei dem OpenAI-API Aufruf
 
-ERROR:root:unsupported operand type(s) for /: 'str' and 'str'
+ERROR:root:Object of type TextIOWrapper is not JSON serializable
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-ERROR:root:Es gab ein Fehler bei der Antwort-Datei erstellung:
+ERROR:root:Es gab ein Fehler bei dem OpenAI-API Aufruf
 
-ERROR:root:unsupported operand type(s) for /: 'str' and 'str'
+ERROR:root:Object of type TextIOWrapper is not JSON serializable
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-ERROR:root:Es gab ein Fehler bei der Antwort-Datei erstellung:
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Es gab ein Fehler bei der Task-erstellungsdatei erstellung:
 
-ERROR:root:unsupported operand type(s) for +: 'builtin_function_or_method' and 'int'
+ERROR:root:Expecting value: line 1 column 1 (char 0)
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
@@ -76,42 +91,16 @@ INFO:root:Programm endet
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
+ERROR:root:Es gab ein Fehler bei der Task-erstellungsdatei erstellung:
+
+ERROR:root:list indices must be integers or slices, not str
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-ERROR:root:Es konnte kein API-KEY gefunden werden.
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-ERROR:root:Es konnte das GPT Modell nicht sauber aufgerufen werden!
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-ERROR:root:Es konnte das GPT Modell nicht sauber aufgerufen werden!
+ERROR:root:Es gab ein Fehler bei der Task-erstellungsdatei erstellung:
+
+ERROR:root:list indices must be integers or slices, not str
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:root:Programm endet

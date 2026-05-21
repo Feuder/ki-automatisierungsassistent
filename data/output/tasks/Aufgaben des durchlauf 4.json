@@ -1,0 +1,52 @@
+[
+{
+"aufgabe": "Prüfen, ob der neue Ordner data/output/tasks/ korrekt angelegt wird.",
+"priorität": "hoch",
+"status": "offen"
+},
+{
+"aufgabe": "Im Menü einen weiteren Punkt ergänzen, um Aufgaben aus einer Notizdatei zu extrahieren.",
+"priorität": "hoch",
+"status": "offen"
+},
+{
+"aufgabe": "Kontrollieren, ob leere Dateien sauber abgefangen werden; bei fehlendem Inhalt eine verständliche Meldung anzeigen und den Vorgang abbrechen.",
+"priorität": "hoch",
+"status": "offen"
+},
+{
+"aufgabe": "Den Prompt für die KI so aufbauen, dass konkrete Aufgaben erkannt werden; jede Aufgabe erhält eine Priorität und neue Aufgaben standardmäßig den Status offen.",
+"priorität": "hoch",
+"status": "offen"
+},
+{
+"aufgabe": "Test mit einer Notiz ohne Aufgaben durchführen.",
+"priorität": "hoch",
+"status": "offen"
+},
+{
+"aufgabe": "Für Phase 6 eine gut lesbare Markdown-Ausgabe erstellen.",
+"priorität": "mittel",
+"status": "offen"
+},
+{
+"aufgabe": "Speicherort für Aufgabenlisten festlegen.",
+"priorität": "mittel",
+"status": "offen"
+},
+{
+"aufgabe": "Ergebnisdatei eindeutig benennen.",
+"priorität": "mittel",
+"status": "offen"
+},
+{
+"aufgabe": "Fehler beim Speichern loggen.",
+"priorität": "mittel",
+"status": "offen"
+},
+{
+"aufgabe": "Ausgabe im Terminal prüfen.",
+"priorität": "mittel",
+"status": "offen"
+}
+]

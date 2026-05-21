@@ -1,0 +1,67 @@
+[
+  {
+    "aufgabe": "Prüfen, ob der Ordner data/output/tasks/ korrekt angelegt wird",
+    "priorität": "hoch",
+    "status": "offen"
+  },
+  {
+    "aufgabe": "Speicherort für Aufgabenlisten festlegen",
+    "priorität": "mittel",
+    "status": "offen"
+  },
+  {
+    "aufgabe": "Ergebnisdatei eindeutig benennen",
+    "priorität": "mittel",
+    "status": "offen"
+  },
+  {
+    "aufgabe": "Fehler beim Speichern loggen",
+    "priorität": "mittel",
+    "status": "offen"
+  },
+  {
+    "aufgabe": "Im Menü einen weiteren Punkt ergänzen, um Aufgaben aus einer Notizdatei zu extrahieren",
+    "priorität": "hoch",
+    "status": "offen"
+  },
+  {
+    "aufgabe": "Prompt für die KI so aufbauen, dass konkrete Aufgaben erkannt werden",
+    "priorität": "hoch",
+    "status": "offen"
+  },
+  {
+    "aufgabe": "Im Prompt sicherstellen, dass jede Aufgabe eine Priorität bekommt",
+    "priorität": "mittel",
+    "status": "offen"
+  },
+  {
+    "aufgabe": "Im Prompt festlegen, dass neue Aufgaben standardmäßig den Status offen erhalten",
+    "priorität": "mittel",
+    "status": "offen"
+  },
+  {
+    "aufgabe": "Kontrollieren, ob leere Dateien sauber abgefangen werden",
+    "priorität": "hoch",
+    "status": "offen"
+  },
+  {
+    "aufgabe": "Bei leerer Datei eine verständliche Meldung anzeigen und den Vorgang abbrechen",
+    "priorität": "hoch",
+    "status": "offen"
+  },
+  {
+    "aufgabe": "Für Phase 6 eine gut lesbare Markdown-Ausgabe erstellen",
+    "priorität": "mittel",
+    "status": "offen"
+  },
+  {
+    "aufgabe": "Ausgabe im Terminal prüfen",
+    "priorität": "mittel",
+    "status": "offen"
+  },
+  {
+    "aufgabe": "Test mit einer Notiz ohne Aufgaben durchführen",
+    "priorität": "hoch",
+    "status": "offen"
+  }
+]
