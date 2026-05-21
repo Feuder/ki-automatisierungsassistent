@@ -1,17 +1,17 @@
 import logging
-from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARIE_ORDNER
+from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER
 from ai.ai_client import KI_anfrage
 from utils.text_reader import datei_inhalt
 
 #-------Hier wird überprüft ob die Pfade alle in Ordnung sind-------
 LOG_ORDNER.mkdir(parents=True, exist_ok=True)
 AUSGABE_ORDNER.mkdir(parents=True, exist_ok=True)
-SUMMARIE_ORDNER.mkdir(parents=True, exist_ok=True)
+SUMMARY_ORDNER.mkdir(parents=True, exist_ok=True)
 
 LOG_DATEI = LOG_ORDNER / "logs.log"
 
 pfad = EINGABE_ORDNER
-zusammenfassung_ordner = SUMMARIE_ORDNER
+zusammenfassung_ordner = SUMMARY_ORDNER
 ki_response = None
 
 logging.basicConfig(filename=LOG_DATEI, level=logging.INFO, encoding="utf-8")
@@ -23,18 +23,25 @@ print("Was möchtest du machen?:\n" \
 "1. Metadaten aller Dateien anzeigen\n" \
 "2. Den Inhalt einer Datei zusammenfassen\n")
 
-userstartwahl = int(input("Gebe eine Zahl von 1 bis 2 ein:\n"))
+print("Gebe eine Zahl von 1 bis 2 ein:\n")
 
 while True:
-    if userstartwahl == 1 or userstartwahl == 2:
+    userstartwahl = input()
+
+    if userstartwahl == "1" or userstartwahl == "2":
         break
     else:
         print("Bitte gebe eine gültige Zahl ein!")
 
+if not pfad.is_dir():
+    print("Der Pfad existiert nicht oder ist kein Ordner.")
+    logging.error("Der Eingabeordner existiert nicht oder ist kein Ordner.")
+    raise SystemExit
+
 dateien = [f for f in pfad.iterdir() if f.is_file()]
 dateianzahl = []
 
-if userstartwahl == 1:
+if userstartwahl == "1":
     #Ab hier wird geguckt was es für Dateien gibt und wie diese heißen.
     bericht = []
     fehlerbericht = []
@@ -68,7 +75,7 @@ if userstartwahl == 1:
 
     for b in bericht:
         print(b)
-elif userstartwahl == 2:
+elif userstartwahl == "2":
 
     for i in range(1, len(dateien) +1):
         dateianzahl.append(i)
@@ -102,7 +109,7 @@ if ki_response is not None:
 
     try:
 
-        with open(zusammenfassung_ordner / f"summary des durchlauf {len(anzahl_dateien) +1}.txt", "a", encoding="utf-8") as antwortdatei:
+        with open(zusammenfassung_ordner / f"summary des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
             antwortdatei.write("-----------------------------\n")
             antwortdatei.write("KI Antwort:\n")
             antwortdatei.write(f"{ki_response}\n")
