@@ -39,3 +39,20 @@ def KI_anfrage(inhalt):
         print(f)
         logging.error(f)
         raise SystemExit
+    
+def ki_task_erstellen():
+    try:
+        client = get_client()
+
+        response = client.responses.create(
+            model=get_model_env(),
+            instructions="Du bekommst einen Text, oder eine unsortierte Aufgabenliste. Diese sollst du sortieren und sortiert als Aufgabenliste ausgeben. Hierbei sollst du zu jedem Punkt ein Priotät vorschlagen. Nehme entweder: 1.niedrig, 2.mittel, oder 3. hoch. Erfinde nichts dazu und halte dich an den Text den du bekommst. Mache nichts auser diese Liste zu erstellen. Gebe auch nur diese Aufgabenliste aus, nichts anderes!"
+            reasoning={"effort": "low"},
+            input=inhalt
+        )
+    except Exception as f:  
+        print("Es gab ein Fehler bei dem OpenAI API Aufruf:\n")
+        logging.error("Es gab ein Fehler bei dem OpenAI-API Aufruf\n")
+        print(f)
+        logging.error(f)
+        raise SystemExit
