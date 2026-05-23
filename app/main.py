@@ -149,11 +149,8 @@ if ki_response is not None:
 
         try:
 
-            with open(aufgaben_ordner / f"Aufgaben des durchlauf {len(anzahl_dateien) +1}.json", "a", encoding="utf-8") as antwortdatei:
+            with open(aufgaben_ordner / f"Aufgaben des durchlauf {len(anzahl_dateien) +1}.json", "w", encoding="utf-8") as antwortdatei:
                 antwortdatei.write(f"{ki_response}\n")
-
-
-            aufgaben = json.loads(ki_response)
 
             aufgaben_daten = json.loads(ki_response)
 

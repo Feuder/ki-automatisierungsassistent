@@ -1,10 +1,6 @@
 import json
 from jsonschema import validate, ValidationError, FormatChecker 
 import logging
-from config.settings import SUMMARY_ORDNER,TASK_ORDNER 
-
-zusammenfassung_ordner = SUMMARY_ORDNER
-aufgaben_ordner = TASK_ORDNER
 
 def aufgaben_validieren(inhalt):
 

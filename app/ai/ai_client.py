@@ -1,7 +1,7 @@
 from config.settings import get_api_key, get_model
 from ai.prompts.prompt_reader import zusammenfassenprompt, task_erstellenpromt
 from json_validierung.json_validierung import aufgaben_validieren
-from utils.ladescreens import ladeanzeige
+from utils.loading_screen import ladeanzeige
 import logging
 from openai import OpenAI
 
