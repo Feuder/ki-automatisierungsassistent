@@ -39,7 +39,7 @@ Die Ausgabe muss exakt dieses JSON-Objekt sein:
       "status": "offen",
       "kategorie": "...",
       "quelle": "...",
-      "erstellungsdatum": "YYYY-MM-DD"
+      "erstellungsdatum": "DD-MM-YYYY"
     }
   ]
 }

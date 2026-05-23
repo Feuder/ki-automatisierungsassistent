@@ -68,3 +68,33 @@ INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
 INFO:root:Das JSON-Schema wurde erfolgreich validiert.
 INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Anzahl Gefundener Dateien: 2
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:openai._base_client:Retrying request to /responses in 0.379276 seconds
+INFO:openai._base_client:Retrying request to /responses in 0.826977 seconds
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:openai._base_client:Retrying request to /responses in 0.382730 seconds
+INFO:openai._base_client:Retrying request to /responses in 0.985333 seconds
+ERROR:root:Es gab einen Fehler bei der Task-Erstellung.
+ERROR:root:Connection error.
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:openai._base_client:Retrying request to /responses in 0.430232 seconds
+INFO:openai._base_client:Retrying request to /responses in 0.882786 seconds
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Programm endet

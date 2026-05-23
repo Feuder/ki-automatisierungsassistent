@@ -1,17 +1,17 @@
 {
   "aufgaben": [
     {
-      "titel": "Ordner data/output/tasks/ anlegen und prüfen",
-      "beschreibung": "Prüfen, ob der neue Ordner data/output/tasks/ korrekt angelegt wird.",
+      "titel": "Ordnerstruktur für Aufgaben prüfen",
+      "beschreibung": "Überprüfen, ob der Ordner data/output/tasks/ korrekt angelegt wird.",
       "priorität": "hoch",
       "status": "offen",
-      "kategorie": "Dateisystem",
+      "kategorie": "Infrastruktur",
       "quelle": "Projekt-Notiz für Phase 6",
       "erstellungsdatum": "2026-05-23"
     },
     {
       "titel": "Menüpunkt zur Aufgabenextraktion ergänzen",
-      "beschreibung": "Im Menü einen weiteren Punkt ergänzen, damit man Aufgaben aus einer Notizdatei extrahieren kann.",
+      "beschreibung": "Im Menü einen weiteren Punkt hinzufügen, um Aufgaben aus einer Notizdatei zu extrahieren.",
       "priorität": "hoch",
       "status": "offen",
       "kategorie": "UI",
@@ -19,8 +19,8 @@
       "erstellungsdatum": "2026-05-23"
     },
     {
-      "titel": "Leere Dateien abfangen: Meldung und Abbruch",
-      "beschreibung": "Kontrollieren, ob leere Dateien sauber abgefangen werden; falls eine Datei keinen Inhalt hat, eine verständliche Meldung anzeigen und den Vorgang abbrechen.",
+      "titel": "Leere Dateien sauber abfangen",
+      "beschreibung": "Sicherstellen, dass bei leeren Dateien eine verständliche Meldung angezeigt und der Vorgang abgebrochen wird.",
       "priorität": "hoch",
       "status": "offen",
       "kategorie": "Fehlerbehandlung",
@@ -28,18 +28,18 @@
       "erstellungsdatum": "2026-05-23"
     },
     {
-      "titel": "KI-Prompt für Aufgabenextraktion erstellen",
-      "beschreibung": "Prompt so aufbauen, dass konkrete Aufgaben erkannt werden; jede Aufgabe erhält eine Priorität; neue Aufgaben erhalten standardmäßig den Status offen.",
-      "priorität": "hoch",
+      "titel": "KI-Prompt für Aufgabenerkennung erstellen",
+      "beschreibung": "Prompt so gestalten, dass konkrete Aufgaben erkannt werden und jede Aufgabe eine Priorität sowie standardmäßig den Status offen erhält.",
+      "priorität": "mittel",
       "status": "offen",
-      "kategorie": "KI/Parsing",
+      "kategorie": "KI-Prompt",
       "quelle": "Projekt-Notiz für Phase 6",
       "erstellungsdatum": "2026-05-23"
     },
     {
-      "titel": "Markdown-Ausgabe der Aufgaben bereitstellen",
-      "beschreibung": "Für Phase 6 eine gut lesbare Markdown-Ausgabe der extrahierten Aufgaben erzeugen.",
-      "priorität": "hoch",
+      "titel": "Markdown-Ausgabe implementieren",
+      "beschreibung": "Für Phase 6 eine gut lesbare Markdown-Ausgabe der extrahierten Aufgaben bereitstellen.",
+      "priorität": "mittel",
       "status": "offen",
       "kategorie": "Ausgabe",
       "quelle": "Projekt-Notiz für Phase 6",
@@ -47,25 +47,25 @@
     },
     {
       "titel": "Speicherort für Aufgabenlisten festlegen",
-      "beschreibung": "Speicherort für Aufgabenlisten festlegen.",
+      "beschreibung": "Den endgültigen Speicherort für Aufgabenlisten definieren.",
       "priorität": "mittel",
       "status": "offen",
-      "kategorie": "Architektur",
+      "kategorie": "Konfiguration",
       "quelle": "Projekt-Notiz für Phase 6",
       "erstellungsdatum": "2026-05-23"
     },
     {
       "titel": "Ergebnisdatei eindeutig benennen",
-      "beschreibung": "Ergebnisdatei eindeutig benennen.",
+      "beschreibung": "Regeln zur eindeutigen Benennung der Ergebnisdatei festlegen.",
       "priorität": "mittel",
       "status": "offen",
-      "kategorie": "Dateisystem",
+      "kategorie": "Konfiguration",
       "quelle": "Projekt-Notiz für Phase 6",
       "erstellungsdatum": "2026-05-23"
     },
     {
       "titel": "Fehler beim Speichern loggen",
-      "beschreibung": "Fehler beim Speichern loggen.",
+      "beschreibung": "Sicherstellen, dass Fehler beim Speichern protokolliert werden.",
       "priorität": "mittel",
       "status": "offen",
       "kategorie": "Logging",
@@ -73,20 +73,20 @@
       "erstellungsdatum": "2026-05-23"
     },
     {
-      "titel": "Ausgabe im Terminal prüfen",
-      "beschreibung": "Ausgabe im Terminal prüfen.",
+      "titel": "Test mit einer Notiz ohne Aufgaben durchführen",
+      "beschreibung": "Einen Testfall ausführen, bei dem eine Notiz keine Aufgaben enthält.",
       "priorität": "mittel",
       "status": "offen",
-      "kategorie": "Test",
+      "kategorie": "Tests",
       "quelle": "Projekt-Notiz für Phase 6",
       "erstellungsdatum": "2026-05-23"
     },
     {
-      "titel": "Test mit einer Notiz ohne Aufgaben durchführen",
-      "beschreibung": "Test mit einer Notiz ohne Aufgaben durchführen.",
-      "priorität": "hoch",
+      "titel": "Ausgabe im Terminal prüfen",
+      "beschreibung": "Überprüfen, dass die Ausgabe im Terminal korrekt dargestellt wird.",
+      "priorität": "niedrig",
       "status": "offen",
-      "kategorie": "Test",
+      "kategorie": "Ausgabe",
       "quelle": "Projekt-Notiz für Phase 6",
       "erstellungsdatum": "2026-05-23"
     }

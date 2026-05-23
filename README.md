@@ -21,6 +21,7 @@ Phase 4 abgeschlossen: Hier habe ich die OpenAI anbindung gemacht
 Phase 5 abgeschlossen.
 Phase 6 abgeschlossen: Das Projekt kann aus einer lokalen Notizdatei per KI Aufgaben extrahieren, Prioritäten und Status vergeben, die Aufgaben als JSON speichern und im Terminal strukturiert anzeigen.
 Phase 7 zusatz: Ich habe zusätzlich einen JSON Validiere mit eingebaut, damit die KI ausgabe immer noch überprüft wurde. Wenn dies nicht der Fall ist, wird die Anfrage bis zu 3 mal wiederholt.
+Phase 7 abgeschlossen: Das Projekt kann KI-Ausgaben als strukturiertes JSON erzeugen, gegen ein Schema validieren, ungültige Ergebnisse erkennen, JSON speichern und wieder einlesen.
 
 # Geplante Phasen
-Phase 7 – Strukturierte KI-Ausgaben mit JSON
+Phase 8 – Automatisierte Berichte

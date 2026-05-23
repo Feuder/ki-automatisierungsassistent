@@ -1,0 +1,19 @@
+-----------------------------
+KI Antwort:
+- Das Projekt behandelt die automatisierte Verarbeitung von Textdateien.
+- Es nutzt eine einfache Ordnerstruktur für Eingabe- und Ausgabedaten.
+- Der Eingabeordner enthält Dateien, die vom Programm eingelesen und verarbeitet werden sollen.
+- Eine Beispielstruktur besteht aus den Ordnern data/input und data/output.
+- Die Datei test_text.txt dient als Testdatei für die erste Verarbeitung.
+- Der Text in test_text.txt soll lang genug sein, um das Einlesen mehrerer Zeilen zu prüfen.
+- Beim Start des Programms wird kontrolliert, ob die gewünschte Eingabedatei vorhanden ist.
+- Anschließend wird der Inhalt der Datei zeilenweise oder vollständig eingelesen.
+- Jede Zeile kann analysiert, verändert oder in eine neue Datei geschrieben werden.
+- Ein mögliches Ziel ist das Zählen bestimmter Wörter oder das Filtern von Textabschnitten.
+- Außerdem kann ermittelt werden, wie viele Zeilen, Wörter und Zeichen die Datei enthält.
+- Die Ergebnisse der Verarbeitung werden im Ausgabeordner gespeichert.
+- Die Testdatei ermöglicht es, die Grundfunktion des Programms zuverlässig zu prüfen.
+- Fehler wie fehlende Dateien oder leere Inhalte können früh erkannt werden.
+- Das Projekt bildet eine Grundlage für weitere Automatisierungsaufgaben.
+- Später können auch mehrere Dateien nacheinander verarbeitet werden.
+-----------------------------
