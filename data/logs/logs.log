@@ -1,126 +1,56 @@
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON schema wurde erfolgreich Validiert und ist im richtigen Format
 INFO:root:Programm endet
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON schema wurde erfolgreich Validiert und ist im richtigen Format
 INFO:root:Programm endet
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-ERROR:root:Es gab ein Fehler bei der Task-erstellungsdatei erstellung:
-
-ERROR:root:Expecting property name enclosed in double quotes: line 3 column 5 (char 10)
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-ERROR:root:Es gab ein Fehler bei der Task-erstellungsdatei erstellung:
-
-ERROR:root:Expecting property name enclosed in double quotes: line 3 column 5 (char 10)
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
 ERROR:root:Es gab ein Fehler bei dem OpenAI-API Aufruf
 
-ERROR:root:Object of type function is not JSON serializable
+ERROR:root:Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Es gab einen Fehler bei der Task-Erstellung.
+ERROR:root:Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:Es gab einen Fehler bei der Task-Erstellung.
+ERROR:root:Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:--------------------------------------
+ERROR:root:JSON konnte nicht gelesen werden.
+ERROR:root:Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+ERROR:root:--------------------------------------
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:--------------------------------------
+ERROR:root:JSON konnte nicht gelesen werden.
+ERROR:root:Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+ERROR:root:--------------------------------------
+ERROR:root:Wegen zu vielen Versuchen wurde das Programm abgebrochen.
+ERROR:root:Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-ERROR:root:Es gab ein Fehler bei dem OpenAI-API Aufruf
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:--------------------------------------
+ERROR:root:Schema-Validierung fehlgeschlagen.
+ERROR:root:'' should be non-empty
 
-ERROR:root:Object of type TextIOWrapper is not JSON serializable
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-ERROR:root:Es gab ein Fehler bei dem OpenAI-API Aufruf
+Failed validating 'minLength' in schema['properties']['aufgaben']['items']['properties']['kategorie']:
+    {'type': 'string', 'minLength': 1}
 
-ERROR:root:Object of type TextIOWrapper is not JSON serializable
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
+On instance['aufgaben'][10]['kategorie']:
+    ''
+ERROR:root:--------------------------------------
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
 INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-ERROR:root:Es gab ein Fehler bei der Task-erstellungsdatei erstellung:
-
-ERROR:root:Expecting value: line 1 column 1 (char 0)
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-ERROR:root:Es gab ein Fehler bei der Task-erstellungsdatei erstellung:
-
-ERROR:root:list indices must be integers or slices, not str
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-ERROR:root:Es gab ein Fehler bei der Task-erstellungsdatei erstellung:
-
-ERROR:root:list indices must be integers or slices, not str
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Anzahl Gefundener Dateien: 2
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
-INFO:root:Programm endet
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt
-INFO:root:Programm startet
-INFO:root:Ausgabe wurde geprüft, oder erstellt

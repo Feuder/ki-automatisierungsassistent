@@ -153,16 +153,23 @@ if ki_response is not None:
 
             aufgaben = json.loads(ki_response)
 
-            print("")
-            print("-----------------------------------------------------")
-            for i in aufgaben:
-                print("")
-                print("Aufgabenbeschreibung:" + i["aufgabe"])
-                print("Priorität:" + i["priorität"])
-                print("Status:" + i["status"])
-                print("")
+            aufgaben_daten = json.loads(ki_response)
+
+            print("\n-----------------------------------------------------")
+
+            for aufgabe in aufgaben_daten["aufgaben"]:
+                print()
+                print(f"Titel: {aufgabe['titel']}")
+                print(f"Beschreibung: {aufgabe['beschreibung']}")
+                print(f"Priorität: {aufgabe['priorität']}")
+                print(f"Status: {aufgabe['status']}")
+                print(f"Kategorie: {aufgabe['kategorie']}")
+                print(f"Quelle: {aufgabe['quelle']}")
+                print(f"Erstellungsdatum: {aufgabe['erstellungsdatum']}")
+                print()
                 print("-----------------------------------------------------")
-            print("")
+
+            print()
 
         except Exception as fehler:
             print("")
