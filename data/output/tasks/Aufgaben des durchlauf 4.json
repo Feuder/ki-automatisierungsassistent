@@ -247,3 +247,97 @@
     }
   ]
 }
+{
+  "aufgaben": [
+    {
+      "titel": "Speicherort für Aufgabenlisten festlegen",
+      "beschreibung": "Festlegen, wo die generierten Aufgabenlisten abgelegt werden sollen.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "Konfiguration",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-23"
+    },
+    {
+      "titel": "Ordner data/output/tasks/ korrekt angelegt wird prüfen",
+      "beschreibung": "Überprüfen, ob der Ordner data/output/tasks/ bei Bedarf erstellt und korrekt strukturiert wird.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "Dateisystem",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-23"
+    },
+    {
+      "titel": "Ergebnisdatei eindeutig benennen",
+      "beschreibung": "Festlegen eines eindeutigen Benennungsschemas für die Ergebnisdatei der Aufgabenextraktion.",
+      "priorität": "mittel",
+      "status": "offen",
+      "kategorie": "Konfiguration",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-23"
+    },
+    {
+      "titel": "Fehler beim Speichern loggen",
+      "beschreibung": "Sicherstellen, dass Fehler während des Speichervorgangs protokolliert werden.",
+      "priorität": "mittel",
+      "status": "offen",
+      "kategorie": "Logging",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-23"
+    },
+    {
+      "titel": "Markdown-Ausgabe der extrahierten Aufgaben umsetzen",
+      "beschreibung": "Die Ausgabe der extrahierten Aufgaben für Phase 6 als gut lesbare Markdown-Datei generieren.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "Ausgabe",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-23"
+    },
+    {
+      "titel": "Menüpunkt zur Aufgabenextraktion aus Notizdatei ergänzen",
+      "beschreibung": "Im Menü einen neuen Punkt hinzufügen, um Aufgaben aus einer Notizdatei zu extrahieren.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "UI",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-23"
+    },
+    {
+      "titel": "Prompt für KI zur Aufgabenerkennung erstellen",
+      "beschreibung": "Prompt so aufbauen, dass konkrete Aufgaben erkannt werden, jede Aufgabe eine Priorität erhält und neue Aufgaben standardmäßig den Status offen bekommen.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "KI/Prompting",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-23"
+    },
+    {
+      "titel": "Leere Dateien sauber abfangen",
+      "beschreibung": "Prüfen, dass bei leeren Dateien eine verständliche Meldung angezeigt und der Vorgang abgebrochen wird.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "Fehlerbehandlung",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-23"
+    },
+    {
+      "titel": "Ausgabe im Terminal prüfen",
+      "beschreibung": "Überprüfen, ob die Ausgabe im Terminal korrekt und lesbar ist.",
+      "priorität": "mittel",
+      "status": "offen",
+      "kategorie": "Test",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-23"
+    },
+    {
+      "titel": "Test mit Notiz ohne Aufgaben durchführen",
+      "beschreibung": "Einen Testlauf mit einer Notizdatei ohne Aufgaben durchführen, um das Verhalten bei fehlenden Aufgaben zu verifizieren.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "Test",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-23"
+    }
+  ]
+}

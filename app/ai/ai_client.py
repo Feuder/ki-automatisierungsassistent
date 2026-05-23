@@ -1,6 +1,7 @@
 from config.settings import get_api_key, get_model
 from ai.prompts.prompt_reader import zusammenfassenprompt, task_erstellenpromt
 from json_validierung.json_validierung import aufgaben_validieren
+from utils.ladescreens import ladeanzeige
 import logging
 from openai import OpenAI
 
@@ -30,11 +31,12 @@ def KI_anfrage(inhalt):
     try:
         client = get_client()
 
-        response = client.responses.create(
-            model=get_model_env(),
-            instructions=prompt,
-            input=inhalt
-        )
+        with ladeanzeige("Zusammenfassung wird erstellt..."):
+            response = client.responses.create(
+                model=get_model_env(),
+                instructions=prompt,
+                input=inhalt
+            )
 
         return response.output_text
     
@@ -62,34 +64,36 @@ def ki_task_erstellen(inhalt):
             client = get_client()
 
             if fehlermeldung is None:
-                response = client.responses.create(
-                    model=get_model_env(),
-                    instructions=prompt,
-                    reasoning={"effort": "low"},
-                    input=original_inhalt
-                )
+                with ladeanzeige("Aufgaben werden erstellt..."):
+                    response = client.responses.create(
+                        model=get_model_env(),
+                        instructions=prompt,
+                        reasoning={"effort": "low"},
+                        input=original_inhalt
+                    )
 
             elif fehlermeldung is not None and durchlauf <= 3:
-                response = client.responses.create(
-                    model=get_model_env(),
-                    instructions=prompt,
-                    reasoning={"effort": "medium"},
-                    input=[
-                        {
-                            "role": "user",
-                            "content": (
-                                "Der vorherige Output war fehlerhaft.\n\n"
-                                f"Fehlermeldung:\n{fehlermeldung}\n\n"
-                                "Vorheriger fehlerhafter Output:\n"
-                                f"{letzter_output}\n\n"
-                                "Bitte gib jetzt ausschließlich gültiges JSON zurück.\n"
-                                "Keine Erklärung. Kein Markdown. Kein Text vor oder nach dem JSON.\n\n"
-                                "Ursprünglicher Inhalt:\n"
-                                f"{original_inhalt}"
-                            )
-                        }
-                    ]
-                )
+                with ladeanzeige("JSON wird korrigiert..."):
+                    response = client.responses.create(
+                        model=get_model_env(),
+                        instructions=prompt,
+                        reasoning={"effort": "medium"},
+                        input=[
+                            {
+                                "role": "user",
+                                "content": (
+                                    "Der vorherige Output war fehlerhaft.\n\n"
+                                    f"Fehlermeldung:\n{fehlermeldung}\n\n"
+                                    "Vorheriger fehlerhafter Output:\n"
+                                    f"{letzter_output}\n\n"
+                                    "Bitte gib jetzt ausschließlich gültiges JSON zurück.\n"
+                                    "Keine Erklärung. Kein Markdown. Kein Text vor oder nach dem JSON.\n\n"
+                                    "Ursprünglicher Inhalt:\n"
+                                    f"{original_inhalt}"
+                                )
+                            }
+                        ]
+                    )
 
             else:
                 print("Zu viele Versuche, das Programm wird beendet. Probiere es noch einmal.")

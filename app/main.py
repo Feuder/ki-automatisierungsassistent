@@ -108,6 +108,8 @@ elif userstartwahl == "2" or userstartwahl == "3":
             logging.error("Es gab einen Fehler bei der Dateiaussuche")
             raise SystemExit
 
+    print()
+
     ausgedatei = dateien[userinput -1]
 
     inhalt = datei_inhalt(ausgedatei)
