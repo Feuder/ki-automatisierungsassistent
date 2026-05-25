@@ -1,5 +1,5 @@
 from config.settings import get_api_key, get_model
-from ai.prompts.prompt_reader import zusammenfassenprompt, task_erstellenpromt
+from ai.prompts.prompt_reader import zusammenfassenprompt, task_erstellenpromt, ordnerbericht_prompt
 from json_validierung.json_validierung import aufgaben_validieren
 from utils.loading_screen import ladeanzeige
 import logging
@@ -115,5 +115,28 @@ def ki_task_erstellen(inhalt):
         print("Es gab einen Fehler bei der Task-Erstellung:\n")
         logging.error("Es gab einen Fehler bei der Task-Erstellung.")
         print(f)
+        logging.error(f)
+        raise SystemExit
+    
+
+def ordnerbericht(inhalt):
+    prompt = str(ordnerbericht_prompt())
+    
+    try:
+        client = get_client()
+
+        with ladeanzeige("Ordnerbericht wird erstellt..."):
+            response = client.responses.create(
+                model=get_model_env(),
+                instructions=prompt,
+                input= inhalt
+            )
+
+        return response.output_text
+    
+    except Exception as f:
+        print("Es gab einen Fehler bei der erstellung des Ordnerberichts")
+        print(f)
+        logging.error("Es gab einen Fehler bei der erstellung des Ordnerberichts")
         logging.error(f)
         raise SystemExit

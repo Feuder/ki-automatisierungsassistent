@@ -4,7 +4,7 @@ import sys
 from contextlib import contextmanager
 
 
-def _ladeanimation(stop_event, text, geschwindigkeit=0.1, pause=1):
+def _ladeanimation(stop_event, text, geschwindigkeit=0.1, pause=0.8):
     while not stop_event.is_set():
         ausgabe = ""
 

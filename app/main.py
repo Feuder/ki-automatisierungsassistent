@@ -1,22 +1,23 @@
 import logging
 import json
-from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER
-from ai.ai_client import KI_anfrage, ki_task_erstellen
+from collections import Counter
+from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER, REPORT_ORDNER
+from ai.ai_client import KI_anfrage, ki_task_erstellen, ordnerbericht
 from utils.text_reader import datei_inhalt
-
-
 
 #-------Hier wird überprüft ob die Pfade alle in Ordnung sind-------
 LOG_ORDNER.mkdir(parents=True, exist_ok=True)
 AUSGABE_ORDNER.mkdir(parents=True, exist_ok=True)
 SUMMARY_ORDNER.mkdir(parents=True, exist_ok=True)
 TASK_ORDNER.mkdir(parents=True, exist_ok=True)
+REPORT_ORDNER.mkdir(parents=True, exist_ok=True)
 
 LOG_DATEI = LOG_ORDNER / "logs.log"
 
 pfad = EINGABE_ORDNER
 zusammenfassung_ordner = SUMMARY_ORDNER
 aufgaben_ordner = TASK_ORDNER
+report_ordner = REPORT_ORDNER
 ki_response = None
 
 logging.basicConfig(filename=LOG_DATEI, level=logging.INFO, encoding="utf-8")
@@ -32,14 +33,17 @@ if not pfad.exists() or not pfad.is_dir():
 print("Was möchtest du machen?:\n" \
 "1. Metadaten aller Dateien anzeigen\n" \
 "2. Den Inhalt einer Datei zusammenfassen\n" \
-"3. Aufgaben erstellen")
+"3. Aufgaben erstellen\n" \
+"4. Einen Report erzeugen")
 
-print("Gebe eine Zahl von 1 bis 3 ein:\n")
+print("Gebe eine Zahl von 1 bis 4 ein:\n")
+
+auswahlzahlen = ["1", "2", "3", "4"]
 
 while True:
     userstartwahl = input()
 
-    if userstartwahl == "1" or userstartwahl == "2" or userstartwahl == "3":
+    if userstartwahl in auswahlzahlen:
         break
     else:
         print("Bitte gebe eine gültige Zahl ein!")
@@ -118,7 +122,69 @@ elif userstartwahl == "2" or userstartwahl == "3":
         ki_response = KI_anfrage(inhalt)
     elif userstartwahl == "3":
         ki_response = ki_task_erstellen(inhalt)
+
+elif userstartwahl == "4":
     
+    metadaten = []
+    dateitypen = Counter()
+
+    metadaten.append("")
+    metadaten.append("============= Ordnerbericht =============")
+    metadaten.append("")
+    metadaten.append(f"Analysierter Pfad: {pfad}")
+    metadaten.append(f"Anzahl der Dateien: {len(dateien)}")
+    metadaten.append("")
+    metadaten.append("Dateien:")
+
+    if dateien:
+        for f in dateien:
+            grösse = f.stat().st_size
+
+            if f.suffix:
+                endung = f.suffix.lower()
+                dateitypen[endung] += 1
+
+    
+                metadaten.append(f"{f.name} | {endung} | {grösse} Bytes")
+            else:
+                metadaten.append(f"{f.name} | Keine Endung | {grösse} Bytes")
+        
+        metadaten.append("")
+        metadaten.append("Dateitypen:")
+
+        for endung, anzahl in dateitypen.items():
+            metadaten.append(f"- {endung}: {anzahl}")
+
+    else:
+        metadaten.append("Es wurden keine Dateien gefunden.")
+        logging.info("Es wurden keine Dateien gefunden")
+
+    for b in metadaten:
+        print(b)
+
+    print("")
+    
+    try:
+
+        inhalt = "\n".join(metadaten)
+
+        ki_response = ordnerbericht(inhalt)    
+
+        anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_file()]
+
+        with open(report_ordner / f"Report des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
+            
+            antwortdatei.write("## Technischer Bericht:")
+            antwortdatei.write(f"{inhalt}\n")
+            antwortdatei.write("## KI Empfehlung:\n")
+            antwortdatei.write(f"{ki_response}\n")
+
+    except Exception as f:
+        print("Es gab einen Fehler bei der Erstellung des Reports")
+        print(f)
+        logging.error("Es gab einen Fehler bei der erstellung des Reports")
+        logging.error(f)
+        raise SystemExit
 
 if ki_response is not None:
     #Ab hier wird die KI Anfrage aufgerufen und ausgegeben
