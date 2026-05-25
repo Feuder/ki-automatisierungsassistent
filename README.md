@@ -25,4 +25,4 @@ Phase 7 abgeschlossen: Das Projekt kann KI-Ausgaben als strukturiertes JSON erze
 Phase 8 abgeschlossen: Das Projekt kann einen lokalen Eingabeordner analysieren, daraus einen technischen Bericht erzeugen, diesen per KI verständlich zusammenfassen, Handlungsempfehlungen erstellen und das Ergebnis als Markdown-Report speichern.
 
 # Geplante Phasen
-Phase 8 – Automatisierte Berichte
+Phase 9 – Dateiablage-Vorschläge
