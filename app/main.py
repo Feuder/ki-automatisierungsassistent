@@ -4,7 +4,7 @@ from collections import Counter
 from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER, REPORT_ORDNER, MAX_TIEFE
 from ai.ai_client import KI_anfrage, ki_task_erstellen, ordnerbericht
 from utils.text_reader import datei_inhalt
-from utils.folder_scanner import ordnerinhalt
+from utils.folder_scanner import ordnerinhaltunteror, ordnerinhaltohne
 from pathlib import Path
 
 #-------Hier wird überprüft ob die Pfade alle in Ordnung sind-------
@@ -201,31 +201,39 @@ elif userstartwahl == "5":
             print("Den angegebenen Ordner gibt es nicht. Gebe einen anderen Pfad an!\n")
             logging.error("Der angebene Pfad wurde nicht gefunden!\n")
 
+        elif wahlpfad.is_dir() and not any(wahlpfad.iterdir()):
+            print("Der Ordner ist leer und kann nicht Analysiert werden\n")
+            logging.error("Der angebenene Ordner ist leer und kann nicht Analysiert werden!")
+
         else:
+            logging.info("Es wurde ein Unterordner oder eine Datei gefunden")
             break
 
     unterorderentsch = input("Sollen Unterordner mit einbezogen sein? j/n\n").lower()
 
     if unterorderentsch == "j":
 
-        ordnerstat, inhalt = ordnerinhalt(wahlpfad)
-
-        inhalt = "\n".join("".join(i) for i in inhalt)
-
-        ki_response = ordnerbericht(inhalt)
-
-        print(ki_response)
-
-        anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_file()]
-
-        with open(report_ordner / f"Report des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
-            
-            antwortdatei.write("## Technischer Bericht:")
-            antwortdatei.write(f"{ordnerstat}\n")
-            antwortdatei.write("## KI Empfehlung:\n")
-            antwortdatei.write(f"{ki_response}\n")
+        ordnerstat, inhalt = ordnerinhaltunteror(wahlpfad)
     else:
-        print("Es werden keine Unterordner mit einbezogen\n")
+
+        ordnerstat, inhalt = ordnerinhaltohne(wahlpfad)
+
+    inhalt = "\n".join("".join(i) for i in inhalt)
+
+    ki_response = ordnerbericht(inhalt)
+
+    print(ki_response)
+
+    anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_file()]
+
+    with open(report_ordner / f"Report des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
+        
+        antwortdatei.write("## Technischer Bericht:")
+        antwortdatei.write(f"{ordnerstat}\n")
+        antwortdatei.write("## KI Empfehlung:\n")
+        antwortdatei.write(f"{ki_response}\n")
+
+
 
 
 if ki_response is not None:
