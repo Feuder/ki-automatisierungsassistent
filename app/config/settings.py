@@ -13,6 +13,8 @@ REPORT_ORDNER = Path("data/output/reports")
 BERICHT_DATEINAME = "ordnerbericht.txt"
 BERICHT_DATEIPFAD = AUSGABE_ORDNER / BERICHT_DATEINAME
 
+MAX_TIEFE = 5
+
 def get_api_key():
     ENV_PFAD = Path(__file__).resolve().parent.parent.parent / ".env"
     load_dotenv(ENV_PFAD)

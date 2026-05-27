@@ -1,9 +1,11 @@
 import logging
 import json
 from collections import Counter
-from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER, REPORT_ORDNER
+from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER, REPORT_ORDNER, MAX_TIEFE
 from ai.ai_client import KI_anfrage, ki_task_erstellen, ordnerbericht
 from utils.text_reader import datei_inhalt
+from utils.folder_scanner import ordnerinhalt
+from pathlib import Path
 
 #-------Hier wird überprüft ob die Pfade alle in Ordnung sind-------
 LOG_ORDNER.mkdir(parents=True, exist_ok=True)
@@ -19,6 +21,7 @@ zusammenfassung_ordner = SUMMARY_ORDNER
 aufgaben_ordner = TASK_ORDNER
 report_ordner = REPORT_ORDNER
 ki_response = None
+max_unterordner = MAX_TIEFE
 
 logging.basicConfig(filename=LOG_DATEI, level=logging.INFO, encoding="utf-8")
 logging.info("Programm startet")
@@ -34,11 +37,12 @@ print("Was möchtest du machen?:\n" \
 "1. Metadaten aller Dateien anzeigen\n" \
 "2. Den Inhalt einer Datei zusammenfassen\n" \
 "3. Aufgaben erstellen\n" \
-"4. Einen Report erzeugen")
+"4. Einen Report erzeugen\n" \
+"5. Ordnerstrukur Optimieren")
 
-print("Gebe eine Zahl von 1 bis 4 ein:\n")
+print("Gebe eine Zahl von 1 bis 5 ein:\n")
 
-auswahlzahlen = ["1", "2", "3", "4"]
+auswahlzahlen = ["1", "2", "3", "4", "5"]
 
 while True:
     userstartwahl = input()
@@ -185,6 +189,44 @@ elif userstartwahl == "4":
         logging.error("Es gab einen Fehler bei der erstellung des Reports")
         logging.error(f)
         raise SystemExit
+
+elif userstartwahl == "5":
+
+    while True:
+        wahlpfad = input("Gebe den zu zu Optimierenden Pfad ein:\n")
+
+        wahlpfad = Path(wahlpfad)
+
+        if not wahlpfad.exists():
+            print("Den angegebenen Ordner gibt es nicht. Gebe einen anderen Pfad an!\n")
+            logging.error("Der angebene Pfad wurde nicht gefunden!\n")
+
+        else:
+            break
+
+    unterorderentsch = input("Sollen Unterordner mit einbezogen sein? j/n\n").lower()
+
+    if unterorderentsch == "j":
+
+        inhalt = ordnerinhalt(wahlpfad)
+
+        inhalt = "\n".join(inhalt)
+
+        ordnerstat, ki_response = ordnerbericht(inhalt)
+
+        print(ki_response)
+
+        anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_file()]
+
+        with open(report_ordner / f"Report des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
+            
+            antwortdatei.write("## Technischer Bericht:")
+            antwortdatei.write(f"{ordnerstat}\n")
+            antwortdatei.write("## KI Empfehlung:\n")
+            antwortdatei.write(f"{ki_response}\n")
+    else:
+        print("Es werden keine Unterordner mit einbezogen\n")
+
 
 if ki_response is not None:
     #Ab hier wird die KI Anfrage aufgerufen und ausgegeben
