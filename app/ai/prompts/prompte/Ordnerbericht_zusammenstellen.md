@@ -23,3 +23,6 @@ Gib genau die folgenden Abschnitte in dieser Reihenfolge aus:
 ### 5. Neue Visuelle Ordnerstrukur
 Hier sollst du einmal mit "-", "|" und sowas eine visuelle Ordnerstrukur für eine Terminal ausgabe und für eine .md Datei erstellen. 
 Hier soll nur die Strukut mit Unterordnern angezeigt werden, keine Datein!
+
+### 6. Regeln
+1. Es muss im utf-8 Format alles geschrieben werden

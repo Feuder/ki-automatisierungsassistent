@@ -208,11 +208,11 @@ elif userstartwahl == "5":
 
     if unterorderentsch == "j":
 
-        inhalt = ordnerinhalt(wahlpfad)
+        ordnerstat, inhalt = ordnerinhalt(wahlpfad)
 
-        inhalt = "\n".join(inhalt)
+        inhalt = "\n".join("".join(i) for i in inhalt)
 
-        ordnerstat, ki_response = ordnerbericht(inhalt)
+        ki_response = ordnerbericht(inhalt)
 
         print(ki_response)
 

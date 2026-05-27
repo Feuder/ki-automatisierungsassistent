@@ -36449,3 +36449,28 @@ INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+ERROR:root:Der angebene Pfad wurde nicht gefunden!
+
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+ERROR:root:Der angebene Pfad wurde nicht gefunden!
+
+ERROR:root:Der angebene Pfad wurde nicht gefunden!
+
+ERROR:root:Der angebene Pfad wurde nicht gefunden!
+
+ERROR:root:Der angebene Pfad wurde nicht gefunden!
+
+INFO:root:Programm endet
