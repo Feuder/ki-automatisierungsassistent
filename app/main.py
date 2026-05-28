@@ -232,7 +232,7 @@ elif userstartwahl == "5":
 
     anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_file()]
 
-    reportpfad = report_ordner + "Report des durchlauf {len(anzahl_dateien) +1}"
+    reportpfad = report_ordner / f"Report des durchlauf {len(anzahl_dateien) + 1}"
 
     reportpfad.mkdir(parents=True, exist_ok=True)
 
