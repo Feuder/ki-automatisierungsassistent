@@ -1,0 +1,363 @@
+## Technischer Bericht:
+----------------Ordnerstruktur---------------
+
+Angegebener Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\PDfs
+Unterordner werden mit einbezogen:
+
+Tiefe der Unterordner: 2
+Anzahl der Dateien: 35
+## KI Empfehlung:
+{
+  "datei_vorschläge": [
+    {
+      "original_name": "2025-02-14_2650.030 Fassade.pdf",
+      "relative_path": "2025-02-14_2650.030 Fassade.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": ".",
+      "suggested_new_name": "2025-02-14_2650.030 Fassade.pdf",
+      "action_type": "keep",
+      "reason": "Allgemeines Fassadendokument im Hauptverzeichnis; kein klarer Zielordner vorgegeben."
+    },
+    {
+      "original_name": "250917 LIN LV Metallbauarbeiten.pdf",
+      "relative_path": "250917 LIN LV Metallbauarbeiten.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Leistungsverzeichnisse",
+      "suggested_new_name": "250917 LIN LV Metallbauarbeiten.pdf",
+      "action_type": "move_suggestion",
+      "reason": "Dateiname enthält 'LV' und beschreibt ein Leistungsverzeichnis; Bündelung in neuem Ordner 'Leistungsverzeichnisse' vorgeschlagen."
+    },
+    {
+      "original_name": "6.21.10 Alu-Fenster-Fassaden_LV_inkl. Sonnenschutz_260106.pdf",
+      "relative_path": "6.21.10 Alu-Fenster-Fassaden_LV_inkl. Sonnenschutz_260106.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Leistungsverzeichnisse",
+      "suggested_new_name": "6.21.10 Alu-Fenster-Fassaden_LV_inkl. Sonnenschutz_260106.pdf",
+      "action_type": "move_suggestion",
+      "reason": "Bezeichnung enthält 'LV'; thematisch als Leistungsverzeichnis erkennbar."
+    },
+    {
+      "original_name": "62110-1_UHG_BA2-FB-BNB-251209.pdf",
+      "relative_path": "62110-1_UHG_BA2-FB-BNB-251209.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": ".",
+      "suggested_new_name": "62110-1_UHG_BA2-FB-BNB-251209.pdf",
+      "action_type": "unclear",
+      "reason": "Kryptischer Projekt-/Dateiname ohne eindeutige Zuordnung zu bestehendem Ordner."
+    },
+    {
+      "original_name": "Anleitung Deaktivieren der Abwesenheitsnotiz.pdf",
+      "relative_path": "Anleitung Deaktivieren der Abwesenheitsnotiz.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Anleitungen",
+      "suggested_new_name": "Anleitung Deaktivieren der Abwesenheitsnotiz.pdf",
+      "action_type": "move_suggestion",
+      "reason": "Handbuch/Anleitung; es existiert bereits der Ordner 'Anleitungen'."
+    },
+    {
+      "original_name": "Anleitung Dynamische Sperre einrichten.pdf",
+      "relative_path": "Anleitung Dynamische Sperre einrichten.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Anleitungen",
+      "suggested_new_name": "Anleitung Dynamische Sperre einrichten.pdf",
+      "action_type": "move_suggestion",
+      "reason": "Anleitung; konsistente Ablage im bestehenden Ordner 'Anleitungen' empfohlen."
+    },
+    {
+      "original_name": "Anleitung Mitarbeiter Bereich.pdf",
+      "relative_path": "Anleitung Mitarbeiter Bereich.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Anleitungen",
+      "suggested_new_name": "Anleitung Mitarbeiter Bereich.pdf",
+      "action_type": "move_suggestion",
+      "reason": "Anleitungsdokument; sollte zu 'Anleitungen' verschoben werden."
+    },
+    {
+      "original_name": "Anleitung Zuweisungsänderung.pdf",
+      "relative_path": "Anleitung Zuweisungsänderung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Anleitungen",
+      "suggested_new_name": "Anleitung Zuweisungsänderung.pdf",
+      "action_type": "move_suggestion",
+      "reason": "Anleitung; passender vorhandener Ordner ist 'Anleitungen'."
+    },
+    {
+      "original_name": "Ap01 26.pdf",
+      "relative_path": "Ap01 26.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Unklar",
+      "suggested_folder": ".",
+      "suggested_new_name": "Ap01 26.pdf",
+      "action_type": "unclear",
+      "reason": "Zweck aus Dateinamen nicht ersichtlich; kein passender Zielordner ableitbar."
+    },
+    {
+      "original_name": "Entschuldigung 06.02.2026.pdf",
+      "relative_path": "Entschuldigung 06.02.2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": ".",
+      "suggested_new_name": "Entschuldigung 06.02.2026.pdf",
+      "action_type": "keep",
+      "reason": "Datierte Entschuldigungsdatei; kein besserer Zielordner im Bericht erkennbar."
+    },
+    {
+      "original_name": "Entschuldigung 13.02.2026.pdf",
+      "relative_path": "Entschuldigung 13.02.2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": ".",
+      "suggested_new_name": "Entschuldigung 13.02.2026.pdf",
+      "action_type": "keep",
+      "reason": "Entschuldigungsdokument ohne klaren Zielordner im Bericht."
+    },
+    {
+      "original_name": "Entschuldigung 27.02.2026.pdf",
+      "relative_path": "Entschuldigung 27.02.2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": ".",
+      "suggested_new_name": "Entschuldigung 27.02.2026.pdf",
+      "action_type": "keep",
+      "reason": "Entschuldigungsdokument; keine passendere vorhandene Ordnerstruktur ersichtlich."
+    },
+    {
+      "original_name": "Haskamp - Überprüfung Microsoft Surface.pdf",
+      "relative_path": "Haskamp - Überprüfung Microsoft Surface.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": ".",
+      "suggested_new_name": "Haskamp - Überprüfung Microsoft Surface.pdf",
+      "action_type": "keep",
+      "reason": "IT-bezogener Prüfbericht; kein eindeutiger Zielordner vorhanden."
+    },
+    {
+      "original_name": "KARLA_250121_VE3.335.01-1_LV Fassadenarbeiten Angebotseinholung_wsa.pdf",
+      "relative_path": "KARLA_250121_VE3.335.01-1_LV Fassadenarbeiten Angebotseinholung_wsa.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Leistungsverzeichnisse",
+      "suggested_new_name": "KARLA_250121_VE3.335.01-1_LV Fassadenarbeiten Angebotseinholung_wsa.pdf",
+      "action_type": "move_suggestion",
+      "reason": "Enthält 'LV' im Namen; thematisch Leistungsverzeichnis."
+    },
+    {
+      "original_name": "Leistungsverzeichnis VE 313 Fassadenbekleidung.pdf",
+      "relative_path": "Leistungsverzeichnis VE 313 Fassadenbekleidung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Leistungsverzeichnisse",
+      "suggested_new_name": "Leistungsverzeichnis VE 313 Fassadenbekleidung.pdf",
+      "action_type": "move_suggestion",
+      "reason": "Explizit als Leistungsverzeichnis benannt; Bündelung sinnvoll."
+    },
+    {
+      "original_name": "LV 6.21.10-0 Elementfassade.pdf",
+      "relative_path": "LV 6.21.10-0 Elementfassade.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Leistungsverzeichnisse",
+      "suggested_new_name": "LV 6.21.10-0 Elementfassade.pdf",
+      "action_type": "move_suggestion",
+      "reason": "Dateiname beginnt mit 'LV'; als Leistungsverzeichnis erkennbar."
+    },
+    {
+      "original_name": "OneDrive_1_8.1.2026.zip",
+      "relative_path": "OneDrive_1_8.1.2026.zip",
+      "file_type": "zip",
+      "suggested_category": "Export",
+      "suggested_folder": "Exporte",
+      "suggested_new_name": "OneDrive_1_8.1.2026.zip",
+      "action_type": "move_suggestion",
+      "reason": "Archiv/Export aus OneDrive; neuer Sammelordner 'Exporte' vorgeschlagen."
+    },
+    {
+      "original_name": "Registrations Anleitung.pdf",
+      "relative_path": "Registrations Anleitung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Anleitungen",
+      "suggested_new_name": "Registrations Anleitung.pdf",
+      "action_type": "move_suggestion",
+      "reason": "Anleitungsdokument; in bestehenden Ordner 'Anleitungen' verschieben."
+    },
+    {
+      "original_name": "Telefon - Kopie.pdf",
+      "relative_path": "Telefon - Kopie.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Unklar",
+      "suggested_folder": ".",
+      "suggested_new_name": "Telefon - Kopie.pdf",
+      "action_type": "unclear",
+      "reason": "Inhalt/Zweck aus Titel nicht eindeutig; kein passender Zielordner erkennbar."
+    },
+    {
+      "original_name": "testdatei.pdf",
+      "relative_path": "testdatei.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Unklar",
+      "suggested_folder": ".",
+      "suggested_new_name": "testdatei.pdf",
+      "action_type": "unclear",
+      "reason": "Als Testdatei bezeichnet; keine verlässliche fachliche Zuordnung möglich."
+    },
+    {
+      "original_name": "Ticket Center Anleitung.pdf",
+      "relative_path": "Ticket Center Anleitung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Anleitungen",
+      "suggested_new_name": "Ticket Center Anleitung.pdf",
+      "action_type": "move_suggestion",
+      "reason": "Anleitung; in Ordner 'Anleitungen' ablegen, analog zu anderer vorhandener Anleitung."
+    },
+    {
+      "original_name": "In Edge auf die 3 Punkte oben rechts.pdf",
+      "relative_path": "Anleitungen\\In Edge auf die 3 Punkte oben rechts.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Anleitungen",
+      "suggested_new_name": "In Edge auf die 3 Punkte oben rechts.pdf",
+      "action_type": "keep",
+      "reason": "Bereits korrekt im Ordner 'Anleitungen' abgelegt."
+    },
+    {
+      "original_name": "2025-02-14_2650.030_Fassade_markiert (2).pdf",
+      "relative_path": "Aufgabe PK\\2025-02-14_2650.030_Fassade_markiert (2).pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Aufgabe PK",
+      "suggested_new_name": "2025-02-14_2650.030_Fassade_markiert.pdf",
+      "action_type": "rename_suggestion",
+      "reason": "Dublettenzusatz ' (2)' im Dateinamen; Bereinigung ohne Ordnerwechsel empfohlen."
+    },
+    {
+      "original_name": "Promting Aufgabe.docx",
+      "relative_path": "Aufgabe PK\\Promting Aufgabe.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Aufgabe PK",
+      "suggested_new_name": "Promting Aufgabe.docx",
+      "action_type": "keep",
+      "reason": "Aufgabendatei liegt im Aufgabenordner 'Aufgabe PK'."
+    },
+    {
+      "original_name": "Stichworte Vertragsprüfung.txt",
+      "relative_path": "Aufgabe PK\\Stichworte Vertragsprüfung.txt",
+      "file_type": "txt",
+      "suggested_category": "Vertrag",
+      "suggested_folder": "Aufgabe PK",
+      "suggested_new_name": "Stichworte Vertragsprüfung.txt",
+      "action_type": "keep",
+      "reason": "Bezieht sich auf Vertragsprüfung; Ablage im Aufgabenordner plausibel."
+    },
+    {
+      "original_name": "Vertragspruefung (3).xlsx",
+      "relative_path": "Aufgabe PK\\Vertragspruefung (3).xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Vertrag",
+      "suggested_folder": "Aufgabe PK",
+      "suggested_new_name": "Vertragspruefung.xlsx",
+      "action_type": "rename_suggestion",
+      "reason": "Entfernung der Dublettenkennung ' (3)' für eindeutigeren Dateinamen; Ordner bleibt gleich."
+    },
+    {
+      "original_name": "Scan Seite 1.pdf",
+      "relative_path": "BAB\\Scan Seite 1.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "BAB",
+      "suggested_new_name": "Scan Seite 1.pdf",
+      "action_type": "keep",
+      "reason": "Serieller Scan bereits im Ordner 'BAB' gruppiert."
+    },
+    {
+      "original_name": "Scan Seite 2.pdf",
+      "relative_path": "BAB\\Scan Seite 2.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "BAB",
+      "suggested_new_name": "Scan Seite 2.pdf",
+      "action_type": "keep",
+      "reason": "Serieller Scan im bestehenden Ordner 'BAB'."
+    },
+    {
+      "original_name": "Scan Seite 3.pdf",
+      "relative_path": "BAB\\Scan Seite 3.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "BAB",
+      "suggested_new_name": "Scan Seite 3.pdf",
+      "action_type": "keep",
+      "reason": "Serieller Scan im passenden Ordner 'BAB'."
+    },
+    {
+      "original_name": "Scan Seite 4.pdf",
+      "relative_path": "BAB\\Scan Seite 4.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "BAB",
+      "suggested_new_name": "Scan Seite 4.pdf",
+      "action_type": "keep",
+      "reason": "Serieller Scan im passenden Ordner 'BAB'."
+    },
+    {
+      "original_name": "25-06-16_Ergebnisbericht_KI-Expertengesprche_final.pdf",
+      "relative_path": "KI Richtlinien\\25-06-16_Ergebnisbericht_KI-Expertengesprche_final.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "KI Richtlinien",
+      "suggested_new_name": "25-06-16_Ergebnisbericht_KI-Expertengesprche_final.pdf",
+      "action_type": "keep",
+      "reason": "Thematisch zu KI-Richtlinien passend und bereits entsprechend abgelegt."
+    },
+    {
+      "original_name": "25-06-27_Checkliste für KI-Tools.pdf",
+      "relative_path": "KI Richtlinien\\25-06-27_Checkliste für KI-Tools.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "KI Richtlinien",
+      "suggested_new_name": "25-06-27_Checkliste für KI-Tools.pdf",
+      "action_type": "keep",
+      "reason": "KI-bezogene Checkliste im Ordner 'KI Richtlinien' korrekt abgelegt."
+    },
+    {
+      "original_name": "25-06-27_KI-Ratgeber - Im Juni 2025 hat die Datenschutzkonferenz.pdf",
+      "relative_path": "KI Richtlinien\\25-06-27_KI-Ratgeber - Im Juni 2025 hat die Datenschutzkonferenz.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "KI Richtlinien",
+      "suggested_new_name": "25-06-27_KI-Ratgeber - Im Juni 2025 hat die Datenschutzkonferenz.pdf",
+      "action_type": "keep",
+      "reason": "Ratgeber zu KI im Ordner 'KI Richtlinien' sinnvoll platziert."
+    },
+    {
+      "original_name": "25-10-10_KI_Strategie_Niedersachsen_final__3_.pdf",
+      "relative_path": "KI Richtlinien\\25-10-10_KI_Strategie_Niedersachsen_final__3_.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "KI Richtlinien",
+      "suggested_new_name": "25-10-10_KI_Strategie_Niedersachsen_final.pdf",
+      "action_type": "rename_suggestion",
+      "reason": "Bereinigung von doppelten Unterstrichen und Revisionssuffix '__3_' für klaren, finalen Titel."
+    },
+    {
+      "original_name": "Hallo Herr Gerdes.pdf",
+      "relative_path": "KI Richtlinien\\Hallo Herr Gerdes.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Unklar",
+      "suggested_folder": "KI Richtlinien",
+      "suggested_new_name": "Hallo Herr Gerdes.pdf",
+      "action_type": "unclear",
+      "reason": "Inhalt nicht aus Dateinamen ersichtlich; liegt jedoch bereits in 'KI Richtlinien'."
+    }
+  ]
+}

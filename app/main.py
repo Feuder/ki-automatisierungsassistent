@@ -232,11 +232,17 @@ elif userstartwahl == "5":
 
     anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_file()]
 
-    with open(report_ordner / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "a", encoding="utf-8") as antwortdatei:
-        
+    reportpfad = report_ordner + "Report des durchlauf {len(anzahl_dateien) +1}"
+
+    reportpfad.mkdir(parents=True, exist_ok=True)
+
+    with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
         antwortdatei.write("## Technischer Bericht:")
-        antwortdatei.write(f"{ordnerstat}\n")
-        antwortdatei.write("## KI Empfehlung:\n")
+        antwortdatei.write(ordnerstat)
+        antwortdatei.write("## KI Ausgabe:")
+        antwortdatei.write(f"{ki_response}\n")
+
+    with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "a", encoding="utf-8") as antwortdatei:
         antwortdatei.write(f"{ki_response}\n")
 
 if ki_response is not None:
@@ -276,8 +282,8 @@ if ki_response is not None:
 
             for aufgabe in aufgaben_daten["aufgaben"]:
                 print()
-                print(f"Titel: {aufgabe['titel']}")
-                print(f"Beschreibung: {aufgabe['beschreibung']}")
+                print(f"Titel: {aufgabe['original_name']}")
+                print(f"Re: {aufgabe['beschreibung']}")
                 print(f"Priorität: {aufgabe['priorität']}")
                 print(f"Status: {aufgabe['status']}")
                 print(f"Kategorie: {aufgabe['kategorie']}")
@@ -303,19 +309,20 @@ if ki_response is not None:
 
             for vorschlag in report["datei_vorschläge"]:
                 print()
-                print(f"Titel: {vorschlag['titel']}")
-                print(f"Beschreibung: {vorschlag['beschreibung']}")
-                print(f"Priorität: {vorschlag['priorität']}")
-                print(f"Status: {vorschlag['status']}")
-                print(f"Kategorie: {vorschlag['kategorie']}")
-                print(f"Quelle: {vorschlag['quelle']}")
-                print(f"Erstellungsdatum: {vorschlag['erstellungsdatum']}")
+                print(f"Originalname: {vorschlag['original_name']}")
+                print(f"Relativer Pfad: {vorschlag['relative_path']}")
+                print(f"Dateityp: {vorschlag['file_type']}")
+                print(f"Vorgeschlagene Kategorie: {vorschlag['suggested_category']}")
+                print(f"Vorgeschlagener Ordner: {vorschlag['suggested_folder']}")
+                print(f"Vorgeschlagener neuer Name: {vorschlag['suggested_new_name']}")
+                print(f"Aktionstyp: {vorschlag['action_type']}")
+                print(f"Begründung: {vorschlag['reason']}")
                 print()
                 print("-----------------------------------------------------")
 
             print()
 
-    if not userstartwahl == "3":
+    if not userstartwahl == "3" and not userstartwahl =="5":
         print("")
         print("------------------------------------------")
         print(ki_response)
