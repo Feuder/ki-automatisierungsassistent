@@ -9,51 +9,59 @@ def ordnerinhaltunteror(wahlpfad):
     tiefe = 0
 
     for pfad in wahlpfad.rglob("*"):
-        tiefe = len(pfad.relative_to(wahlpfad).parts)
-        
-    dateien = [pfad for pfad in wahlpfad.rglob("*") if pfad.is_file()]
+        temp_tiefe = len(pfad.relative_to(wahlpfad).parts)
+        if temp_tiefe > tiefe:
+            tiefe = temp_tiefe
+
+    if tiefe <= max_unterordner:
+        dateien = [pfad for pfad in wahlpfad.rglob("*") if pfad.is_file()]
+        logging.info("Es werden alle existierenden Unterordner mit einbezogen!")
+    else:
+        dateien = [pfad for pfad in wahlpfad.rglob("*") if pfad.is_file() and len(pfad.relative_to(wahlpfad).parts) <= max_unterordner]
+        logging.error("Es werden nicht alle existierenden Unterordner mit einbezogen!")
+
     metadaten = []
     dateiendungen = Counter()
 
-    print(tiefe)
-    if tiefe <= max_unterordner:
-        logging.info("Es werden alle existierenden Unterordner mit einbezogen!")
-        if dateien:
+    if dateien:
 
-            ordnerstat = (
-                "\n"
-                "----------------Ordnerstruktur---------------\n\n"
-                f"Angegebener Pfad: {wahlpfad}\n"
-                "Unterordner werden mit einbezogen:\n\n"
-                f"Tiefe der Unterordner: {tiefe}\n"
-                f"Anzahl der Dateien: {len(dateien)}"
-            )
+        ordnerstat = (
+            "\n"
+            "----------------Ordnerstruktur---------------\n\n"
+            f"Angegebener Pfad: {wahlpfad}\n"
+            "Unterordner werden mit einbezogen:\n\n"
+            f"Tiefe der Unterordner: {tiefe}\n"
+            f"Anzahl der Dateien: {len(dateien)}"
+        )
 
-            print(ordnerstat)
+        print(ordnerstat)
 
-            for f in dateien:
-                grösse = f.stat().st_size
+        for f in dateien:
+            grösse = f.stat().st_size
 
-                if f.suffix:
-                    endung = f.suffix.lower()
-                    dateiendungen[endung] += 1
-                    dateipfad = f.relative_to(wahlpfad)
+            if f.suffix:
+                endung = f.suffix.lower()
+                dateiendungen[endung] += 1
+                dateipfad = f.relative_to(wahlpfad)
 
-        
-                    metadaten.append(f"{f.name} | {endung} | {dateipfad} | {grösse} Bytes")
-                else:
-                    metadaten.append(f"{f.name} | Keine Endung | {dateipfad} | {grösse} Bytes")
-                    metadaten.append("")
+    
+                metadaten.append(f"{f.name} | {endung} | {dateipfad} | {grösse} Bytes")
+            else:
+                metadaten.append(f"{f.name} | Keine Endung |{dateipfad} | {grösse} Bytes")
+                metadaten.append("")
 
-                metadaten.append("Dateiendungen:")
+        metadaten.append("Dateiendungen:")
 
-            for endung, anzahl in dateiendungen.items():
-                metadaten.append(f"- {endung}: {anzahl}")
-                print(f"- {endung}: {anzahl}")
-        
-        print("")    
+        for endung, anzahl in dateiendungen.items():
+            metadaten.append(f"- {endung}: {anzahl}")
+            print(f"- {endung}: {anzahl}")
     else:
-        logging.error("Es werden nicht alle existierenden Unterordner mit ein bezogen!")
+        logging.error("Es gab einen Fehler bei der Ordnerstrukur erkennung!")
+        logging.error(dateien)
+
+        raise SystemExit
+
+    print("")   
 
 
     return ordnerstat, metadaten
@@ -65,6 +73,7 @@ def ordnerinhaltohne(wahlpfad):
     dateiendungen = Counter()
 
     logging.info("Es werden nur der angebenene Ordner Analyisert")
+
     if dateien:
 
         ordnerstat = (
@@ -97,7 +106,10 @@ def ordnerinhaltohne(wahlpfad):
     
         print("")    
     else:
-        logging.error("Es werden nicht alle existierenden Unterordner mit ein bezogen!")
+        logging.error("Es gab einen Fehler bei der Ordnerstrukur erkennung!")
+        logging.error(dateien)
+
+        raise SystemExit
 
 
     return ordnerstat, metadaten

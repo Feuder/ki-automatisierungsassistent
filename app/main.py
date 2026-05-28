@@ -203,8 +203,8 @@ elif userstartwahl == "5":
 
         elif wahlpfad.is_dir() and not any(wahlpfad.iterdir()):
             print("Der Ordner ist leer und kann nicht Analysiert werden\n")
-            logging.error("Der angebenene Ordner ist leer und kann nicht Analysiert werden!")
-
+            logging.warning("Der angebenene Ordner ist leer und kann nicht Analysiert werden!")
+            
         else:
             logging.info("Es wurde ein Unterordner oder eine Datei gefunden")
             break

@@ -5,3 +5,15 @@ INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
 ERROR:root:Der angebenene Ordner ist leer und kann nicht Analysiert werden!
 ERROR:root:Der angebenene Ordner ist leer und kann nicht Analysiert werden!
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden nur der angebenene Ordner Analyisert
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
