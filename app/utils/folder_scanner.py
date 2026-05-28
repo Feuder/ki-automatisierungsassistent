@@ -18,7 +18,9 @@ def ordnerinhaltunteror(wahlpfad):
         logging.info("Es werden alle existierenden Unterordner mit einbezogen!")
     else:
         dateien = [pfad for pfad in wahlpfad.rglob("*") if pfad.is_file() and len(pfad.relative_to(wahlpfad).parts) <= max_unterordner]
-        logging.error("Es werden nicht alle existierenden Unterordner mit einbezogen!")
+        logging.warning("Es werden nicht alle existierenden Unterordner mit einbezogen!")
+        print("Die Ordnerstruktur ist tiefer als erlaubt.")
+        print("Es werden nur Dateien bis zur erlaubten Tiefe analysiert.")
 
     metadaten = []
     dateiendungen = Counter()
@@ -38,16 +40,18 @@ def ordnerinhaltunteror(wahlpfad):
 
         for f in dateien:
             grösse = f.stat().st_size
+            dateipfad = f.relative_to(wahlpfad)
 
             if f.suffix:
                 endung = f.suffix.lower()
                 dateiendungen[endung] += 1
-                dateipfad = f.relative_to(wahlpfad)
 
     
                 metadaten.append(f"{f.name} | {endung} | {dateipfad} | {grösse} Bytes")
             else:
-                metadaten.append(f"{f.name} | Keine Endung |{dateipfad} | {grösse} Bytes")
+                dateiendungen["Ohne Endung"] += 1
+
+                metadaten.append(f"{f.name} | Keine Endung | {dateipfad} | {grösse} Bytes")
                 metadaten.append("")
 
         metadaten.append("Dateiendungen:")
@@ -98,7 +102,7 @@ def ordnerinhaltohne(wahlpfad):
                 metadaten.append(f"{f.name} | Keine Endung | {grösse} Bytes")
                 metadaten.append("")
 
-            metadaten.append("Dateiendungen:")
+        metadaten.append("Dateiendungen:")
 
         for endung, anzahl in dateiendungen.items():
             metadaten.append(f"- {endung}: {anzahl}")

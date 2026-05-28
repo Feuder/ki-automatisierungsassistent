@@ -174,9 +174,9 @@ elif userstartwahl == "4":
 
         ki_response = ordnerbericht(inhalt)    
 
-        anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_file()]
+        anzahl_dateien = [1 for f in aufgaben_ordner.iterdir() if f.is_file()]
 
-        with open(report_ordner / f"Report des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
+        with open(report_ordner / f"Aufgaben des durchlauf {len(anzahl_dateien) +1}.json", "a", encoding="utf-8") as antwortdatei:
             
             antwortdatei.write("## Technischer Bericht:")
             antwortdatei.write(f"{inhalt}\n")
@@ -200,44 +200,46 @@ elif userstartwahl == "5":
         if not wahlpfad.exists():
             print("Den angegebenen Ordner gibt es nicht. Gebe einen anderen Pfad an!\n")
             logging.error("Der angebene Pfad wurde nicht gefunden!\n")
-
+        elif wahlpfad.is_file():
+            print("Der angebene Pfad führt zu einer Datei und kann nicht Analyisert werden!\n")
+            logging.warning("Der angebene Pfad führt zu einer Datei und kann nicht Analyisert werden!")
         elif wahlpfad.is_dir() and not any(wahlpfad.iterdir()):
             print("Der Ordner ist leer und kann nicht Analysiert werden\n")
             logging.warning("Der angebenene Ordner ist leer und kann nicht Analysiert werden!")
-            
         else:
             logging.info("Es wurde ein Unterordner oder eine Datei gefunden")
             break
 
-    unterorderentsch = input("Sollen Unterordner mit einbezogen sein? j/n\n").lower()
+    print("Sollen Unterordner mit einbezogen sein? j/n\n")
 
-    if unterorderentsch == "j":
+    while True:
+        unterorderentsch = input().lower()
 
-        ordnerstat, inhalt = ordnerinhaltunteror(wahlpfad)
-    else:
+        if unterorderentsch == "j" or unterorderentsch == "n":
+            if unterorderentsch == "j":
 
-        ordnerstat, inhalt = ordnerinhaltohne(wahlpfad)
+                ordnerstat, inhalt = ordnerinhaltunteror(wahlpfad)
+            else:
+
+                ordnerstat, inhalt = ordnerinhaltohne(wahlpfad)
+            break
+        else:
+            print("Gebe nur j/n ein!")
 
     inhalt = "\n".join("".join(i) for i in inhalt)
-
+    
     ki_response = ordnerbericht(inhalt)
-
-    print(ki_response)
 
     anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_file()]
 
-    with open(report_ordner / f"Report des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
+    with open(report_ordner / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "a", encoding="utf-8") as antwortdatei:
         
         antwortdatei.write("## Technischer Bericht:")
         antwortdatei.write(f"{ordnerstat}\n")
         antwortdatei.write("## KI Empfehlung:\n")
         antwortdatei.write(f"{ki_response}\n")
 
-
-
-
 if ki_response is not None:
-    #Ab hier wird die KI Anfrage aufgerufen und ausgegeben
 
     if userstartwahl == "2":
 
@@ -293,6 +295,25 @@ if ki_response is not None:
             print(fehler)
             logging.error(fehler)
             raise SystemExit
+    elif userstartwahl == "5":
+
+            report = json.loads(ki_response)
+
+            print("\n-----------------------------------------------------")
+
+            for vorschlag in report["datei_vorschläge"]:
+                print()
+                print(f"Titel: {vorschlag['titel']}")
+                print(f"Beschreibung: {vorschlag['beschreibung']}")
+                print(f"Priorität: {vorschlag['priorität']}")
+                print(f"Status: {vorschlag['status']}")
+                print(f"Kategorie: {vorschlag['kategorie']}")
+                print(f"Quelle: {vorschlag['quelle']}")
+                print(f"Erstellungsdatum: {vorschlag['erstellungsdatum']}")
+                print()
+                print("-----------------------------------------------------")
+
+            print()
 
     if not userstartwahl == "3":
         print("")

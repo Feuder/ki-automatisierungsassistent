@@ -42,3 +42,17 @@ def get_model():
         raise SystemExit
     
     return GPT_VERSION
+
+def get_fehler_moodel():
+    ENV_PFAD = Path(__file__).resolve().parent.parent.parent / ".env"
+    load_dotenv(ENV_PFAD)
+
+    GPT_VERSION = os.getenv("OPENAI_FEHLER_MODEL")
+                            
+                                
+    if not GPT_VERSION:
+        print("Es konnte das GPT Modell nicht sauber aufgerufen werden!")
+        logging.error("Es konnte das GPT Modell nicht sauber aufgerufen werden!")
+        raise SystemExit
+    
+    return GPT_VERSION
