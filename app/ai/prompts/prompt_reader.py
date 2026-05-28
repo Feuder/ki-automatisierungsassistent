@@ -9,3 +9,7 @@ def task_erstellenpromt():
 def ordnerbericht_prompt():
     with open("app/ai/prompts/prompte/Ordnerbericht_zusammenstellen.md", "r", encoding="utf-8") as promt:
         return promt.read()
+    
+def ordnerstrkurbericht():
+    with open("app/ai/prompts/prompte/Ordnerbericht_zusammenstellen.md", "r", encoding="utf-8") as promt:
+        return promt.read()

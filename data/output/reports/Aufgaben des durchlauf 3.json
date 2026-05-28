@@ -1,0 +1,37 @@
+## Technischer Bericht:
+============= Ordnerbericht =============
+
+Analysierter Pfad: data\input
+Anzahl der Dateien: 2
+
+Dateien:
+notizen_phase6_input.txt | .txt | 1058 Bytes
+test text.txt | .txt | 1342 Bytes
+
+Dateitypen:
+- .txt: 2
+## KI Empfehlung:
+{
+  "datei_vorschläge": [
+    {
+      "original_name": "notizen_phase6_input.txt",
+      "relative_path": "data\\input\\notizen_phase6_input.txt",
+      "file_type": "txt",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "data\\input",
+      "suggested_new_name": "notizen_phase6_input.txt",
+      "action_type": "keep",
+      "reason": "Im Ordnerbericht als .txt-Notiz erkennbar; Dateiname wirkt aussagekräftig und passt zum aktuellen Ordner data\\input."
+    },
+    {
+      "original_name": "test text.txt",
+      "relative_path": "data\\input\\test text.txt",
+      "file_type": "txt",
+      "suggested_category": "Unklar",
+      "suggested_folder": "data\\input",
+      "suggested_new_name": "test text.txt",
+      "action_type": "unclear",
+      "reason": "Aus dem Ordnerbericht ist der Zweck der Test-Textdatei nicht ersichtlich; keine verlässliche Zuordnung oder Umbenennung ableitbar."
+    }
+  ]
+}
