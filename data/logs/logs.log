@@ -6844,3 +6844,31 @@ INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
 INFO:root:Das JSON-Schema wurde erfolgreich validiert.
 INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:--------------------------------------
+ERROR:root:JSON konnte nicht gelesen werden.
+ERROR:root:Expecting value: line 1 column 1 (char 0)
+ERROR:root:--------------------------------------
+ERROR:root:Es konnte das GPT Modell nicht sauber aufgerufen werden!
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:--------------------------------------
+ERROR:root:JSON konnte nicht gelesen werden.
+ERROR:root:Expecting value: line 1 column 1 (char 0)
+ERROR:root:--------------------------------------
+ERROR:root:Es konnte das GPT Modell nicht sauber aufgerufen werden!
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:--------------------------------------
+ERROR:root:JSON konnte nicht gelesen werden.
+ERROR:root:Expecting value: line 1 column 1 (char 0)
+ERROR:root:--------------------------------------
+ERROR:root:Es konnte das GPT Modell nicht sauber aufgerufen werden!
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet

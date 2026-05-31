@@ -2,7 +2,7 @@ import logging
 import json
 from collections import Counter
 from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER, REPORT_ORDNER, MAX_TIEFE
-from ai.ai_client import KI_anfrage, ki_task_erstellen, ordnerbericht
+from ai.ai_client import KI_anfrage, ki_task_erstellen, dateiablage_vorschlag, ordnerbericht
 from utils.text_reader import datei_inhalt
 from utils.folder_scanner import ordnerinhaltunteror, ordnerinhaltohne
 from pathlib import Path
@@ -172,7 +172,7 @@ elif userstartwahl == "4":
 
         inhalt = "\n".join(metadaten)
 
-        ki_response = ordnerbericht(inhalt)    
+        ki_response = dateiablage_vorschlag(inhalt)    
 
         anzahl_dateien = [1 for f in aufgaben_ordner.iterdir() if f.is_file()]
 
