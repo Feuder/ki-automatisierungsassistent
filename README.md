@@ -23,6 +23,7 @@ Phase 6 abgeschlossen: Das Projekt kann aus einer lokalen Notizdatei per KI Aufg
 Phase 7 zusatz: Ich habe zusätzlich einen JSON Validiere mit eingebaut, damit die KI ausgabe immer noch überprüft wurde. Wenn dies nicht der Fall ist, wird die Anfrage bis zu 3 mal wiederholt.
 Phase 7 abgeschlossen: Das Projekt kann KI-Ausgaben als strukturiertes JSON erzeugen, gegen ein Schema validieren, ungültige Ergebnisse erkennen, JSON speichern und wieder einlesen.
 Phase 8 abgeschlossen: Das Projekt kann einen lokalen Eingabeordner analysieren, daraus einen technischen Bericht erzeugen, diesen per KI verständlich zusammenfassen, Handlungsempfehlungen erstellen und das Ergebnis als Markdown-Report speichern.
+Phase 9 abgeschlossen: Das Projekt kann einen frei gewählten Ordner analysieren, optional Unterordner einbeziehen, Dateiablage-Vorschläge per KI erzeugen, diese als JSON validieren, als Trockenlauf anzeigen und speichern. Es werden keine Dateien automatisch verändert.
 
 # Geplante Phasen
-Phase 9 – Dateiablage-Vorschläge
+Phase 10 – Kontrollierte Dateiaktionen

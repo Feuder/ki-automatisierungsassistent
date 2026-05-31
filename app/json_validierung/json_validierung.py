@@ -4,7 +4,6 @@ import logging
 
 def aufgaben_validieren(inhalt):
 
-
     schema = {
         "type": "object",
         "required": ["aufgaben"],

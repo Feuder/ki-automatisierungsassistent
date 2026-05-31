@@ -1,0 +1,136 @@
+None
+None
+{
+  "datei_vorschläge": [
+    {
+      "original_name": "chat_protokoll_komplett.docx",
+      "relative_path": "chat_protokoll_komplett.docx",
+      "file_type": "docx",
+      "suggested_category": "Protokoll",
+      "suggested_folder": "Word",
+      "suggested_new_name": "chat_protokoll_komplett.docx",
+      "action_type": "move_suggestion",
+      "reason": "DOCX liegt im Stammverzeichnis, thematisch passt es in den vorhandenen Ordner Word."
+    },
+    {
+      "original_name": "Erstausstattung_2_Zimmer_Wohnung.xlsx",
+      "relative_path": "Excel\\Erstausstattung_2_Zimmer_Wohnung.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel",
+      "suggested_new_name": "Erstausstattung_2_Zimmer_Wohnung.xlsx",
+      "action_type": "keep",
+      "reason": "Dateiname ist eindeutig und liegt sinnvoll im Ordner Excel."
+    },
+    {
+      "original_name": "Spesenabrechnungsboge Vorlage - Kopie.xlsx",
+      "relative_path": "Excel\\Spesenabrechnungsboge Vorlage - Kopie.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Finanzen",
+      "suggested_folder": "Excel",
+      "suggested_new_name": "Spesenabrechnungsbogen Vorlage.xlsx",
+      "action_type": "rename_suggestion",
+      "reason": "Dateiname enthält \"- Kopie\" und einen offensichtlichen Tippfehler; Vorlage sollte eindeutig ohne Kopie-Zusatz benannt sein."
+    },
+    {
+      "original_name": "Subnetze Konfigurieren.xlsx",
+      "relative_path": "Excel\\Subnetze Konfigurieren.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "IT-Netzwerk",
+      "suggested_folder": "Excel",
+      "suggested_new_name": "Subnetze Konfigurieren.xlsx",
+      "action_type": "keep",
+      "reason": "Sinnvoller Dateiname und richtige Ablage im Ordner Excel."
+    },
+    {
+      "original_name": "Kostenrechnung 2026.xlsx",
+      "relative_path": "Excel\\Kostenrechnung\\Kostenrechnung 2026.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Finanzen",
+      "suggested_folder": "Excel\\Kostenrechnung",
+      "suggested_new_name": "Kostenrechnung 2026.xlsx",
+      "action_type": "keep",
+      "reason": "Jahresbezogene Kostenrechnung liegt bereits in passendem Unterordner Excel\\Kostenrechnung."
+    },
+    {
+      "original_name": "AP01 Lernzettel Themblöcke.docx",
+      "relative_path": "Word\\AP01 Lernzettel Themblöcke.docx",
+      "file_type": "docx",
+      "suggested_category": "Lernunterlage",
+      "suggested_folder": "Word",
+      "suggested_new_name": "AP01 Lernzettel Themenblöcke.docx",
+      "action_type": "rename_suggestion",
+      "reason": "Offensichtlicher Tippfehler im Wort \"Themblöcke\"; Korrektur erhöht Verständlichkeit."
+    },
+    {
+      "original_name": "IPv4 erklärung.docx",
+      "relative_path": "Word\\IPv4 erklärung.docx",
+      "file_type": "docx",
+      "suggested_category": "Lernunterlage",
+      "suggested_folder": "Word",
+      "suggested_new_name": "IPv4 Erklärung.docx",
+      "action_type": "rename_suggestion",
+      "reason": "Korrektur der Groß-/Kleinschreibung und Umlaute für einheitliche Benennung."
+    },
+    {
+      "original_name": "Lernzettel AP01.docx",
+      "relative_path": "Word\\Lernzettel AP01.docx",
+      "file_type": "docx",
+      "suggested_category": "Lernunterlage",
+      "suggested_folder": "Word",
+      "suggested_new_name": "Lernzettel AP01.docx",
+      "action_type": "keep",
+      "reason": "Aussagekräftiger Name und korrekter Speicherort im Ordner Word."
+    },
+    {
+      "original_name": "Lerzettel Arbeit NR.2.docx",
+      "relative_path": "Word\\Lerzettel Arbeit NR.2.docx",
+      "file_type": "docx",
+      "suggested_category": "Lernunterlage",
+      "suggested_folder": "Word",
+      "suggested_new_name": "Lernzettel Arbeit Nr. 2.docx",
+      "action_type": "rename_suggestion",
+      "reason": "Tippfehler in \"Lerzettel\" sowie uneinheitliche Schreibweise von \"Nr.\"; vorgeschlagene Korrektur vereinheitlicht."
+    },
+    {
+      "original_name": "Lf7 Zugangskontrolle.odt",
+      "relative_path": "Word\\Lf7 Zugangskontrolle.odt",
+      "file_type": "odt",
+      "suggested_category": "Lernunterlage",
+      "suggested_folder": "Word",
+      "suggested_new_name": "Lf7 Zugangskontrolle.odt",
+      "action_type": "keep",
+      "reason": "Aussagekräftiger Name und passender Speicherort im Ordner Word."
+    },
+    {
+      "original_name": "Relationsmodell.odt",
+      "relative_path": "Word\\Relationsmodell.odt",
+      "file_type": "odt",
+      "suggested_category": "Lernunterlage",
+      "suggested_folder": "Word",
+      "suggested_new_name": "Relationsmodell.odt",
+      "action_type": "keep",
+      "reason": "Sinnvoller Name und korrekter Speicherort im Ordner Word."
+    },
+    {
+      "original_name": "Subnetting.docx",
+      "relative_path": "Word\\Subnetting.docx",
+      "file_type": "docx",
+      "suggested_category": "IT-Netzwerk",
+      "suggested_folder": "Word",
+      "suggested_new_name": "Subnetting.docx",
+      "action_type": "keep",
+      "reason": "Thema und Format passen zum Ordner Word."
+    },
+    {
+      "original_name": "Test-Dokument.docx",
+      "relative_path": "Word\\Test-Dokument.docx",
+      "file_type": "docx",
+      "suggested_category": "Unklar",
+      "suggested_folder": "Unklar",
+      "suggested_new_name": "Test-Dokument.docx",
+      "action_type": "unclear",
+      "reason": "Der generische Name lässt den Zweck nicht zuverlässig erkennen."
+    }
+  ]
+}

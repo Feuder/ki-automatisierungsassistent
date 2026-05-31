@@ -128,7 +128,7 @@ elif userstartwahl == "2" or userstartwahl == "3":
         ki_response = ki_task_erstellen(inhalt)
 
 elif userstartwahl == "4":
-    
+
     metadaten = []
     dateitypen = Counter()
 
@@ -141,18 +141,17 @@ elif userstartwahl == "4":
     metadaten.append("Dateien:")
 
     if dateien:
-        for f in dateien:
-            grösse = f.stat().st_size
+        for datei in dateien:
+            groesse = datei.stat().st_size
 
-            if f.suffix:
-                endung = f.suffix.lower()
+            if datei.suffix:
+                endung = datei.suffix.lower()
                 dateitypen[endung] += 1
-
-    
-                metadaten.append(f"{f.name} | {endung} | {grösse} Bytes")
+                metadaten.append(f"{datei.name} | {endung} | {groesse} Bytes")
             else:
-                metadaten.append(f"{f.name} | Keine Endung | {grösse} Bytes")
-        
+                dateitypen["Ohne Endung"] += 1
+                metadaten.append(f"{datei.name} | Keine Endung | {groesse} Bytes")
+
         metadaten.append("")
         metadaten.append("Dateitypen:")
 
@@ -161,33 +160,32 @@ elif userstartwahl == "4":
 
     else:
         metadaten.append("Es wurden keine Dateien gefunden.")
-        logging.info("Es wurden keine Dateien gefunden")
+        logging.info("Es wurden keine Dateien gefunden.")
 
-    for b in metadaten:
-        print(b)
+    for eintrag in metadaten:
+        print(eintrag)
 
     print("")
-    
-    try:
 
+    try:
         inhalt = "\n".join(metadaten)
 
-        ki_response = dateiablage_vorschlag(inhalt)    
+        ki_response = ordnerbericht(inhalt)
 
-        anzahl_dateien = [1 for f in aufgaben_ordner.iterdir() if f.is_file()]
+        anzahl_dateien = [1 for datei in report_ordner.iterdir() if datei.is_file()]
 
-        with open(report_ordner / f"Aufgaben des durchlauf {len(anzahl_dateien) +1}.json", "a", encoding="utf-8") as antwortdatei:
-            
-            antwortdatei.write("## Technischer Bericht:")
-            antwortdatei.write(f"{inhalt}\n")
-            antwortdatei.write("## KI Empfehlung:\n")
+        with open(report_ordner / f"Report des durchlauf {len(anzahl_dateien) + 1}.md", "w", encoding="utf-8") as antwortdatei:
+            antwortdatei.write("# Automatisierter Ordnerbericht\n\n")
+            antwortdatei.write("## Technischer Bericht\n\n")
+            antwortdatei.write(f"{inhalt}\n\n")
+            antwortdatei.write("## KI-Auswertung\n\n")
             antwortdatei.write(f"{ki_response}\n")
 
-    except Exception as f:
-        print("Es gab einen Fehler bei der Erstellung des Reports")
-        print(f)
-        logging.error("Es gab einen Fehler bei der erstellung des Reports")
-        logging.error(f)
+    except Exception as fehler:
+        print("Es gab einen Fehler bei der Erstellung des Reports.")
+        print(fehler)
+        logging.error("Es gab einen Fehler bei der Erstellung des Reports.")
+        logging.error(fehler)
         raise SystemExit
 
 elif userstartwahl == "5":
@@ -228,7 +226,7 @@ elif userstartwahl == "5":
 
     inhalt = "\n".join("".join(i) for i in inhalt)
     
-    ki_response = ordnerbericht(inhalt)
+    ki_response = dateiablage_vorschlag(inhalt)
 
     anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_file()]
 
@@ -282,8 +280,8 @@ if ki_response is not None:
 
             for aufgabe in aufgaben_daten["aufgaben"]:
                 print()
-                print(f"Titel: {aufgabe['original_name']}")
-                print(f"Re: {aufgabe['beschreibung']}")
+                print(f"Titel: {aufgabe['titel']}")
+                print(f"Beschreibung: {aufgabe['beschreibung']}")
                 print(f"Priorität: {aufgabe['priorität']}")
                 print(f"Status: {aufgabe['status']}")
                 print(f"Kategorie: {aufgabe['kategorie']}")

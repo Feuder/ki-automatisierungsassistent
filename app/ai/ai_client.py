@@ -1,5 +1,5 @@
 from config.settings import get_api_key, get_model, get_fehler_moodel
-from ai.prompts.prompt_reader import zusammenfassenprompt, task_erstellenpromt, ordnerbericht_prompt, ordnerstrkurbericht 
+from ai.prompts.prompt_reader import (zusammenfassenprompt, task_erstellenpromt, ordnerbericht_prompt, dateiablage_prompt)
 from json_validierung.json_validierung import aufgaben_validieren, vorschlag_validieren
 from utils.loading_screen import ladeanzeige
 import logging
@@ -117,10 +117,10 @@ def ki_task_erstellen(inhalt):
         print(f)
         logging.error(f)
         raise SystemExit
-    
-def dateiablage_vorschlag(inhalt):
+
+def ordnerbericht(inhalt):
     prompt = str(ordnerbericht_prompt())
-    
+
     try:
         client = get_client()
 
@@ -128,21 +128,21 @@ def dateiablage_vorschlag(inhalt):
             response = client.responses.create(
                 model=get_model_env(),
                 instructions=prompt,
-                input= inhalt
+                input=inhalt
             )
 
         return response.output_text
-    
-    except Exception as f:
-        print("Es gab einen Fehler bei der erstellung des Ordnerberichts")
-        print(f)
-        logging.error("Es gab einen Fehler bei der erstellung des Ordnerberichts")
-        logging.error(f)
+
+    except Exception as fehler:
+        print("Es gab einen Fehler bei der Erstellung des Ordnerberichts.")
+        print(fehler)
+        logging.error("Es gab einen Fehler bei der Erstellung des Ordnerberichts.")
+        logging.error(fehler)
         raise SystemExit
 
-def ordnerbericht(inhalt):
-    prompt = str(ordnerstrkurbericht())
-    
+def dateiablage_vorschlag(inhalt):
+    prompt = str(dateiablage_prompt())
+
     original_inhalt = inhalt
     letzter_output = None
 
@@ -155,12 +155,12 @@ def ordnerbericht(inhalt):
             client = get_client()
 
             if fehlermeldung is None:
-                with ladeanzeige("Handlungsvorschläge werden erstellt..."):
+                with ladeanzeige("Dateiablage-Vorschläge werden erstellt..."):
                     response = client.responses.create(
                         model=get_model_env(),
                         instructions=prompt,
                         reasoning={"effort": "low"},
-                        input= inhalt
+                        input=original_inhalt
                     )
 
             elif fehlermeldung is not None and durchlauf <= 3:
@@ -185,9 +185,10 @@ def ordnerbericht(inhalt):
                             }
                         ]
                     )
+
             else:
                 print("Zu viele Versuche, das Programm wird beendet. Probiere es noch einmal.")
-                logging.error("Wegen zu vielen Versuchen wurde das Programm abgebrochen.")
+                logging.error("Wegen zu vielen JSON-Korrekturversuchen wurde das Programm abgebrochen.")
                 logging.error(fehlermeldung)
                 raise SystemExit
 
@@ -201,11 +202,9 @@ def ordnerbericht(inhalt):
                 fehlermeldung = fehler
                 durchlauf += 1
 
-        return response.output_text
-    
-    except Exception as f:
-        print("Es gab einen Fehler bei der erstellung des Ordnerberichts")
-        print(f)
-        logging.error("Es gab einen Fehler bei der erstellung des Ordnerberichts")
-        logging.error(f)
+    except Exception as fehler:
+        print("Es gab einen Fehler bei der Erstellung der Dateiablage-Vorschläge.")
+        print(fehler)
+        logging.error("Es gab einen Fehler bei der Erstellung der Dateiablage-Vorschläge.")
+        logging.error(fehler)
         raise SystemExit

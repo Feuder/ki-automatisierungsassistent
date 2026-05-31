@@ -1,0 +1,121 @@
+{
+  "aufgaben": [
+    {
+      "titel": "Neue Aufgabenextraktion vorbereiten",
+      "beschreibung": "Vorbereitung der neuen Aufgabenextraktion für Phase 6 durchführen.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "Management",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    },
+    {
+      "titel": "Ordner data/output/tasks/ prüfen",
+      "beschreibung": "Überprüfen, ob der Ordner data/output/tasks/ korrekt angelegt wird.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "Infrastruktur",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    },
+    {
+      "titel": "Menüpunkt zur Aufgabenextraktion ergänzen",
+      "beschreibung": "Im Menü einen weiteren Punkt ergänzen, um Aufgaben aus einer Notizdatei zu extrahieren.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "UI",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    },
+    {
+      "titel": "Leere Dateien sauber abfangen",
+      "beschreibung": "Sicherstellen, dass bei Dateien ohne Inhalt eine verständliche Meldung angezeigt wird und der Vorgang abbricht.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "Fehlerbehandlung",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    },
+    {
+      "titel": "Prompt für KI aufbauen",
+      "beschreibung": "Prompt so gestalten, dass konkrete Aufgaben zuverlässig erkannt werden.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "KI/Logik",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    },
+    {
+      "titel": "Markdown-Ausgabe für Phase 6 umsetzen",
+      "beschreibung": "Ergebnisse der Aufgabenextraktion als gut lesbare Markdown-Ausgabe bereitstellen.",
+      "priorität": "hoch",
+      "status": "offen",
+      "kategorie": "Ausgabe",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    },
+    {
+      "titel": "Priorität pro Aufgabe zuweisen",
+      "beschreibung": "Sicherstellen, dass jede erkannte Aufgabe eine Priorität erhält.",
+      "priorität": "mittel",
+      "status": "offen",
+      "kategorie": "Logik",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    },
+    {
+      "titel": "Standardstatus offen setzen",
+      "beschreibung": "Neue Aufgaben standardmäßig mit dem Status 'offen' versehen.",
+      "priorität": "mittel",
+      "status": "offen",
+      "kategorie": "Logik",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    },
+    {
+      "titel": "Speicherort für Aufgabenlisten festlegen",
+      "beschreibung": "Einen eindeutigen Speicherort für generierte Aufgabenlisten definieren.",
+      "priorität": "mittel",
+      "status": "offen",
+      "kategorie": "Planung",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    },
+    {
+      "titel": "Ergebnisdatei eindeutig benennen",
+      "beschreibung": "Konvention für eine eindeutige Benennung der Ergebnisdatei festlegen.",
+      "priorität": "mittel",
+      "status": "offen",
+      "kategorie": "Ausgabe",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    },
+    {
+      "titel": "Fehler beim Speichern loggen",
+      "beschreibung": "Beim Speichern auftretende Fehler protokollieren.",
+      "priorität": "mittel",
+      "status": "offen",
+      "kategorie": "Logging",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    },
+    {
+      "titel": "Ausgabe im Terminal prüfen",
+      "beschreibung": "Terminalausgabe auf Vollständigkeit und Lesbarkeit überprüfen.",
+      "priorität": "mittel",
+      "status": "offen",
+      "kategorie": "QA",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    },
+    {
+      "titel": "Test mit Notiz ohne Aufgaben durchführen",
+      "beschreibung": "Einen Testfall mit einer Notiz ohne Aufgaben ausführen.",
+      "priorität": "mittel",
+      "status": "offen",
+      "kategorie": "Test",
+      "quelle": "Projekt-Notiz für Phase 6",
+      "erstellungsdatum": "2026-05-31"
+    }
+  ]
+}
