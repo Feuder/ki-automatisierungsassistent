@@ -228,7 +228,7 @@ elif userstartwahl == "5":
     
     ki_response = dateiablage_vorschlag(inhalt)
 
-    anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_file()]
+    anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_dir()]
 
     reportpfad = report_ordner / f"Report des durchlauf {len(anzahl_dateien) + 1}"
 
@@ -242,6 +242,121 @@ elif userstartwahl == "5":
 
     with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "a", encoding="utf-8") as antwortdatei:
         antwortdatei.write(f"{ki_response}\n")
+
+anzahl_keine_änderungen = 0
+anzahl_neuer_name = 0
+anzahl_verschiebungen  = 0
+anzahl_neuername_verschiebung = 0
+unklar = 0
+
+ausgewählte_vorschlagen_komp = []
+
+print("------------------Zusammenfassung der Analyse:------------------")
+with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "r", encoding="utf-8") as antwortdatei:
+
+    json_daten = json.load(antwortdatei)
+
+    json_daten = json_daten["datei_vorschläge"]
+
+    for eintrag in json_daten:
+        match eintrag["action_type"]:
+            case "keep":
+                anzahl_keine_änderungen += 1
+
+            case "move_suggestion":
+                anzahl_verschiebungen += 1
+
+            case "rename_suggestion":
+                anzahl_neuer_name += 1
+
+            case "rename_and_move_suggestion":
+                anzahl_neuername_verschiebung += 1
+
+            case "unclear":
+                unklar += 1
+                
+            case _:
+                print(f"Unbekannter action_type: {eintrag['action_type']}")
+
+print(f"Keine Änderungen: {anzahl_keine_änderungen}")
+print(f"Verschiebungen: {anzahl_verschiebungen}")
+print(f"Neuer Name: {anzahl_neuer_name}")
+print(f"Neuer Name + Verschiebung: {anzahl_neuername_verschiebung}")
+print(f"Unklar: {unklar}")
+
+print()
+print("Möchtest du dir die Vorschläge angucken?")
+print("Wenn ja, was möchtest du machen:")
+print("1. Keine Änderungen anzeigen")
+print("2. Verschiebungen anzeigen")
+print("3. Neuer Name anzeigen")
+print("4. Neuer Name + Verschiebung anzeigen")
+print("5. Unklare Vorschläge anzeigen")
+print("6. Alle Vorschläge anzeigen")
+print("7. Keine Vorschläge anzeigen")
+
+auswahl = input("Bitte wähle eine Option von 1 bis 7: ").strip()
+auswaählbare_Kategorien = [1, 2, 3, 4, 5, 6, 7]
+
+while True:
+    if auswahl in auswaählbare_Kategorien:
+        break
+    else:
+        print(f"Gebe nur 1 - {len(auswaählbare_Kategorien)} ein!")
+
+match auswahl:
+    case "1":
+        print("Kategorie: Keine Änderungen")
+        ausgewählte_vorschlagen_komp = [vorschlag for eintrag in json_daten if eintrag["action_type"] == "keep"]
+
+    case "2":
+        print("Kategorie: Verschiebungen")
+        ausgewählte_vorschlagen_komp = [vorschlag for eintrag in json_daten if eintrag["action_type"] == "move_suggestion"]
+
+    case "3":
+        print("Kategorie: Neuer Name")
+        ausgewählte_vorschlagen_komp = [vorschlag for eintrag in json_daten if eintrag["action_type"] == "rename_suggestion"]
+
+    case "4":
+        print("Kategorie: Neuer Name + Verschiebung")
+        ausgewählte_vorschlagen_komp = [vorschlag for eintrag in json_daten if eintrag["action_type"] == "rename_and_move_suggestion"]
+
+    case "5":
+        print("Kategorie: Unklar")
+        ausgewählte_vorschlagen_komp = [vorschlag for eintrag in json_daten if eintrag["action_type"] == "unclear"]
+
+    case "6":
+        print("Kategorie: Alle Vorschläge")
+        ausgewählte_vorschlagen_komp = json_daten
+
+    case "7":
+        print("Es werden keine Vorschläge angezeigt.")
+
+print("----------------------------------------------")
+for eintrag in ausgewählte_vorschlagen_komp:
+    print(eintrag)
+    print("----------------------------------------------")
+
+
+print("Sollen die Vorschäge ausgeführt werden? j/n")
+
+while True:
+    phase5_auswahl = input().strip()
+
+    if  phase5_auswahl == "j":
+        logging.info("Die Vorgeschlagenen Vorschläge sollen umgesetzt werden")
+        break
+
+    elif phase5_auswahl == "n":
+        logging.info("Dateivorschläge sollen nicht ausgeführt werden. Programm wird beendet")
+        raise SystemExit
+    
+    else:
+        print("Gebe nur j/n ein!")
+
+
+
+#----Ab hier werden die ausgaben der Antworten getätigt.----
 
 if ki_response is not None:
 
@@ -299,32 +414,13 @@ if ki_response is not None:
             print(fehler)
             logging.error(fehler)
             raise SystemExit
-    elif userstartwahl == "5":
-
-            report = json.loads(ki_response)
-
-            print("\n-----------------------------------------------------")
-
-            for vorschlag in report["datei_vorschläge"]:
-                print()
-                print(f"Originalname: {vorschlag['original_name']}")
-                print(f"Relativer Pfad: {vorschlag['relative_path']}")
-                print(f"Dateityp: {vorschlag['file_type']}")
-                print(f"Vorgeschlagene Kategorie: {vorschlag['suggested_category']}")
-                print(f"Vorgeschlagener Ordner: {vorschlag['suggested_folder']}")
-                print(f"Vorgeschlagener neuer Name: {vorschlag['suggested_new_name']}")
-                print(f"Aktionstyp: {vorschlag['action_type']}")
-                print(f"Begründung: {vorschlag['reason']}")
-                print()
-                print("-----------------------------------------------------")
-
-            print()
+        
+        print()
 
     if not userstartwahl == "3" and not userstartwahl =="5":
         print("")
         print("------------------------------------------")
         print(ki_response)
         print("------------------------------------------")
-
 
 logging.info("Programm endet")
