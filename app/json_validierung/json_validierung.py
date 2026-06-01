@@ -84,7 +84,6 @@ def aufgaben_validieren(inhalt):
 def vorschlag_validieren(inhalt):
 
     schema_datei_vorschläge = {
-
         "type": "object",
         "required": ["datei_vorschläge"],
         "additionalProperties": False,
@@ -119,16 +118,13 @@ def vorschlag_validieren(inhalt):
                             "minLength": 1
                         },
                         "suggested_category": {
-                            "type": "string",
-                            "minLength": 1
+                            "type": "string"
                         },
                         "suggested_folder": {
-                            "type": "string",
-                            "minLength": 1
+                            "type": "string"
                         },
                         "suggested_new_name": {
-                            "type": "string",
-                            "minLength": 1
+                            "type": "string"
                         },
                         "action_type": {
                             "type": "string",

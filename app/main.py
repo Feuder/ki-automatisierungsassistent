@@ -296,7 +296,7 @@ print("6. Alle Vorschläge anzeigen")
 print("7. Keine Vorschläge anzeigen")
 
 auswahl = input("Bitte wähle eine Option von 1 bis 7: ").strip()
-auswaählbare_Kategorien = [1, 2, 3, 4, 5, 6, 7]
+auswaählbare_Kategorien = ["1", "2", "3", "4", "5", "6", "7"]
 
 while True:
     if auswahl in auswaählbare_Kategorien:
@@ -304,26 +304,28 @@ while True:
     else:
         print(f"Gebe nur 1 - {len(auswaählbare_Kategorien)} ein!")
 
+    auswahl = input()
+
 match auswahl:
     case "1":
         print("Kategorie: Keine Änderungen")
-        ausgewählte_vorschlagen_komp = [vorschlag for eintrag in json_daten if eintrag["action_type"] == "keep"]
+        ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "keep"]
 
     case "2":
         print("Kategorie: Verschiebungen")
-        ausgewählte_vorschlagen_komp = [vorschlag for eintrag in json_daten if eintrag["action_type"] == "move_suggestion"]
+        ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "move_suggestion"]
 
     case "3":
         print("Kategorie: Neuer Name")
-        ausgewählte_vorschlagen_komp = [vorschlag for eintrag in json_daten if eintrag["action_type"] == "rename_suggestion"]
+        ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "rename_suggestion"]
 
     case "4":
         print("Kategorie: Neuer Name + Verschiebung")
-        ausgewählte_vorschlagen_komp = [vorschlag for eintrag in json_daten if eintrag["action_type"] == "rename_and_move_suggestion"]
+        ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "rename_and_move_suggestion"]
 
     case "5":
         print("Kategorie: Unklar")
-        ausgewählte_vorschlagen_komp = [vorschlag for eintrag in json_daten if eintrag["action_type"] == "unclear"]
+        ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "unclear"]
 
     case "6":
         print("Kategorie: Alle Vorschläge")
@@ -332,10 +334,14 @@ match auswahl:
     case "7":
         print("Es werden keine Vorschläge angezeigt.")
 
-print("----------------------------------------------")
+print("-" * 50)
+
 for eintrag in ausgewählte_vorschlagen_komp:
-    print(eintrag)
-    print("----------------------------------------------")
+    for key, wert in eintrag.items():
+        if wert is not None and str(wert).strip() != "":
+            print(f"{key}: {wert}")
+            
+    print("-" * 50)
 
 
 print("Sollen die Vorschäge ausgeführt werden? j/n")

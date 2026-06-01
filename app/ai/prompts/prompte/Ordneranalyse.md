@@ -3,6 +3,7 @@
 ## Ziel
 
 Analysiere einen technischen Ordnerbericht und erstelle konkrete Vorschläge zur Sortierung, Umbenennung oder Beibehaltung der Dateien.
+
 Die Ausgabe dient zur weiteren automatisierten Verarbeitung. Deshalb muss ausschließlich gültiges JSON im vorgegebenen Format ausgegeben werden.
 
 ## Aufgabe
@@ -13,16 +14,17 @@ Ein Dateivorschlag beschreibt, ob die Datei:
 
 * unverändert bleiben soll
 * in einen anderen Ordner verschoben werden soll
-* Ein neuer Ordner erstellt werden soll, in den dann Dateien verschoben werden sollen
 * umbenannt werden soll
 * umbenannt und verschoben werden soll
 * nicht zuverlässig bewertet werden kann
 
-## Regeln
+## Grundregeln
 
 * Verwende ausschließlich Informationen aus dem übergebenen Ordnerbericht.
 * Erfinde keine Dateien.
 * Erfinde keine Inhalte, die nicht aus dem Bericht ableitbar sind.
+* Jede Datei aus dem Ordnerbericht muss genau einmal verarbeitet werden.
+* Es darf keine Datei ausgelassen werden.
 * Wenn der Zweck einer Datei oder eines Ordners nicht sicher erkennbar ist, verwende `unclear`.
 * Gib keine Erklärungen außerhalb des JSON aus.
 * Gib keinen Markdown-Codeblock aus.
@@ -30,8 +32,105 @@ Ein Dateivorschlag beschreibt, ob die Datei:
 * Alle Textwerte müssen UTF-8-kompatibel sein.
 * Verwende exakt die vorgegebenen Feldnamen.
 * Verwende keine zusätzlichen Felder.
-* Jeder Eintrag muss alle Pflichtfelder enthalten.
+* Jeder Eintrag muss alle vorgegebenen Felder enthalten.
 * Jeder Wert muss als String ausgegeben werden.
+* Verwende für nicht benötigte oder nicht sicher ableitbare optionale Werte einen leeren String `""`.
+* Verwende niemals `null`.
+
+## Pflichtwerte
+
+Die folgenden Felder müssen bei jeder Datei immer einen nicht-leeren String enthalten:
+
+* `original_name`
+* `relative_path`
+* `file_type`
+* `action_type`
+* `reason`
+
+Die folgenden Felder dürfen leer sein, wenn sie für die vorgeschlagene Aktion nicht benötigt werden oder nicht sicher ableitbar sind:
+
+* `suggested_category`
+* `suggested_folder`
+* `suggested_new_name`
+
+## Bedingte Pflichtwerte
+
+Je nach `action_type` gelten zusätzliche Regeln:
+
+### `keep`
+
+Die Datei soll unverändert bleiben.
+
+Pflichtwerte:
+
+* `original_name`
+* `relative_path`
+* `file_type`
+* `action_type`
+* `reason`
+
+Optionale Felder:
+
+* `suggested_category`: nur befüllen, wenn die Kategorie sicher aus dem Bericht ableitbar ist, sonst `""`
+* `suggested_folder`: `""`
+* `suggested_new_name`: `""`
+
+### `move_suggestion`
+
+Die Datei soll in einen anderen Ordner verschoben werden, aber der Dateiname bleibt gleich.
+
+Zusätzlich verpflichtend:
+
+* `suggested_folder`
+
+Nicht benötigte Felder:
+
+* `suggested_new_name`: `""`
+
+`suggested_category` nur befüllen, wenn die Kategorie sicher aus dem Bericht ableitbar ist, sonst `""`.
+
+### `rename_suggestion`
+
+Die Datei soll umbenannt werden, aber im gleichen Ordner bleiben.
+
+Zusätzlich verpflichtend:
+
+* `suggested_new_name`
+
+Nicht benötigte Felder:
+
+* `suggested_folder`: `""`
+
+`suggested_category` nur befüllen, wenn die Kategorie sicher aus dem Bericht ableitbar ist, sonst `""`.
+
+### `rename_and_move_suggestion`
+
+Die Datei soll umbenannt und zusätzlich in einen anderen Ordner verschoben werden.
+
+Zusätzlich verpflichtend:
+
+* `suggested_folder`
+* `suggested_new_name`
+
+`suggested_category` nur befüllen, wenn die Kategorie sicher aus dem Bericht ableitbar ist, sonst `""`.
+
+### `unclear`
+
+Die Datei kann nicht zuverlässig bewertet werden.
+
+Pflichtwerte:
+
+* `original_name`
+* `relative_path`
+* `file_type`
+* `action_type`
+* `reason`
+
+Nicht sicher ableitbare Felder müssen leer bleiben:
+
+* `suggested_category`: `""`
+* `suggested_folder`: `""`
+* `suggested_new_name`: `""`
 
 ## Erlaubte Werte für `action_type`
 
@@ -43,39 +142,19 @@ Verwende ausschließlich einen dieser Werte:
 * `rename_and_move_suggestion`
 * `unclear`
 
-## Bedeutung von `action_type`
-
-### `keep`
-
-Die Datei soll unverändert bleiben.
-
-Verwende diesen Wert, wenn Name und Speicherort sinnvoll wirken.
-
-### `move_suggestion`
-
-Die Datei soll in einen anderen Ordner verschoben werden, aber der Dateiname bleibt gleich.
-
-### `rename_suggestion`
-
-Die Datei soll umbenannt werden, aber im gleichen Ordner bleiben.
-
-### `rename_and_move_suggestion`
-
-Die Datei soll umbenannt und zusätzlich in einen anderen Ordner verschoben werden.
-
-### `unclear`
-
-Es ist nicht zuverlässig ableitbar, was mit der Datei passieren soll.
-
 ## Feldbeschreibung
 
 ### `original_name`
 
 Der ursprüngliche Dateiname aus dem Bericht.
 
+Muss immer befüllt sein.
+
 ### `relative_path`
 
 Der relative Pfad der Datei aus dem Bericht.
+
+Muss immer befüllt sein.
 
 ### `file_type`
 
@@ -90,6 +169,10 @@ Beispiele:
 * `png`
 * `unknown`
 
+Muss immer befüllt sein.
+
+Wenn der Dateityp nicht erkennbar ist, verwende `unknown`.
+
 ### `suggested_category`
 
 Die vorgeschlagene fachliche Kategorie der Datei.
@@ -103,24 +186,37 @@ Beispiele:
 * `Export`
 * `Quellcode`
 * `Konfiguration`
-* `Unklar`
+
+Nur befüllen, wenn die Kategorie sicher aus dem Ordnerbericht ableitbar ist.
+
+Wenn keine sichere Kategorie ableitbar ist, verwende `""`.
 
 ### `suggested_folder`
 
 Der vorgeschlagene Zielordner als relativer Ordnerpfad.
-Es dürfen neue Ordner vorgeschlagen werden
-Wenn keine Verschiebung vorgeschlagen wird, verwende den bisherigen Ordner.
-Wenn der Zielordner nicht sicher bestimmbar ist, verwende `Unklar`.
+
+Es dürfen neue Ordner vorgeschlagen werden.
+
+Nur befüllen, wenn `action_type` den Wert `move_suggestion` oder `rename_and_move_suggestion` hat.
+
+Wenn keine Verschiebung vorgeschlagen wird, verwende `""`.
+
+Wenn ein Zielordner nicht sicher bestimmbar ist, darf keine Verschiebung vorgeschlagen werden. Verwende dann stattdessen `unclear`.
 
 ### `suggested_new_name`
 
 Der vorgeschlagene neue Dateiname.
-Wenn keine Umbenennung vorgeschlagen wird, verwende den ursprünglichen Dateinamen.
-Wenn kein sinnvoller neuer Name ableitbar ist, verwende den ursprünglichen Dateinamen.
+
+Nur befüllen, wenn `action_type` den Wert `rename_suggestion` oder `rename_and_move_suggestion` hat.
+
+Wenn keine Umbenennung vorgeschlagen wird, verwende `""`.
+
+Wenn kein sinnvoller neuer Name sicher ableitbar ist, darf keine Umbenennung vorgeschlagen werden. Verwende dann stattdessen `unclear`.
 
 ### `action_type`
 
 Die vorgeschlagene Aktion für die Datei.
+
 Erlaubt sind ausschließlich:
 
 * `keep`
@@ -129,28 +225,31 @@ Erlaubt sind ausschließlich:
 * `rename_and_move_suggestion`
 * `unclear`
 
+Muss immer befüllt sein.
+
 ### `reason`
 
 Kurze sachliche Begründung für den Vorschlag.
-Die Begründung muss sich auf den Ordnerbericht stützen.
+
+Die Begründung muss sich ausschließlich auf den Ordnerbericht stützen.
+
+Muss immer befüllt sein.
 
 ## Ausgabeformat
 
 Die Ausgabe muss exakt dieses JSON-Objekt sein:
 
-```json
 {
-  "datei_vorschläge": [
-    {
-      "original_name": "...",
-      "relative_path": "...",
-      "file_type": "...",
-      "suggested_category": "...",
-      "suggested_folder": "...",
-      "suggested_new_name": "...",
-      "action_type": "...",
-      "reason": "..."
-    }
-  ]
+"datei_vorschläge": [
+{
+"original_name": "...",
+"relative_path": "...",
+"file_type": "...",
+"suggested_category": "",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "...",
+"reason": "..."
 }
-```
+]
+}

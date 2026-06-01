@@ -1,0 +1,751 @@
+## Technischer Bericht:
+----------------Ordnerstruktur---------------
+
+Angegebener Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)
+Unterordner werden mit einbezogen:
+
+Tiefe der Unterordner: 13
+Anzahl der Dateien: 228## KI Ausgabe:{
+  "datei_vorschläge": [
+    {
+      "original_name": "A Vorlage Kostenberechnung.xlsx",
+      "relative_path": "Excel-Datein\\A Vorlage Kostenberechnung.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "A Vorlage Kostenberechnung.xlsx",
+      "action_type": "keep",
+      "reason": "Aussagekräftiger Name in thematisch passendem Excel-Ordner."
+    },
+    {
+      "original_name": "ASOL00163.xml",
+      "relative_path": "Excel-Datein\\ASOL00163.xml",
+      "file_type": "xml",
+      "suggested_category": "Export",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "ASOL00163.xml",
+      "action_type": "keep",
+      "reason": "XML-Datei vermutlich Export/Strukturdatei, Ordner bleibt unklar, daher belassen."
+    },
+    {
+      "original_name": "Aufgabe Angebotsvergleich Tabelle.xlsx",
+      "relative_path": "Excel-Datein\\Aufgabe Angebotsvergleich Tabelle.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Aufgabe Angebotsvergleich Tabelle.xlsx",
+      "action_type": "keep",
+      "reason": "Sinnvoll benannte Excel-Datei im passenden Ordner."
+    },
+    {
+      "original_name": "B TEsttabelle, nicht öffnen (1).xlsx",
+      "relative_path": "Excel-Datein\\B TEsttabelle, nicht öffnen (1).xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "B Testtabelle - nicht öffnen (1).xlsx",
+      "action_type": "rename_suggestion",
+      "reason": "Tippfehlerkorrektur der Groß-/Kleinschreibung erhöht Lesbarkeit."
+    },
+    {
+      "original_name": "B TEsttabelle, nicht öffnen.xlsx",
+      "relative_path": "Excel-Datein\\B TEsttabelle, nicht öffnen.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "B Testtabelle - nicht öffnen.xlsx",
+      "action_type": "rename_suggestion",
+      "reason": "Tippfehlerkorrektur und einheitliche Schreibweise."
+    },
+    {
+      "original_name": "Book.xlsx",
+      "relative_path": "Excel-Datein\\Book.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Unklar",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Book.xlsx",
+      "action_type": "unclear",
+      "reason": "Allgemeiner Platzhaltername ohne erkennbaren Zweck."
+    },
+    {
+      "original_name": "customers-template.csv",
+      "relative_path": "Excel-Datein\\customers-template.csv",
+      "file_type": "csv",
+      "suggested_category": "Export",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "customers-template.csv",
+      "action_type": "keep",
+      "reason": "Vorlagen-CSV plausibel im Excel-Ordner."
+    },
+    {
+      "original_name": "desktop.ini",
+      "relative_path": "Excel-Datein\\desktop.ini",
+      "file_type": "ini",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "desktop.ini",
+      "action_type": "keep",
+      "reason": "Systemkonfigurationsdatei; belassen."
+    },
+    {
+      "original_name": "E-Mail.csv",
+      "relative_path": "Excel-Datein\\E-Mail.csv",
+      "file_type": "csv",
+      "suggested_category": "Export",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "E-Mail.csv",
+      "action_type": "keep",
+      "reason": "CSV mit generischem Namen; Speicherort akzeptabel."
+    },
+    {
+      "original_name": "Hardware Standarts.xlsx",
+      "relative_path": "Excel-Datein\\Hardware Standarts.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Hardware Standards.xlsx",
+      "action_type": "rename_suggestion",
+      "reason": "Rechtschreibfehler 'Standarts' zu 'Standards' korrigieren."
+    },
+    {
+      "original_name": "Home Office IP-Adressen.xlsx",
+      "relative_path": "Excel-Datein\\Home Office IP-Adressen.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Home Office IP-Adressen.xlsx",
+      "action_type": "keep",
+      "reason": "Aussagekräftiger Name; Speicherort ok."
+    },
+    {
+      "original_name": "IP-Adressen PCs.ods",
+      "relative_path": "Excel-Datein\\IP-Adressen PCs.ods",
+      "file_type": "ods",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "IP-Adressen PCs.ods",
+      "action_type": "keep",
+      "reason": "Plausible Kalkulationsdatei im Excel-Ordner."
+    },
+    {
+      "original_name": "IP-Adressen.xlsx",
+      "relative_path": "Excel-Datein\\IP-Adressen.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "IP-Adressen.xlsx",
+      "action_type": "keep",
+      "reason": "Konsistenter Name und Speicherort."
+    },
+    {
+      "original_name": "Jira Kundendetails Importieren - Vorlage.csv",
+      "relative_path": "Excel-Datein\\Jira Kundendetails Importieren - Vorlage.csv",
+      "file_type": "csv",
+      "suggested_category": "Export",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Jira Kundendetails Importieren - Vorlage.csv",
+      "action_type": "keep",
+      "reason": "Vorlagen-CSV für Jira; sinnvoller Speicherort."
+    },
+    {
+      "original_name": "Kosten Berechnung Etiketten.xlsx",
+      "relative_path": "Excel-Datein\\Kosten Berechnung Etiketten.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Kostenberechnung Etiketten.xlsx",
+      "action_type": "rename_suggestion",
+      "reason": "Einheitliche Zusammenschreibung 'Kostenberechnung' erhöht Konsistenz."
+    },
+    {
+      "original_name": "Kreisler Liste.xlsx",
+      "relative_path": "Excel-Datein\\Kreisler Liste.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Kreisler Liste.xlsx",
+      "action_type": "keep",
+      "reason": "Sinnvoller Name im Excel-Hauptordner."
+    },
+    {
+      "original_name": "KW 8 Bautagesbericht - Frankenstrasse.xlsx",
+      "relative_path": "Excel-Datein\\KW 8 Bautagesbericht - Frankenstrasse.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "KW 08 Bautagesbericht - Frankenstraße.xlsx",
+      "action_type": "rename_suggestion",
+      "reason": "Typografie/Rechtschreibkorrektur (führende Null, ß) zur Einheitlichkeit."
+    },
+    {
+      "original_name": "LF 2 Berechnung.ods",
+      "relative_path": "Excel-Datein\\LF 2 Berechnung.ods",
+      "file_type": "ods",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "LF 2 Berechnung.ods",
+      "action_type": "keep",
+      "reason": "Aussagekräftig; Speicherort passend."
+    },
+    {
+      "original_name": "Lizensliste stand 12.12 24.xlsx",
+      "relative_path": "Excel-Datein\\Lizensliste stand 12.12 24.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Lizenzliste Stand 12.12.2024.xlsx",
+      "action_type": "rename_suggestion",
+      "reason": "Rechtschreibung und Datumsformat vereinheitlicht."
+    },
+    {
+      "original_name": "Mappe1.xlsx",
+      "relative_path": "Excel-Datein\\Mappe1.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Unklar",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Mappe1.xlsx",
+      "action_type": "unclear",
+      "reason": "Platzhaltername ohne Kontext."
+    },
+    {
+      "original_name": "Microsoft Excel-Arbeitsblatt (neu).xlsx",
+      "relative_path": "Excel-Datein\\Microsoft Excel-Arbeitsblatt (neu).xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Unklar",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Microsoft Excel-Arbeitsblatt (neu).xlsx",
+      "action_type": "unclear",
+      "reason": "Standardneu-Dateiname ohne erkennbaren Zweck."
+    },
+    {
+      "original_name": "Nutzungsauswertung.xlsx",
+      "relative_path": "Excel-Datein\\Nutzungsauswertung.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Nutzungsauswertung.xlsx",
+      "action_type": "keep",
+      "reason": "Aussagekräftig und passend abgelegt."
+    },
+    {
+      "original_name": "Telefon - Kopie.xlsx",
+      "relative_path": "Excel-Datein\\Telefon - Kopie.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein\\Excel Kopien",
+      "suggested_new_name": "Telefon.xlsx",
+      "action_type": "rename_and_move_suggestion",
+      "reason": "Kopie-Hinweis entfernen und in Kopien-Ordner verschieben."
+    },
+    {
+      "original_name": "Telefonliste MA.xlsx",
+      "relative_path": "Excel-Datein\\Telefonliste MA.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Telefonliste MA.xlsx",
+      "action_type": "keep",
+      "reason": "Aussagekräftiger Name; Hauptordner passend."
+    },
+    {
+      "original_name": "TelefonlisteCaspar.csv",
+      "relative_path": "Excel-Datein\\TelefonlisteCaspar.csv",
+      "file_type": "csv",
+      "suggested_category": "Export",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Telefonliste Caspar.csv",
+      "action_type": "rename_suggestion",
+      "reason": "Lesbarkeit durch Leerzeichen verbessert."
+    },
+    {
+      "original_name": "tiktok auswertung.xlsx",
+      "relative_path": "Excel-Datein\\tiktok auswertung.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "TikTok Auswertung.xlsx",
+      "action_type": "rename_suggestion",
+      "reason": "Einheitliche Großschreibung und Markennamenformat."
+    },
+    {
+      "original_name": "Workshop Verbesserung Ideen.xlsx",
+      "relative_path": "Excel-Datein\\Workshop Verbesserung Ideen.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Workshop Verbesserungsideen.xlsx",
+      "action_type": "rename_suggestion",
+      "reason": "Zusammenschreibung für Klarheit."
+    },
+    {
+      "original_name": "Zeiterfassung.xlsx",
+      "relative_path": "Excel-Datein\\Zeiterfassung.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "Zeiterfassung.xlsx",
+      "action_type": "keep",
+      "reason": "Passender Name und Ordner."
+    },
+    {
+      "original_name": "ÖL Lösung.xlsx",
+      "relative_path": "Excel-Datein\\ÖL Lösung.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "Unklar",
+      "suggested_folder": "Excel-Datein",
+      "suggested_new_name": "ÖL Lösung.xlsx",
+      "action_type": "unclear",
+      "reason": "Zweck aus dem Namen nicht eindeutig ableitbar."
+    },
+    {
+      "original_name": "Doku KI.url",
+      "relative_path": "OneNote\\Doku KI.url",
+      "file_type": "url",
+      "suggested_category": "Verknüpfung",
+      "suggested_folder": "OneNote",
+      "suggested_new_name": "Doku KI.url",
+      "action_type": "keep",
+      "reason": "URL-Verknüpfung im OneNote-Ordner plausibel."
+    },
+    {
+      "original_name": "GER (1).onepkg",
+      "relative_path": "OneNote\\GER (1).onepkg",
+      "file_type": "onepkg",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "OneNote",
+      "suggested_new_name": "GER (1).onepkg",
+      "action_type": "keep",
+      "reason": "OneNote-Paket im passenden Ordner."
+    },
+    {
+      "original_name": "GER onenote.url",
+      "relative_path": "OneNote\\GER onenote.url",
+      "file_type": "url",
+      "suggested_category": "Verknüpfung",
+      "suggested_folder": "OneNote",
+      "suggested_new_name": "GER OneNote.url",
+      "action_type": "rename_suggestion",
+      "reason": "Einheitliche Groß-/Kleinschreibung."
+    },
+    {
+      "original_name": "Jira Bearbeitung.url",
+      "relative_path": "OneNote\\Jira Bearbeitung.url",
+      "file_type": "url",
+      "suggested_category": "Verknüpfung",
+      "suggested_folder": "OneNote",
+      "suggested_new_name": "Jira Bearbeitung.url",
+      "action_type": "keep",
+      "reason": "Sinnvoll benannte Verknüpfung."
+    },
+    {
+      "original_name": "Mein Notizbuch.url",
+      "relative_path": "OneNote\\Mein Notizbuch.url",
+      "file_type": "url",
+      "suggested_category": "Verknüpfung",
+      "suggested_folder": "OneNote",
+      "suggested_new_name": "Mein Notizbuch.url",
+      "action_type": "keep",
+      "reason": "Sinnvolle URL im OneNote-Ordner."
+    },
+    {
+      "original_name": "ZIS Med, Kiel.url",
+      "relative_path": "OneNote\\ZIS Med, Kiel.url",
+      "file_type": "url",
+      "suggested_category": "Verknüpfung",
+      "suggested_folder": "OneNote",
+      "suggested_new_name": "ZIS Med, Kiel.url",
+      "action_type": "keep",
+      "reason": "Aussagekräftige Verknüpfung im passenden Ordner."
+    },
+    {
+      "original_name": "Formularvorlage PowerPoint - Kopie.pptx",
+      "relative_path": "PowerPoint-Datein\\Formularvorlage PowerPoint - Kopie.pptx",
+      "file_type": "pptx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "PowerPoint-Datein",
+      "suggested_new_name": "Formularvorlage PowerPoint - Kopie.pptx",
+      "action_type": "keep",
+      "reason": "Als Kopie klar gekennzeichnet; Ordner passend."
+    },
+    {
+      "original_name": "Formularvorlage PowerPoint.pptx",
+      "relative_path": "PowerPoint-Datein\\Formularvorlage PowerPoint.pptx",
+      "file_type": "pptx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "PowerPoint-Datein",
+      "suggested_new_name": "Formularvorlage PowerPoint.pptx",
+      "action_type": "keep",
+      "reason": "Vorlagenpräsentation im richtigen Ordner."
+    },
+    {
+      "original_name": "Hintergrund.pptx",
+      "relative_path": "PowerPoint-Datein\\Hintergrund.pptx",
+      "file_type": "pptx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "PowerPoint-Datein",
+      "suggested_new_name": "Hintergrund.pptx",
+      "action_type": "keep",
+      "reason": "Präsentationsdatei im passenden Ordner."
+    },
+    {
+      "original_name": "Jira.pptx",
+      "relative_path": "PowerPoint-Datein\\Jira.pptx",
+      "file_type": "pptx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "PowerPoint-Datein",
+      "suggested_new_name": "Jira.pptx",
+      "action_type": "keep",
+      "reason": "Passender Name/Ort."
+    },
+    {
+      "original_name": "KI Präsie.pptx",
+      "relative_path": "PowerPoint-Datein\\KI Präsie.pptx",
+      "file_type": "pptx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "PowerPoint-Datein",
+      "suggested_new_name": "KI Präsentation.pptx",
+      "action_type": "rename_suggestion",
+      "reason": "Abkürzung 'Präsie' durch 'Präsentation' ersetzen."
+    },
+    {
+      "original_name": "KI Richtlinie SAM - Schulung.pptx",
+      "relative_path": "PowerPoint-Datein\\KI Richtlinie SAM - Schulung.pptx",
+      "file_type": "pptx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "PowerPoint-Datein",
+      "suggested_new_name": "KI Richtlinie SAM - Schulung.pptx",
+      "action_type": "keep",
+      "reason": "Aussagekräftiger Titel im richtigen Ordner."
+    },
+    {
+      "original_name": "Outdoor Laptop (1).pptx",
+      "relative_path": "PowerPoint-Datein\\Outdoor Laptop (1).pptx",
+      "file_type": "pptx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "PowerPoint-Datein",
+      "suggested_new_name": "Outdoor Laptop (1).pptx",
+      "action_type": "keep",
+      "reason": "Duplikatskennzeichnung ok; Speicherort passend."
+    },
+    {
+      "original_name": "Outdoor Laptop.pptx",
+      "relative_path": "PowerPoint-Datein\\Outdoor Laptop.pptx",
+      "file_type": "pptx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "PowerPoint-Datein",
+      "suggested_new_name": "Outdoor Laptop.pptx",
+      "action_type": "keep",
+      "reason": "Passender Name/Ort."
+    },
+    {
+      "original_name": "Presentation.pptx",
+      "relative_path": "PowerPoint-Datein\\Presentation.pptx",
+      "file_type": "pptx",
+      "suggested_category": "Unklar",
+      "suggested_folder": "PowerPoint-Datein",
+      "suggested_new_name": "Presentation.pptx",
+      "action_type": "unclear",
+      "reason": "Generischer Name ohne Kontext."
+    },
+    {
+      "original_name": "Präsi LF22.pptx",
+      "relative_path": "PowerPoint-Datein\\Präsi LF22.pptx",
+      "file_type": "pptx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "PowerPoint-Datein",
+      "suggested_new_name": "Präsi LF22.pptx",
+      "action_type": "keep",
+      "reason": "Aussagekräftiger Titel; Ordner korrekt."
+    },
+    {
+      "original_name": "HASKAMP Systemlandschaft.vsdx",
+      "relative_path": "Visio-Datein\\HASKAMP Systemlandschaft.vsdx",
+      "file_type": "vsdx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Visio-Datein",
+      "suggested_new_name": "HASKAMP Systemlandschaft.vsdx",
+      "action_type": "keep",
+      "reason": "Visio-Diagramm im passenden Ordner."
+    },
+    {
+      "original_name": "Zeichnung 1.vsdx",
+      "relative_path": "Visio-Datein\\Zeichnung 1.vsdx",
+      "file_type": "vsdx",
+      "suggested_category": "Unklar",
+      "suggested_folder": "Visio-Datein",
+      "suggested_new_name": "Zeichnung 1.vsdx",
+      "action_type": "unclear",
+      "reason": "Generischer Name ohne erkennbaren Inhalt."
+    },
+    {
+      "original_name": "02_Neuzugänge.doc",
+      "relative_path": "Word-Datein\\02_Neuzugänge.doc",
+      "file_type": "doc",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "02_Neuzugänge.doc",
+      "action_type": "keep",
+      "reason": "Sinnvoll benanntes Word-Dokument im passenden Ordner."
+    },
+    {
+      "original_name": "3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc",
+      "relative_path": "Word-Datein\\3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc",
+      "file_type": "doc",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc",
+      "action_type": "keep",
+      "reason": "Strukturiert benannt; Ordner passend."
+    },
+    {
+      "original_name": "3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc",
+      "relative_path": "Word-Datein\\3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc",
+      "file_type": "doc",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc",
+      "action_type": "keep",
+      "reason": "Aussagekräftig; korrekter Ordner."
+    },
+    {
+      "original_name": "Angebot_Geraete_Liste_Professionell_Final.docx",
+      "relative_path": "Word-Datein\\Angebot_Geraete_Liste_Professionell_Final.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Angebot_Geräte_Liste_Professionell_Final.docx",
+      "action_type": "rename_suggestion",
+      "reason": "Umlaute im Dateinamen vereinheitlichen."
+    },
+    {
+      "original_name": "Anleitung - Erklärung Intune.docx",
+      "relative_path": "Word-Datein\\Anleitung - Erklärung Intune.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Anleitung - Erklärung Intune.docx",
+      "action_type": "keep",
+      "reason": "Sinnvoller Name/Ort."
+    },
+    {
+      "original_name": "Anleitung Account Verifizieren.docx",
+      "relative_path": "Word-Datein\\Anleitung Account Verifizieren.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Anleitung Account verifizieren.docx",
+      "action_type": "rename_suggestion",
+      "reason": "Groß-/Kleinschreibung für Verb vereinheitlichen."
+    },
+    {
+      "original_name": "Anleitung Dynamische Sperre einrichten.docx",
+      "relative_path": "Word-Datein\\Anleitung Dynamische Sperre einrichten.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Anleitung Dynamische Sperre einrichten.docx",
+      "action_type": "keep",
+      "reason": "Aussagekräftig; richtiger Ordner."
+    },
+    {
+      "original_name": "Anleitung Jira.docx",
+      "relative_path": "Word-Datein\\Anleitung Jira.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Anleitung Jira.docx",
+      "action_type": "keep",
+      "reason": "Passender Titel/Ort."
+    },
+    {
+      "original_name": "Anleitung Mitarbeiter Bereich 1 (2).docx",
+      "relative_path": "Word-Datein\\Anleitung Mitarbeiter Bereich 1 (2).docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Anleitung Mitarbeiter Bereich 1 (2).docx",
+      "action_type": "keep",
+      "reason": "Versionierung im Namen; Ordner korrekt."
+    },
+    {
+      "original_name": "Anleitung Mitarbeiter Bereich Android Startbildschirm.docx",
+      "relative_path": "Word-Datein\\Anleitung Mitarbeiter Bereich Android Startbildschirm.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Anleitung Mitarbeiter Bereich Android Startbildschirm.docx",
+      "action_type": "keep",
+      "reason": "Aussagekräftig; Ordner korrekt."
+    },
+    {
+      "original_name": "Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx",
+      "relative_path": "Word-Datein\\Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Anleitung Mitarbeiter Bereich iOS Startbildschirm.docx",
+      "action_type": "rename_suggestion",
+      "reason": "Markenschreibweise iOS vereinheitlichen."
+    },
+    {
+      "original_name": "Anleitung Mitarbeiter Bereich.docx",
+      "relative_path": "Word-Datein\\Anleitung Mitarbeiter Bereich.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Anleitung Mitarbeiter Bereich.docx",
+      "action_type": "keep",
+      "reason": "Passend benannt und abgelegt."
+    },
+    {
+      "original_name": "Anleitung SharePoint2.docx",
+      "relative_path": "Word-Datein\\Anleitung SharePoint2.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Anleitung SharePoint 2.docx",
+      "action_type": "rename_suggestion",
+      "reason": "Lesbarkeit durch Leerzeichen vor '2' verbessert."
+    },
+    {
+      "original_name": "Anleitung Zuweisungsänderung.doc",
+      "relative_path": "Word-Datein\\Anleitung Zuweisungsänderung.doc",
+      "file_type": "doc",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Anleitung Zuweisungsänderung.doc",
+      "action_type": "keep",
+      "reason": "Sinnvoller Name/Ort."
+    },
+    {
+      "original_name": "Anleitung_+Ticket+Center.docx",
+      "relative_path": "Word-Datein\\Anleitung_+Ticket+Center.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Anleitung Ticket Center.docx",
+      "action_type": "rename_suggestion",
+      "reason": "Pluszeichen im Dateinamen entfernen für Lesbarkeit."
+    },
+    {
+      "original_name": "Anleitung_Zugriff_auf_Laufwerk_erteilen.docx",
+      "relative_path": "Word-Datein\\Anleitung_Zugriff_auf_Laufwerk_erteilen.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Anleitung Zugriff auf Laufwerk erteilen.docx",
+      "action_type": "rename_suggestion",
+      "reason": "Unterstriche durch Leerzeichen ersetzen zur Einheitlichkeit."
+    },
+    {
+      "original_name": "Aufgaben LF1.odt",
+      "relative_path": "Word-Datein\\Aufgaben LF1.odt",
+      "file_type": "odt",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Aufgaben LF1.odt",
+      "action_type": "keep",
+      "reason": "ODT-Dokument sinnvoll benannt und abgelegt."
+    },
+    {
+      "original_name": "Dokument 1.docx",
+      "relative_path": "Word-Datein\\Dokument 1.docx",
+      "file_type": "docx",
+      "suggested_category": "Unklar",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Dokument 1.docx",
+      "action_type": "unclear",
+      "reason": "Generischer Name ohne Kontext."
+    },
+    {
+      "original_name": "Dokument 2.docx",
+      "relative_path": "Word-Datein\\Dokument 2.docx",
+      "file_type": "docx",
+      "suggested_category": "Unklar",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Dokument 2.docx",
+      "action_type": "unclear",
+      "reason": "Generischer Name ohne Kontext."
+    },
+    {
+      "original_name": "Dokument.docx",
+      "relative_path": "Word-Datein\\Dokument.docx",
+      "file_type": "docx",
+      "suggested_category": "Unklar",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Dokument.docx",
+      "action_type": "unclear",
+      "reason": "Generischer Name ohne Kontext."
+    },
+    {
+      "original_name": "Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx",
+      "relative_path": "Word-Datein\\Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx",
+      "action_type": "keep",
+      "reason": "Kopie klar gekennzeichnet im passenden Ordner."
+    },
+    {
+      "original_name": "Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc",
+      "relative_path": "Word-Datein\\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc",
+      "file_type": "doc",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc",
+      "action_type": "keep",
+      "reason": "Kopie im passenden Ordner."
+    },
+    {
+      "original_name": "Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx",
+      "relative_path": "Word-Datein\\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx",
+      "action_type": "keep",
+      "reason": "Kopie im passenden Ordner."
+    },
+    {
+      "original_name": "Dokumentvorlage blanco mit Haskamp-Logo 2.doc",
+      "relative_path": "Word-Datein\\Dokumentvorlage blanco mit Haskamp-Logo 2.doc",
+      "file_type": "doc",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Dokumentvorlage blanco mit Haskamp-Logo 2.doc",
+      "action_type": "keep",
+      "reason": "Version mit Nummer im passenden Ordner."
+    },
+    {
+      "original_name": "Dokumentvorlage blanco mit Haskamp-Logo.doc",
+      "relative_path": "Word-Datein\\Dokumentvorlage blanco mit Haskamp-Logo.doc",
+      "file_type": "doc",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Dokumentvorlage blanco mit Haskamp-Logo.doc",
+      "action_type": "keep",
+      "reason": "Vorlage im korrekten Ordner."
+    },
+    {
+      "original_name": "Dokumentvorlage blanco mit Haskamp-Logo.docx",
+      "relative_path": "Word-Datein\\Dokumentvorlage blanco mit Haskamp-Logo.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Dokumentvorlage blanco mit Haskamp-Logo.docx",
+      "action_type": "keep",
+      "reason": "Vorlage im korrekten Ordner."
+    },
+    {
+      "original_name": "Englisch 25.odt",
+      "relative_path": "Word-Datein\\Englisch 25.odt",
+      "file_type": "odt",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "Word-Datein",
+      "suggested_new_name": "Englisch 25.odt",
+      "action_type": "keep",
+      "reason": "Sinnvoll benanntes Dokument."
+    }
+  ]
+}
