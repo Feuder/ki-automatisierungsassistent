@@ -3,6 +3,7 @@ import json
 from collections import Counter
 from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER, REPORT_ORDNER, MAX_TIEFE
 from ai.ai_client import KI_anfrage, ki_task_erstellen, dateiablage_vorschlag, ordnerbericht
+from Testing.test_response_ki import test_dateiablage_vorschlag
 from utils.text_reader import datei_inhalt
 from utils.folder_scanner import ordnerinhaltunteror, ordnerinhaltohne
 from pathlib import Path
@@ -226,7 +227,9 @@ elif userstartwahl == "5":
 
     inhalt = "\n".join("".join(i) for i in inhalt)
     
-    ki_response = dateiablage_vorschlag(inhalt)
+    #ki_response = dateiablage_vorschlag(inhalt) # Hier wurde erstmal eine statische reingemacht, um Zeit und Kosten für das Testen zu sparen
+    ki_response =  str(test_dateiablage_vorschlag(inhalt))
+
 
     anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_dir()]
 
