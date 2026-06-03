@@ -1,10 +1,11 @@
-import json
+## Technischer Bericht:
+----------------Ordnerstruktur---------------
 
-def test_dateiablage_vorschlag(inhalt):
-    
-    t = inhalt
+Angegebener Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schule
+Unterordner werden mit einbezogen:
 
-    test_inhalt = {
+Tiefe der Unterordner: 12
+Anzahl der Dateien: 301## KI Ausgabe:{
 "datei_vorschläge": [
 {
 "original_name": "Arbeit Lernzettel LF.8 Arbeit NR.1 .docx",
@@ -2972,9 +2973,9 @@ def test_dateiablage_vorschlag(inhalt):
 "file_type": "docx",
 "suggested_category": "",
 "suggested_folder": "",
-"suggested_new_name": "Das ist ein Lernzettel",
+"suggested_new_name": "",
 "action_type": "keep",
-"reason": "Ist falsch beannnt."
+"reason": "Liegt im passenden LF.8-Ordner."
 },
 {
 "original_name": "~$rzettel Arbeit NR.2.docx",
@@ -3018,6 +3019,3 @@ def test_dateiablage_vorschlag(inhalt):
 }
 ]
 }
-
-    return json.dumps(test_inhalt, ensure_ascii=False, indent=2)
-    

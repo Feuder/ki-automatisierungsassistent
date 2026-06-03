@@ -6,6 +6,7 @@ from ai.ai_client import KI_anfrage, ki_task_erstellen, dateiablage_vorschlag, o
 from Testing.test_response_ki import test_dateiablage_vorschlag
 from utils.text_reader import datei_inhalt
 from utils.folder_scanner import ordnerinhaltunteror, ordnerinhaltohne
+from utils.File_actions.file_actions import move_file, rename_file
 from pathlib import Path
 
 #-------Hier wird überprüft ob die Pfade alle in Ordnung sind-------
@@ -363,6 +364,32 @@ while True:
     else:
         print("Gebe nur j/n ein!")
 
+for i in ausgewählte_vorschlagen_komp:
+    if i["action_type"] == "move_suggestion" :
+
+        datei_name = i["original_name"]
+
+        alter_pfad = Path(wahlpfad) / i["relative_path"]
+        neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
+
+        if alter_pfad.exists():
+            neuer_pfad.mkdir(parents=True, exist_ok=True)
+
+            move_file(datei_name, alter_pfad, neuer_pfad)
+
+        print("Die Dateie wurde erfolgreich verschoben!")
+
+    elif i["action_type"] == "suggested_new_name":
+
+        datei_name = i["original_name"]
+        alter_pfad = Path(wahlpfad) / i["relative_path"]
+        neuer_name =    i["suggested_new_name"]
+
+        if alter_pfad.exist():
+            rename_file(datei_name, neuer_name, alter_pfad)
+
+        print("Die Datei wurde erfolgreich umbenannt!")
+            
 
 
 #----Ab hier werden die ausgaben der Antworten getätigt.----
