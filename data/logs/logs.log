@@ -177,3 +177,17 @@ INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
 WARNING:root:Es werden nicht alle existierenden Unterordner mit einbezogen!
 INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
 INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+ERROR:root:Der angebene Pfad wurde nicht gefunden!
+
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Programm endet
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Programm endet
