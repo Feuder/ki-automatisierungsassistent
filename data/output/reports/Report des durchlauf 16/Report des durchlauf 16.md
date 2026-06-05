@@ -1,0 +1,3018 @@
+## Technischer Bericht:
+----------------Ordnerstruktur---------------
+
+Angegebener Pfad: /Users/saschameuten/Documents/Caspar - Programmierung/ki-automatisierungsassistent/data
+Anzahl der Dateien: 1## KI Ausgabe:{
+  "datei_vorschläge": [
+    {
+      "original_name": "Arbeit Lernzettel LF.8 Arbeit NR.1 .docx",
+      "relative_path": "Arbeit Lernzettel LF.8 Arbeit NR.1 .docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "LF.8",
+      "suggested_new_name": "",
+      "action_type": "move_suggestion",
+      "reason": "Datei gehört thematisch zu LF.8, liegt jedoch im Wurzelverzeichnis."
+    },
+    {
+      "original_name": "Abschlussprüfung Teil 1 Lernzettel - main - Obsidian v1.8.7.pdf",
+      "relative_path": "APs\\AP01\\Abschlussprüfung Teil 1 Lernzettel - main - Obsidian v1.8.7.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt bereits strukturiert unter APs\\AP01."
+    },
+    {
+      "original_name": "AP01 Lernzettel Themblöcke.docx",
+      "relative_path": "APs\\AP01\\AP01 Lernzettel Themblöcke.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Thematisch passend im Ordner APs\\AP01."
+    },
+    {
+      "original_name": "Lernzettel AP01.docx",
+      "relative_path": "APs\\AP01\\Lernzettel AP01.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Thematisch passend im Ordner APs\\AP01."
+    },
+    {
+      "original_name": "AP S2017 IT GA1 FIAE Löser Hinweis.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA1 FIAE Löser Hinweis.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT GA1 FIAE Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA1 FIAE Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT GA1 FIAE.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA1 FIAE.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT GA1 FISI Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA1 FISI Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT GA1 FISI.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA1 FISI.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT GA1 IK Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA1 IK Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT GA1 IK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA1 IK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT GA1 IT-SE Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA1 IT-SE Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT GA1 IT-SE.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA1 IT-SE.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT GA1 IT-SK Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA1 IT-SK Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT GA1 IT-SK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA1 IT-SK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT GA2 Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA2 Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT GA2.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT GA2.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT WiSo Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT WiSo Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP S2017 IT WiSo.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017 Sommer\\AP S2017 IT WiSo.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Klar strukturierte Jahres- und Prüfungsablage."
+    },
+    {
+      "original_name": "AP W2017 IT GA1 FiAe Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT GA1 FiAe Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT GA1 FiAe.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT GA1 FiAe.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT GA1 FiSi Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT GA1 FiSi Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT GA1 FiSi.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT GA1 FiSi.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT GA1 IK Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT GA1 IK Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT GA1 IK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT GA1 IK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT GA1 SE Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT GA1 SE Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT GA1 SE.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT GA1 SE.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT GA1 SK Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT GA1 SK Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT GA1 SK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT GA1 SK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT GA2 Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT GA2 Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT GA2.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT GA2.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT WiSo Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT WiSo Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2017 IT WiSo.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2017_18 Winter\\AP W2017 IT WiSo.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT GA1 FiAe Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT GA1 FiAe Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT GA1 FiAe.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT GA1 FiAe.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT GA1 FiSi Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT GA1 FiSi Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT GA1 FiSi.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT GA1 FiSi.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT GA1 IK Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT GA1 IK Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT GA1 IK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT GA1 IK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT GA1 SE Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT GA1 SE Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT GA1 SE.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT GA1 SE.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT GA1 SK Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT GA1 SK Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT GA1 SK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT GA1 SK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT GA2 Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT GA2 Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT GA2.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT GA2.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT WiSo Löser.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT WiSo Löser.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2018 IT WiSo.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\AP S2018 IT WiSo.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "Korrekturhinweis zur AP S2018 FISI ITSK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018 Sommer\\Korrekturhinweis zur AP S2018 FISI ITSK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Passender Hinweis im korrekten Jahresordner."
+    },
+    {
+      "original_name": "AP W2018 IT GA1 FiAe Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT GA1 FiAe Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT GA1 FiAe.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT GA1 FiAe.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT GA1 FiSi Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT GA1 FiSi Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT GA1 FiSi.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT GA1 FiSi.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT GA1 IK Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT GA1 IK Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT GA1 IK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT GA1 IK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT GA1 IT-SE Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT GA1 IT-SE Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT GA1 IT-SE.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT GA1 IT-SE.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT GA1 IT-SK Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT GA1 IT-SK Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT GA1 IT-SK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT GA1 IT-SK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT GA2 Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT GA2 Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT GA2.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT GA2.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT WiSo Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT WiSo Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP W2018 IT WiSo.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2018_19 Winter\\AP W2018 IT WiSo.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT GA1 FIAE Lösungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT GA1 FIAE Lösungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT GA1 FIAE.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT GA1 FIAE.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT GA1 FISI Lösungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT GA1 FISI Lösungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT GA1 FISI.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT GA1 FISI.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT GA1 IK Lösungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT GA1 IK Lösungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT GA1 IK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT GA1 IK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT GA1 IT-SE Lösungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT GA1 IT-SE Lösungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT GA1 IT-SE.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT GA1 IT-SE.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT GA1 IT-SK Lösungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT GA1 IT-SK Lösungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT GA1 IT-SK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT GA1 IT-SK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT GA2 Lösungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT GA2 Lösungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT GA2.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT GA2.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT WiSo Lösungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT WiSo Lösungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "AP S2019 IT WiSo.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\AP S2019 IT WiSo.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Einheitliche Ablage nach Jahr und Saison."
+    },
+    {
+      "original_name": "Korrekturhinweis zur AP Sommer 2019 IT-Berufe 20190517.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019 Sommer\\Korrekturhinweis zur AP Sommer 2019 IT-Berufe 20190517.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Passender Hinweis im korrekten Jahresordner."
+    },
+    {
+      "original_name": "AP W2019 GA1 FIAE Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 GA1 FIAE Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 GA1 FIAE.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 GA1 FIAE.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 GA1 FISI Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 GA1 FISI Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 GA1 FISI.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 GA1 FISI.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 GA1 IK Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 GA1 IK Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 GA1 IK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 GA1 IK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 GA1 SE Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 GA1 SE Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 GA1 SE.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 GA1 SE.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 GA1 SK Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 GA1 SK Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 GA1 SK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 GA1 SK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 GA2 Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 GA2 Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 GA2.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 GA2.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 IT Korrekturhinweis.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 IT Korrekturhinweis.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Passender Hinweis im korrekten Jahresordner."
+    },
+    {
+      "original_name": "AP W2019 WiSo Lösung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 WiSo Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP W2019 WiSo.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2019_20 Winter\\AP W2019 WiSo.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Struktur nach Jahr und Saison ist konsistent."
+    },
+    {
+      "original_name": "AP S2020 IT GA1 IK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2020 Sommer\\AP S2020 IT GA1 IK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "AP S2020 IT GA1 IT-SE Lösungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2020 Sommer\\AP S2020 IT GA1 IT-SE Lösungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "AP S2020 IT GA1 IT-SE.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2020 Sommer\\AP S2020 IT GA1 IT-SE.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "AP S2020 IT GA1 IT-SK Lösungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2020 Sommer\\AP S2020 IT GA1 IT-SK Lösungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "AP S2020 IT GA1 IT-SK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2020 Sommer\\AP S2020 IT GA1 IT-SK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "AP S2020 IT WiSo.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2020 Sommer\\AP S2020 IT WiSo.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "AP W2020 GA1 IK.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2020_21 Winter\\AP W2020 GA1 IK.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "AP W2020 GA1 SK Lösungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2020_21 Winter\\AP W2020 GA1 SK Lösungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "Abschlussprüfung Teil 1 - Fruehjahr 2022 .pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2021_22 Winter\\Abschlussprüfung Teil 1 - Fruehjahr 2022 .pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Konsistente Prüfungsablage."
+    },
+    {
+      "original_name": "Abschlussprüfung Teil 1 - Fruehjahr 2022_Loesungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2021_22 Winter\\Abschlussprüfung Teil 1 - Fruehjahr 2022_Loesungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Konsistente Prüfungsablage."
+    },
+    {
+      "original_name": "Abschlussprüfung Teil 1 - Herbst 2022.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2021_22 Winter\\Abschlussprüfung Teil 1 - Herbst 2022.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Konsistente Prüfungsablage."
+    },
+    {
+      "original_name": "Abschlussprüfung Teil 1 - Herbst 2022_Loesungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2021_22 Winter\\Abschlussprüfung Teil 1 - Herbst 2022_Loesungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Konsistente Prüfungsablage."
+    },
+    {
+      "original_name": "Abschlussprüfung Teil 1 - Fruehjahr 2022 .pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2022\\Abschlussprüfung Teil 1 - Fruehjahr 2022 .pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Doppelte Ablage in Jahresordner, aber konsistent strukturiert."
+    },
+    {
+      "original_name": "Abschlussprüfung Teil 1 - Fruehjahr 2022_Loesungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2022\\Abschlussprüfung Teil 1 - Fruehjahr 2022_Loesungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Doppelte Ablage in Jahresordner, aber konsistent strukturiert."
+    },
+    {
+      "original_name": "Abschlussprüfung Teil 1 - Herbst 2022.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2022\\Abschlussprüfung Teil 1 - Herbst 2022.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Doppelte Ablage in Jahresordner, aber konsistent strukturiert."
+    },
+    {
+      "original_name": "Abschlussprüfung Teil 1 - Herbst 2022_Loesungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2022\\Abschlussprüfung Teil 1 - Herbst 2022_Loesungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Doppelte Ablage in Jahresordner, aber konsistent strukturiert."
+    },
+    {
+      "original_name": "Fruehjahr 2023 Teil 1neu (1).pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2023\\Fruehjahr 2023 Teil 1neu (1).pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "IT-Berufe_(AO_2020)_Einrichten_einesl_IT-gestuetzten_Arbeitsplatzes_ungeb-4.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2023\\IT-Berufe_(AO_2020)_Einrichten_einesl_IT-gestuetzten_Arbeitsplatzes_ungeb-4.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Passendes Material im Jahresordner."
+    },
+    {
+      "original_name": "IT-Berufe_(AO_2020)_Einrichten_eines_IT-gestuetzten_Arbeitsplatzes_ungeb-1.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2023\\IT-Berufe_(AO_2020)_Einrichten_eines_IT-gestuetzten_Arbeitsplatzes_ungeb-1.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Passendes Material im Jahresordner."
+    },
+    {
+      "original_name": "Prüfung Fachinformatiker Herbst 2023.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2023\\Prüfung Fachinformatiker Herbst 2023.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "Ap1_2024__1_1.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2024\\Ap1_2024__1_1.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "Abschlussprüfung Fachinfo-1.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2025\\Abschlussprüfung Fachinfo-1.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "AP1_Herbst2025_Loesung.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\2025\\AP1_Herbst2025_Loesung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden Jahresordner."
+    },
+    {
+      "original_name": "Übungen AP01_Aufgaben.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\AP01\\Übungen AP01_Aufgaben.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material liegt im thematisch passenden Unterordner AP01."
+    },
+    {
+      "original_name": "Übungen AP01_Lösungen.pdf",
+      "relative_path": "APs\\AP01\\OneDrive_1_23.1.2026\\AP01\\Übungen AP01_Lösungen.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material liegt im thematisch passenden Unterordner AP01."
+    },
+    {
+      "original_name": "Angebotsvergleich.docx",
+      "relative_path": "Berichtsheft\\Angebotsvergleich.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im übergeordneten Ordner Berichtsheft."
+    },
+    {
+      "original_name": "Ausgefüllte Vorlage.xlsx",
+      "relative_path": "Berichtsheft\\Ausgefüllte Vorlage.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Vorlage/Datei liegt im Stammordner Berichtsheft."
+    },
+    {
+      "original_name": "Ausgefüllte Vorlage.xlsx",
+      "relative_path": "Berichtsheft\\Ausbildungsjahr 1\\Ausgefüllte Vorlage.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Ablage im passenden Ausbildungsjahresordner."
+    },
+    {
+      "original_name": "Berichtsheft für den August.xlsx",
+      "relative_path": "Berichtsheft\\Ausbildungsjahr 1\\a August\\Berichtsheft für den August.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Monatsdatei im passenden Monatsordner."
+    },
+    {
+      "original_name": "Berichtsheft für den September.xlsx",
+      "relative_path": "Berichtsheft\\Ausbildungsjahr 1\\b September\\Berichtsheft für den September.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Monatsdatei im passenden Monatsordner."
+    },
+    {
+      "original_name": "Ausgefüllte Vorlage.xlsx",
+      "relative_path": "Berichtsheft\\Ausbildungsjahr 1\\c Oktober\\Ausgefüllte Vorlage.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Vorlage/Datei im passenden Monatsordner."
+    },
+    {
+      "original_name": "Berichtsheft November.xlsx",
+      "relative_path": "Berichtsheft\\Ausbildungsjahr 1\\d November\\Berichtsheft November.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Monatsdatei im passenden Monatsordner."
+    },
+    {
+      "original_name": "Ausgefüllte Vorlage.xlsx",
+      "relative_path": "Berichtsheft\\Ausbildungsjahr 1\\e Dezember\\Ausgefüllte Vorlage.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Vorlage/Datei im passenden Monatsordner."
+    },
+    {
+      "original_name": "Berichtsheft Januar.xlsx",
+      "relative_path": "Berichtsheft\\Ausbildungsjahr 1\\f Januar\\Berichtsheft Januar.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Monatsdatei im passenden Monatsordner."
+    },
+    {
+      "original_name": "Berichtsheft Februar.xlsx",
+      "relative_path": "Berichtsheft\\Ausbildungsjahr 1\\g Februar\\Berichtsheft Februar.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Monatsdatei im passenden Monatsordner."
+    },
+    {
+      "original_name": "Berichtsheft April.xlsx",
+      "relative_path": "Berichtsheft\\Ausbildungsjahr 1\\i April\\Berichtsheft April.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Monatsdatei im passenden Monatsordner."
+    },
+    {
+      "original_name": "Berichtsheft Mai.xlsx",
+      "relative_path": "Berichtsheft\\Ausbildungsjahr 1\\j Mai\\Berichtsheft Mai.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Monatsdatei im passenden Monatsordner."
+    },
+    {
+      "original_name": "Berichtsheft Juni.xlsx",
+      "relative_path": "Berichtsheft\\Ausbildungsjahr 1\\k Juni\\Berichtsheft Juni.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Monatsdatei im passenden Monatsordner."
+    },
+    {
+      "original_name": "Berichtsheft Juli.xlsx",
+      "relative_path": "Berichtsheft\\Ausbildungsjahr 1\\l Juli\\Berichtsheft Juli.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Monatsdatei im passenden Monatsordner."
+    },
+    {
+      "original_name": "006_ESL-Brains-The-next-big-thing-after-smartphones-SV-5443.pdf",
+      "relative_path": "Englisch\\09.01.2026\\006_ESL-Brains-The-next-big-thing-after-smartphones-SV-5443.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im datierten Unterordner Englisch\\09.01.2026."
+    },
+    {
+      "original_name": "Englisch Aufgabe 1 A und B auf der Seite 53.docx",
+      "relative_path": "Englisch\\09.01.2026\\Englisch Aufgabe 1 A und B auf der Seite 53.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im datierten Unterordner Englisch\\09.01.2026."
+    },
+    {
+      "original_name": "Home Learning Aufgabenblatt.docx",
+      "relative_path": "Englisch\\09.01.2026\\Home Learning Aufgabenblatt.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im datierten Unterordner Englisch\\09.01.2026."
+    },
+    {
+      "original_name": "Datenblatt AR Brille.docx",
+      "relative_path": "Englisch\\AR Brille präsi\\Datenblatt AR Brille.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Datei liegt im thematischen Ordner AR Brille präsi."
+    },
+    {
+      "original_name": "Englisch Präsi.pptx",
+      "relative_path": "Englisch\\AR Brille präsi\\Englisch Präsi.pptx",
+      "file_type": "pptx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Datei liegt im thematischen Ordner AR Brille präsi."
+    },
+    {
+      "original_name": "Microchipping Applications.pptx",
+      "relative_path": "Englisch\\Englisch Präsentationen\\Microchipping Applications.pptx",
+      "file_type": "pptx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt unter Englisch Präsentationen."
+    },
+    {
+      "original_name": "Datenblatt AR Brille.docx",
+      "relative_path": "Englisch\\Englisch Präsentationen\\Inverstor Gespräch\\Datenblatt AR Brille.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "Englisch\\Englisch Präsentationen\\Investor Gespräch",
+      "suggested_new_name": "",
+      "action_type": "move_suggestion",
+      "reason": "Zielordnername enthält offenbar Tippfehler 'Inverstor'; vorgeschlagen: 'Investor Gespräch'."
+    },
+    {
+      "original_name": "Englisch Präsi(alt).pptx",
+      "relative_path": "Englisch\\Englisch Präsentationen\\Inverstor Gespräch\\Englisch Präsi(alt).pptx",
+      "file_type": "pptx",
+      "suggested_category": "",
+      "suggested_folder": "Englisch\\Englisch Präsentationen\\Investor Gespräch",
+      "suggested_new_name": "",
+      "action_type": "move_suggestion",
+      "reason": "Zielordnername enthält offenbar Tippfehler 'Inverstor'; vorgeschlagen: 'Investor Gespräch'."
+    },
+    {
+      "original_name": "Englisch Präsi(Final).pptx",
+      "relative_path": "Englisch\\Englisch Präsentationen\\Inverstor Gespräch\\Englisch Präsi(Final).pptx",
+      "file_type": "pptx",
+      "suggested_category": "",
+      "suggested_folder": "Englisch\\Englisch Präsentationen\\Investor Gespräch",
+      "suggested_new_name": "",
+      "action_type": "move_suggestion",
+      "reason": "Zielordnername enthält offenbar Tippfehler 'Inverstor'; vorgeschlagen: 'Investor Gespräch'."
+    },
+    {
+      "original_name": "Englisch Präsi.pptx",
+      "relative_path": "Englisch\\Englisch Präsentationen\\Inverstor Gespräch\\Englisch Präsi.pptx",
+      "file_type": "pptx",
+      "suggested_category": "",
+      "suggested_folder": "Englisch\\Englisch Präsentationen\\Investor Gespräch",
+      "suggested_new_name": "",
+      "action_type": "move_suggestion",
+      "reason": "Zielordnername enthält offenbar Tippfehler 'Inverstor'; vorgeschlagen: 'Investor Gespräch'."
+    },
+    {
+      "original_name": ".gitignore",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.gitignore",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Konfigurationsdatei im Projektstammverzeichnis."
+    },
+    {
+      "original_name": "data.db",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\data.db",
+      "file_type": "db",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Projektdatenbank im Projektordner."
+    },
+    {
+      "original_name": "fragen.json",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\fragen.json",
+      "file_type": "json",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Projektdaten im Projektordner."
+    },
+    {
+      "original_name": "image.png",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\image.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bildressource im Projektordner."
+    },
+    {
+      "original_name": "log_21072025.log",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\log_21072025.log",
+      "file_type": "log",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Logdatei im Projektordner."
+    },
+    {
+      "original_name": "log_22072025.log",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\log_22072025.log",
+      "file_type": "log",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Logdatei im Projektordner."
+    },
+    {
+      "original_name": "log_23062025.log",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\log_23062025.log",
+      "file_type": "log",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Logdatei im Projektordner."
+    },
+    {
+      "original_name": "main.py",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\main.py",
+      "file_type": "py",
+      "suggested_category": "Quellcode",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Python-Quellcode im Projektordner."
+    },
+    {
+      "original_name": "README.md",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\README.md",
+      "file_type": "md",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Projekt-Dokumentation im Stammordner."
+    },
+    {
+      "original_name": "README.pdf",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\README.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Projekt-Dokumentation im Stammordner."
+    },
+    {
+      "original_name": "COMMIT_EDITMSG",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\COMMIT_EDITMSG",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Metadatei im .git-Ordner."
+    },
+    {
+      "original_name": "config",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\config",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Konfigurationsdatei."
+    },
+    {
+      "original_name": "description",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\description",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Metadatei."
+    },
+    {
+      "original_name": "FETCH_HEAD",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\FETCH_HEAD",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Metadatei."
+    },
+    {
+      "original_name": "HEAD",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\HEAD",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Metadatei."
+    },
+    {
+      "original_name": "index",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\index",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Indexdatei."
+    },
+    {
+      "original_name": "ORIG_HEAD",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\ORIG_HEAD",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Metadatei."
+    },
+    {
+      "original_name": "packed-refs",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\packed-refs",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Referenzdatei."
+    },
+    {
+      "original_name": "applypatch-msg.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\applypatch-msg.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "commit-msg.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\commit-msg.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "fsmonitor-watchman.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\fsmonitor-watchman.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "post-update.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\post-update.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "pre-applypatch.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\pre-applypatch.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "pre-commit.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\pre-commit.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "pre-merge-commit.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\pre-merge-commit.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "pre-push.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\pre-push.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "pre-rebase.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\pre-rebase.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "pre-receive.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\pre-receive.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "prepare-commit-msg.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\prepare-commit-msg.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "push-to-checkout.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\push-to-checkout.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "sendemail-validate.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\sendemail-validate.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "update.sample",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\hooks\\update.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel im hooks-Ordner."
+    },
+    {
+      "original_name": "exclude",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\info\\exclude",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Info/Exclude-Datei."
+    },
+    {
+      "original_name": "HEAD",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.git\\logs\\HEAD",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Logdatei."
+    },
+    {
+      "original_name": ".gitignore",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.venv\\.gitignore",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Ignore-Datei der virtuellen Umgebung."
+    },
+    {
+      "original_name": "pyvenv.cfg",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.venv\\pyvenv.cfg",
+      "file_type": "cfg",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Konfiguration der virtuellen Umgebung."
+    },
+    {
+      "original_name": "activate",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.venv\\Scripts\\activate",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Aktivierungsskript der virtuellen Umgebung."
+    },
+    {
+      "original_name": "activate.bat",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.venv\\Scripts\\activate.bat",
+      "file_type": "bat",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Aktivierungsskript der virtuellen Umgebung."
+    },
+    {
+      "original_name": "activate.fish",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.venv\\Scripts\\activate.fish",
+      "file_type": "fish",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Aktivierungsskript der virtuellen Umgebung."
+    },
+    {
+      "original_name": "Activate.ps1",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.venv\\Scripts\\Activate.ps1",
+      "file_type": "ps1",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Aktivierungsskript der virtuellen Umgebung."
+    },
+    {
+      "original_name": "deactivate.bat",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.venv\\Scripts\\deactivate.bat",
+      "file_type": "bat",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Skript der virtuellen Umgebung."
+    },
+    {
+      "original_name": "pip.exe",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.venv\\Scripts\\pip.exe",
+      "file_type": "exe",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bestandteil der virtuellen Umgebung."
+    },
+    {
+      "original_name": "pip3.13.exe",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.venv\\Scripts\\pip3.13.exe",
+      "file_type": "exe",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bestandteil der virtuellen Umgebung."
+    },
+    {
+      "original_name": "pip3.exe",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.venv\\Scripts\\pip3.exe",
+      "file_type": "exe",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bestandteil der virtuellen Umgebung."
+    },
+    {
+      "original_name": "python.exe",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.venv\\Scripts\\python.exe",
+      "file_type": "exe",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Interpreter der virtuellen Umgebung."
+    },
+    {
+      "original_name": "pythonw.exe",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\.venv\\Scripts\\pythonw.exe",
+      "file_type": "exe",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Interpreter der virtuellen Umgebung."
+    },
+    {
+      "original_name": "ki.docx",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\KI Promts\\ki.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Inhalt liegt im thematischen Unterordner KI Promts."
+    },
+    {
+      "original_name": "Screenshot 2025-06-06 115102.png",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\KI Promts\\Screenshot 2025-06-06 115102.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Screenshot im passenden Unterordner."
+    },
+    {
+      "original_name": "Screenshot 2025-06-15 210807.png",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\KI Promts\\Screenshot 2025-06-15 210807.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Screenshot im passenden Unterordner."
+    },
+    {
+      "original_name": "Screenshot 2025-06-15 210941.png",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\KI Promts\\Screenshot 2025-06-15 210941.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Screenshot im passenden Unterordner."
+    },
+    {
+      "original_name": "Screenshot 2025-06-15 211035.png",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\KI Promts\\Screenshot 2025-06-15 211035.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Screenshot im passenden Unterordner."
+    },
+    {
+      "original_name": "Screenshot 2025-06-15 211129.png",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\KI Promts\\Screenshot 2025-06-15 211129.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Screenshot im passenden Unterordner."
+    },
+    {
+      "original_name": "Screenshot 2025-06-15 211225.png",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\KI Promts\\Screenshot 2025-06-15 211225.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Screenshot im passenden Unterordner."
+    },
+    {
+      "original_name": "Screenshot 2025-06-15 211325.png",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\KI Promts\\Screenshot 2025-06-15 211325.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Screenshot im passenden Unterordner."
+    },
+    {
+      "original_name": "Tom Ki.txt",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\KI Promts\\Tom Ki.txt",
+      "file_type": "txt",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Textdatei im passenden Unterordner."
+    },
+    {
+      "original_name": "image.png",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\KI Promts\\Caspar KI\\image.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bild im passenden Unterordner."
+    },
+    {
+      "original_name": "gui_funktionen.cpython-313.pyc",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\__pycache__\\gui_funktionen.cpython-313.pyc",
+      "file_type": "pyc",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bytecode-Cache im __pycache__-Ordner."
+    },
+    {
+      "original_name": "main.cpython-313.pyc",
+      "relative_path": "LF 5 Programmier prjekte\\IHK-Pr-fungstrainer\\__pycache__\\main.cpython-313.pyc",
+      "file_type": "pyc",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bytecode-Cache im __pycache__-Ordner."
+    },
+    {
+      "original_name": "AB1_Fachbegriffe kennen.docx",
+      "relative_path": "LF.3\\AB1_Fachbegriffe kennen.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material liegt unter LF.3."
+    },
+    {
+      "original_name": "Glossare 2_ BBS Haarentor.pdf",
+      "relative_path": "LF.3\\Glossare 2_ BBS Haarentor.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material liegt unter LF.3."
+    },
+    {
+      "original_name": "Glossare _ BBS Haarentor.pdf",
+      "relative_path": "LF.3\\Glossare _ BBS Haarentor.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material liegt unter LF.3."
+    },
+    {
+      "original_name": "Glossare3 _ BBS Haarentor.pdf",
+      "relative_path": "LF.3\\Glossare3 _ BBS Haarentor.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material liegt unter LF.3."
+    },
+    {
+      "original_name": "2.drawio",
+      "relative_path": "LF.3\\LS 1\\2.drawio",
+      "file_type": "drawio",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Diagrammdatei im passenden Unterordner LS 1."
+    },
+    {
+      "original_name": "Aufgabe_17_09_Word.pdf",
+      "relative_path": "LF.3\\LS 1\\Aufgabe_17_09_Word.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Aufgabenmaterial im Unterordner LS 1."
+    },
+    {
+      "original_name": "Bbs cheat sheet.pdf",
+      "relative_path": "LF.3\\LS 1\\Bbs cheat sheet.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material im Unterordner LS 1."
+    },
+    {
+      "original_name": "Buss.pdf",
+      "relative_path": "LF.3\\LS 1\\Buss.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material im Unterordner LS 1."
+    },
+    {
+      "original_name": "Datenübertragungsraten_LF3_S.299_Lösung.pdf",
+      "relative_path": "LF.3\\LS 1\\Datenübertragungsraten_LF3_S.299_Lösung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Lösungsdokument im Unterordner LS 1."
+    },
+    {
+      "original_name": "Gratzke_295_299.pdf",
+      "relative_path": "LF.3\\LS 1\\Gratzke_295_299.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material im Unterordner LS 1."
+    },
+    {
+      "original_name": "Gratzke_311_317.pdf",
+      "relative_path": "LF.3\\LS 1\\Gratzke_311_317.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material im Unterordner LS 1."
+    },
+    {
+      "original_name": "LS 1 - AB 2 - Netzwerktopologien.pkt",
+      "relative_path": "LF.3\\LS 1\\LS 1 - AB 2 - Netzwerktopologien.pkt",
+      "file_type": "pkt",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Packet Tracer Datei im Unterordner LS 1."
+    },
+    {
+      "original_name": "LS 3.1 - AB 03 - Netzwerkmedien.docx",
+      "relative_path": "LF.3\\LS 1\\LS 3.1 - AB 03 - Netzwerkmedien.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Arbeitsblatt im Unterordner LS 1."
+    },
+    {
+      "original_name": "LS 3.1 - AB 03 - Netzwerkmedien.pdf",
+      "relative_path": "LF.3\\LS 1\\LS 3.1 - AB 03 - Netzwerkmedien.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Arbeitsblatt im Unterordner LS 1."
+    },
+    {
+      "original_name": "LS 3.1 - AB 1 - Abbildungen - Strukturierte Verkabelung.docx",
+      "relative_path": "LF.3\\LS 1\\LS 3.1 - AB 1 - Abbildungen - Strukturierte Verkabelung.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Arbeitsblatt im Unterordner LS 1."
+    },
+    {
+      "original_name": "LS 3.1 - AB 1 - Abbildungen - Strukturierte Verkabelung.pdf",
+      "relative_path": "LF.3\\LS 1\\LS 3.1 - AB 1 - Abbildungen - Strukturierte Verkabelung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Arbeitsblatt im Unterordner LS 1."
+    },
+    {
+      "original_name": "LS 3.1 - AB 1 - Strukturierte Verkabelung.docx",
+      "relative_path": "LF.3\\LS 1\\LS 3.1 - AB 1 - Strukturierte Verkabelung.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Arbeitsblatt im Unterordner LS 1."
+    },
+    {
+      "original_name": "LS 3.1 - AB 1 - Strukturierte Verkabelung.pdf",
+      "relative_path": "LF.3\\LS 1\\LS 3.1 - AB 1 - Strukturierte Verkabelung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Arbeitsblatt im Unterordner LS 1."
+    },
+    {
+      "original_name": "LS 3.1 - AB 2 - Netzwerkpläne.docx",
+      "relative_path": "LF.3\\LS 1\\LS 3.1 - AB 2 - Netzwerkpläne.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Arbeitsblatt im Unterordner LS 1."
+    },
+    {
+      "original_name": "LS 3.1 - AB 2 - Netzwerkpläne.pdf",
+      "relative_path": "LF.3\\LS 1\\LS 3.1 - AB 2 - Netzwerkpläne.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Arbeitsblatt im Unterordner LS 1."
+    },
+    {
+      "original_name": "LS 3.1 - Handlungssituation.pdf",
+      "relative_path": "LF.3\\LS 1\\LS 3.1 - Handlungssituation.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material im Unterordner LS 1."
+    },
+    {
+      "original_name": "LS 3.1 - IB 1 - Ethernet.png",
+      "relative_path": "LF.3\\LS 1\\LS 3.1 - IB 1 - Ethernet.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bildmaterial im Unterordner LS 1."
+    },
+    {
+      "original_name": "LS 3.1 - IB 2 - Strukturierte Verkabelung.pdf",
+      "relative_path": "LF.3\\LS 1\\LS 3.1 - IB 2 - Strukturierte Verkabelung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material im Unterordner LS 1."
+    },
+    {
+      "original_name": "Mesh-Topologie.pdf",
+      "relative_path": "LF.3\\LS 1\\Mesh-Topologie.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material im Unterordner LS 1."
+    },
+    {
+      "original_name": "Mitschrift_Strukturierte Verkabelung.pdf",
+      "relative_path": "LF.3\\LS 1\\Mitschrift_Strukturierte Verkabelung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Mitschrift im Unterordner LS 1."
+    },
+    {
+      "original_name": "Netzwerktopologie Vollvermascht.pdf",
+      "relative_path": "LF.3\\LS 1\\Netzwerktopologie Vollvermascht.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material im Unterordner LS 1."
+    },
+    {
+      "original_name": "RD_LF3_FS1D_24_25_ Beispiel_ Logischer Netzwerkplan _ BBS Haarentor.pdf",
+      "relative_path": "LF.3\\LS 1\\RD_LF3_FS1D_24_25_ Beispiel_ Logischer Netzwerkplan _ BBS Haarentor.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Arbeitsmaterial im Unterordner LS 1."
+    },
+    {
+      "original_name": "RD_LF3_FS1D_24_25_ Brainstorming_ Lösungsmöglichkeiten _ BBS Haarentor.pdf",
+      "relative_path": "LF.3\\LS 1\\RD_LF3_FS1D_24_25_ Brainstorming_ Lösungsmöglichkeiten _ BBS Haarentor.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Arbeitsmaterial im Unterordner LS 1."
+    },
+    {
+      "original_name": "RD_LF3_FS1D_24_25_ Ergebnisse Leitfragen_ Netzwerkpläne _ BBS Haarentor.pdf",
+      "relative_path": "LF.3\\LS 1\\RD_LF3_FS1D_24_25_ Ergebnisse Leitfragen_ Netzwerkpläne _ BBS Haarentor.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Arbeitsmaterial im Unterordner LS 1."
+    },
+    {
+      "original_name": "Ring Verkabelung.pdf",
+      "relative_path": "LF.3\\LS 1\\Ring Verkabelung.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material im Unterordner LS 1."
+    },
+    {
+      "original_name": "Stern-Topologie.pdf",
+      "relative_path": "LF.3\\LS 1\\Stern-Topologie.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Material im Unterordner LS 1."
+    },
+    {
+      "original_name": "Vollmascht Netzwerk - Brainstorming.txt",
+      "relative_path": "LF.3\\LS 1\\Vollmascht Netzwerk - Brainstorming.txt",
+      "file_type": "txt",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Notiz/Brainstorming im Unterordner LS 1."
+    },
+    {
+      "original_name": "Übungsaufgaben_Datenübertragung_Lsg.pdf",
+      "relative_path": "LF.3\\LS 1\\Übungsaufgaben_Datenübertragung_Lsg.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Lösungsdokument im Unterordner LS 1."
+    },
+    {
+      "original_name": "Übungsaufgaben_Datenübertragung_Lsg_Kommentiert.pdf",
+      "relative_path": "LF.3\\LS 1\\Übungsaufgaben_Datenübertragung_Lsg_Kommentiert.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Lösungsdokument im Unterordner LS 1."
+    },
+    {
+      "original_name": "Übungsaufgaben_zu_Netzwerkmedien[1].pdf",
+      "relative_path": "LF.3\\LS 1\\Übungsaufgaben_zu_Netzwerkmedien[1].pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Aufgabenmaterial im Unterordner LS 1."
+    },
+    {
+      "original_name": "Lernzettel LF.7 KL1.docx",
+      "relative_path": "LF.7\\Lernzettel LF.7 KL1.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden LF.7-Ordner."
+    },
+    {
+      "original_name": "Lernzettel LF.7 KL1.pdf",
+      "relative_path": "LF.7\\Lernzettel LF.7 KL1.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden LF.7-Ordner."
+    },
+    {
+      "original_name": ".gitignore",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.gitignore",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Ignore im Projektordner."
+    },
+    {
+      "original_name": "IMPLEMENTATION-SUMMARY.md",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\IMPLEMENTATION-SUMMARY.md",
+      "file_type": "md",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Dokumentation im Projektordner."
+    },
+    {
+      "original_name": "PI-ARCHITECTURE.md",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\PI-ARCHITECTURE.md",
+      "file_type": "md",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Dokumentation im Projektordner."
+    },
+    {
+      "original_name": "PI-MANAGEMENT-QUICKSTART.md",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\PI-MANAGEMENT-QUICKSTART.md",
+      "file_type": "md",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Dokumentation im Projektordner."
+    },
+    {
+      "original_name": "README.md",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\README.md",
+      "file_type": "md",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Projekt-README."
+    },
+    {
+      "original_name": "start_both_servers_simulation.ps1",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\start_both_servers_simulation.ps1",
+      "file_type": "ps1",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Startskript im Projektordner."
+    },
+    {
+      "original_name": "COMMIT_EDITMSG",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\COMMIT_EDITMSG",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Metadatei."
+    },
+    {
+      "original_name": "config",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\config",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Konfiguration."
+    },
+    {
+      "original_name": "description",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\description",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Metadatei."
+    },
+    {
+      "original_name": "FETCH_HEAD",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\FETCH_HEAD",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Metadatei."
+    },
+    {
+      "original_name": "HEAD",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\HEAD",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Metadatei."
+    },
+    {
+      "original_name": "index",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\index",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Indexdatei."
+    },
+    {
+      "original_name": "ORIG_HEAD",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\ORIG_HEAD",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Metadatei."
+    },
+    {
+      "original_name": "packed-refs",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\packed-refs",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Referenzdatei."
+    },
+    {
+      "original_name": "config",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\gk\\config",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-spezifische Konfiguration."
+    },
+    {
+      "original_name": "applypatch-msg.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\applypatch-msg.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "commit-msg.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\commit-msg.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "fsmonitor-watchman.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\fsmonitor-watchman.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "post-update.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\post-update.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "pre-applypatch.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\pre-applypatch.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "pre-commit.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\pre-commit.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "pre-merge-commit.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\pre-merge-commit.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "pre-push.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\pre-push.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "pre-rebase.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\pre-rebase.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "pre-receive.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\pre-receive.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "prepare-commit-msg.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\prepare-commit-msg.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "push-to-checkout.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\push-to-checkout.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "sendemail-validate.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\sendemail-validate.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "update.sample",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\hooks\\update.sample",
+      "file_type": "sample",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git Hook-Beispiel."
+    },
+    {
+      "original_name": "exclude",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\info\\exclude",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Info/Exclude-Datei."
+    },
+    {
+      "original_name": "HEAD",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\.git\\logs\\HEAD",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Git-Logdatei."
+    },
+    {
+      "original_name": "README.md",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Server-PI\\README.md",
+      "file_type": "md",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Dokumentation im Unterordner Server-PI."
+    },
+    {
+      "original_name": "Zugangsbeschränkung.db",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Server-PI\\Datenbank\\Zugangsbeschränkung.db",
+      "file_type": "db",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Datenbank im passenden Unterordner."
+    },
+    {
+      "original_name": "package-lock.json",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Server-PI\\Website\\package-lock.json",
+      "file_type": "json",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Webprojekt-Konfigurationsdatei."
+    },
+    {
+      "original_name": "package.json",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Server-PI\\Website\\package.json",
+      "file_type": "json",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Webprojekt-Konfigurationsdatei."
+    },
+    {
+      "original_name": "README-PI-MANAGEMENT.md",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Server-PI\\Website\\README-PI-MANAGEMENT.md",
+      "file_type": "md",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Dokumentation im Website-Ordner."
+    },
+    {
+      "original_name": "Com.py",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Sicherheits-PI\\Com.py",
+      "file_type": "py",
+      "suggested_category": "Quellcode",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Python-Quellcode im Unterordner Sicherheits-PI."
+    },
+    {
+      "original_name": "main.py",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Sicherheits-PI\\main.py",
+      "file_type": "py",
+      "suggested_category": "Quellcode",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Python-Quellcode im Unterordner Sicherheits-PI."
+    },
+    {
+      "original_name": "README.md",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Sicherheits-PI\\README.md",
+      "file_type": "md",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Dokumentation im Unterordner Sicherheits-PI."
+    },
+    {
+      "original_name": "Com.cpython-311.pyc",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Sicherheits-PI\\__pycache__\\Com.cpython-311.pyc",
+      "file_type": "pyc",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "__pycache__-Bytecode im passenden Ordner."
+    },
+    {
+      "original_name": "main.cpython-311.pyc",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Sicherheits-PI\\__pycache__\\main.cpython-311.pyc",
+      "file_type": "pyc",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "__pycache__-Bytecode im passenden Ordner."
+    },
+    {
+      "original_name": "mock_main.cpython-311.pyc",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Sicherheits-PI\\__pycache__\\mock_main.cpython-311.pyc",
+      "file_type": "pyc",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "__pycache__-Bytecode im passenden Ordner."
+    },
+    {
+      "original_name": "mock_security_pi.py",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Test-Umgebung\\mock_security_pi.py",
+      "file_type": "py",
+      "suggested_category": "Quellcode",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Testskript im Unterordner Test-Umgebung."
+    },
+    {
+      "original_name": "README.md",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Test-Umgebung\\README.md",
+      "file_type": "md",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Test-Dokumentation im Unterordner."
+    },
+    {
+      "original_name": "seed_test_pis.py",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Test-Umgebung\\seed_test_pis.py",
+      "file_type": "py",
+      "suggested_category": "Quellcode",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Testskript im Unterordner Test-Umgebung."
+    },
+    {
+      "original_name": "start_simulation.ps1",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Test-Umgebung\\start_simulation.ps1",
+      "file_type": "ps1",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Startskript für Simulation im Unterordner."
+    },
+    {
+      "original_name": "Zugangsbeschraenkung-20260412-163146.db",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Test-Umgebung\\db-backups\\Zugangsbeschraenkung-20260412-163146.db",
+      "file_type": "db",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Backup-Datenbank im db-backups-Ordner."
+    },
+    {
+      "original_name": "mock_security_pi.cpython-311.pyc",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\Test-Umgebung\\__pycache__\\mock_security_pi.cpython-311.pyc",
+      "file_type": "pyc",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "__pycache__-Bytecode im passenden Ordner."
+    },
+    {
+      "original_name": "pyvenv.cfg",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\venv\\pyvenv.cfg",
+      "file_type": "cfg",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Konfiguration der virtuellen Umgebung."
+    },
+    {
+      "original_name": "activate",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\venv\\Scripts\\activate",
+      "file_type": "unknown",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Aktivierungsskript der virtuellen Umgebung."
+    },
+    {
+      "original_name": "activate.bat",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\venv\\Scripts\\activate.bat",
+      "file_type": "bat",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Aktivierungsskript der virtuellen Umgebung."
+    },
+    {
+      "original_name": "Activate.ps1",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\venv\\Scripts\\Activate.ps1",
+      "file_type": "ps1",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Aktivierungsskript der virtuellen Umgebung."
+    },
+    {
+      "original_name": "deactivate.bat",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\venv\\Scripts\\deactivate.bat",
+      "file_type": "bat",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Skript der virtuellen Umgebung."
+    },
+    {
+      "original_name": "flask.exe",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\venv\\Scripts\\flask.exe",
+      "file_type": "exe",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bestandteil der virtuellen Umgebung."
+    },
+    {
+      "original_name": "pip.exe",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\venv\\Scripts\\pip.exe",
+      "file_type": "exe",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bestandteil der virtuellen Umgebung."
+    },
+    {
+      "original_name": "pip3.11.exe",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\venv\\Scripts\\pip3.11.exe",
+      "file_type": "exe",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bestandteil der virtuellen Umgebung."
+    },
+    {
+      "original_name": "pip3.exe",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\venv\\Scripts\\pip3.exe",
+      "file_type": "exe",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bestandteil der virtuellen Umgebung."
+    },
+    {
+      "original_name": "python.exe",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\venv\\Scripts\\python.exe",
+      "file_type": "exe",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Interpreter der virtuellen Umgebung."
+    },
+    {
+      "original_name": "pythonw.exe",
+      "relative_path": "LF.7\\Zugangbeschraenkung\\venv\\Scripts\\pythonw.exe",
+      "file_type": "exe",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Interpreter der virtuellen Umgebung."
+    },
+    {
+      "original_name": "Lernzettel Datenbanken Klausur.pdf",
+      "relative_path": "LF.8\\Lernzettel Datenbanken Klausur.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt im passenden LF.8-Ordner."
+    },
+    {
+      "original_name": "Lerzettel Arbeit NR.2.docx",
+      "relative_path": "LF.8\\Lerzettel Arbeit NR.2.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "Das ist ein Lernzettel",
+      "action_type": "keep",
+      "reason": "Ist falsch beannnt."
+    },
+    {
+      "original_name": "~$rzettel Arbeit NR.2.docx",
+      "relative_path": "LF.8\\~$rzettel Arbeit NR.2.docx",
+      "file_type": "docx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": "Dateiname deutet auf temporäre Office-Sperrdatei hin; Umgang unklar ohne weitere Vorgaben."
+    },
+    {
+      "original_name": "9.1.2 - FIRNTEC GmbH Netzwerk.pkt",
+      "relative_path": "LF.9\\Homeschooling Aufgabe vom 16.09\\9.1.2 - FIRNTEC GmbH Netzwerk.pkt",
+      "file_type": "pkt",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Packet Tracer Datei im passenden Aufgabenordner."
+    },
+    {
+      "original_name": "Aufgabe 16.09.zip",
+      "relative_path": "LF.9\\Homeschooling Aufgabe vom 16.09\\Aufgabe 16.09.zip",
+      "file_type": "zip",
+      "suggested_category": "Export",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Archiv im passenden Aufgabenordner."
+    },
+    {
+      "original_name": "Subnetzwerke Planen AB02.xlsx",
+      "relative_path": "LF.9\\Homeschooling Aufgabe vom 16.09\\Subnetzwerke Planen AB02.xlsx",
+      "file_type": "xlsx",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Arbeitsblatt im passenden Aufgabenordner."
+    }
+  ]
+}

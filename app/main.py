@@ -26,6 +26,7 @@ ki_response = None
 max_unterordner = MAX_TIEFE
 
 logging.basicConfig(filename=LOG_DATEI, level=logging.INFO, encoding="utf-8")
+logging.info("-" * 100)
 logging.info("Programm startet")
 logging.info("Ausgabe wurde geprüft, oder erstellt")
 
@@ -297,10 +298,11 @@ print("3. Neuer Name anzeigen")
 print("4. Neuer Name + Verschiebung anzeigen")
 print("5. Unklare Vorschläge anzeigen")
 print("6. Alle Vorschläge anzeigen")
-print("7. Keine Vorschläge anzeigen")
+print("7. Alle Änderungen anzeigen")
+print("8. Keine Vorschläge anzeigen")
 
-auswahl = input("Bitte wähle eine Option von 1 bis 7: ").strip()
-auswaählbare_Kategorien = ["1", "2", "3", "4", "5", "6", "7"]
+auswahl = input("Bitte wähle eine Option von 1 bis 8: ").strip()
+auswaählbare_Kategorien = ["1", "2", "3", "4", "5", "6", "7", "8"]
 
 while True:
     if auswahl in auswaählbare_Kategorien:
@@ -336,6 +338,10 @@ match auswahl:
         ausgewählte_vorschlagen_komp = json_daten
 
     case "7":
+        print("Es werden alle Änderungen angezeigt")
+        ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if not eintrag["action_type"] == "keep"]
+
+    case "8":
         print("Es werden keine Vorschläge angezeigt.")
 
 print("-" * 50)
@@ -390,6 +396,22 @@ for i in ausgewählte_vorschlagen_komp:
 
         print("Die Datei wurde erfolgreich umbenannt!")
             
+    elif i["action_type"] == "rename_and_move_suggestion":
+        
+        datei_name = i["original_name"]
+        alter_pfad = Path(wahlpfad) / i["relative_path"]
+        neuer_name =    i["suggested_new_name"]
+        neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
+
+        if alter_pfad.exist() and not neuer_name == "":
+
+            if alter_pfad.exists():
+                neuer_pfad.mkdir(parents=True, exist_ok=True)
+            
+                move_file(datei_name, alter_pfad, neuer_pfad)
+                rename_file(datei_name, neuer_name, alter_pfad)
+
+
 
 
 #----Ab hier werden die ausgaben der Antworten getätigt.----
@@ -460,3 +482,5 @@ if ki_response is not None:
         print("------------------------------------------")
 
 logging.info("Programm endet")
+logging.info("-" * 100)
+logging.info("")
