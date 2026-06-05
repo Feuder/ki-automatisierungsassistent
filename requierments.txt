@@ -1,3 +1,0 @@
-pip install python-dotenv
-pip install jsonschema
-python -m pip install openai

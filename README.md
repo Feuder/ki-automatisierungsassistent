@@ -27,3 +27,20 @@ Phase 9 abgeschlossen: Das Projekt kann einen frei gewählten Ordner analysieren
 
 # Geplante Phasen
 Phase 10 – Kontrollierte Dateiaktionen
+
+# Projekt einrichten
+1. Die .env .example kopieren und mit der API von OPENAI verbinden
+
+## Venv einrichten:
+1. Im Projekt Ordner: "python -m venv .venv" ausführen
+2. Aktiviere sie mit folgendem Befehl: ".\.venv\Scripts\Activate.ps1"
+
+## Abhängikkeiten Installieren
+1. Im Terminal folgenden Befehl ausführen 'pip install -r requirements.txt'
+2. PIP Updateten, sofern nicht aktuell 'python.exe -m pip install --upgrade pip'
+
+## Projekt starten
+Führe um das Projekt zu starten folgenden Befehl aus: 'Python app\main.py'
+
+## Projekt Bereinigen
+1. Um das Projekt zu bereinigen deinstalliere zu erst die Venv: "deactivate; Remove-Item -Recurse -Force .\venv"
