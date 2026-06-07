@@ -377,7 +377,7 @@ while True:
         print("Gebe nur j/n ein!")
 
 for i in ausgewählte_vorschlagen_komp:
-    if i["action_type"] == "move_suggestion" :
+    if i["action_type"] == "move_suggestion":
 
         datei_name = i["original_name"]
         alter_pfad = Path(wahlpfad) / i["relative_path"]
@@ -403,13 +403,15 @@ for i in ausgewählte_vorschlagen_komp:
             f"{alter_pfad}" \
             )
 
-    elif i["action_type"] == "suggested_new_name":
+    elif i["action_type"] == "rename_suggestion":
 
         datei_name = i["original_name"]
         alter_pfad = Path(wahlpfad) / i["relative_path"]
         neuer_name =    i["suggested_new_name"]
 
-        if alter_pfad.exist():
+        if alter_pfad.exists():
+            logging.info("Pfad existiert, Datei wird bearbeitet.")
+            
             rename_file(datei_name, neuer_name, alter_pfad)
         
         else:
@@ -425,7 +427,7 @@ for i in ausgewählte_vorschlagen_komp:
         neuer_name =    i["suggested_new_name"]
         neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
 
-        if alter_pfad.exist() and not neuer_name == "":
+        if alter_pfad.exists() and not neuer_name == "":
 
             if alter_pfad.exists():
                 neuer_pfad.mkdir(parents=True, exist_ok=True)

@@ -59,6 +59,7 @@ INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
 INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
 WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
 WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es k3onnte keine Änderung getätigt werden. Es wird übersprungen
 WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
 WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
 WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
@@ -70,7 +71,375 @@ WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
 WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
 WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
 WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
-WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad exile Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenanntistiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_F
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Rename_File Funktion wurde aufgerufen und nennt nun den Namen um:
+INFO:root:Name wurde erfolgreich umbenannt
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025
+
+INFO:root:--------------------------------------------------
+Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025
+
+INFO:root:--------------------------------------------------
+Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-Die Datei Spesenabrechnung C Juniorinnen 29.11.2025.xlsx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Junniorinnen 29.11.2025\Spesenabrechnung C Juniorinnen 29.11.2025.xlsx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\Schiedsrichter\Abrechnungsbogen\Futsal\C Juniorinnen 29.11.2025-
 INFO:root:Programm endet
 INFO:root:----------------------------------------------------------------------------------------------------
 INFO:root:

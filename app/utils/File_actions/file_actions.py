@@ -23,15 +23,15 @@ def move_file(datei_name, alter_pfad, neuer_pfad):
         logging.error("Es gab einen Fehler bei dem versuch folgende Datei zu verschieben:\n" \
         f"Dateiname: {datei_name}")
         f"Fehlermeldung: {f}"
+    
+    logging.info("Dateu wurde erfolgreich verschoben")
 
 
 def rename_file(datei_name, neuer_name, alter_pfad):
 
     try:
-        neuer_name = alter_pfad.with_stem(neuer_name)
-
-        alter_pfad.rename(neuer_name)
-
+        neuer_pfad = alter_pfad.with_name(neuer_name)
+        alter_pfad.rename(neuer_pfad)
     except Exception as f:
         print("Es gab einen Fehler bei dem versuch folgende Datei zu verschieben:\n" \
         "-" * 50 + "\n " \
@@ -41,3 +41,5 @@ def rename_file(datei_name, neuer_name, alter_pfad):
         logging.error("Es gab einen Fehler bei dem versuch folgende Datei zu verschieben:\n" \
         f"Dateiname: {datei_name}")
         f"Fehlermeldung: {f}"
+    
+    logging.info("Dateiname wurde erfolgreich umbenannt")
