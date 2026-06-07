@@ -229,9 +229,15 @@ elif userstartwahl == "5":
 
     inhalt = "\n".join("".join(i) for i in inhalt)
     
-    #ki_response = dateiablage_vorschlag(inhalt) # Hier wurde erstmal eine statische reingemacht, um Zeit und Kosten für das Testen zu sparen
-    ki_response =  str(test_dateiablage_vorschlag(inhalt))
+    logging.info("Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet\n")
+    ki_response = dateiablage_vorschlag(inhalt) # Hier wurde erstmal eine statische reingemacht, um Zeit und Kosten für das Testen zu sparen
+    #ki_response =  str(test_dateiablage_vorschlag(inhalt))
 
+    if ki_response:
+        logging.info("KI Antwort erhalten und erfolgreich zurück bekommen\n")
+    else:
+        logging.error("Es ist keine Antwort zurück gekommen!\n" \
+        "Programm wird beendet!\n")
 
     anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_dir()]
 
@@ -374,16 +380,28 @@ for i in ausgewählte_vorschlagen_komp:
     if i["action_type"] == "move_suggestion" :
 
         datei_name = i["original_name"]
-
         alter_pfad = Path(wahlpfad) / i["relative_path"]
         neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
+
+        logging.info(
+            f"\n"
+            f"{'-' * 50}\n"
+            f"Aktuelles Objekt: {datei_name}\n"
+            f"Der aktuelle Pfad: {alter_pfad}\n"
+            f"Der neue geplante Pfad: {neuer_pfad}\n"
+            ""
+        )
 
         if alter_pfad.exists():
             neuer_pfad.mkdir(parents=True, exist_ok=True)
 
             move_file(datei_name, alter_pfad, neuer_pfad)
 
-        print("Die Dateie wurde erfolgreich verschoben!")
+        else:
+            logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
+            f"{datei_name}\n" \
+            f"{alter_pfad}" \
+            )
 
     elif i["action_type"] == "suggested_new_name":
 
@@ -393,8 +411,12 @@ for i in ausgewählte_vorschlagen_komp:
 
         if alter_pfad.exist():
             rename_file(datei_name, neuer_name, alter_pfad)
-
-        print("Die Datei wurde erfolgreich umbenannt!")
+        
+        else:
+            logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
+            f"{datei_name}\n" \
+            f"{alter_pfad}" \
+            )
             
     elif i["action_type"] == "rename_and_move_suggestion":
         
@@ -410,9 +432,15 @@ for i in ausgewählte_vorschlagen_komp:
             
                 move_file(datei_name, alter_pfad, neuer_pfad)
                 rename_file(datei_name, neuer_name, alter_pfad)
-
-
-
+        
+        else:
+            logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden, oder der neue Name ist leer:" \
+            f"{datei_name}\n" \
+            f"{alter_pfad}" \
+            f"{neuer_name}"
+            )
+    else:
+        logging.warning("Es konnte keine Änderung getätigt werden. Es wird übersprungen")
 
 #----Ab hier werden die ausgaben der Antworten getätigt.----
 

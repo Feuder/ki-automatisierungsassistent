@@ -16,3 +16,61 @@ INFO:root:
 INFO:root:----------------------------------------------------------------------------------------------------
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:

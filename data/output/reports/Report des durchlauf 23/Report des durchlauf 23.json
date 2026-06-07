@@ -1,0 +1,464 @@
+{
+"datei_vorschläge": [
+{
+"original_name": "Bewertungsbogen_Patenbegleitung von AB am 10.05.pdf",
+"relative_path": "Bewertungsbogen_Patenbegleitung von AB am 10.05.pdf",
+"file_type": "pdf",
+"suggested_category": "",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Keine Zielstruktur im Bericht erkennbar; Datei liegt auf oberster Ebene ohne eindeutige Alternativen."
+},
+{
+"original_name": "Kompetenzcheck_KL1.pdf",
+"relative_path": "Kompetenzcheck_KL1.pdf",
+"file_type": "pdf",
+"suggested_category": "",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Keine verlässliche Umbenennungs- oder Verschiebungsregel aus dem Bericht ableitbar."
+},
+{
+"original_name": "Patenbogen Ben Hamann.pdf",
+"relative_path": "Patenbogen Ben Hamann.pdf",
+"file_type": "pdf",
+"suggested_category": "",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Kein eindeutiger Zielordner erkennbar; keine offensichtlichen Fehler im Dateinamen."
+},
+{
+"original_name": "Spesenabrechnung Pokalspiel 1.FC Ohmstede - FC Rastede B-Jugend-Bezirkspokal.pdf",
+"relative_path": "Abrechnungsbogen\\Spesenabrechnung Pokalspiel 1.FC Ohmstede - FC Rastede B-Jugend-Bezirkspokal.pdf",
+"file_type": "pdf",
+"suggested_category": "Abrechnungsbogen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Datei liegt bereits im passenden Ordner 'Abrechnungsbogen'; keine eindeutige bessere Benennung ableitbar."
+},
+{
+"original_name": "Formular Feldverweis SV Brake 2 vs ESV Nordenham Finn Samland.docx",
+"relative_path": "Sonderberichte\\Formular Feldverweis SV Brake 2 vs ESV Nordenham Finn Samland.docx",
+"file_type": "docx",
+"suggested_category": "Sonderberichte",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Sinnvolle Standardisierung nicht sicher; Inhalt und Namen wirken konsistent zum Ordner 'Sonderberichte'."
+},
+{
+"original_name": "Formular Sonderbericht SV Brake 2 vs ESV Nordenham Berndt Eilers SV Brake.docx",
+"relative_path": "Sonderberichte\\Formular Sonderbericht SV Brake 2 vs ESV Nordenham Berndt Eilers SV Brake.docx",
+"file_type": "docx",
+"suggested_category": "Sonderberichte",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Bereits im korrekten Themenordner; kein eindeutiger Verbesserungsbedarf aus dem Bericht ersichtlich."
+},
+{
+"original_name": "Formular_Feldverweis Eintrach Oldenburg vs TVMetjendorf.docx",
+"relative_path": "Sonderberichte\\Formular_Feldverweis Eintrach Oldenburg vs TVMetjendorf.docx",
+"file_type": "docx",
+"suggested_category": "Sonderberichte",
+"suggested_folder": "",
+"suggested_new_name": "Formular_Feldverweis Eintracht Oldenburg vs TV Metjendorf.docx",
+"action_type": "rename_suggestion",
+"reason": "Offensichtliche Tippfehler/Konvention: 'Eintrach' → 'Eintracht', fehlendes Leerzeichen in 'TV Metjendorf'."
+},
+{
+"original_name": "Sonderbericht GVO4-Eversten 3.docx",
+"relative_path": "Sonderberichte\\Sonderbericht GVO4-Eversten 3.docx",
+"file_type": "docx",
+"suggested_category": "Sonderberichte",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Schreibweise des Vereins/Teams ist nicht eindeutig bewertbar; keine sichere Umbenennung möglich."
+},
+{
+"original_name": "Sonderbericht Spielabruch durch zu geringe Spileranzahl.docx",
+"relative_path": "Sonderberichte\\Sonderbericht Spielabruch durch zu geringe Spileranzahl.docx",
+"file_type": "docx",
+"suggested_category": "Sonderberichte",
+"suggested_folder": "",
+"suggested_new_name": "Sonderbericht Spielabbruch durch zu geringe Spieleranzahl.docx",
+"action_type": "rename_suggestion",
+"reason": "Offensichtliche Rechtschreibfehler: 'Spielabruch' → 'Spielabbruch', 'Spileranzahl' → 'Spieleranzahl'."
+},
+{
+"original_name": "Sonderbericht Spielabruch FC-Rastede - SV Werder Bremen.docx",
+"relative_path": "Sonderberichte\\Sonderbericht Spielabruch FC-Rastede - SV Werder Bremen.docx",
+"file_type": "docx",
+"suggested_category": "Sonderberichte",
+"suggested_folder": "",
+"suggested_new_name": "Sonderbericht Spielabbruch FC-Rastede - SV Werder Bremen.docx",
+"action_type": "rename_suggestion",
+"reason": "Offensichtlicher Tippfehler: 'Spielabruch' → 'Spielabbruch'."
+},
+{
+"original_name": "Sonderbericht Spielabruch wegen Nebel.docx",
+"relative_path": "Sonderberichte\\Sonderbericht Spielabruch wegen Nebel.docx",
+"file_type": "docx",
+"suggested_category": "Sonderberichte",
+"suggested_folder": "",
+"suggested_new_name": "Sonderbericht Spielabbruch wegen Nebel.docx",
+"action_type": "rename_suggestion",
+"reason": "Offensichtlicher Tippfehler: 'Spielabruch' → 'Spielabbruch'."
+},
+{
+"original_name": "01.04-30.7 Report.pdf",
+"relative_path": "VFL Abrechnungen\\01.04-30.7 Report.pdf",
+"file_type": "pdf",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Datei liegt im passenden Ordner; kein zweifelsfreier besserer Name aus dem Bericht ableitbar."
+},
+{
+"original_name": "Angerechnete Spiele.pdf",
+"relative_path": "VFL Abrechnungen\\Angerechnete Spiele.pdf",
+"file_type": "pdf",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Ordnerzuordnung ist schlüssig; keine sichere Umbenennung ersichtlich."
+},
+{
+"original_name": "Auszahlungsbogen Q4.pdf",
+"relative_path": "VFL Abrechnungen\\Auszahlungsbogen Q4.pdf",
+"file_type": "pdf",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Benennung und Ordner passen zusammen; keine eindeutige Verbesserung ableitbar."
+},
+{
+"original_name": "Auszahlung_Schiedsrichter_181104 (2).pdf",
+"relative_path": "VFL Abrechnungen\\Auszahlung_Schiedsrichter_181104 (2).pdf",
+"file_type": "pdf",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Kein sicher besserer Name oder Zielordner aus dem Bericht ableitbar."
+},
+{
+"original_name": "Q1;25 Spiele.pdf",
+"relative_path": "VFL Abrechnungen\\Q1;25 Spiele.pdf",
+"file_type": "pdf",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Zeichenwahl im Dateinamen ist unüblich, aber keine eindeutige Korrektur aus dem Bericht gesichert."
+},
+{
+"original_name": "Q2 2025.pdf",
+"relative_path": "VFL Abrechnungen\\Q2 2025.pdf",
+"file_type": "pdf",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Ordner- und Dateiname sind stimmig; keine sichere Umbenennung notwendig."
+},
+{
+"original_name": "Q3 2024.pdf",
+"relative_path": "VFL Abrechnungen\\Q3 2024.pdf",
+"file_type": "pdf",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Benennung passt zum Ordner; keine eindeutige Verbesserung ableitbar."
+},
+{
+"original_name": "report(1).xlsx",
+"relative_path": "VFL Abrechnungen\\report(1).xlsx",
+"file_type": "xlsx",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Möglicher Platzhaltername, aber keine sichere alternative Benennung aus dem Bericht ableitbar."
+},
+{
+"original_name": "VFL Edewecht Auzsahlungsbogen Q1 25.pdf",
+"relative_path": "VFL Abrechnungen\\VFL Edewecht Auzsahlungsbogen Q1 25.pdf",
+"file_type": "pdf",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "VFL Edewecht Auszahlungsbogen Q1 25.pdf",
+"action_type": "rename_suggestion",
+"reason": "Offensichtlicher Tippfehler: 'Auzsahlungsbogen' → 'Auszahlungsbogen'."
+},
+{
+"original_name": "VFL Edewecht Auzsahlungsbogen(01.04-30.06).pdf",
+"relative_path": "VFL Abrechnungen\\VFL Edewecht Auzsahlungsbogen(01.04-30.06).pdf",
+"file_type": "pdf",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "VFL Edewecht Auszahlungsbogen(01.04-30.06).pdf",
+"action_type": "rename_suggestion",
+"reason": "Offensichtlicher Tippfehler: 'Auzsahlungsbogen' → 'Auszahlungsbogen'."
+},
+{
+"original_name": "VFL Edewecht Auzsahlungsbogen(01.7-30.9).pdf",
+"relative_path": "VFL Abrechnungen\\VFL Edewecht Auzsahlungsbogen(01.7-30.9).pdf",
+"file_type": "pdf",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "VFL Edewecht Auszahlungsbogen(01.7-30.9).pdf",
+"action_type": "rename_suggestion",
+"reason": "Offensichtlicher Tippfehler: 'Auzsahlungsbogen' → 'Auszahlungsbogen'."
+},
+{
+"original_name": "VFL Edewecht Auzsahlungsbogen(03.09-30.06).pdf",
+"relative_path": "VFL Abrechnungen\\VFL Edewecht Auzsahlungsbogen(03.09-30.06).pdf",
+"file_type": "pdf",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "VFL Edewecht Auszahlungsbogen(03.09-30.06).pdf",
+"action_type": "rename_suggestion",
+"reason": "Offensichtlicher Tippfehler: 'Auzsahlungsbogen' → 'Auszahlungsbogen'."
+},
+{
+"original_name": "VFL Edewecht Auzsahlungsbogen.docx",
+"relative_path": "VFL Abrechnungen\\VFL Edewecht Auzsahlungsbogen.docx",
+"file_type": "docx",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "VFL Edewecht Auszahlungsbogen.docx",
+"action_type": "rename_suggestion",
+"reason": "Offensichtlicher Tippfehler: 'Auzsahlungsbogen' → 'Auszahlungsbogen'."
+},
+{
+"original_name": "VFL Edewecht Auzsahlungsbogen.pdf",
+"relative_path": "VFL Abrechnungen\\VFL Edewecht Auzsahlungsbogen.pdf",
+"file_type": "pdf",
+"suggested_category": "VFL Abrechnungen",
+"suggested_folder": "",
+"suggested_new_name": "VFL Edewecht Auszahlungsbogen.pdf",
+"action_type": "rename_suggestion",
+"reason": "Offensichtlicher Tippfehler: 'Auzsahlungsbogen' → 'Auszahlungsbogen'."
+},
+{
+"original_name": "pdf24_zusammengefügt.pdf",
+"relative_path": "DFB Schirifragen\\KLP 26\\pdf24_zusammengefügt.pdf",
+"file_type": "pdf",
+"suggested_category": "DFB Schirifragen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Allgemeiner Sammelname, jedoch keine sichere alternative Bezeichnung aus dem Bericht ableitbar."
+},
+{
+"original_name": "Schiri-Zeitung 01-26.pdf",
+"relative_path": "DFB Schirifragen\\KLP 26\\Schiri-Zeitung 01-26.pdf",
+"file_type": "pdf",
+"suggested_category": "DFB Schirifragen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Konsistente Benennung innerhalb des Ordners; keine sichere Verbesserung ersichtlich."
+},
+{
+"original_name": "Schiri-Zeitung 02-26.pdf",
+"relative_path": "DFB Schirifragen\\KLP 26\\Schiri-Zeitung 02-26.pdf",
+"file_type": "pdf",
+"suggested_category": "DFB Schirifragen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Benennung passt zum Serienmuster; kein Änderungsbedarf aus dem Bericht."
+},
+{
+"original_name": "Schiri-Zeitung 03-25.pdf",
+"relative_path": "DFB Schirifragen\\KLP 26\\Schiri-Zeitung 03-25.pdf",
+"file_type": "pdf",
+"suggested_category": "DFB Schirifragen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Serienkonforme Benennung; keine eindeutige Alternative angegeben."
+},
+{
+"original_name": "Schiri-Zeitung 04_25.pdf",
+"relative_path": "DFB Schirifragen\\KLP 26\\Schiri-Zeitung 04_25.pdf",
+"file_type": "pdf",
+"suggested_category": "DFB Schirifragen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Benennung konsistent zum Ordner; Umbenennung nicht zwingend und nicht sicher ableitbar."
+},
+{
+"original_name": "Schiri-Zeitung 05-25.pdf",
+"relative_path": "DFB Schirifragen\\KLP 26\\Schiri-Zeitung 05-25.pdf",
+"file_type": "pdf",
+"suggested_category": "DFB Schirifragen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Reihe ist erkennbar; kein sicher besseres Schema aus dem Bericht."
+},
+{
+"original_name": "Schiri-Zeitung 06_25.pdf",
+"relative_path": "DFB Schirifragen\\KLP 26\\Schiri-Zeitung 06_25.pdf",
+"file_type": "pdf",
+"suggested_category": "DFB Schirifragen",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Serienname stimmig; keine eindeutige Umbennenungsregel ersichtlich."
+},
+{
+"original_name": "Anmeldung Norhalne-Cup 2025.pdf",
+"relative_path": "Anmelde Formulare\\Dänemark Cup\\Anmeldung Norhalne-Cup 2025.pdf",
+"file_type": "pdf",
+"suggested_category": "Anmelde Formulare",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Benennung und Ordner passen; kein sicherer Verbesserungsbedarf."
+},
+{
+"original_name": "Anmeldung Norhalne-Cup 2026 ausgefüllt.docx",
+"relative_path": "Anmelde Formulare\\Dänemark Cup\\Anmeldung Norhalne-Cup 2026 ausgefüllt.docx",
+"file_type": "docx",
+"suggested_category": "Anmelde Formulare",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Aussagekräftiger Name im passenden Ordner; keine eindeutige Alternative."
+},
+{
+"original_name": "Anmeldung Norhalne-Cup 2026 ausgefüllt.pdf",
+"relative_path": "Anmelde Formulare\\Dänemark Cup\\Anmeldung Norhalne-Cup 2026 ausgefüllt.pdf",
+"file_type": "pdf",
+"suggested_category": "Anmelde Formulare",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "PDF-Version der Anmeldung im korrekten Ordner; kein Änderungsbedarf ableitbar."
+},
+{
+"original_name": "Anmeldung Norhalne-Cup 2026.pdf",
+"relative_path": "Anmelde Formulare\\Dänemark Cup\\Anmeldung Norhalne-Cup 2026.pdf",
+"file_type": "pdf",
+"suggested_category": "Anmelde Formulare",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Passende Benennung zum Inhalt und Ordner."
+},
+{
+"original_name": "Anmeldung_Norhalne_2025.pdf",
+"relative_path": "Anmelde Formulare\\Dänemark Cup\\Anmeldung_Norhalne_2025.pdf",
+"file_type": "pdf",
+"suggested_category": "Anmelde Formulare",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Eindeutig und im richtigen Ordner; keine sichere Verbesserung."
+},
+{
+"original_name": "Anmeldeformular Holland-Cup 2025.pdf",
+"relative_path": "Anmelde Formulare\\Holland Cup\\Anmeldeformular Holland-Cup 2025.pdf",
+"file_type": "pdf",
+"suggested_category": "Anmelde Formulare",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Name stimmt mit Ordner und Inhalt überein; kein Änderungsbedarf."
+},
+{
+"original_name": "Anmeldung Holland-Cup 2026 ausgefüllt.docx",
+"relative_path": "Anmelde Formulare\\Holland Cup\\Anmeldung Holland-Cup 2026 ausgefüllt.docx",
+"file_type": "docx",
+"suggested_category": "Anmelde Formulare",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Sinnvolle, aussagekräftige Benennung im passenden Ordner."
+},
+{
+"original_name": "Anmeldung Holland-Cup 2026 ausgefüllt.pdf",
+"relative_path": "Anmelde Formulare\\Holland Cup\\Anmeldung Holland-Cup 2026 ausgefüllt.pdf",
+"file_type": "pdf",
+"suggested_category": "Anmelde Formulare",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "PDF im passenden Themenordner; keine eindeutige bessere Benennung."
+},
+{
+"original_name": "Anmeldung Holland-Cup 2026.pdf",
+"relative_path": "Anmelde Formulare\\Holland Cup\\Anmeldung Holland-Cup 2026.pdf",
+"file_type": "pdf",
+"suggested_category": "Anmelde Formulare",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Benennung ist konsistent; kein Änderungsbedarf aus dem Bericht."
+},
+{
+"original_name": "Anmeldung_Holland_2025.pdf",
+"relative_path": "Anmelde Formulare\\Holland Cup\\Anmeldung_Holland_2025.pdf",
+"file_type": "pdf",
+"suggested_category": "Anmelde Formulare",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Ordner und Dateiname passen zusammen; keine sichere Verbesserung ersichtlich."
+},
+{
+"original_name": "Fustal abrechnungsbogen Vorlage - leer.xlsx",
+"relative_path": "Abrechnungsbogen\\Futsal\\Fustal abrechnungsbogen Vorlage - leer.xlsx",
+"file_type": "xlsx",
+"suggested_category": "Abrechnungsbogen",
+"suggested_folder": "",
+"suggested_new_name": "Futsal abrechnungsbogen Vorlage - leer.xlsx",
+"action_type": "rename_suggestion",
+"reason": "Offensichtlicher Tippfehler im Sportbegriff: 'Fustal' → 'Futsal'."
+},
+{
+"original_name": "Fustal abrechnungsbogen Vorlage.xlsx",
+"relative_path": "Abrechnungsbogen\\Futsal\\Fustal abrechnungsbogen Vorlage.xlsx",
+"file_type": "xlsx",
+"suggested_category": "Abrechnungsbogen",
+"suggested_folder": "",
+"suggested_new_name": "Futsal abrechnungsbogen Vorlage.xlsx",
+"action_type": "rename_suggestion",
+"reason": "Offensichtlicher Tippfehler im Sportbegriff: 'Fustal' → 'Futsal'."
+},
+{
+"original_name": "Spesenabrechnung C Junniorinnen 29.11.202(Keine Uhrzeit).xlsx",
+"relative_path": "Abrechnungsbogen\\Futsal\\C Junniorinnen 29.11.2025\\Spesenabrechnung C Junniorinnen 29.11.202(Keine Uhrzeit).xlsx",
+"file_type": "xlsx",
+"suggested_category": "Abrechnungsbogen",
+"suggested_folder": "",
+"suggested_new_name": "Spesenabrechnung C Juniorinnen 29.11.2025 (Keine Uhrzeit).xlsx",
+"action_type": "rename_suggestion",
+"reason": "Offensichtliche Korrekturen: 'Junniorinnen' → 'Juniorinnen' und Jahr auf 2025 gemäß Ordnername vervollständigt."
+},
+{
+"original_name": "Spesenabrechnung C Junniorinnen 29.11.2025.xlsx",
+"relative_path": "Abrechnungsbogen\\Futsal\\C Junniorinnen 29.11.2025\\Spesenabrechnung C Junniorinnen 29.11.2025.xlsx",
+"file_type": "xlsx",
+"suggested_category": "Abrechnungsbogen",
+"suggested_folder": "",
+"suggested_new_name": "Spesenabrechnung C Juniorinnen 29.11.2025.xlsx",
+"action_type": "rename_suggestion",
+"reason": "Offensichtlicher Tippfehler: 'Junniorinnen' → 'Juniorinnen'."
+}
+]
+}
