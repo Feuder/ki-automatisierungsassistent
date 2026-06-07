@@ -398,9 +398,11 @@ for i in ausgewählte_vorschlagen_komp:
             move_file(datei_name, alter_pfad, neuer_pfad)
 
         else:
-            logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
+            logging.warning("" \
+            "Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
             f"{datei_name}\n" \
             f"{alter_pfad}" \
+            ""
             )
 
     elif i["action_type"] == "rename_suggestion":
@@ -411,13 +413,13 @@ for i in ausgewählte_vorschlagen_komp:
 
         if alter_pfad.exists():
             logging.info("Pfad existiert, Datei wird bearbeitet.")
-            
+
             rename_file(datei_name, neuer_name, alter_pfad)
         
         else:
             logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
             f"{datei_name}\n" \
-            f"{alter_pfad}" \
+            f"{alter_pfad}\n" \
             )
             
     elif i["action_type"] == "rename_and_move_suggestion":
@@ -427,13 +429,14 @@ for i in ausgewählte_vorschlagen_komp:
         neuer_name =    i["suggested_new_name"]
         neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
 
-        if alter_pfad.exists() and not neuer_name == "":
+        if alter_pfad.exists() and neuer_name != "":
 
-            if alter_pfad.exists():
-                neuer_pfad.mkdir(parents=True, exist_ok=True)
-            
-                move_file(datei_name, alter_pfad, neuer_pfad)
-                rename_file(datei_name, neuer_name, alter_pfad)
+            neuer_pfad.mkdir(parents=True, exist_ok=True)
+
+            move_file(datei_name, alter_pfad, neuer_pfad)
+
+            verschobener_pfad = neuer_pfad / datei_name
+            rename_file(datei_name, neuer_name, verschobener_pfad)
         
         else:
             logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden, oder der neue Name ist leer:" \

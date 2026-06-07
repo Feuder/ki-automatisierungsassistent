@@ -1,0 +1,131 @@
+## Technischer Bericht:
+----------------Ordnerstruktur---------------
+
+Angegebener Pfad: C:\Users\Caspa\Downloads\KI_Dateivorschlaege_Testpaket
+Unterordner werden mit einbezogen:
+
+Tiefe der Unterordner: 5
+Anzahl der Dateien: 12## KI Ausgabe:{
+"datei_vorschläge": [
+{
+"original_name": "erwartete_ausgabe_beispiel.json",
+"relative_path": "KI_Dateivorschlaege_Testpaket\\erwartete_ausgabe_beispiel.json",
+"file_type": "json",
+"suggested_category": "",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Datei gehört zum Testpaket im Hauptverzeichnis; keine eindeutige Umsortierung aus dem Bericht ableitbar."
+},
+{
+"original_name": "ki_input_komplett.txt",
+"relative_path": "KI_Dateivorschlaege_Testpaket\\ki_input_komplett.txt",
+"file_type": "txt",
+"suggested_category": "",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Eingabedatei des Testpakets im Hauptverzeichnis; kein anderer Zielordner aus dem Bericht ersichtlich."
+},
+{
+"original_name": "ordnerbericht_testdaten.txt",
+"relative_path": "KI_Dateivorschlaege_Testpaket\\ordnerbericht_testdaten.txt",
+"file_type": "txt",
+"suggested_category": "",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Testdaten-Ordnerbericht im Hauptverzeichnis; keine eindeutige alternative Ablage ableitbar."
+},
+{
+"original_name": "prompt_dateivorschlaege.txt",
+"relative_path": "KI_Dateivorschlaege_Testpaket\\prompt_dateivorschlaege.txt",
+"file_type": "txt",
+"suggested_category": "",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Prompt-Datei des Testpakets im Hauptverzeichnis; keine Verschiebung aus dem Bericht ableitbar."
+},
+{
+"original_name": "README.md",
+"relative_path": "KI_Dateivorschlaege_Testpaket\\README.md",
+"file_type": "md",
+"suggested_category": "Dokumentation",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "README ist Projektdokumentation und liegt plausibel im Hauptverzeichnis."
+},
+{
+"original_name": "Projektbeschreibung.docx",
+"relative_path": "KI_Dateivorschlaege_Testpaket\\test_ordner\\Dokumentation\\Projektbeschreibung.docx",
+"file_type": "docx",
+"suggested_category": "Dokumentation",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Dateiname und Speicherort im Ordner 'Dokumentation' sind konsistent."
+},
+{
+"original_name": "Notiz.txt",
+"relative_path": "KI_Dateivorschlaege_Testpaket\\test_ordner\\Eingang\\Notiz.txt",
+"file_type": "txt",
+"suggested_category": "",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "unclear",
+"reason": "Allgemeine Notiz im Ordner 'Eingang'; kein sicherer Zielordner oder neuer Name aus dem Bericht ableitbar."
+},
+{
+"original_name": "Rechnung_Mai_2026.pdf",
+"relative_path": "KI_Dateivorschlaege_Testpaket\\test_ordner\\Eingang\\Rechnung_Mai_2026.pdf",
+"file_type": "pdf",
+"suggested_category": "Rechnung",
+"suggested_folder": "KI_Dateivorschlaege_Testpaket\\test_ordner\\Rechnungen\\2026",
+"suggested_new_name": "",
+"action_type": "move_suggestion",
+"reason": "Es existiert der Zielordner 'Rechnungen\\2026'; Dateiname weist eindeutig auf eine Rechnung von 2026 hin."
+},
+{
+"original_name": "scan0001.pdf",
+"relative_path": "KI_Dateivorschlaege_Testpaket\\test_ordner\\Eingang\\scan0001.pdf",
+"file_type": "pdf",
+"suggested_category": "",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "unclear",
+"reason": "Generischer Scan im Ordner 'Eingang'; Inhalt und passender Zielordner nicht zuverlässig bestimmbar."
+},
+{
+"original_name": ".gitkeep",
+"relative_path": "KI_Dateivorschlaege_Testpaket\\test_ordner\\Vertraege\\Wartung\\.gitkeep",
+"file_type": "unknown",
+"suggested_category": "",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Platzhalterdatei für leeren Ordner; liegt bereits im vorgesehenen Strukturordner."
+},
+{
+"original_name": ".gitkeep",
+"relative_path": "KI_Dateivorschlaege_Testpaket\\test_ordner\\Rechnungen\\2026\\.gitkeep",
+"file_type": "unknown",
+"suggested_category": "",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Platzhalterdatei zur Ordnerstruktur 'Rechnungen\\2026'; keine Änderung erforderlich."
+},
+{
+"original_name": "IMG_20260601.png",
+"relative_path": "KI_Dateivorschlaege_Testpaket\\test_ordner\\Bilder\\Baustelle\\IMG_20260601.png",
+"file_type": "png",
+"suggested_category": "Bild",
+"suggested_folder": "",
+"suggested_new_name": "",
+"action_type": "keep",
+"reason": "Bilddatei liegt passend im Ordner 'Bilder\\Baustelle'; keine Umbenennung oder Verschiebung nötig."
+}
+]
+}
