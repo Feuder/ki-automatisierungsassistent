@@ -4,3 +4,15 @@ INFO:root:Ausgabe wurde geprüft, oder erstellt
 INFO:root:----------------------------------------------------------------------------------------------------
 INFO:root:Programm startet
 INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+WARNING:root:Es werden nicht alle existierenden Unterordner mit einbezogen!
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
