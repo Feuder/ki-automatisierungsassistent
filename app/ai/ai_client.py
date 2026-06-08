@@ -160,7 +160,6 @@ def dateiablage_vorschlag(inhalt):
                         model=get_model_env(),
                         instructions=prompt,
                         reasoning={"effort": "low"},
-                        temperature=0.0,
                         input=original_inhalt
                     )
 
@@ -170,7 +169,6 @@ def dateiablage_vorschlag(inhalt):
                         model=get_fehler_moodel(),
                         instructions=prompt,
                         reasoning={"effort": "medium"},
-                        temperature=0.0,
                         input=[
                             {
                                 "role": "user",

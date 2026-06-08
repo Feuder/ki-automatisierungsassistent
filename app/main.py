@@ -359,93 +359,118 @@ for eintrag in ausgewählte_vorschlagen_komp:
             
     print("-" * 50)
 
-
 print("Sollen die Vorschäge ausgeführt werden? j/n")
 
+
 while True:
-    phase5_auswahl = input().strip()
 
-    if  phase5_auswahl == "j":
-        logging.info("Die Vorgeschlagenen Vorschläge sollen umgesetzt werden")
-        break
+    while True:
+        phase5_auswahl = input().strip()
 
-    elif phase5_auswahl == "n":
-        logging.info("Dateivorschläge sollen nicht ausgeführt werden. Programm wird beendet")
-        raise SystemExit
-    
-    else:
-        print("Gebe nur j/n ein!")
+        if  phase5_auswahl == "j":
+            logging.info("Die Vorgeschlagenen Vorschläge sollen umgesetzt werden")
+            break
 
-for i in ausgewählte_vorschlagen_komp:
-    if i["action_type"] == "move_suggestion":
-
-        datei_name = i["original_name"]
-        alter_pfad = Path(wahlpfad) / i["relative_path"]
-        neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
-
-        logging.info(
-            f"\n"
-            f"{'-' * 50}\n"
-            f"Aktuelles Objekt: {datei_name}\n"
-            f"Der aktuelle Pfad: {alter_pfad}\n"
-            f"Der neue geplante Pfad: {neuer_pfad}\n"
-            ""
-        )
-
-        if alter_pfad.exists():
-            neuer_pfad.mkdir(parents=True, exist_ok=True)
-
-            move_file(datei_name, alter_pfad, neuer_pfad)
-
-        else:
-            logging.warning("" \
-            "Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
-            f"{datei_name}\n" \
-            f"{alter_pfad}" \
-            ""
-            )
-
-    elif i["action_type"] == "rename_suggestion":
-
-        datei_name = i["original_name"]
-        alter_pfad = Path(wahlpfad) / i["relative_path"]
-        neuer_name =    i["suggested_new_name"]
-
-        if alter_pfad.exists():
-            logging.info("Pfad existiert, Datei wird bearbeitet.")
-
-            rename_file(datei_name, neuer_name, alter_pfad)
+        elif phase5_auswahl == "n":
+            logging.info("Dateivorschläge sollen nicht ausgeführt werden. Programm wird beendet")
+            raise SystemExit
         
         else:
-            logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
-            f"{datei_name}\n" \
-            f"{alter_pfad}\n" \
-            )
+            print("Gebe nur j/n ein!")
+
+    for i in ausgewählte_vorschlagen_komp:
+
+        if i["erledigt"] == "":
+
+            if i["action_type"] == "move_suggestion":
+
+                datei_name = i["original_name"]
+                alter_pfad = Path(wahlpfad) / i["relative_path"]
+                neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
+
+                logging.info(
+                    f"\n"
+                    f"{'-' * 50}\n"
+                    f"Aktuelles Objekt: {datei_name}\n"
+                    f"Der aktuelle Pfad: {alter_pfad}\n"
+                    f"Der neue geplante Pfad: {neuer_pfad}\n"
+                    ""
+                )
+
+                if alter_pfad.exists():
+                    neuer_pfad.mkdir(parents=True, exist_ok=True)
+
+                    move_file(datei_name, alter_pfad, neuer_pfad)
+
+                    i["erledigt"] = "True"
+
+                else:
+                    logging.warning("" \
+                    "Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
+                    f"{datei_name}\n" \
+                    f"{alter_pfad}" \
+                    ""
+                    )
+
+            elif i["action_type"] == "rename_suggestion":
+
+                datei_name = i["original_name"]
+                alter_pfad = Path(wahlpfad) / i["relative_path"]
+                neuer_name =    i["suggested_new_name"]
+
+                if alter_pfad.exists():
+                    logging.info("Pfad existiert, Datei wird bearbeitet.")
+
+                    rename_file(datei_name, neuer_name, alter_pfad)
+
+                    i["erledigt"] = "True"
+                
+                else:
+                    logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
+                    f"{datei_name}\n" \
+                    f"{alter_pfad}\n" \
+                    )
+                    
+            elif i["action_type"] == "rename_and_move_suggestion":
+                
+                datei_name = i["original_name"]
+                alter_pfad = Path(wahlpfad) / i["relative_path"]
+                neuer_name =    i["suggested_new_name"]
+                neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
+
+                if alter_pfad.exists() and neuer_name != "":
+
+                    neuer_pfad.mkdir(parents=True, exist_ok=True)
+
+                    move_file(datei_name, alter_pfad, neuer_pfad)
+
+                    verschobener_pfad = neuer_pfad / datei_name
+                    rename_file(datei_name, neuer_name, verschobener_pfad)
+
+                    i["erledigt"] = "True"
+                
+                else:
+                    logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden, oder der neue Name ist leer:" \
+                    f"{datei_name}\n" \
+                    f"{alter_pfad}" \
+                    f"{neuer_name}"
+                    )
+            else:
+                logging.warning("Es konnte keine Änderung getätigt werden. Es wird übersprungen")
             
-    elif i["action_type"] == "rename_and_move_suggestion":
+            print("Sollen auch noch andere Änderungen getätigt werden?")
+            neu_input = input().strip()
+
+            if neu_input == "j":
+
+
+                print("Die anderen Änderungen werden angezeigt:")
+            elif neu_input == "n":
+                print("Änderungen wurden getätigt. Programm wird nun beendet")
+                break
+            else:
+                print("Gebe nur j/n an!")
         
-        datei_name = i["original_name"]
-        alter_pfad = Path(wahlpfad) / i["relative_path"]
-        neuer_name =    i["suggested_new_name"]
-        neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
-
-        if alter_pfad.exists() and neuer_name != "":
-
-            neuer_pfad.mkdir(parents=True, exist_ok=True)
-
-            move_file(datei_name, alter_pfad, neuer_pfad)
-
-            verschobener_pfad = neuer_pfad / datei_name
-            rename_file(datei_name, neuer_name, verschobener_pfad)
-        
-        else:
-            logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden, oder der neue Name ist leer:" \
-            f"{datei_name}\n" \
-            f"{alter_pfad}" \
-            f"{neuer_name}"
-            )
-    else:
-        logging.warning("Es konnte keine Änderung getätigt werden. Es wird übersprungen")
 
 #----Ab hier werden die ausgaben der Antworten getätigt.----
 

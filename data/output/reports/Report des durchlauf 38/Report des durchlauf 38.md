@@ -1,0 +1,601 @@
+## Technischer Bericht:
+----------------Ordnerstruktur---------------
+
+Angegebener Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3
+Unterordner werden mit einbezogen:
+
+Tiefe der Unterordner: 3
+Anzahl der Dateien: 59## KI Ausgabe:{
+  "datei_vorschläge": [
+    {
+      "original_name": "Alte_Notiz_ohne_Zusammenhang.txt",
+      "relative_path": "Alte_Notiz_ohne_Zusammenhang.txt",
+      "file_type": "txt",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": "Dateiname und Speicherort im Root geben keinen eindeutigen Zweck oder Zielordner vor."
+    },
+    {
+      "original_name": "Archivrest_2024.old",
+      "relative_path": "Archivrest_2024.old",
+      "file_type": "old",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": "Alte .old-Datei im Root ohne Kontext; Zielordner oder Benennung nicht sicher ableitbar."
+    },
+    {
+      "original_name": "Bild_ohne_Kontext.png",
+      "relative_path": "Bild_ohne_Kontext.png",
+      "file_type": "png",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": "Bild im Root ohne Bezug; passender Zielordner (z. B. Bilder) nicht sicher bestimmbar."
+    },
+    {
+      "original_name": "Download_Unbekannt_2026.dat",
+      "relative_path": "Download_Unbekannt_2026.dat",
+      "file_type": "dat",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": ".dat-Datei im Root mit unklarem Zweck; kein sicherer Zielordner ableitbar."
+    },
+    {
+      "original_name": "Kopie_von_Datei.alt",
+      "relative_path": "Kopie_von_Datei.alt",
+      "file_type": "alt",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": ".alt-Datei im Root ohne Kontext; weder Inhalt noch Kategorie sicher erkennbar."
+    },
+    {
+      "original_name": "Liesmich_Altbestand.md",
+      "relative_path": "Liesmich_Altbestand.md",
+      "file_type": "md",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": "README-ähnliche Datei im Root; zugehöriges Projekt oder Ordner nicht sicher erkennbar."
+    },
+    {
+      "original_name": "Privater_Merkzettel.txt",
+      "relative_path": "Privater_Merkzettel.txt",
+      "file_type": "txt",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": "Persönliche Notiz im Root ohne organisatorischen Kontext; Zielablage unklar."
+    },
+    {
+      "original_name": "Temp_Import_ohne_Bezug.csv",
+      "relative_path": "Temp_Import_ohne_Bezug.csv",
+      "file_type": "csv",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": "Temporärer CSV-Import im Root ohne Systembezug; kein sicherer Zielordner."
+    },
+    {
+      "original_name": "Testdatei_Leerstand.bin",
+      "relative_path": "Testdatei_Leerstand.bin",
+      "file_type": "bin",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": "Testdatei im Root ohne weiteren Kontext; Nutzung und Zielstruktur unklar."
+    },
+    {
+      "original_name": "Unbenannte_Ablage_01.log",
+      "relative_path": "Unbenannte_Ablage_01.log",
+      "file_type": "log",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": "Logdatei im Root ohne Bezug zu einem Systemordner; Zuordnung nicht gesichert."
+    },
+    {
+      "original_name": "Unklare_Sammlung.zip",
+      "relative_path": "Unklare_Sammlung.zip",
+      "file_type": "zip",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": "ZIP-Archiv im Root mit unklarem Inhalt; kein sicherer Zielordner bestimmbar."
+    },
+    {
+      "original_name": "USV.txt.txt",
+      "relative_path": "USV.txt.txt",
+      "file_type": "txt",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "USV.txt",
+      "action_type": "rename_suggestion",
+      "reason": "Doppelte Dateiendung .txt.txt erkennbar; eindeutige Korrektur auf .txt möglich."
+    },
+    {
+      "original_name": "Zwischenablage_Unsortiert.tmp",
+      "relative_path": "Zwischenablage_Unsortiert.tmp",
+      "file_type": "tmp",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "unclear",
+      "reason": "Temporäre Datei im Root ohne Prozessbezug; kein sicherer Zielordner ableitbar."
+    },
+    {
+      "original_name": "bild1.png",
+      "relative_path": "01_Eingang\\bild1.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bilddatei im Ordner 01_Eingang; kein sicherer endgültiger Zielordner benannt."
+    },
+    {
+      "original_name": "code.txt",
+      "relative_path": "01_Eingang\\code.txt",
+      "file_type": "txt",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Textdatei im Ordner 01_Eingang; Verwendungszweck nicht eindeutig, daher unverändert belassen."
+    },
+    {
+      "original_name": "datei_neu.pdf",
+      "relative_path": "01_Eingang\\datei_neu.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "PDF im Ordner 01_Eingang ohne klaren Zielbereich; keine sichere Umbenennung/Verschiebung möglich."
+    },
+    {
+      "original_name": "export.csv",
+      "relative_path": "01_Eingang\\export.csv",
+      "file_type": "csv",
+      "suggested_category": "Export",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "CSV-Export im Eingangsordner; endgültiger Export-Zielpfad nicht sicher ableitbar."
+    },
+    {
+      "original_name": "ohne_kontext.bin",
+      "relative_path": "01_Eingang\\ohne_kontext.bin",
+      "file_type": "bin",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Binärdatei im Ordner 01_Eingang ohne weiterführende Informationen."
+    },
+    {
+      "original_name": "scan_001.pdf",
+      "relative_path": "01_Eingang\\scan_001.pdf",
+      "file_type": "pdf",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Allgemeiner Scan im Eingangsordner; Zielkategorie nicht sicher bestimmbar."
+    },
+    {
+      "original_name": "ablage.tmp",
+      "relative_path": "07_Sonstiges\\ablage.tmp",
+      "file_type": "tmp",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Temporäre Datei in 07_Sonstiges; keine sichere Zuordnung zu einem anderen Bereich."
+    },
+    {
+      "original_name": "rechnung_scan.pdf",
+      "relative_path": "07_Sonstiges\\rechnung_scan.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Rechnung",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Dateiname deutet auf Rechnung hin, aber konkreter Jahresordner nicht sicher; daher unverändert."
+    },
+    {
+      "original_name": "Unbekannte_Datei_001.dat",
+      "relative_path": "07_Sonstiges\\Unbekannte_Datei_001.dat",
+      "file_type": "dat",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Unklare .dat-Datei unter 07_Sonstiges; ohne weitere Angaben keine sichere Aktion."
+    },
+    {
+      "original_name": "vertrag_alt.pdf",
+      "relative_path": "07_Sonstiges\\vertrag_alt.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Vertrag",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Dateiname weist auf Vertrag hin, aber Zielunterordner (z. B. Lieferanten/Wartung/Jahr) nicht sicher."
+    },
+    {
+      "original_name": "bericht_neu.pdf",
+      "relative_path": "12_Berichte\\Monatsberichte\\bericht_neu.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Liegt bereits unter 12_Berichte/Monatsberichte; Struktur wirkt korrekt."
+    },
+    {
+      "original_name": "Monatsbericht_Mai_2026.pdf",
+      "relative_path": "12_Berichte\\Monatsberichte\\Monatsbericht_Mai_2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Eindeutig benannter Monatsbericht im passenden Ordner."
+    },
+    {
+      "original_name": "doku_neu.md",
+      "relative_path": "10_Archiv\\Altbestand\\doku_neu.md",
+      "file_type": "md",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Dokumentationsdatei liegt im Archiv/Altbestand; passend zur Struktur."
+    },
+    {
+      "original_name": "notiz_alt.txt",
+      "relative_path": "10_Archiv\\Altbestand\\notiz_alt.txt",
+      "file_type": "txt",
+      "suggested_category": "",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Alte Notiz im Archiv/Altbestand; keine sicherere Alternativablage erkennbar."
+    },
+    {
+      "original_name": "backup.json",
+      "relative_path": "09_Konfiguration\\Server\\backup.json",
+      "file_type": "json",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Konfigurations-/Backupdatei im passenden Ordner 09_Konfiguration/Server."
+    },
+    {
+      "original_name": "Konfiguration_Switch_EG-02_2026-06.json",
+      "relative_path": "09_Konfiguration\\Switches\\Konfiguration_Switch_EG-02_2026-06.json",
+      "file_type": "json",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Switch-Konfiguration bereits korrekt unter 09_Konfiguration/Switches abgelegt."
+    },
+    {
+      "original_name": "switch_backup_neu.json",
+      "relative_path": "09_Konfiguration\\Switches\\switch_backup_neu.json",
+      "file_type": "json",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Backupdatei für Switches im passenden Konfigurationsordner."
+    },
+    {
+      "original_name": "Switch_EG-01_Konfiguration_2026-06.json",
+      "relative_path": "09_Konfiguration\\Switches\\Switch_EG-01_Konfiguration_2026-06.json",
+      "file_type": "json",
+      "suggested_category": "Konfiguration",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Switch-Konfigurationsdatei korrekt einsortiert."
+    },
+    {
+      "original_name": "PowerShell_Benutzeranlage.ps1",
+      "relative_path": "08_Quellcode\\PowerShell\\PowerShell_Benutzeranlage.ps1",
+      "file_type": "ps1",
+      "suggested_category": "Quellcode",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "PowerShell-Skript im Quellcode/PowerShell-Ordner korrekt abgelegt."
+    },
+    {
+      "original_name": "user_script_final.ps1",
+      "relative_path": "08_Quellcode\\PowerShell\\user_script_final.ps1",
+      "file_type": "ps1",
+      "suggested_category": "Quellcode",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "PowerShell-Skript liegt im passenden Quellcode-Ordner."
+    },
+    {
+      "original_name": "Auswertung_Ticketsystem.py",
+      "relative_path": "08_Quellcode\\Python\\Auswertung_Ticketsystem.py",
+      "file_type": "py",
+      "suggested_category": "Quellcode",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Python-Skript korrekt unter 08_Quellcode/Python einsortiert."
+    },
+    {
+      "original_name": "script_alt.py",
+      "relative_path": "08_Quellcode\\Python\\script_alt.py",
+      "file_type": "py",
+      "suggested_category": "Quellcode",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Python-Skript im passenden Quellcode-Ordner."
+    },
+    {
+      "original_name": "test.py",
+      "relative_path": "08_Quellcode\\Python\\test.py",
+      "file_type": "py",
+      "suggested_category": "Quellcode",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Tests/Beispielskript liegt im Quellcode/Python-Ordner; keine bessere Zuordnung erkennbar."
+    },
+    {
+      "original_name": "export_alt.csv",
+      "relative_path": "06_Exporte\\Ticketsystem\\export_alt.csv",
+      "file_type": "csv",
+      "suggested_category": "Export",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Exportdatei passend unter 06_Exporte/Ticketsystem abgelegt."
+    },
+    {
+      "original_name": "Export_Ticketsystem_Juni_2026.csv",
+      "relative_path": "06_Exporte\\Ticketsystem\\Export_Ticketsystem_Juni_2026.csv",
+      "file_type": "csv",
+      "suggested_category": "Export",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Eindeutig benannter Export im richtigen Exportordner."
+    },
+    {
+      "original_name": "Export_Ticketsystem_Mai_2026.csv",
+      "relative_path": "06_Exporte\\Ticketsystem\\Export_Ticketsystem_Mai_2026.csv",
+      "file_type": "csv",
+      "suggested_category": "Export",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Eindeutig benannter Export im richtigen Exportordner."
+    },
+    {
+      "original_name": "Baustellenfoto_Edewecht_2026-06-04.jpg",
+      "relative_path": "05_Bilder\\Baustellen\\Baustellenfoto_Edewecht_2026-06-04.jpg",
+      "file_type": "jpg",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Bilddatei ist bereits korrekt unter Bilder/Baustellen abgelegt."
+    },
+    {
+      "original_name": "IMG_4421.jpg",
+      "relative_path": "05_Bilder\\Baustellen\\IMG_4421.jpg",
+      "file_type": "jpg",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Foto liegt im passenden Ordner Bilder/Baustellen."
+    },
+    {
+      "original_name": "Screenshot_Fehler_Anmeldung_2026-06-03.png",
+      "relative_path": "05_Bilder\\Screenshots\\Screenshot_Fehler_Anmeldung_2026-06-03.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Screenshot liegt bereits im Ordner Bilder/Screenshots."
+    },
+    {
+      "original_name": "Screenshot_VPN_Fehler_2026-06-05.png",
+      "relative_path": "05_Bilder\\Screenshots\\Screenshot_VPN_Fehler_2026-06-05.png",
+      "file_type": "png",
+      "suggested_category": "Bild",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Screenshot liegt bereits im Ordner Bilder/Screenshots."
+    },
+    {
+      "original_name": "handbuch_neu.docx",
+      "relative_path": "04_Dokumentation\\Handbücher\\handbuch_neu.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Handbuchdatei in 04_Dokumentation/Handbücher korrekt abgelegt."
+    },
+    {
+      "original_name": "Handbuch_Zeiterfassung_V2.docx",
+      "relative_path": "04_Dokumentation\\Handbücher\\Handbuch_Zeiterfassung_V2.docx",
+      "file_type": "docx",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Handbuchdatei in 04_Dokumentation/Handbücher korrekt abgelegt."
+    },
+    {
+      "original_name": "doku_final_final.md",
+      "relative_path": "04_Dokumentation\\Projektunterlagen\\doku_final_final.md",
+      "file_type": "md",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Projektbezogene Dokumentation liegt im passenden Ordner 04_Dokumentation/Projektunterlagen."
+    },
+    {
+      "original_name": "Projektbericht_Zugangsbeschränkung_Juni_2026.pdf",
+      "relative_path": "04_Dokumentation\\Projektunterlagen\\Projektbericht_Zugangsbeschränkung_Juni_2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Projektbericht korrekt in 04_Dokumentation/Projektunterlagen abgelegt."
+    },
+    {
+      "original_name": "Projektdokumentation_Zugangsbeschränkung_2026.md",
+      "relative_path": "04_Dokumentation\\Projektunterlagen\\Projektdokumentation_Zugangsbeschränkung_2026.md",
+      "file_type": "md",
+      "suggested_category": "Dokumentation",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Projektdokumentation im passenden Ordner vorhanden."
+    },
+    {
+      "original_name": "Rechnung_Bueromaterial_Mai_2026.pdf",
+      "relative_path": "03_Rechnungen\\2026\\Rechnung_Bueromaterial_Mai_2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Rechnung",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Rechnung im Jahresordner 2026 korrekt abgelegt."
+    },
+    {
+      "original_name": "Rechnung_Stadtwerke_Mai_2026.pdf",
+      "relative_path": "03_Rechnungen\\2026\\Rechnung_Stadtwerke_Mai_2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Rechnung",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Rechnung im Jahresordner 2026 korrekt abgelegt."
+    },
+    {
+      "original_name": "rechnung_strom_mai.pdf",
+      "relative_path": "03_Rechnungen\\2026\\rechnung_strom_mai.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Rechnung",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Rechnung im korrekten Ordner 03_Rechnungen/2026; Benennung hinreichend erkennbar."
+    },
+    {
+      "original_name": "Rechnung_Telekom_April_2026.pdf",
+      "relative_path": "03_Rechnungen\\2026\\Rechnung_Telekom_April_2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Rechnung",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Telekom-Rechnung im passenden Jahresordner."
+    },
+    {
+      "original_name": "Rechnung_Telekom_Juni_2026.pdf",
+      "relative_path": "03_Rechnungen\\2026\\Rechnung_Telekom_Juni_2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Rechnung",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Telekom-Rechnung im passenden Jahresordner."
+    },
+    {
+      "original_name": "telekom_final_neu.pdf",
+      "relative_path": "03_Rechnungen\\2026\\telekom_final_neu.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Rechnung",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Dateiname lässt auf Rechnung schließen und liegt im korrekten Rechnungsordner."
+    },
+    {
+      "original_name": "Lieferantenvertrag_Büromaterial_2026.pdf",
+      "relative_path": "02_Verträge\\Lieferanten\\Lieferantenvertrag_Büromaterial_2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Vertrag",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Lieferantenvertrag im passenden Ordner 02_Verträge/Lieferanten."
+    },
+    {
+      "original_name": "Lieferantenvertrag_Netzwerkhaus_2026.pdf",
+      "relative_path": "02_Verträge\\Lieferanten\\Lieferantenvertrag_Netzwerkhaus_2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Vertrag",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Lieferantenvertrag im passenden Ordner 02_Verträge/Lieferanten."
+    },
+    {
+      "original_name": "vertrag_drucker_scan.pdf",
+      "relative_path": "02_Verträge\\Wartung\\vertrag_drucker_scan.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Vertrag",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Vertragsdokument liegt im Ordner 02_Verträge/Wartung; Struktur passend."
+    },
+    {
+      "original_name": "Wartungsvertrag_Drucker_2026.pdf",
+      "relative_path": "02_Verträge\\Wartung\\Wartungsvertrag_Drucker_2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Vertrag",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Wartungsvertrag im passenden Verträge/Wartung-Ordner."
+    },
+    {
+      "original_name": "Wartungsvertrag_HASKAMP_IT_2026.pdf",
+      "relative_path": "02_Verträge\\Wartung\\Wartungsvertrag_HASKAMP_IT_2026.pdf",
+      "file_type": "pdf",
+      "suggested_category": "Vertrag",
+      "suggested_folder": "",
+      "suggested_new_name": "",
+      "action_type": "keep",
+      "reason": "Wartungsvertrag im passenden Verträge/Wartung-Ordner."
+    }
+  ]
+}
