@@ -2,7 +2,7 @@ import logging
 import json
 from collections import Counter
 from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER, REPORT_ORDNER, MAX_TIEFE
-from ai.ai_client import KI_anfrage, ki_task_erstellen, dateiablage_vorschlag, ordnerbericht
+from ai.ai_client import KI_anfrage, ki_task_erstellen, dateiablage_vorschlag, ordnerbericht, dateiablage_vorschlag_erklärung
 from Testing.test_response_ki import test_dateiablage_vorschlag
 from utils.text_reader import datei_inhalt
 from utils.folder_scanner import ordnerinhaltunteror, ordnerinhaltohne
@@ -230,8 +230,8 @@ elif userstartwahl == "5":
     inhalt = "\n".join("".join(i) for i in inhalt)
     
     logging.info("Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet\n")
-    ki_response = dateiablage_vorschlag(inhalt) # Hier wurde erstmal eine statische reingemacht, um Zeit und Kosten für das Testen zu sparen
-    #ki_response =  str(test_dateiablage_vorschlag(inhalt))
+    #ki_response = dateiablage_vorschlag(inhalt) # Hier wurde erstmal eine statische reingemacht, um Zeit und Kosten für das Testen zu sparen
+    ki_response =  str(test_dateiablage_vorschlag(inhalt))
 
     if ki_response:
         logging.info("KI Antwort erhalten und erfolgreich zurück bekommen\n")
@@ -259,114 +259,143 @@ elif userstartwahl == "5":
     eingetragene_aktionen = []
 
     while True:
-        anzahl_keine_änderungen = 0
-        anzahl_neuer_name = 0
-        anzahl_verschiebungen  = 0
-        anzahl_neuername_verschiebung = 0
-        unklar = 0
-
-        print("------------------Zusammenfassung der Analyse:------------------")
-        with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "r", encoding="utf-8") as antwortdatei:
-
-            roh_daten = json.load(antwortdatei)
-
-            json_daten = roh_daten["datei_vorschläge"]
-
-            for eintrag in json_daten:
-                match eintrag["action_type"]:
-                    case "keep":
-                        if eintrag["erledigt"] == "False":
-                            anzahl_keine_änderungen += 1
-
-                    case "move_suggestion":
-                        if eintrag["erledigt"] == "False":
-                            anzahl_verschiebungen += 1
-
-                    case "rename_suggestion":
-                        if eintrag["erledigt"] == "False":
-                            anzahl_neuer_name += 1
-
-                    case "rename_and_move_suggestion":
-                        if eintrag["erledigt"] == "False":
-                            anzahl_neuername_verschiebung += 1
-
-                    case "unclear":
-                        if eintrag["erledigt"] == "False":
-                            unklar += 1
-                        
-                    case _:
-                        print(f"Unbekannter action_type: {eintrag['action_type']}")
-
-        print(f"Keine Änderungen: {anzahl_keine_änderungen}")
-        print(f"Verschiebungen: {anzahl_verschiebungen}")
-        print(f"Neuer Name: {anzahl_neuer_name}")
-        print(f"Neuer Name + Verschiebung: {anzahl_neuername_verschiebung}")
-        print(f"Unklar: {unklar}")
-
-        print()
-        print("Möchtest du dir die Vorschläge angucken?")
-        print("Wenn ja, was möchtest du machen:")
-        print("1. Dateien ohne einen Vorschlag zur Änderung anzeigen")
-        print("2. Verschiebungen anzeigen")
-        print("3. Neuer Name anzeigen")
-        print("4. Neuer Name + Verschiebung anzeigen")
-        print("5. Unklare Vorschläge anzeigen")
-        print("6. Alle Vorschläge anzeigen")
-        print("7. Alle Änderungen anzeigen")
-        print("8. Keine Vorschläge anzeigen")
-
-        auswahl = input("Bitte wähle eine Option von 1 bis 8: ").strip()
-        auswaählbare_Kategorien = ["1", "2", "3", "4", "5", "6", "7", "8"]
-
         while True:
-            if auswahl in auswaählbare_Kategorien:
-                break
-            else:
-                print(f"Gebe nur 1 - {len(auswaählbare_Kategorien)} ein!")
 
-            auswahl = input()
+            anzahl_keine_änderungen = 0
+            anzahl_neuer_name = 0
+            anzahl_verschiebungen  = 0
+            anzahl_neuername_verschiebung = 0
+            unklar = 0
 
-        match auswahl:
-            case "1":
-                print("Kategorie: Keine Änderungen")
-                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "keep" and eintrag["erledigt"] == "False"]
+            print("------------------Zusammenfassung der Analyse:------------------")
+            with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "r", encoding="utf-8") as antwortdatei:
 
-            case "2":
-                print("Kategorie: Verschiebungen")
-                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "move_suggestion" and eintrag["erledigt"] == "False"]
+                roh_daten = json.load(antwortdatei)
 
-            case "3":
-                print("Kategorie: Neuer Name")
-                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "rename_suggestion" and eintrag["erledigt"] == "False"]
+                json_daten = roh_daten["datei_vorschläge"]
 
-            case "4":
-                print("Kategorie: Neuer Name + Verschiebung")
-                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "rename_and_move_suggestion" and eintrag["erledigt"] == "False"]
+                for eintrag in json_daten:
+                    match eintrag["action_type"]:
+                        case "keep":
+                            if eintrag["erledigt"] == "False":
+                                anzahl_keine_änderungen += 1
 
-            case "5":
-                print("Kategorie: Unklar")
-                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "unclear" and eintrag["erledigt"] == "False"]
+                        case "move_suggestion":
+                            if eintrag["erledigt"] == "False":
+                                anzahl_verschiebungen += 1
 
-            case "6":
-                print("Kategorie: Alle Vorschläge")
-                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["erledigt"] == "False" and not eintrag["action_type"] == "keep" and not eintrag["action_type"] == "unclear"]
+                        case "rename_suggestion":
+                            if eintrag["erledigt"] == "False":
+                                anzahl_neuer_name += 1
 
-            case "7":
-                print("Es werden alle Änderungen angezeigt")
-                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if not eintrag["action_type"] == "keep" and not eintrag["action_type"] == "unclear" and eintrag["erledigt"] == "False"]
+                        case "rename_and_move_suggestion":
+                            if eintrag["erledigt"] == "False":
+                                anzahl_neuername_verschiebung += 1
 
-            case "8":
-                print("Es wird keine der Vorschläge getätigt.")
-                ausgewählte_vorschlagen_komp = []
+                        case "unclear":
+                            if eintrag["erledigt"] == "False":
+                                unklar += 1
+                            
+                        case _:
+                            print(f"Unbekannter action_type: {eintrag['action_type']}")
 
-        print("-" * 50)
+            print(f"Keine Änderungen: {anzahl_keine_änderungen}")
+            print(f"Verschiebungen: {anzahl_verschiebungen}")
+            print(f"Neuer Name: {anzahl_neuer_name}")
+            print(f"Neuer Name + Verschiebung: {anzahl_neuername_verschiebung}")
+            print(f"Unklar: {unklar}")
 
-        for eintrag in ausgewählte_vorschlagen_komp:
-            for key, wert in eintrag.items():
-                if wert is not None and str(wert).strip() != "":
-                    print(f"{key}: {wert}")
-                    
+            print()
+            print("Möchtest du dir die Vorschläge angucken?")
+            print("Wenn ja, was möchtest du machen:")
+            print("1. Dateien ohne einen Vorschlag zur Änderung anzeigen")
+            print("2. Verschiebungen anzeigen")
+            print("3. Neuer Name anzeigen")
+            print("4. Neuer Name + Verschiebung anzeigen")
+            print("5. Unklare Vorschläge anzeigen")
+            print("6. Alle Vorschläge anzeigen")
+            print("7. Alle Änderungen anzeigen")
+            print("8. Keine Vorschläge anzeigen")
+
+            auswahl = input("Bitte wähle eine Option von 1 bis 8: ").strip()
+            auswaählbare_Kategorien = ["1", "2", "3", "4", "5", "6", "7", "8"]
+
+            while True:
+                if auswahl in auswaählbare_Kategorien:
+                    break
+                else:
+                    print(f"Gebe nur 1 - {len(auswaählbare_Kategorien)} ein!")
+
+                auswahl = input()
+
+            match auswahl:
+                case "1":
+                    print("Kategorie: Keine Änderungen")
+                    ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "keep" and eintrag["erledigt"] == "False"]
+
+                case "2":
+                    print("Kategorie: Verschiebungen")
+                    ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "move_suggestion" and eintrag["erledigt"] == "False"]
+
+                case "3":
+                    print("Kategorie: Neuer Name")
+                    ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "rename_suggestion" and eintrag["erledigt"] == "False"]
+
+                case "4":
+                    print("Kategorie: Neuer Name + Verschiebung")
+                    ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "rename_and_move_suggestion" and eintrag["erledigt"] == "False"]
+
+                case "5":
+                    print("Kategorie: Unklar")
+                    ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "unclear" and eintrag["erledigt"] == "False"]
+
+                case "6":
+                    print("Kategorie: Alle Vorschläge")
+                    ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["erledigt"] == "False" and not eintrag["action_type"] == "keep" and not eintrag["action_type"] == "unclear"]
+
+                case "7":
+                    print("Es werden alle Änderungen angezeigt")
+                    ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if not eintrag["action_type"] == "keep" and not eintrag["action_type"] == "unclear" and eintrag["erledigt"] == "False"]
+
+                case "8":
+                    print("Es wird keine der Vorschläge getätigt.")
+                    ausgewählte_vorschlagen_komp = []
+
             print("-" * 50)
+
+            neuer_eintrag = []
+
+            for eintrag in ausgewählte_vorschlagen_komp:
+                for key, wert in eintrag.items():
+                    if wert is not None and str(wert).strip() != "":
+                        print(f"{key}: {wert}")
+                print("-" * 50)
+                                    
+                if auswahl == "5":
+                    print("Du kannst mir diesen Unclear erklären, wenn du möchtest. j/n\n")
+
+                    while True:
+                        erklär_auswahl = input().strip()
+
+                        if erklär_auswahl == "j":
+                            print("Okay, dann erkläre mir diese Datei:\n")
+                            erklärung = input("")
+                            
+                            verbessertereintrag = json.loads(
+                                dateiablage_vorschlag_erklärung(eintrag, erklärung)
+                            )
+
+                            vorschlag = verbessertereintrag["datei_vorschläge"][0]
+
+                            eintrag.update(vorschlag)
+
+                            break
+
+                        elif erklär_auswahl == "n":
+                            break
+                        else:
+                            print("Gebe nur 'j' oder 'n' ein!")
+
         
         if auswahl == "8":
             print("Es wird kein Vorschlag angezeigt\n" \

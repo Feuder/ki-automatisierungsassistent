@@ -264,3 +264,4 @@ def vorschlag_validieren(inhalt):
         logging.error(fehler)
         logging.error("--------------------------------------")
         return False, fehler
+    
