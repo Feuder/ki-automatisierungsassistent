@@ -1091,3 +1091,14 @@ Die Datei rechnung_scan.pdf wurde erfolgreich verschoben:
 Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges\rechnung_scan.pdf
 Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\03_Rechnungen\2026--------------------------------------------------
 INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+

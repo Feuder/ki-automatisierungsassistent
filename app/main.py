@@ -238,6 +238,7 @@ elif userstartwahl == "5":
     else:
         logging.error("Es ist keine Antwort zurück gekommen!\n" \
         "Programm wird beendet!\n")
+        raise SystemExit
 
     anzahl_dateien = [1 for f in report_ordner.iterdir() if f.is_dir()]
 
@@ -251,7 +252,7 @@ elif userstartwahl == "5":
         antwortdatei.write("## KI Ausgabe:")
         antwortdatei.write(f"{ki_response}\n")
 
-    with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "a", encoding="utf-8") as antwortdatei:
+    with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "w", encoding="utf-8") as antwortdatei:
         antwortdatei.write(f"{ki_response}\n")
 
 
@@ -348,11 +349,11 @@ elif userstartwahl == "5":
 
             case "6":
                 print("Kategorie: Alle Vorschläge")
-                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["erledigt"] == "False"]
+                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["erledigt"] == "False" and not eintrag["action_type"] == "keep" and not eintrag["action_type"] == "unclear"]
 
             case "7":
                 print("Es werden alle Änderungen angezeigt")
-                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if not eintrag["action_type"] == "keep" and eintrag["erledigt"] == "False"]
+                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if not eintrag["action_type"] == "keep" and not eintrag["action_type"] == "unclear" and eintrag["erledigt"] == "False"]
 
             case "8":
                 print("Es wird keine der Vorschläge getätigt.")
@@ -409,11 +410,9 @@ elif userstartwahl == "5":
                         )
 
                         if alter_pfad.exists():
-                            neuer_pfad.mkdir(parents=True, exist_ok=True)
 
-                            move_file(datei_name, alter_pfad, neuer_pfad)
-
-                            i["erledigt"] = "True"
+                            if move_file(datei_name, alter_pfad, neuer_pfad):
+                                i["erledigt"] = "True"
 
                         else:
                             logging.warning("" \
@@ -432,9 +431,8 @@ elif userstartwahl == "5":
                         if alter_pfad.exists():
                             logging.info("Pfad existiert, Datei wird bearbeitet.")
 
-                            rename_file(datei_name, neuer_name, alter_pfad)
-
-                            i["erledigt"] = "True"
+                            if rename_file(datei_name, neuer_name, alter_pfad):
+                                i["erledigt"] = "True"
                         
                         else:
                             logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
@@ -451,14 +449,10 @@ elif userstartwahl == "5":
 
                         if alter_pfad.exists() and neuer_name != "":
 
-                            neuer_pfad.mkdir(parents=True, exist_ok=True)
-
-                            move_file(datei_name, alter_pfad, neuer_pfad)
-
                             verschobener_pfad = neuer_pfad / datei_name
-                            rename_file(datei_name, neuer_name, verschobener_pfad)
 
-                            i["erledigt"] = "True"
+                            if move_file(datei_name, alter_pfad, neuer_pfad) and rename_file(datei_name, neuer_name, verschobener_pfad):
+                                i["erledigt"] = "True"
                         
                         else:
                             logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden, oder der neue Name ist leer:" \
