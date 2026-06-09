@@ -255,250 +255,250 @@ elif userstartwahl == "5":
         antwortdatei.write(f"{ki_response}\n")
 
 
-eingetragene_aktionen = []
-
-while True:
-    anzahl_keine_änderungen = 0
-    anzahl_neuer_name = 0
-    anzahl_verschiebungen  = 0
-    anzahl_neuername_verschiebung = 0
-    unklar = 0
-
-    print("------------------Zusammenfassung der Analyse:------------------")
-    with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "r", encoding="utf-8") as antwortdatei:
-
-        roh_daten = json.load(antwortdatei)
-
-        json_daten = roh_daten["datei_vorschläge"]
-
-        for eintrag in json_daten:
-            match eintrag["action_type"]:
-                case "keep":
-                    if eintrag["erledigt"] == "False":
-                        anzahl_keine_änderungen += 1
-
-                case "move_suggestion":
-                    if eintrag["erledigt"] == "False":
-                        anzahl_verschiebungen += 1
-
-                case "rename_suggestion":
-                    if eintrag["erledigt"] == "False":
-                        anzahl_neuer_name += 1
-
-                case "rename_and_move_suggestion":
-                    if eintrag["erledigt"] == "False":
-                        anzahl_neuername_verschiebung += 1
-
-                case "unclear":
-                    if eintrag["erledigt"] == "False":
-                        unklar += 1
-                    
-                case _:
-                    print(f"Unbekannter action_type: {eintrag['action_type']}")
-
-    print(f"Keine Änderungen: {anzahl_keine_änderungen}")
-    print(f"Verschiebungen: {anzahl_verschiebungen}")
-    print(f"Neuer Name: {anzahl_neuer_name}")
-    print(f"Neuer Name + Verschiebung: {anzahl_neuername_verschiebung}")
-    print(f"Unklar: {unklar}")
-
-    print()
-    print("Möchtest du dir die Vorschläge angucken?")
-    print("Wenn ja, was möchtest du machen:")
-    print("1. Dateien ohne einen Vorschlag zur Änderung anzeigen")
-    print("2. Verschiebungen anzeigen")
-    print("3. Neuer Name anzeigen")
-    print("4. Neuer Name + Verschiebung anzeigen")
-    print("5. Unklare Vorschläge anzeigen")
-    print("6. Alle Vorschläge anzeigen")
-    print("7. Alle Änderungen anzeigen")
-    print("8. Keine Vorschläge anzeigen")
-
-    auswahl = input("Bitte wähle eine Option von 1 bis 8: ").strip()
-    auswaählbare_Kategorien = ["1", "2", "3", "4", "5", "6", "7", "8"]
+    eingetragene_aktionen = []
 
     while True:
-        if auswahl in auswaählbare_Kategorien:
-            break
-        else:
-            print(f"Gebe nur 1 - {len(auswaählbare_Kategorien)} ein!")
+        anzahl_keine_änderungen = 0
+        anzahl_neuer_name = 0
+        anzahl_verschiebungen  = 0
+        anzahl_neuername_verschiebung = 0
+        unklar = 0
 
-        auswahl = input()
+        print("------------------Zusammenfassung der Analyse:------------------")
+        with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "r", encoding="utf-8") as antwortdatei:
 
-    match auswahl:
-        case "1":
-            print("Kategorie: Keine Änderungen")
-            ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "keep" and eintrag["erledigt"] == "False"]
+            roh_daten = json.load(antwortdatei)
 
-        case "2":
-            print("Kategorie: Verschiebungen")
-            ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "move_suggestion" and eintrag["erledigt"] == "False"]
+            json_daten = roh_daten["datei_vorschläge"]
 
-        case "3":
-            print("Kategorie: Neuer Name")
-            ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "rename_suggestion" and eintrag["erledigt"] == "False"]
+            for eintrag in json_daten:
+                match eintrag["action_type"]:
+                    case "keep":
+                        if eintrag["erledigt"] == "False":
+                            anzahl_keine_änderungen += 1
 
-        case "4":
-            print("Kategorie: Neuer Name + Verschiebung")
-            ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "rename_and_move_suggestion" and eintrag["erledigt"] == "False"]
+                    case "move_suggestion":
+                        if eintrag["erledigt"] == "False":
+                            anzahl_verschiebungen += 1
 
-        case "5":
-            print("Kategorie: Unklar")
-            ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "unclear" and eintrag["erledigt"] == "False"]
+                    case "rename_suggestion":
+                        if eintrag["erledigt"] == "False":
+                            anzahl_neuer_name += 1
 
-        case "6":
-            print("Kategorie: Alle Vorschläge")
-            ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["erledigt"] == "False"]
+                    case "rename_and_move_suggestion":
+                        if eintrag["erledigt"] == "False":
+                            anzahl_neuername_verschiebung += 1
 
-        case "7":
-            print("Es werden alle Änderungen angezeigt")
-            ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if not eintrag["action_type"] == "keep" and eintrag["erledigt"] == "False"]
+                    case "unclear":
+                        if eintrag["erledigt"] == "False":
+                            unklar += 1
+                        
+                    case _:
+                        print(f"Unbekannter action_type: {eintrag['action_type']}")
 
-        case "8":
-            print("Es wird keine der Vorschläge getätigt.")
-            ausgewählte_vorschlagen_komp = []
+        print(f"Keine Änderungen: {anzahl_keine_änderungen}")
+        print(f"Verschiebungen: {anzahl_verschiebungen}")
+        print(f"Neuer Name: {anzahl_neuer_name}")
+        print(f"Neuer Name + Verschiebung: {anzahl_neuername_verschiebung}")
+        print(f"Unklar: {unklar}")
 
-    print("-" * 50)
+        print()
+        print("Möchtest du dir die Vorschläge angucken?")
+        print("Wenn ja, was möchtest du machen:")
+        print("1. Dateien ohne einen Vorschlag zur Änderung anzeigen")
+        print("2. Verschiebungen anzeigen")
+        print("3. Neuer Name anzeigen")
+        print("4. Neuer Name + Verschiebung anzeigen")
+        print("5. Unklare Vorschläge anzeigen")
+        print("6. Alle Vorschläge anzeigen")
+        print("7. Alle Änderungen anzeigen")
+        print("8. Keine Vorschläge anzeigen")
 
-    for eintrag in ausgewählte_vorschlagen_komp:
-        for key, wert in eintrag.items():
-            if wert is not None and str(wert).strip() != "":
-                print(f"{key}: {wert}")
-                
-        print("-" * 50)
-    
-    if auswahl == "8":
-        print("Es wird kein Vorschlag angezeigt\n" \
-        "Sollen andere Vorschläge getätigt werden? j/n\n")
-
-    elif ausgewählte_vorschlagen_komp: 
-        print("Sollen die Vorschäge ausgeführt werden? j/n")
+        auswahl = input("Bitte wähle eine Option von 1 bis 8: ").strip()
+        auswaählbare_Kategorien = ["1", "2", "3", "4", "5", "6", "7", "8"]
 
         while True:
-            phase5_auswahl = input().strip()
-
-            if  phase5_auswahl == "j":
-                logging.info("Die Vorgeschlagenen Vorschläge sollen umgesetzt werden")
+            if auswahl in auswaählbare_Kategorien:
                 break
-
-            elif phase5_auswahl == "n":
-                logging.info("Dateivorschläge sollen nicht ausgeführt werden. Programm wird beendet")
-                raise SystemExit
-            
             else:
-                print("Gebe nur j/n ein!")
+                print(f"Gebe nur 1 - {len(auswaählbare_Kategorien)} ein!")
 
+            auswahl = input()
 
-        for i in ausgewählte_vorschlagen_komp:
+        match auswahl:
+            case "1":
+                print("Kategorie: Keine Änderungen")
+                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "keep" and eintrag["erledigt"] == "False"]
 
-            if i["erledigt"] == "False":
+            case "2":
+                print("Kategorie: Verschiebungen")
+                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "move_suggestion" and eintrag["erledigt"] == "False"]
 
-                if i["action_type"] == "move_suggestion":
+            case "3":
+                print("Kategorie: Neuer Name")
+                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "rename_suggestion" and eintrag["erledigt"] == "False"]
 
-                    datei_name = i["original_name"]
-                    alter_pfad = Path(wahlpfad) / i["relative_path"]
-                    neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
+            case "4":
+                print("Kategorie: Neuer Name + Verschiebung")
+                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "rename_and_move_suggestion" and eintrag["erledigt"] == "False"]
 
-                    logging.info(
-                        f"\n"
-                        f"{'-' * 50}\n"
-                        f"Aktuelles Objekt: {datei_name}\n"
-                        f"Der aktuelle Pfad: {alter_pfad}\n"
-                        f"Der neue geplante Pfad: {neuer_pfad}\n"
-                        ""
-                    )
+            case "5":
+                print("Kategorie: Unklar")
+                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["action_type"] == "unclear" and eintrag["erledigt"] == "False"]
 
-                    if alter_pfad.exists():
-                        neuer_pfad.mkdir(parents=True, exist_ok=True)
+            case "6":
+                print("Kategorie: Alle Vorschläge")
+                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if eintrag["erledigt"] == "False"]
 
-                        move_file(datei_name, alter_pfad, neuer_pfad)
+            case "7":
+                print("Es werden alle Änderungen angezeigt")
+                ausgewählte_vorschlagen_komp = [eintrag for eintrag in json_daten if not eintrag["action_type"] == "keep" and eintrag["erledigt"] == "False"]
 
-                        i["erledigt"] = "True"
+            case "8":
+                print("Es wird keine der Vorschläge getätigt.")
+                ausgewählte_vorschlagen_komp = []
 
-                    else:
-                        logging.warning("" \
-                        "Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
-                        f"{datei_name}\n" \
-                        f"{alter_pfad}" \
-                        ""
-                        )
+        print("-" * 50)
 
-                elif i["action_type"] == "rename_suggestion":
-
-                    datei_name = i["original_name"]
-                    alter_pfad = Path(wahlpfad) / i["relative_path"]
-                    neuer_name =    i["suggested_new_name"]
-
-                    if alter_pfad.exists():
-                        logging.info("Pfad existiert, Datei wird bearbeitet.")
-
-                        rename_file(datei_name, neuer_name, alter_pfad)
-
-                        i["erledigt"] = "True"
+        for eintrag in ausgewählte_vorschlagen_komp:
+            for key, wert in eintrag.items():
+                if wert is not None and str(wert).strip() != "":
+                    print(f"{key}: {wert}")
                     
-                    else:
-                        logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
-                        f"{datei_name}\n" \
-                        f"{alter_pfad}\n" \
-                        )
-                        
-                elif i["action_type"] == "rename_and_move_suggestion":
-                    
-                    datei_name = i["original_name"]
-                    alter_pfad = Path(wahlpfad) / i["relative_path"]
-                    neuer_name =    i["suggested_new_name"]
-                    neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
+            print("-" * 50)
+        
+        if auswahl == "8":
+            print("Es wird kein Vorschlag angezeigt\n" \
+            "Sollen andere Vorschläge getätigt werden? j/n\n")
 
-                    if alter_pfad.exists() and neuer_name != "":
+        elif ausgewählte_vorschlagen_komp: 
+            print("Sollen die Vorschäge ausgeführt werden? j/n")
 
-                        neuer_pfad.mkdir(parents=True, exist_ok=True)
+            while True:
+                phase5_auswahl = input().strip()
 
-                        move_file(datei_name, alter_pfad, neuer_pfad)
+                if  phase5_auswahl == "j":
+                    logging.info("Die Vorgeschlagenen Vorschläge sollen umgesetzt werden")
+                    break
 
-                        verschobener_pfad = neuer_pfad / datei_name
-                        rename_file(datei_name, neuer_name, verschobener_pfad)
-
-                        i["erledigt"] = "True"
-                    
-                    else:
-                        logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden, oder der neue Name ist leer:" \
-                        f"{datei_name}\n" \
-                        f"{alter_pfad}" \
-                        f"{neuer_name}"
-                        )
-                else:
-                    logging.warning("Es konnte keine Änderung getätigt werden. Es wird übersprungen")
+                elif phase5_auswahl == "n":
+                    logging.info("Dateivorschläge sollen nicht ausgeführt werden. Programm wird beendet")
+                    raise SystemExit
                 
-                if i["erledigt"] == "True":
-                    eingetragene_aktionen.append(i)
+                else:
+                    print("Gebe nur j/n ein!")
 
-        roh_daten["datei_vorschläge"] = json_daten
 
-        with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "w", encoding="utf-8") as antwortdatei:
-            json.dump(roh_daten, antwortdatei, ensure_ascii=False, indent=4)
+            for i in ausgewählte_vorschlagen_komp:
 
-        with open(reportpfad / f"Ausgeführte Aktionen des durchlauf {len(anzahl_dateien) +1}.json", "w", encoding="utf-8") as ausgeführteaktionen:
-            json.dump(eingetragene_aktionen, ausgeführteaktionen, ensure_ascii=False, indent=4)
+                if i["erledigt"] == "False":
 
-        print("Sollen auch noch andere Änderungen getätigt werden? j/n")
+                    if i["action_type"] == "move_suggestion":
 
-    else:
-        print(""
-        "Es wurde kein Vorschlag für diese Funktion gefunden!\n" \
-        "Möchtest du andere Änderungen Tätigen? j/n\n")
+                        datei_name = i["original_name"]
+                        alter_pfad = Path(wahlpfad) / i["relative_path"]
+                        neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
 
-    neu_input = input().strip()
+                        logging.info(
+                            f"\n"
+                            f"{'-' * 50}\n"
+                            f"Aktuelles Objekt: {datei_name}\n"
+                            f"Der aktuelle Pfad: {alter_pfad}\n"
+                            f"Der neue geplante Pfad: {neuer_pfad}\n"
+                            ""
+                        )
 
-    while True:
-        if neu_input == "j":
-            print("Die anderen Änderungen werden angezeigt:")
-            break
-        elif neu_input == "n":
-            print("Änderungen wurden getätigt. Programm wird nun beendet")
-            raise SystemExit
+                        if alter_pfad.exists():
+                            neuer_pfad.mkdir(parents=True, exist_ok=True)
+
+                            move_file(datei_name, alter_pfad, neuer_pfad)
+
+                            i["erledigt"] = "True"
+
+                        else:
+                            logging.warning("" \
+                            "Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
+                            f"{datei_name}\n" \
+                            f"{alter_pfad}" \
+                            ""
+                            )
+
+                    elif i["action_type"] == "rename_suggestion":
+
+                        datei_name = i["original_name"]
+                        alter_pfad = Path(wahlpfad) / i["relative_path"]
+                        neuer_name =    i["suggested_new_name"]
+
+                        if alter_pfad.exists():
+                            logging.info("Pfad existiert, Datei wird bearbeitet.")
+
+                            rename_file(datei_name, neuer_name, alter_pfad)
+
+                            i["erledigt"] = "True"
+                        
+                        else:
+                            logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
+                            f"{datei_name}\n" \
+                            f"{alter_pfad}\n" \
+                            )
+                            
+                    elif i["action_type"] == "rename_and_move_suggestion":
+                        
+                        datei_name = i["original_name"]
+                        alter_pfad = Path(wahlpfad) / i["relative_path"]
+                        neuer_name =    i["suggested_new_name"]
+                        neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
+
+                        if alter_pfad.exists() and neuer_name != "":
+
+                            neuer_pfad.mkdir(parents=True, exist_ok=True)
+
+                            move_file(datei_name, alter_pfad, neuer_pfad)
+
+                            verschobener_pfad = neuer_pfad / datei_name
+                            rename_file(datei_name, neuer_name, verschobener_pfad)
+
+                            i["erledigt"] = "True"
+                        
+                        else:
+                            logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden, oder der neue Name ist leer:" \
+                            f"{datei_name}\n" \
+                            f"{alter_pfad}" \
+                            f"{neuer_name}"
+                            )
+                    else:
+                        logging.warning("Es konnte keine Änderung getätigt werden. Es wird übersprungen")
+                    
+                    if i["erledigt"] == "True":
+                        eingetragene_aktionen.append(i)
+
+            roh_daten["datei_vorschläge"] = json_daten
+
+            with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "w", encoding="utf-8") as antwortdatei:
+                json.dump(roh_daten, antwortdatei, ensure_ascii=False, indent=4)
+
+            with open(reportpfad / f"Ausgeführte Aktionen des durchlauf {len(anzahl_dateien) +1}.json", "w", encoding="utf-8") as ausgeführteaktionen:
+                json.dump(eingetragene_aktionen, ausgeführteaktionen, ensure_ascii=False, indent=4)
+
+            print("Sollen auch noch andere Änderungen getätigt werden? j/n")
+
         else:
-            print("Gebe nur j/n an!\n")
-            neu_input = input().strip()   
+            print(""
+            "Es wurde kein Vorschlag für diese Funktion gefunden!\n" \
+            "Möchtest du andere Änderungen Tätigen? j/n\n")
+
+        neu_input = input().strip()
+
+        while True:
+            if neu_input == "j":
+                print("Die anderen Änderungen werden angezeigt:")
+                break
+            elif neu_input == "n":
+                print("Änderungen wurden getätigt. Programm wird nun beendet")
+                raise SystemExit
+            else:
+                print("Gebe nur j/n an!\n")
+                neu_input = input().strip()   
 
 #----Ab hier werden die ausgaben der Antworten getätigt.----
 
