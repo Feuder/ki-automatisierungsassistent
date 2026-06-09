@@ -47,3 +47,1047 @@ WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
 INFO:root:Programm endet
 INFO:root:----------------------------------------------------------------------------------------------------
 INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+ERROR:root:Der angebene Pfad wurde nicht gefunden!
+
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:--------------------------------------
+ERROR:root:Schema-Validierung fehlgeschlagen.
+ERROR:root:Additional properties are not allowed ('erledigt' was unexpected)
+
+Failed validating 'additionalProperties' in schema['properties']['datei_vorschläge']['items']:
+    {'type': 'object',
+     'required': ['original_name',
+                  'relative_path',
+                  'file_type',
+                  'suggested_category',
+                  'suggested_folder',
+                  'suggested_new_name',
+                  'action_type',
+                  'reason'],
+     'additionalProperties': False,
+     'properties': {'original_name': {'type': 'string', 'minLength': 1},
+                    'relative_path': {'type': 'string', 'minLength': 1},
+                    'file_type': {'type': 'string', 'minLength': 1},
+                    'suggested_category': {'type': 'string'},
+                    'suggested_folder': {'type': 'string'},
+                    'suggested_new_name': {'type': 'string'},
+                    'action_type': {'type': 'string',
+                                    'enum': ['keep',
+                                             'move_suggestion',
+                                             'rename_suggestion',
+                                             'rename_and_move_suggestion',
+                                             'unclear']},
+                    'reason': {'type': 'string', 'minLength': 1}}}
+
+On instance['datei_vorschläge'][58]:
+    {'original_name': 'Wartungsvertrag_HASKAMP_IT_2026.pdf',
+     'relative_path': '02_Verträge\\Wartung\\Wartungsvertrag_HASKAMP_IT_2026.pdf',
+     'file_type': 'pdf',
+     'suggested_category': 'Vertrag',
+     'suggested_folder': '',
+     'suggested_new_name': '',
+     'action_type': 'keep',
+     'reason': 'Klar zugeordneter Wartungsvertrag im '
+               'Verträge/Wartung-Ordner.',
+     'erledigt': 'False'}
+ERROR:root:--------------------------------------
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Dateiname wurde erfolgreich umbenannt
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+INFO:root:Dateivorschläge sollen nicht ausgeführt werden. Programm wird beendet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+WARNING:root:Es werden nicht alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:USV.txt.txt
+USV.txt.txt
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:USV.txt.txt
+USV.txt.txt
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:USV.txt.txt
+USV.txt.txt
+
+INFO:root:Dateivorschläge sollen nicht ausgeführt werden. Programm wird beendet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: rechnung_scan.pdf
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges\rechnung_scan.pdf
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\03_Rechnungen\Unsortiert
+
+INFO:root:--------------------------------------------------
+Die Datei rechnung_scan.pdf wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges\rechnung_scan.pdf
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\03_Rechnungen\Unsortiert--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:Dateivorschläge sollen nicht ausgeführt werden. Programm wird beendet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Archivrest_2024.old
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Archivrest_2024.old
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\10_Archiv\Altbestand
+
+INFO:root:--------------------------------------------------
+Die Datei Archivrest_2024.old wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Archivrest_2024.old
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\10_Archiv\Altbestand--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Bild_ohne_Kontest sda.png
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Bild_ohne_Kontest sda.png
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\05_Bilder
+
+INFO:root:--------------------------------------------------
+Die Datei Bild_ohne_Kontest sda.png wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Bild_ohne_Kontest sda.png
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\05_Bilder--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Download_Unbekannt_2026.dat
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Download_Unbekannt_2026.dat
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang
+
+INFO:root:--------------------------------------------------
+Die Datei Download_Unbekannt_2026.dat wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Download_Unbekannt_2026.dat
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Liesmich_Altbestand.md
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Liesmich_Altbestand.md
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\10_Archiv\Altbestand
+
+INFO:root:--------------------------------------------------
+Die Datei Liesmich_Altbestand.md wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Liesmich_Altbestand.md
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\10_Archiv\Altbestand--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Privater_Merkzettel.txt
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Privater_Merkzettel.txt
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges
+
+INFO:root:--------------------------------------------------
+Die Datei Privater_Merkzettel.txt wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Privater_Merkzettel.txt
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Temp_Import_ohne_Bezug.csv
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Temp_Import_ohne_Bezug.csv
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges
+
+INFO:root:--------------------------------------------------
+Die Datei Temp_Import_ohne_Bezug.csv wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Temp_Import_ohne_Bezug.csv
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Testdatei_Leerstand.bin
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Testdatei_Leerstand.bin
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges
+
+INFO:root:--------------------------------------------------
+Die Datei Testdatei_Leerstand.bin wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Testdatei_Leerstand.bin
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Unbenannte_Ablage_01.log
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Unbenannte_Ablage_01.log
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges
+
+INFO:root:--------------------------------------------------
+Die Datei Unbenannte_Ablage_01.log wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Unbenannte_Ablage_01.log
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Unklare_Sammlung.zip
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Unklare_Sammlung.zip
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges
+
+INFO:root:--------------------------------------------------
+Die Datei Unklare_Sammlung.zip wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Unklare_Sammlung.zip
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Zwischenablage_Unsortiert.tmp
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Zwischenablage_Unsortiert.tmp
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges
+
+INFO:root:--------------------------------------------------
+Die Datei Zwischenablage_Unsortiert.tmp wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Zwischenablage_Unsortiert.tmp
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: bild1.png
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\bild1.png
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\05_Bilder
+
+INFO:root:--------------------------------------------------
+Die Datei bild1.png wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\bild1.png
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\05_Bilder--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: export.csv
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\export.csv
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\06_Exporte
+
+INFO:root:--------------------------------------------------
+Die Datei export.csv wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\export.csv
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\06_Exporte--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: vertrag_alt.pdf
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges\vertrag_alt.pdf
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\02_Verträge
+
+INFO:root:--------------------------------------------------
+Die Datei vertrag_alt.pdf wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges\vertrag_alt.pdf
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\02_Verträge--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Dateiname wurde erfolgreich umbenannt
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+WARNING:root:Es werden nicht alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Archivrest_2024.old
+Der aktuelle Pfad: Archivrest_2024.old
+Der neue geplante Pfad: 10_Archiv\Altbestand
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Archivrest_2024.old
+Archivrest_2024.old
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Bild_ohne_Kontest sda.png
+Der aktuelle Pfad: Bild_ohne_Kontest sda.png
+Der neue geplante Pfad: 05_Bilder
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Bild_ohne_Kontest sda.png
+Bild_ohne_Kontest sda.png
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Download_Unbekannt_2026.dat
+Der aktuelle Pfad: Download_Unbekannt_2026.dat
+Der neue geplante Pfad: 01_Eingang
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Download_Unbekannt_2026.dat
+Download_Unbekannt_2026.dat
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Liesmich_Altbestand.md
+Der aktuelle Pfad: Liesmich_Altbestand.md
+Der neue geplante Pfad: 10_Archiv\Altbestand
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Liesmich_Altbestand.md
+Liesmich_Altbestand.md
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Privater_Merkzettel.txt
+Der aktuelle Pfad: Privater_Merkzettel.txt
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Privater_Merkzettel.txt
+Privater_Merkzettel.txt
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Temp_Import_ohne_Bezug.csv
+Der aktuelle Pfad: Temp_Import_ohne_Bezug.csv
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Temp_Import_ohne_Bezug.csv
+Temp_Import_ohne_Bezug.csv
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Testdatei_Leerstand.bin
+Der aktuelle Pfad: Testdatei_Leerstand.bin
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Testdatei_Leerstand.bin
+Testdatei_Leerstand.bin
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Unbenannte_Ablage_01.log
+Der aktuelle Pfad: Unbenannte_Ablage_01.log
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Unbenannte_Ablage_01.log
+Unbenannte_Ablage_01.log
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Unklare_Sammlung.zip
+Der aktuelle Pfad: Unklare_Sammlung.zip
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Unklare_Sammlung.zip
+Unklare_Sammlung.zip
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Zwischenablage_Unsortiert.tmp
+Der aktuelle Pfad: Zwischenablage_Unsortiert.tmp
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Zwischenablage_Unsortiert.tmp
+Zwischenablage_Unsortiert.tmp
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: bild1.png
+Der aktuelle Pfad: 01_Eingang\bild1.png
+Der neue geplante Pfad: 05_Bilder
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:bild1.png
+01_Eingang\bild1.png
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: export.csv
+Der aktuelle Pfad: 01_Eingang\export.csv
+Der neue geplante Pfad: 06_Exporte
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:export.csv
+01_Eingang\export.csv
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: vertrag_alt.pdf
+Der aktuelle Pfad: 07_Sonstiges\vertrag_alt.pdf
+Der neue geplante Pfad: 02_Verträge
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:vertrag_alt.pdf
+07_Sonstiges\vertrag_alt.pdf
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Archivrest_2024.old
+Der aktuelle Pfad: Archivrest_2024.old
+Der neue geplante Pfad: 10_Archiv\Altbestand
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Archivrest_2024.old
+Archivrest_2024.old
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Bild_ohne_Kontest sda.png
+Der aktuelle Pfad: Bild_ohne_Kontest sda.png
+Der neue geplante Pfad: 05_Bilder
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Bild_ohne_Kontest sda.png
+Bild_ohne_Kontest sda.png
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Download_Unbekannt_2026.dat
+Der aktuelle Pfad: Download_Unbekannt_2026.dat
+Der neue geplante Pfad: 01_Eingang
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Download_Unbekannt_2026.dat
+Download_Unbekannt_2026.dat
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Liesmich_Altbestand.md
+Der aktuelle Pfad: Liesmich_Altbestand.md
+Der neue geplante Pfad: 10_Archiv\Altbestand
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Liesmich_Altbestand.md
+Liesmich_Altbestand.md
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Privater_Merkzettel.txt
+Der aktuelle Pfad: Privater_Merkzettel.txt
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Privater_Merkzettel.txt
+Privater_Merkzettel.txt
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Temp_Import_ohne_Bezug.csv
+Der aktuelle Pfad: Temp_Import_ohne_Bezug.csv
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Temp_Import_ohne_Bezug.csv
+Temp_Import_ohne_Bezug.csv
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Testdatei_Leerstand.bin
+Der aktuelle Pfad: Testdatei_Leerstand.bin
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Testdatei_Leerstand.bin
+Testdatei_Leerstand.bin
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Unbenannte_Ablage_01.log
+Der aktuelle Pfad: Unbenannte_Ablage_01.log
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Unbenannte_Ablage_01.log
+Unbenannte_Ablage_01.log
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Unklare_Sammlung.zip
+Der aktuelle Pfad: Unklare_Sammlung.zip
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Unklare_Sammlung.zip
+Unklare_Sammlung.zip
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Zwischenablage_Unsortiert.tmp
+Der aktuelle Pfad: Zwischenablage_Unsortiert.tmp
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Zwischenablage_Unsortiert.tmp
+Zwischenablage_Unsortiert.tmp
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: bild1.png
+Der aktuelle Pfad: 01_Eingang\bild1.png
+Der neue geplante Pfad: 05_Bilder
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:bild1.png
+01_Eingang\bild1.png
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: export.csv
+Der aktuelle Pfad: 01_Eingang\export.csv
+Der neue geplante Pfad: 06_Exporte
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:export.csv
+01_Eingang\export.csv
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: vertrag_alt.pdf
+Der aktuelle Pfad: 07_Sonstiges\vertrag_alt.pdf
+Der neue geplante Pfad: 02_Verträge
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:vertrag_alt.pdf
+07_Sonstiges\vertrag_alt.pdf
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Archivrest_2024.old
+Der aktuelle Pfad: Archivrest_2024.old
+Der neue geplante Pfad: 10_Archiv\Altbestand
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Archivrest_2024.old
+Archivrest_2024.old
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Bild_ohne_Kontest sda.png
+Der aktuelle Pfad: Bild_ohne_Kontest sda.png
+Der neue geplante Pfad: 05_Bilder
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Bild_ohne_Kontest sda.png
+Bild_ohne_Kontest sda.png
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Download_Unbekannt_2026.dat
+Der aktuelle Pfad: Download_Unbekannt_2026.dat
+Der neue geplante Pfad: 01_Eingang
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Download_Unbekannt_2026.dat
+Download_Unbekannt_2026.dat
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Liesmich_Altbestand.md
+Der aktuelle Pfad: Liesmich_Altbestand.md
+Der neue geplante Pfad: 10_Archiv\Altbestand
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Liesmich_Altbestand.md
+Liesmich_Altbestand.md
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Privater_Merkzettel.txt
+Der aktuelle Pfad: Privater_Merkzettel.txt
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Privater_Merkzettel.txt
+Privater_Merkzettel.txt
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Temp_Import_ohne_Bezug.csv
+Der aktuelle Pfad: Temp_Import_ohne_Bezug.csv
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Temp_Import_ohne_Bezug.csv
+Temp_Import_ohne_Bezug.csv
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Testdatei_Leerstand.bin
+Der aktuelle Pfad: Testdatei_Leerstand.bin
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Testdatei_Leerstand.bin
+Testdatei_Leerstand.bin
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Unbenannte_Ablage_01.log
+Der aktuelle Pfad: Unbenannte_Ablage_01.log
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Unbenannte_Ablage_01.log
+Unbenannte_Ablage_01.log
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Unklare_Sammlung.zip
+Der aktuelle Pfad: Unklare_Sammlung.zip
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Unklare_Sammlung.zip
+Unklare_Sammlung.zip
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Zwischenablage_Unsortiert.tmp
+Der aktuelle Pfad: Zwischenablage_Unsortiert.tmp
+Der neue geplante Pfad: 07_Sonstiges
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Zwischenablage_Unsortiert.tmp
+Zwischenablage_Unsortiert.tmp
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: bild1.png
+Der aktuelle Pfad: 01_Eingang\bild1.png
+Der neue geplante Pfad: 05_Bilder
+
+WARNING:root:Bei dem aktuellen Objekt urde der alte Pfad nicht gefunden:bild1.pngw
+01_Eingang\bild1.png
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: export.csv
+Der aktuelle Pfad: 01_Eingang\export.csv
+Der neue geplante Pfad: 06_Exporte
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:export.csv
+01_Eingang\export.csv
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: vertrag_alt.pdf
+Der aktuelle Pfad: 07_Sonstiges\vertrag_alt.pdf
+Der neue geplante Pfad: 02_Verträge
+
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:vertrag_alt.pdf
+07_Sonstiges\vertrag_alt.pdf
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Alte_Notiz_ohne_Zusammenhang.txt
+C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Alte_Notiz_ohne_Zusammenhang.txt
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+ERROR:root:Der angebene Pfad wurde nicht gefunden!
+
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Alte_Notiz_ohne_Zusammenhang.txt
+C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Alte_Notiz_ohne_Zusammenhang.txt
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Alte_Notiz_ohne_Zusammenhang.txt
+C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Alte_Notiz_ohne_Zusammenhang.txt
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Alte_Notiz_ohne_Zusammenhang.txt
+C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Alte_Notiz_ohne_Zusammenhang.txt
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Alte_Notiz_ohne_Zusammenhang.txt
+C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Alte_Notiz_ohne_Zusammenhang.txt
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:--------------------------------------
+ERROR:root:Schema-Validierung fehlgeschlagen.
+ERROR:root:'' was expected
+
+Failed validating 'const' in schema['properties']['datei_vorschläge']['items']['allOf'][4]['then']['properties']['suggested_category']:
+    {'const': ''}
+
+On instance['datei_vorschläge'][53]['suggested_category']:
+    'Rechnung'
+ERROR:root:--------------------------------------
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Dateivorschläge sollen nicht ausgeführt werden. Programm wird beendet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:Dateiname wurde erfolgreich umbenannt
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+ERROR:root:Der angebene Pfad wurde nicht gefunden!
+
+ERROR:root:Der angebene Pfad wurde nicht gefunden!
+
+ERROR:root:Der angebene Pfad wurde nicht gefunden!
+
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Alte_Notiz_ohne_Zusammenhang.txt
+C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Alte_Notiz_ohne_Zusammenhang.txt
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:Alte_Notiz_ohne_Zusammenhang.txt
+C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Alte_Notiz_ohne_Zusammenhang.txt
+
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Alte_Notiz_ohne_Zusammenhang.txt
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Alte_Notiz_ohne_Zusammenhang.txt
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\10_Archiv\Altbestand
+
+INFO:root:--------------------------------------------------
+Die Datei Alte_Notiz_ohne_Zusammenhang.txt wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Alte_Notiz_ohne_Zusammenhang.txt
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\10_Archiv\Altbestand--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Archivrest_2024.old
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Archivrest_2024.old
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\10_Archiv\Altbestand
+
+INFO:root:--------------------------------------------------
+Die Datei Archivrest_2024.old wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Archivrest_2024.old
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\10_Archiv\Altbestand--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Kopie_von_Datei.alt
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Kopie_von_Datei.alt
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\10_Archiv\Altbestand
+
+INFO:root:--------------------------------------------------
+Die Datei Kopie_von_Datei.alt wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Kopie_von_Datei.alt
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\10_Archiv\Altbestand--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Liesmich_Altbestand.md
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Liesmich_Altbestand.md
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\10_Archiv\Altbestand
+
+INFO:root:--------------------------------------------------
+Die Datei Liesmich_Altbestand.md wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\Liesmich_Altbestand.md
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\10_Archiv\Altbestand--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Baustellenfoto_Edewecht_2026-06-04.jpg
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Baustellenfoto_Edewecht_2026-06-04.jpg
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\05_Bilder\Baustellen
+
+INFO:root:--------------------------------------------------
+Die Datei Baustellenfoto_Edewecht_2026-06-04.jpg wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Baustellenfoto_Edewecht_2026-06-04.jpg
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\05_Bilder\Baustellen--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Export_Ticketsystem_Juni_2026.csv
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Export_Ticketsystem_Juni_2026.csv
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\06_Exporte\Ticketsystem
+
+INFO:root:--------------------------------------------------
+Die Datei Export_Ticketsystem_Juni_2026.csv wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Export_Ticketsystem_Juni_2026.csv
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\06_Exporte\Ticketsystem--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Handbuch_Zeiterfassung_V2.docx
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Handbuch_Zeiterfassung_V2.docx
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\04_Dokumentation\Handbücher
+
+INFO:root:--------------------------------------------------
+Die Datei Handbuch_Zeiterfassung_V2.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Handbuch_Zeiterfassung_V2.docx
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\04_Dokumentation\Handbücher--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Konfiguration_Switch_EG-02_2026-06.json
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Konfiguration_Switch_EG-02_2026-06.json
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\09_Konfiguration\Switches
+
+INFO:root:--------------------------------------------------
+Die Datei Konfiguration_Switch_EG-02_2026-06.json wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Konfiguration_Switch_EG-02_2026-06.json
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\09_Konfiguration\Switches--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Lieferantenvertrag_Netzwerkhaus_2026.pdf
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Lieferantenvertrag_Netzwerkhaus_2026.pdf
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\02_Verträge\Lieferanten
+
+INFO:root:--------------------------------------------------
+Die Datei Lieferantenvertrag_Netzwerkhaus_2026.pdf wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Lieferantenvertrag_Netzwerkhaus_2026.pdf
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\02_Verträge\Lieferanten--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: PowerShell_Benutzeranlage.ps1
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\PowerShell_Benutzeranlage.ps1
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\08_Quellcode\PowerShell
+
+INFO:root:--------------------------------------------------
+Die Datei PowerShell_Benutzeranlage.ps1 wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\PowerShell_Benutzeranlage.ps1
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\08_Quellcode\PowerShell--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Rechnung_Stadtwerke_Mai_2026.pdf
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Rechnung_Stadtwerke_Mai_2026.pdf
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\03_Rechnungen\2026
+
+INFO:root:--------------------------------------------------
+Die Datei Rechnung_Stadtwerke_Mai_2026.pdf wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Rechnung_Stadtwerke_Mai_2026.pdf
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\03_Rechnungen\2026--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Rechnung_Telekom_Juni_2026.pdf
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Rechnung_Telekom_Juni_2026.pdf
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\03_Rechnungen\2026
+
+INFO:root:--------------------------------------------------
+Die Datei Rechnung_Telekom_Juni_2026.pdf wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Rechnung_Telekom_Juni_2026.pdf
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\03_Rechnungen\2026--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Screenshot_Fehler_Anmeldung_2026-06-03.png
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Screenshot_Fehler_Anmeldung_2026-06-03.png
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\05_Bilder\Screenshots
+
+INFO:root:--------------------------------------------------
+Die Datei Screenshot_Fehler_Anmeldung_2026-06-03.png wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Screenshot_Fehler_Anmeldung_2026-06-03.png
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\05_Bilder\Screenshots--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Wartungsvertrag_Drucker_2026.pdf
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Wartungsvertrag_Drucker_2026.pdf
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\02_Verträge\Wartung
+
+INFO:root:--------------------------------------------------
+Die Datei Wartungsvertrag_Drucker_2026.pdf wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\01_Eingang\Wartungsvertrag_Drucker_2026.pdf
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\02_Verträge\Wartung--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Projektbericht_Zugangsbeschränkung_Juni_2026.pdf
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges\Projektbericht_Zugangsbeschränkung_Juni_2026.pdf
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\04_Dokumentation\Projektunterlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Projektbericht_Zugangsbeschränkung_Juni_2026.pdf wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges\Projektbericht_Zugangsbeschränkung_Juni_2026.pdf
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\04_Dokumentation\Projektunterlagen--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Rechnung_Bueromaterial_Mai_2026.pdf
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges\Rechnung_Bueromaterial_Mai_2026.pdf
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\03_Rechnungen\2026
+
+INFO:root:--------------------------------------------------
+Die Datei Rechnung_Bueromaterial_Mai_2026.pdf wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges\Rechnung_Bueromaterial_Mai_2026.pdf
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\03_Rechnungen\2026--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: rechnung_scan.pdf
+Der aktuelle Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges\rechnung_scan.pdf
+Der neue geplante Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\03_Rechnungen\2026
+
+INFO:root:--------------------------------------------------
+Die Datei rechnung_scan.pdf wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\07_Sonstiges\rechnung_scan.pdf
+Neuer Pfad: C:\Users\Caspa\OneDrive\Dokumente\KI -  Test Dokumente\Testordner_Dateivorschläge_V3\03_Rechnungen\2026--------------------------------------------------
+INFO:root:Dateu wurde erfolgreich verschoben

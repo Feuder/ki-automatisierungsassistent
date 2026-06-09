@@ -46,6 +46,7 @@ Die folgenden Felder müssen bei jeder Datei immer einen nicht-leeren String ent
 * `file_type`
 * `action_type`
 * `reason`
+* `erledigt`
 
 Die folgenden Felder dürfen leer sein, wenn sie für die vorgeschlagene Aktion nicht benötigt werden oder nicht sicher ableitbar sind:
 
@@ -68,6 +69,7 @@ Pflichtwerte:
 * `file_type`
 * `action_type`
 * `reason`
+* `erledigt`
 
 Optionale Felder:
 
@@ -125,6 +127,7 @@ Pflichtwerte:
 * `file_type`
 * `action_type`
 * `reason`
+* `erledigt`
 
 Nicht sicher ableitbare Felder müssen leer bleiben:
 
@@ -235,6 +238,14 @@ Die Begründung muss sich ausschließlich auf den Ordnerbericht stützen.
 
 Muss immer befüllt sein.
 
+### * `erledigt`
+
+Muss IMMER mit "False" gefüllt werden. 
+
+Es darf nichts anderes in dieser Spalte stehen!
+
+Muss immer befüllt sein!
+
 ## Ausgabeformat
 
 Die Ausgabe muss exakt dieses JSON-Objekt sein:
@@ -249,7 +260,8 @@ Die Ausgabe muss exakt dieses JSON-Objekt sein:
 "suggested_folder": "",
 "suggested_new_name": "",
 "action_type": "...",
-"reason": "..."
+"reason": "...",
+"erledigt": "..."
 }
 ]
 }

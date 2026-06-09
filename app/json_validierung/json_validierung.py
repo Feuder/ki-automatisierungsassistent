@@ -101,7 +101,8 @@ def vorschlag_validieren(inhalt):
                         "suggested_folder",
                         "suggested_new_name",
                         "action_type",
-                        "reason"
+                        "reason",
+                        "erledigt"
                     ],
                     "additionalProperties": False,
                     "properties": {
@@ -139,8 +140,92 @@ def vorschlag_validieren(inhalt):
                         "reason": {
                             "type": "string",
                             "minLength": 1
+                        },
+                        "erledigt": {
+                            "type": "string",
+                            "enum": ["False"]
                         }
-                    }
+                    },
+                    "allOf": [
+                        {
+                            "if": {
+                                "properties": {
+                                    "action_type": {"const": "keep"}
+                                }
+                            },
+                            "then": {
+                                "properties": {
+                                    "suggested_folder": {"const": ""},
+                                    "suggested_new_name": {"const": ""}
+                                }
+                            }
+                        },
+                        {
+                            "if": {
+                                "properties": {
+                                    "action_type": {"const": "move_suggestion"}
+                                }
+                            },
+                            "then": {
+                                "properties": {
+                                    "suggested_folder": {
+                                        "type": "string",
+                                        "minLength": 1
+                                    },
+                                    "suggested_new_name": {"const": ""}
+                                }
+                            }
+                        },
+                        {
+                            "if": {
+                                "properties": {
+                                    "action_type": {"const": "rename_suggestion"}
+                                }
+                            },
+                            "then": {
+                                "properties": {
+                                    "suggested_folder": {"const": ""},
+                                    "suggested_new_name": {
+                                        "type": "string",
+                                        "minLength": 1
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if": {
+                                "properties": {
+                                    "action_type": {"const": "rename_and_move_suggestion"}
+                                }
+                            },
+                            "then": {
+                                "properties": {
+                                    "suggested_folder": {
+                                        "type": "string",
+                                        "minLength": 1
+                                    },
+                                    "suggested_new_name": {
+                                        "type": "string",
+                                        "minLength": 1
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if": {
+                                "properties": {
+                                    "action_type": {"const": "unclear"}
+                                }
+                            },
+                            "then": {
+                                "properties": {
+                                    "suggested_category": {"const": ""},
+                                    "suggested_folder": {"const": ""},
+                                    "suggested_new_name": {"const": ""}
+                                }
+                            }
+                        }
+                    ]
                 }
             }
         }
