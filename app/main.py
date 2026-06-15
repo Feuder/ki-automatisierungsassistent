@@ -481,10 +481,14 @@ elif userstartwahl == "5":
                         if alter_pfad.exists() and neuer_name != "":
 
                             verschobener_pfad = neuer_pfad / datei_name
+                            try: 
+                                if move_file(datei_name, alter_pfad, neuer_pfad) and rename_file(datei_name, neuer_name, verschobener_pfad):
 
-                            if move_file(datei_name, alter_pfad, neuer_pfad) and rename_file(datei_name, neuer_name, verschobener_pfad):
-                                i["erledigt"] = "True"
-                        
+                                
+                                print("Es gab einen Fehler beim Neubennen der Datei. Die Datei wurde erfolgreich verschoben")
+                                logging.warning("Es gab einen Fehler beim neu bennnen der Datei. Die wurde aber erfolgreich verschoben")
+
+                                
                         else:
                             logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden, oder der neue Name ist leer:" \
                             f"{datei_name}\n" \

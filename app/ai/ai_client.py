@@ -214,7 +214,7 @@ def dateiablage_vorschlag(inhalt, anweisung):
                 durchlauf += 1
 
     except Exception as fehler:
-        print("-" + 50)
+        print("-" * 50)
         print("Es gab einen Fehler bei der Erstellung der Dateiablage-Vorschläge.")
         print(fehler)
         logging.error("Es gab einen Fehler bei der Erstellung der Dateiablage-Vorschläge.")

@@ -66,6 +66,7 @@ def move_file(datei_name, alter_pfad, neuer_pfad):
         return False
 
 def rename_file(datei_name, neuer_name, alter_pfad):
+    
     try:
         alter_pfad = Path(alter_pfad)
 
@@ -145,3 +146,10 @@ def rename_file(datei_name, neuer_name, alter_pfad):
         )
 
         return False
+    
+def move_and_rename_file(datei_name, alter_pfad, neuer_pfad, neuer_name):
+    
+    try:
+        move_file(datei_name, alter_pfad, neuer_pfad)
+    except Exception as f:
+        print("Es gab einen Fehler mit")
