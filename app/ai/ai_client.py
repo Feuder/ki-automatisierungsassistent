@@ -141,11 +141,21 @@ def ordnerbericht(inhalt):
         logging.error(fehler)
         raise SystemExit
 
-def dateiablage_vorschlag(inhalt):
+def dateiablage_vorschlag(inhalt, anweisung):
     prompt = str(dateiablage_prompt())
 
     original_inhalt = inhalt
     letzter_output = None
+    useranweisungen = anweisung
+
+    if useranweisungen:
+        anfrage_inhalt = ("Du bekommst gleich einen Inhalt. Dazu kommen folgende Anweisungen, die du ausführen sollst:\n" \
+                        f"{useranweisungen}\n" \
+                        "Das ist der Inhalt\n" \
+                        f"{original_inhalt}"
+        )
+    else:
+        anfrage_inhalt = original_inhalt
 
     try:
         validiert = False
@@ -161,7 +171,7 @@ def dateiablage_vorschlag(inhalt):
                         model=get_model_env(),
                         instructions=prompt,
                         reasoning={"effort": "low"},
-                        input=original_inhalt
+                        input= anfrage_inhalt
                     )
 
             elif fehlermeldung is not None and durchlauf <= 3:
@@ -204,6 +214,7 @@ def dateiablage_vorschlag(inhalt):
                 durchlauf += 1
 
     except Exception as fehler:
+        print("-" + 50)
         print("Es gab einen Fehler bei der Erstellung der Dateiablage-Vorschläge.")
         print(fehler)
         logging.error("Es gab einen Fehler bei der Erstellung der Dateiablage-Vorschläge.")
