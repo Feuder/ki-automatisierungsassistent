@@ -1941,3 +1941,73 @@ Die Datei V7-Skill datei.docx wurde erfolgreich umbenannt:
 Alter Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LV Analyse Tool Prompts\V7 - 2. Custom GPT + Skills\V7-Skill datei.docx
 Neuer Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LV Analyse Tool Prompts\V7 - 2. Custom GPT + Skills\V7-Skill_Datei.docx
 --------------------------------------------------
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+WARNING:root:Es werden nicht alle existierenden Unterordner mit einbezogen!
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:--------------------------------------------------
+Die Datei Englisch 25.odt wurde erfolgreich umbenannt:
+Alter Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Englisch 25.odt
+Neuer Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Englisch Aufgabe vom 25.01.odt
+--------------------------------------------------
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:--------------------------------------------------
+Die Datei Englisch am 11.odt wurde erfolgreich umbenannt:
+Alter Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Englisch am 11.odt
+Neuer Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Englisch am 11.01.odt
+--------------------------------------------------
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:--------------------------------------------------
+Die Datei Inhaltsangabe.docx wurde erfolgreich umbenannt:
+Alter Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Inhaltsangabe.docx
+Neuer Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Inhaltsangabe_Deutsch_1-Lehrjahr.docx
+--------------------------------------------------
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:--------------------------------------------------
+Die Datei LF 4n 18.2.odt wurde erfolgreich umbenannt:
+Alter Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\LF 4n 18.2.odt
+Neuer Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\LF 4 vom 18.2.odt
+--------------------------------------------------
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:--------------------------------------------------
+Die Datei Öhlschläger LF2.docx wurde erfolgreich umbenannt:
+Alter Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Öhlschläger LF2.docx
+Neuer Pfad: C:\Users\cgr\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Öhlschläger LF2 - 1. Lehrjahr.docx
+--------------------------------------------------

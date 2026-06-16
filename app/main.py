@@ -6,7 +6,7 @@ from ai.ai_client import KI_anfrage, ki_task_erstellen, dateiablage_vorschlag, o
 from Testing.test_response_ki import test_dateiablage_vorschlag
 from utils.text_reader import datei_inhalt
 from utils.folder_scanner import ordnerinhaltunteror, ordnerinhaltohne
-from utils.File_actions.file_actions import move_file, rename_file
+from utils.File_actions.file_actions import move_file, rename_file, move_and_rename_file
 from pathlib import Path
 
 #-------Hier wird überprüft ob die Pfade alle in Ordnung sind-------
@@ -479,15 +479,10 @@ elif userstartwahl == "5":
                         neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
 
                         if alter_pfad.exists() and neuer_name != "":
-
                             verschobener_pfad = neuer_pfad / datei_name
-                            try: 
-                                if move_file(datei_name, alter_pfad, neuer_pfad) and rename_file(datei_name, neuer_name, verschobener_pfad):
-
-                                
-                                print("Es gab einen Fehler beim Neubennen der Datei. Die Datei wurde erfolgreich verschoben")
-                                logging.warning("Es gab einen Fehler beim neu bennnen der Datei. Die wurde aber erfolgreich verschoben")
-
+                        
+                        if move_and_rename_file:
+                            logging.info("Datei erfolgreich verschoben")
                                 
                         else:
                             logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden, oder der neue Name ist leer:" \
