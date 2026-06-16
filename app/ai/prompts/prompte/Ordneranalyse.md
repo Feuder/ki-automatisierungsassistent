@@ -135,7 +135,7 @@ Nicht sicher ableitbare Felder müssen leer bleiben:
 * `suggested_folder`: `""`
 * `suggested_new_name`: `""`
 
-## Erlaubte Werte für `action_type`
+### Erlaubte Werte für `action_type`
 
 Verwende ausschließlich einen dieser Werte:
 

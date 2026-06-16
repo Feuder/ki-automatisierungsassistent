@@ -1,12 +1,13 @@
 import logging
 import json
 from collections import Counter
-from config.settings import EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER, REPORT_ORDNER, MAX_TIEFE
+from config.settings import PRJ_PFAD, EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER, REPORT_ORDNER, MAX_TIEFE
 from ai.ai_client import KI_anfrage, ki_task_erstellen, dateiablage_vorschlag, ordnerbericht, dateiablage_vorschlag_erklärung
 from Testing.test_response_ki import test_dateiablage_vorschlag
 from utils.text_reader import datei_inhalt
 from utils.folder_scanner import ordnerinhaltunteror, ordnerinhaltohne
 from utils.File_actions.file_actions import move_file, rename_file, move_and_rename_file
+from utils.Validate_Path import validere_Pfad
 from pathlib import Path
 
 #-------Hier wird überprüft ob die Pfade alle in Ordnung sind-------
@@ -18,6 +19,7 @@ REPORT_ORDNER.mkdir(parents=True, exist_ok=True)
 
 LOG_DATEI = LOG_ORDNER / "logs.log"
 
+projekt_pfad = PRJ_PFAD
 pfad = EINGABE_ORDNER
 zusammenfassung_ordner = SUMMARY_ORDNER
 aufgaben_ordner = TASK_ORDNER
@@ -249,15 +251,30 @@ elif userstartwahl == "5":
 
     reportpfad.mkdir(parents=True, exist_ok=True)
 
-    with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
-        antwortdatei.write("## Technischer Bericht:")
-        antwortdatei.write(ordnerstat)
-        antwortdatei.write("## KI Ausgabe:")
-        antwortdatei.write(f"{ki_response}\n")
+    roh_daten = json.loads(ki_response)
+    überprüfte_daten = roh_daten
+    alter_roh_Daten = None
 
-    with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "w", encoding="utf-8") as antwortdatei:
-        antwortdatei.write(f"{ki_response}\n")
+    for i in überprüfte_daten:
+        if not validere_Pfad(i):
+            überprüfte_daten.remove(i)
+            print("Es wurde ein Vorschlag entfernt! Es gab ein Fehler bei der erstellung des Vorschlages")
+            logging.warning("Es wurde ein Vorschlag entfernt! Es gab ein Fehler bei der erstellung des Vorschlages")
+    
 
+    if überprüfte_daten != roh_daten:
+        alter_roh_Daten = roh_daten
+        roh_daten = überprüfte_daten
+
+    if überprüfte_daten == roh_daten:
+        with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
+            antwortdatei.write("## Technischer Bericht:")
+            antwortdatei.write(ordnerstat)
+            antwortdatei.write("## KI Ausgabe:")
+            antwortdatei.write(f"{roh_daten}\n")
+
+        with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "w", encoding="utf-8") as antwortdatei:
+            antwortdatei.write(f"{roh_daten}\n")
 
     eingetragene_aktionen = []
 
@@ -269,9 +286,10 @@ elif userstartwahl == "5":
         anzahl_neuername_verschiebung = 0
         unklar = 0
 
+        print("")
+        print("")
         print("------------------Zusammenfassung der Analyse:------------------")
         with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "r", encoding="utf-8") as antwortdatei:
-
             roh_daten = json.load(antwortdatei)
 
             json_daten = roh_daten["datei_vorschläge"]
@@ -374,14 +392,14 @@ elif userstartwahl == "5":
             print("-" * 50)
                                 
             if auswahl == "5":
-                print("Du kannst mir diesen Unclear erklären, wenn du möchtest. j/n\n")
+                print("Du kannst mir diesen Unclear erklären, wenn du möchtest. j/n")
 
                 while True:
                     erklär_auswahl = input().strip()
 
                     if erklär_auswahl == "j":
                         print("Okay, dann erkläre mir diese Datei:\n")
-                        erklärung = input("")
+                        erklärung = input("\n")
                         
                         verbessertereintrag = json.loads(
                             dateiablage_vorschlag_erklärung(eintrag, erklärung)
