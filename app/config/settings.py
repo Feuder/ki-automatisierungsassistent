@@ -10,6 +10,8 @@ SUMMARY_ORDNER = Path("data/output/summaries")
 TASK_ORDNER = Path("data/output/tasks")
 REPORT_ORDNER = Path("data/output/reports")
 
+
+PRJ_PFAD = Path.cwd().parent.parent
 BERICHT_DATEINAME = "ordnerbericht.txt"
 BERICHT_DATEIPFAD = AUSGABE_ORDNER / BERICHT_DATEINAME
 

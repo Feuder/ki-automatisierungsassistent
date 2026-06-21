@@ -3,6 +3,7 @@ from pathlib import Path
 import logging
 
 def move_file(datei_name, alter_pfad, neuer_pfad):
+    
     try:
         alter_pfad = Path(alter_pfad)
         ziel_ordner = Path(neuer_pfad)
@@ -66,6 +67,7 @@ def move_file(datei_name, alter_pfad, neuer_pfad):
         return False
 
 def rename_file(datei_name, neuer_name, alter_pfad):
+    
     try:
         alter_pfad = Path(alter_pfad)
 
@@ -145,3 +147,30 @@ def rename_file(datei_name, neuer_name, alter_pfad):
         )
 
         return False
+    
+def move_and_rename_file(datei_name, alter_pfad, neuer_pfad, neuer_name):
+
+    try:
+        move_status = move_file(datei_name, alter_pfad, neuer_pfad)
+
+    except Exception as f:
+        print("Es gab einen Fehler bei der verschiebung der Datei:\n" \
+                f"{f}")
+        logging.error("Es gab einen Fehler bei der verschiebung der Datei:\n" \
+                    f"{f}")
+
+    try:
+        rename_staus = rename_file(datei_name, neuer_name, alter_pfad)
+    
+    except Exception as f:
+        print("Es gab einen Fehler bei der neu benneung der Datei:\n" \
+            f"{f}")
+        logging.error("Es gab einen Fehler bei der neu benneung der Datei:\n" \
+            f"{f}")
+        
+    if move_status == True and rename_staus == True:
+        return True
+    else:
+        return False
+
+        
