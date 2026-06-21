@@ -146,6 +146,7 @@ def dateiablage_vorschlag(inhalt):
 
     original_inhalt = inhalt
     letzter_output = None
+    connection_error = False
 
     try:
         validiert = False
@@ -209,7 +210,13 @@ def dateiablage_vorschlag(inhalt):
         logging.error("Es gab einen Fehler bei der Erstellung der Dateiablage-Vorschläge.")
         logging.error(fehler)
         raise SystemExit
-    
+    except ConnectionError as ce:
+        print("Es gab ein Problem mit der Internet verbindung:" \
+        f"{ce}")
+        logging.error("Es gab einen Connection Error. Es wird einmal neu probiert")
+        logging.error(ce)
+        raise SystemExit
+
 
 def dateiablage_vorschlag_erklärung(json_daten, erklärung):
     prompt = str(erklärung_prompt())
