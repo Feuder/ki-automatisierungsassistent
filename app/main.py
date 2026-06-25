@@ -2,7 +2,7 @@ import logging
 import json
 from collections import Counter
 from config.settings import PRJ_PFAD, EINGABE_ORDNER, AUSGABE_ORDNER, LOG_ORDNER, SUMMARY_ORDNER, TASK_ORDNER, REPORT_ORDNER, MAX_TIEFE
-from ai.ai_client import KI_anfrage, ki_task_erstellen, dateiablage_vorschlag, ordnerbericht, dateiablage_vorschlag_erklärung
+from ai.ai_client import KI_anfrage, ki_task_erstellen, dateiablage_vorschlag, ordnerbericht, dateiablage_vorschlag_erklärung, Datei_anylsieren
 from Testing.test_response_ki import test_dateiablage_vorschlag
 from utils.text_reader import datei_inhalt
 from utils.folder_scanner import ordnerinhaltunteror, ordnerinhaltohne
@@ -231,11 +231,12 @@ elif userstartwahl == "5":
     
     print("Gebe hier die Aufgabe rein. Leer lassen, wenn er einfach machen soll:")
     anweisung = input()
+    print("")
 
     inhalt = "\n".join("".join(i) for i in inhalt)
     
     logging.info("Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet\n")
-    ki_response = dateiablage_vorschlag(inhalt) # Hier wurde erstmal eine statische reingemacht, um Zeit und Kosten für das Testen zu sparen
+    ki_response = dateiablage_vorschlag(inhalt, anweisung) # Hier wurde erstmal eine statische reingemacht, um Zeit und Kosten für das Testen zu sparen
     #ki_response =  str(test_dateiablage_vorschlag(inhalt))
 
     if ki_response:
@@ -252,29 +253,58 @@ elif userstartwahl == "5":
     reportpfad.mkdir(parents=True, exist_ok=True)
 
     roh_daten = json.loads(ki_response)
-    überprüfte_daten = roh_daten
-    alter_roh_Daten = None
 
-    for i in überprüfte_daten:
-        if not validere_Pfad(i):
-            überprüfte_daten.remove(i)
-            print("Es wurde ein Vorschlag entfernt! Es gab ein Fehler bei der erstellung des Vorschlages")
-            logging.warning("Es wurde ein Vorschlag entfernt! Es gab ein Fehler bei der erstellung des Vorschlages")
-    
+    if isinstance(roh_daten, dict) and "datei_vorschläge" in roh_daten:
+        überprüfte_daten = roh_daten["datei_vorschläge"]
+    else:
+        raise TypeError("KI-Antwort hat nicht die erwartete Struktur: 'datei_vorschläge' fehlt.")
 
-    if überprüfte_daten != roh_daten:
-        alter_roh_Daten = roh_daten
-        roh_daten = überprüfte_daten
+    gültige_daten = []
 
-    if überprüfte_daten == roh_daten:
-        with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.md", "a", encoding="utf-8") as antwortdatei:
-            antwortdatei.write("## Technischer Bericht:")
-            antwortdatei.write(ordnerstat)
-            antwortdatei.write("## KI Ausgabe:")
-            antwortdatei.write(f"{roh_daten}\n")
+    for eintrag in überprüfte_daten:
+        if validere_Pfad(eintrag, wahlpfad):
+            gültige_daten.append(eintrag)
+        else:
+            print("Es wurde ein Vorschlag entfernt! Es gab einen Fehler bei der Erstellung des Vorschlages.")
+            logging.warning("Es wurde ein Vorschlag wegen ungültigem Pfad entfernt.")
 
-        with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "w", encoding="utf-8") as antwortdatei:
-            antwortdatei.write(f"{roh_daten}\n")
+    roh_daten["datei_vorschläge"] = gültige_daten
+    überprüfte_daten = gültige_daten
+
+    logging.info("Es wird geprüft, ob es unklare Dateien gibt.")
+
+    for index, eintrag in enumerate(überprüfte_daten):
+        if eintrag.get("action_type") == "unclear":
+            try:
+                logging.info("Unclear wird genauer untersucht.")
+
+                neuer_vorschlag_response = Datei_anylsieren(eintrag, inhalt, wahlpfad)
+                neuer_vorschlag = json.loads(neuer_vorschlag_response)
+
+                if "datei_vorschläge" in neuer_vorschlag:
+                    neuer_vorschlag = neuer_vorschlag["datei_vorschläge"][0]
+
+                if validere_Pfad(neuer_vorschlag, wahlpfad):
+                    überprüfte_daten[index] = neuer_vorschlag
+                    logging.info("Unclear-Vorschlag wurde erfolgreich ersetzt.")
+                else:
+                    logging.warning("Neuer Vorschlag wurde verworfen, weil der Pfad ungültig ist.")
+
+            except Exception as f:
+                print(f)
+                logging.error("Fehler bei der Nachanalyse einer unclear-Datei.")
+                logging.error(f)
+
+    roh_daten["datei_vorschläge"] = überprüfte_daten
+
+    with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) + 1}.md", "a", encoding="utf-8") as antwortdatei:
+        antwortdatei.write("## Technischer Bericht:\n")
+        antwortdatei.write(ordnerstat)
+        antwortdatei.write("\n## KI Ausgabe:\n")
+        antwortdatei.write(json.dumps(roh_daten, ensure_ascii=False, indent=4))
+
+    with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) + 1}.json", "w", encoding="utf-8") as antwortdatei:
+        json.dump(roh_daten, antwortdatei, ensure_ascii=False, indent=4)
 
     eingetragene_aktionen = []
 
@@ -289,35 +319,35 @@ elif userstartwahl == "5":
         print("")
         print("")
         print("------------------Zusammenfassung der Analyse:------------------")
-        with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) +1}.json", "r", encoding="utf-8") as antwortdatei:
-            roh_daten = json.load(antwortdatei)
+        json_daten = roh_daten["datei_vorschläge"]
 
-            json_daten = roh_daten["datei_vorschläge"]
+        with open(reportpfad / f"Report des durchlauf {len(anzahl_dateien) + 1}.json", "w", encoding="utf-8") as antwortdatei:
+            json.dump(roh_daten, antwortdatei, ensure_ascii=False, indent=4)
 
-            for eintrag in json_daten:
-                match eintrag["action_type"]:
-                    case "keep":
-                        if eintrag["erledigt"] == "False":
-                            anzahl_keine_änderungen += 1
+        for eintrag in json_daten:
+            match eintrag["action_type"]:
+                case "keep":
+                    if eintrag["erledigt"] == "False":
+                        anzahl_keine_änderungen += 1
 
-                    case "move_suggestion":
-                        if eintrag["erledigt"] == "False":
-                            anzahl_verschiebungen += 1
+                case "move_suggestion":
+                    if eintrag["erledigt"] == "False":
+                        anzahl_verschiebungen += 1
 
-                    case "rename_suggestion":
-                        if eintrag["erledigt"] == "False":
-                            anzahl_neuer_name += 1
+                case "rename_suggestion":
+                    if eintrag["erledigt"] == "False":
+                        anzahl_neuer_name += 1
 
-                    case "rename_and_move_suggestion":
-                        if eintrag["erledigt"] == "False":
-                            anzahl_neuername_verschiebung += 1
+                case "rename_and_move_suggestion":
+                    if eintrag["erledigt"] == "False":
+                        anzahl_neuername_verschiebung += 1
 
-                    case "unclear":
-                        if eintrag["erledigt"] == "False":
-                            unklar += 1
-                        
-                    case _:
-                        print(f"Unbekannter action_type: {eintrag['action_type']}")
+                case "unclear":
+                    if eintrag["erledigt"] == "False":
+                        unklar += 1
+                    
+                case _:
+                    print(f"Unbekannter action_type: {eintrag['action_type']}")
 
         print(f"Keine Änderungen: {anzahl_keine_änderungen}")
         print(f"Verschiebungen: {anzahl_verschiebungen}")

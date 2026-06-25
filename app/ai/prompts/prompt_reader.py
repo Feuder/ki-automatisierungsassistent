@@ -17,3 +17,7 @@ def dateiablage_prompt():
 def erklärung_prompt():
     with open("app/ai/prompts/prompte/Usererklärung_der_einzelenden_Dateien.md", "r", encoding="utf-8") as prompt_datei:
         return prompt_datei.read()
+    
+def datei_anaylse_Prompt():
+    with open("app/ai/prompts/prompte/Einzelnde_Datei_Analysieren.md", "r", encoding="utf-8") as prompt_datei:
+        return prompt_datei.read()
