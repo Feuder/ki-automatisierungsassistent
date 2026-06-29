@@ -31,13 +31,34 @@ logging.basicConfig(filename=LOG_DATEI, level=logging.INFO, encoding="utf-8")
 logging.info("-" * 100)
 logging.info("Programm startet")
 logging.info("Ausgabe wurde geprüft, oder erstellt")
+#---------------------------------------------
+
+#-------Start des Programmes-------
+#Hier wird der Relevante Pfad für dennen die Aktionen gemacht werden sollen aufgerufen
+print("Gebe den Pfad ein, mit dem du Arbeiten möchtest:\n")
+pfad = Path(input()).resolve()
 
 if not pfad.exists() or not pfad.is_dir():
     print("Es gibt ein Problem mit dem Pfad der input Dateien.")
     logging.error("Der Input Pfad wurde nicht gefunden")
     raise SystemExit
-#---------------------------------------------
 
+dateien = [f for f in pfad.iterdir() if f.is_file()]
+dateianzahl = []
+
+if not dateien:
+    print("Es wurden keine Dateien im Eingabeordner gefunden.")
+    logging.info("Keine Dateien im Eingabeordner gefunden.")
+    raise SystemExit
+
+
+relevantes_Objekt = {
+    "pfad": pfad,
+    "dateien": dateien,
+    "Metadaten": call_metadata(relevantes_Objekt)
+}
+
+#Hier wird ausgewählt, was der User machen möchte
 print("Was möchtest du machen?:\n" \
 "1. Metadaten aller Dateien anzeigen\n" \
 "2. Den Inhalt einer Datei zusammenfassen\n" \
@@ -57,42 +78,12 @@ while True:
     else:
         print("Bitte gebe eine gültige Zahl ein!")
 
-dateien = [f for f in pfad.iterdir() if f.is_file()]
-dateianzahl = []
 
 if userstartwahl == "1":
-    #Ab hier wird geguckt was es für Dateien gibt und wie diese heißen.
-    bericht = []
-
-    logging.info(f"Anzahl Gefundener Dateien: {len(dateien)}")
-
-    bericht.append("============= Ordnerbericht =============")
-    bericht.append("")
-    bericht.append(f"Analysierter Pfad: {pfad}")
-    bericht.append(f"Anzahl der Dateien: {len(dateien)}")
-    bericht.append("")
-    bericht.append("Dateien:")
-
-    #Hier werden die Dateien ausgeben
-    if dateien:
-        for f in dateien:
-            if f.suffix:
-                bericht.append(f"{f.name} | {f.suffix} | {f.stat().st_size} Bytes")
-            else:
-                bericht.append(f"{f.name} | Keine Endung | {f.stat().st_size} Bytes")
-    else:
-        bericht.append("Es wurden keine Dateien gefunden.")
-        logging.info("Es wurden keine Dateien gefunden")
-
-    for b in bericht:
-        print(b)
+    #Hier werden nur die Metadaten abgerufen und ausgegeben
+    print(relevantes_Objekt["bericht"])
 
 elif userstartwahl == "2" or userstartwahl == "3":
-
-    if not dateien:
-        print("Es wurden keine Dateien im Eingabeordner gefunden.")
-        logging.info("Keine Dateien im Eingabeordner gefunden.")
-        raise SystemExit
 
     for i in range(1, len(dateien) +1):
         dateianzahl.append(i)

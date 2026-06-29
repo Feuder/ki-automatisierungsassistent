@@ -2186,3 +2186,27 @@ INFO:root:Unclear wird genauer untersucht.
 ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
 ERROR:root:'utf-8' codec can't decode byte 0xd2 in position 16: invalid continuation byte
 INFO:root:Dateivorschläge sollen nicht ausgeführt werden. Programm wird beendet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Es wird geprüft, ob es unklare Dateien gibt.
+INFO:root:Unclear wird genauer untersucht.
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:'utf-8' codec can't decode byte 0xd5 in position 10: invalid continuation byte
+INFO:root:Unclear wird genauer untersucht.
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:'utf-8' codec can't decode byte 0x86 in position 17: invalid start byte
+INFO:root:Unclear wird genauer untersucht.
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:'utf-8' codec can't decode byte 0xaf in position 10: invalid start byte
+INFO:root:Unclear wird genauer untersucht.
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:'utf-8' codec can't decode byte 0xd0 in position 0: invalid continuation byte
