@@ -11,7 +11,7 @@ def call_metadata(relevantes_Objekt):
 
     bericht = []
     datei_metadaten = []
-    gesamtgroesse = 0
+    gesamtgroesse = 0   
 
     logging.info(f"Anzahl Gefundener Dateien: {len(dateien)}")
 

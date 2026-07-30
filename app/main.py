@@ -9,6 +9,7 @@ from utils.folder_scanner import ordnerinhaltunteror, ordnerinhaltohne
 from utils.File_actions.file_actions import move_file, rename_file, move_and_rename_file
 from utils.Validate_Path import validere_Pfad
 from choices.Metadata import call_metadata
+from choices.summerize_tasks_Content import extract_content
 from pathlib import Path
 
 #-------Hier wird überprüft ob die Pfade alle in Ordnung sind-------
@@ -88,84 +89,16 @@ if userstartwahl == "1":
 
 elif userstartwahl == "2" or userstartwahl == "3":
 
-    for i in range(1, len(dateien) +1):
-        dateianzahl.append(i)
-
-    print("")
-    print("------------------------------------------")
-    for i, f in enumerate(dateien, start=1):
-        print(f"{i}. {f.name}")
-    print("------------------------------------------")
-    print("")
-    
-    while True:
-        try:
-            userinput = int(input(f"Wähle eine Zahl zwischen 1 und {len(dateien)} aus\n"))
-            
-            if userinput in dateianzahl:
-                break
-            else:
-                print("Gebe nur gültige Zahlen an!")
-
-        except ValueError:
-            print("Gebe nur gültige Zahlen an!")
-            pass
-        except Exception:
-            print("Es gab einen Fehler bei der Dateiaussuche")
-            logging.error("Es gab einen Fehler bei der Dateiaussuche")
-            raise SystemExit
-
-    print()
-
-    ausgedatei = dateien[userinput -1]
-
-    inhalt = datei_inhalt(ausgedatei)
-
-    if userstartwahl == "2":
-        ki_response = KI_anfrage(inhalt)
-    elif userstartwahl == "3":
-        ki_response = ki_task_erstellen(inhalt)
+    ki_response = extract_content(userstartwahl, relevantes_Objekt)
 
 elif userstartwahl == "4":
 
-    metadaten = []
-    dateitypen = Counter()
+    metadaten = relevantes_Objekt["Metadaten"]
 
-    metadaten.append("")
-    metadaten.append("============= Ordnerbericht =============")
-    metadaten.append("")
-    metadaten.append(f"Analysierter Pfad: {pfad}")
-    metadaten.append(f"Anzahl der Dateien: {len(dateien)}")
-    metadaten.append("")
-    metadaten.append("Dateien:")
+    for i in metadaten:
+        print(i)
 
-    if dateien:
-        for datei in dateien:
-            groesse = datei.stat().st_size
-
-            if datei.suffix:
-                endung = datei.suffix.lower()
-                dateitypen[endung] += 1
-                metadaten.append(f"{datei.name} | {endung} | {groesse} Bytes")
-            else:
-                dateitypen["Ohne Endung"] += 1
-                metadaten.append(f"{datei.name} | Keine Endung | {groesse} Bytes")
-
-        metadaten.append("")
-        metadaten.append("Dateitypen:")
-
-        for endung, anzahl in dateitypen.items():
-            metadaten.append(f"- {endung}: {anzahl}")
-
-    else:
-        metadaten.append("Es wurden keine Dateien gefunden.")
-        logging.info("Es wurden keine Dateien gefunden.")
-
-    for eintrag in metadaten:
-        print(eintrag)
-
-    print("")
-
+    #Den Inhalt und die Daten in die ausgabedatei schreiben
     try:
         inhalt = "\n".join(metadaten)
 

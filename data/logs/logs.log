@@ -2440,3 +2440,1059 @@ Failed validating 'format' in schema['properties']['aufgaben']['items']['propert
 
 On instance['aufgaben'][15]['erstellungsdatum']:
     '30-07-2026'
+ERROR:root:--------------------------------------
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch Aufgabe vom 25.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4 vom 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch Aufgabe vom 25.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4 vom 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Es wird geprüft, ob es unklare Dateien gibt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Datei hat 'sonstiges' als Dateipfad
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:'utf-8' codec can't decode byte 0xd0 in position 0: invalid continuation byte
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 1.docx
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 1.docx
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 2.docx
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 2.docx
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:--------------------------------------
+ERROR:root:Schema-Validierung fehlgeschlagen.
+ERROR:root:'datei_vorschläge' is a required property
+
+Failed validating 'required' in schema:
+    {'type': 'object',
+     'required': ['datei_vorschläge'],
+     'additionalProperties': False,
+     'properties': {'datei_vorschläge': {'type': 'array',
+                                         'minItems': 1,
+                                         'items': {'type': 'object',
+                                                   'required': ['original_name',
+                                                                'relative_path',
+                                                                'file_type',
+                                                                'suggested_category',
+                                                                'suggested_folder',
+                                                                'suggested_new_name',
+                                                                'action_type',
+                                                                'reason',
+                                                                'erledigt'],
+                                                   'additionalProperties': False,
+                                                   'properties': {'original_name': {'type': 'string',
+                                                                                    'minLength': 1},
+                                                                  'relative_path': {'type': 'string',
+                                                                                    'minLength': 1},
+                                                                  'file_type': {'type': 'string',
+                                                                                'minLength': 1},
+                                                                  'suggested_category': {'type': 'string'},
+                                                                  'suggested_folder': {'type': 'string'},
+                                                                  'suggested_new_name': {'type': 'string'},
+                                                                  'action_type': {'type': 'string',
+                                                                                  'enum': ['keep',
+                                                                                           'move_suggestion',
+                                                                                           'rename_suggestion',
+                                                                                           'rename_and_move_suggestion',
+                                                                                           'unclear']},
+                                                                  'reason': {'type': 'string',
+                                                                             'minLength': 1},
+                                                                  'erledigt': {'type': 'string',
+                                                                               'enum': ['False']}},
+                                                   'allOf': [{'if': {'properties': {'action_type': {'const': 'keep'}}},
+                                                              'then': {'properties': {'suggested_folder': {'const': ''},
+                                                                                      'suggested_new_name': {'const': ''}}}},
+                                                             {'if': {'properties': {'action_type': {'const': 'move_suggestion'}}},
+                                                              'then': {'properties': {'suggested_folder': {'type': 'string',
+                                                                                                           'minLength': 1},
+                                                                                      'suggested_new_name': {'const': ''}}}},
+                                                             {'if': {'properties': {'action_type': {'const': 'rename_suggestion'}}},
+                                                              'then': {'properties': {'suggested_folder': {'const': ''},
+                                                                                      'suggested_new_name': {'type': 'string',
+                                                                                                             'minLength': 1}}}},
+                                                             {'if': {'properties': {'action_type': {'const': 'rename_and_move_suggestion'}}},
+                                                              'then': {'properties': {'suggested_folder': {'type': 'string',
+                                                                                                           'minLength': 1},
+                                                                                      'suggested_new_name': {'type': 'string',
+                                                                                                             'minLength': 1}}}},
+                                                             {'if': {'properties': {'action_type': {'const': 'unclear'}}},
+                                                              'then': {'properties': {'suggested_category': {'const': ''},
+                                                                                      'suggested_folder': {'const': ''},
+                                                                                      'suggested_new_name': {'const': ''}}}}]}}}}
+
+On instance:
+    {}
+ERROR:root:--------------------------------------
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:--------------------------------------
+ERROR:root:Schema-Validierung fehlgeschlagen.
+ERROR:root:'datei_vorschläge' is a required property
+
+Failed validating 'required' in schema:
+    {'type': 'object',
+     'required': ['datei_vorschläge'],
+     'additionalProperties': False,
+     'properties': {'datei_vorschläge': {'type': 'array',
+                                         'minItems': 1,
+                                         'items': {'type': 'object',
+                                                   'required': ['original_name',
+                                                                'relative_path',
+                                                                'file_type',
+                                                                'suggested_category',
+                                                                'suggested_folder',
+                                                                'suggested_new_name',
+                                                                'action_type',
+                                                                'reason',
+                                                                'erledigt'],
+                                                   'additionalProperties': False,
+                                                   'properties': {'original_name': {'type': 'string',
+                                                                                    'minLength': 1},
+                                                                  'relative_path': {'type': 'string',
+                                                                                    'minLength': 1},
+                                                                  'file_type': {'type': 'string',
+                                                                                'minLength': 1},
+                                                                  'suggested_category': {'type': 'string'},
+                                                                  'suggested_folder': {'type': 'string'},
+                                                                  'suggested_new_name': {'type': 'string'},
+                                                                  'action_type': {'type': 'string',
+                                                                                  'enum': ['keep',
+                                                                                           'move_suggestion',
+                                                                                           'rename_suggestion',
+                                                                                           'rename_and_move_suggestion',
+                                                                                           'unclear']},
+                                                                  'reason': {'type': 'string',
+                                                                             'minLength': 1},
+                                                                  'erledigt': {'type': 'string',
+                                                                               'enum': ['False']}},
+                                                   'allOf': [{'if': {'properties': {'action_type': {'const': 'keep'}}},
+                                                              'then': {'properties': {'suggested_folder': {'const': ''},
+                                                                                      'suggested_new_name': {'const': ''}}}},
+                                                             {'if': {'properties': {'action_type': {'const': 'move_suggestion'}}},
+                                                              'then': {'properties': {'suggested_folder': {'type': 'string',
+                                                                                                           'minLength': 1},
+                                                                                      'suggested_new_name': {'const': ''}}}},
+                                                             {'if': {'properties': {'action_type': {'const': 'rename_suggestion'}}},
+                                                              'then': {'properties': {'suggested_folder': {'const': ''},
+                                                                                      'suggested_new_name': {'type': 'string',
+                                                                                                             'minLength': 1}}}},
+                                                             {'if': {'properties': {'action_type': {'const': 'rename_and_move_suggestion'}}},
+                                                              'then': {'properties': {'suggested_folder': {'type': 'string',
+                                                                                                           'minLength': 1},
+                                                                                      'suggested_new_name': {'type': 'string',
+                                                                                                             'minLength': 1}}}},
+                                                             {'if': {'properties': {'action_type': {'const': 'unclear'}}},
+                                                              'then': {'properties': {'suggested_category': {'const': ''},
+                                                                                      'suggested_folder': {'const': ''},
+                                                                                      'suggested_new_name': {'const': ''}}}}]}}}}
+
+On instance:
+    {}
+ERROR:root:--------------------------------------
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:--------------------------------------------------
+Die Datei 02_Neuzugänge.doc wurde erfolgreich umbenannt:
+Alter Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\02_Neuzugänge.doc
+Neuer Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Fragebogen_Website.doc
+--------------------------------------------------
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+WARNING:root:Es konnte keine Änderung getätigt werden. Es wird übersprungen
+INFO: ----------------------Ende---------------------------
+
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch Aufgabe vom 25.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Fragebogen_Website.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4 vom 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:Es wurde ein Unterordner oder eine Datei gefunden
+INFO:root:Es werden alle existierenden Unterordner mit einbezogen!
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Es wird geprüft, ob es unklare Dateien gibt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 1.docx
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 1.docx
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 2.docx
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 2.docx
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Verkaufsgespräch
+
+INFO:root:--------------------------------------------------
+Die Datei 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Verkaufsgespräch\3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Verkaufsgespräch
+
+INFO:root:--------------------------------------------------
+Die Datei 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Verkaufsgespräch\3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Angebot_Geraete_Liste_Professionell_Final.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Angebot_Geraete_Liste_Professionell_Final.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Angebote
+
+INFO:root:--------------------------------------------------
+Die Datei Angebot_Geraete_Liste_Professionell_Final.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Angebot_Geraete_Liste_Professionell_Final.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Angebote\Angebot_Geraete_Liste_Professionell_Final.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung - Erklärung Intune.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung - Erklärung Intune.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Intune
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung - Erklärung Intune.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung - Erklärung Intune.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Intune\Anleitung - Erklärung Intune.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Account Verifizieren.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Account Verifizieren.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Konten
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Account Verifizieren.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Account Verifizieren.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Konten\Anleitung Account Verifizieren.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Dynamische Sperre einrichten.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Dynamische Sperre einrichten.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Sicherheit
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Dynamische Sperre einrichten.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Dynamische Sperre einrichten.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Sicherheit\Anleitung Dynamische Sperre einrichten.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Jira.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Jira.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Jira
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Jira.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Jira.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Jira\Anleitung Jira.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Mitarbeiter Bereich 1 (2).docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Mitarbeiter Bereich 1 (2).docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Mitarbeiterbereich
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Mitarbeiter Bereich 1 (2).docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Mitarbeiter Bereich 1 (2).docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Mitarbeiterbereich\Anleitung Mitarbeiter Bereich 1 (2).docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Mitarbeiter Bereich Android Startbildschirm.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Mitarbeiter Bereich Android Startbildschirm.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Mitarbeiterbereich
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Mitarbeiter Bereich Android Startbildschirm.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Mitarbeiter Bereich Android Startbildschirm.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Mitarbeiterbereich\Anleitung Mitarbeiter Bereich Android Startbildschirm.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Mitarbeiterbereich
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Mitarbeiterbereich\Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Mitarbeiter Bereich.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Mitarbeiter Bereich.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Mitarbeiterbereich
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Mitarbeiter Bereich.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Mitarbeiter Bereich.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Mitarbeiterbereich\Anleitung Mitarbeiter Bereich.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung SharePoint2.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung SharePoint2.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\SharePoint
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung SharePoint2.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung SharePoint2.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\SharePoint\Anleitung SharePoint2.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Zuweisungsänderung.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Zuweisungsänderung.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Zuweisungsänderung.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung Zuweisungsänderung.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Anleitung Zuweisungsänderung.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung_+Ticket+Center.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung_+Ticket+Center.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Ticket-Center
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung_+Ticket+Center.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung_+Ticket+Center.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Ticket-Center\Anleitung_+Ticket+Center.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung_Zugriff_auf_Laufwerk_erteilen.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung_Zugriff_auf_Laufwerk_erteilen.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Zugriffsverwaltung
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung_Zugriff_auf_Laufwerk_erteilen.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung_Zugriff_auf_Laufwerk_erteilen.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Zugriffsverwaltung\Anleitung_Zugriff_auf_Laufwerk_erteilen.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Aufgaben LF1.odt
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Aufgaben LF1.odt
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Lernfelder
+
+INFO:root:--------------------------------------------------
+Die Datei Aufgaben LF1.odt wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Aufgaben LF1.odt
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Lernfelder\Aufgaben LF1.odt
+--------------------------------------------------
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:--------------------------------------------------
+Die Datei Dokument.docx wurde erfolgreich umbenannt:
+Alter Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokument.docx
+Neuer Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Aufgabe_Netzwerktopologie.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Vorlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Vorlagen\Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Vorlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Vorlagen\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Vorlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Vorlagen\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Vorlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Dokumentvorlage blanco mit Haskamp-Logo 2.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Vorlagen\Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokumentvorlage blanco mit Haskamp-Logo.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokumentvorlage blanco mit Haskamp-Logo.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Vorlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Dokumentvorlage blanco mit Haskamp-Logo.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokumentvorlage blanco mit Haskamp-Logo.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Vorlagen\Dokumentvorlage blanco mit Haskamp-Logo.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokumentvorlage blanco mit Haskamp-Logo.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokumentvorlage blanco mit Haskamp-Logo.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Vorlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Dokumentvorlage blanco mit Haskamp-Logo.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Dokumentvorlage blanco mit Haskamp-Logo.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Vorlagen\Dokumentvorlage blanco mit Haskamp-Logo.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Englisch am 11.01.odt
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Englisch am 11.01.odt
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Englisch
+
+INFO:root:--------------------------------------------------
+Die Datei Englisch am 11.01.odt wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Englisch am 11.01.odt
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Englisch\Englisch am 11.01.odt
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Englisch Aufgabe vom 25.01.odt
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Englisch Aufgabe vom 25.01.odt
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Englisch
+
+INFO:root:--------------------------------------------------
+Die Datei Englisch Aufgabe vom 25.01.odt wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Englisch Aufgabe vom 25.01.odt
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Englisch\Englisch Aufgabe vom 25.01.odt
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Entschuldigung für die Schule.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Entschuldigung für die Schule.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Schule
+
+INFO:root:--------------------------------------------------
+Die Datei Entschuldigung für die Schule.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Entschuldigung für die Schule.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Schule\Entschuldigung für die Schule.docx
+--------------------------------------------------
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:--------------------------------------------------
+Die Datei Fehler.docx wurde erfolgreich umbenannt:
+Alter Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Fehler.docx
+Neuer Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Anleitung_Domain-Benutzer_zu_lokalen_Administratoren_hinzufuegen.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: FO-T-1A Praktikumsbericht August.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\FO-T-1A Praktikumsbericht August.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Praktikum
+
+INFO:root:--------------------------------------------------
+Die Datei FO-T-1A Praktikumsbericht August.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\FO-T-1A Praktikumsbericht August.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Praktikum\FO-T-1A Praktikumsbericht August.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Formular Sonderbericht. JVF Westerstede vs Brake.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Formular Sonderbericht. JVF Westerstede vs Brake.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Formulare\Sonderberichte
+
+INFO:root:--------------------------------------------------
+Die Datei Formular Sonderbericht. JVF Westerstede vs Brake.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Formular Sonderbericht. JVF Westerstede vs Brake.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Formulare\Sonderberichte\Formular Sonderbericht. JVF Westerstede vs Brake.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Fragebogen_Website.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Fragebogen_Website.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Fragebögen
+
+INFO:root:--------------------------------------------------
+Die Datei Fragebogen_Website.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Fragebogen_Website.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Fragebögen\Fragebogen_Website.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: In Edge auf die 3 Punkte oben rechts.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\In Edge auf die 3 Punkte oben rechts.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Browser
+
+INFO:root:--------------------------------------------------
+Die Datei In Edge auf die 3 Punkte oben rechts.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\In Edge auf die 3 Punkte oben rechts.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Browser\In Edge auf die 3 Punkte oben rechts.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Inhaltsangabe_Deutsch_1-Lehrjahr.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Inhaltsangabe_Deutsch_1-Lehrjahr.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Deutsch
+
+INFO:root:--------------------------------------------------
+Die Datei Inhaltsangabe_Deutsch_1-Lehrjahr.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Inhaltsangabe_Deutsch_1-Lehrjahr.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Deutsch\Inhaltsangabe_Deutsch_1-Lehrjahr.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: IT Notfall-Protkoll.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT Notfall-Protkoll.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Notfallmanagement
+
+INFO:root:--------------------------------------------------
+Die Datei IT Notfall-Protkoll.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT Notfall-Protkoll.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Notfallmanagement\IT Notfall-Protkoll.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Verkaufsgespräch
+
+INFO:root:--------------------------------------------------
+Die Datei IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Verkaufsgespräch\IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Jira Agenten Anleitung.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Jira Agenten Anleitung.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Jira
+
+INFO:root:--------------------------------------------------
+Die Datei Jira Agenten Anleitung.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Jira Agenten Anleitung.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Jira\Jira Agenten Anleitung.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Jira Registrieren.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Jira Registrieren.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Jira
+
+INFO:root:--------------------------------------------------
+Die Datei Jira Registrieren.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Jira Registrieren.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Jira\Jira Registrieren.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Jira.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Jira.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Jira
+
+INFO:root:--------------------------------------------------
+Die Datei Jira.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Jira.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Jira\Jira.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: KI Veranstaltung Themen .docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI Veranstaltung Themen .docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI\Veranstaltungen
+
+INFO:root:--------------------------------------------------
+Die Datei KI Veranstaltung Themen .docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI Veranstaltung Themen .docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI\Veranstaltungen\KI Veranstaltung Themen .docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: KI Workshop.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI Workshop.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI\Veranstaltungen
+
+INFO:root:--------------------------------------------------
+Die Datei KI Workshop.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI Workshop.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI\Veranstaltungen\KI Workshop.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: KI.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI
+
+INFO:root:--------------------------------------------------
+Die Datei KI.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI\KI.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: LF 4 vom 18.2.odt
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\LF 4 vom 18.2.odt
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Lernfelder
+
+INFO:root:--------------------------------------------------
+Die Datei LF 4 vom 18.2.odt wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\LF 4 vom 18.2.odt
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Lernfelder\LF 4 vom 18.2.odt
+--------------------------------------------------
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:--------------------------------------------------
+Die Datei Militärische Standards.docx wurde erfolgreich umbenannt:
+Alter Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Militärische Standards.docx
+Neuer Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IP67_und_MIL-STD-810G_Standards.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: OneDrive Anleitung 2.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\OneDrive Anleitung 2.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\OneDrive
+
+INFO:root:--------------------------------------------------
+Die Datei OneDrive Anleitung 2.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\OneDrive Anleitung 2.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\OneDrive\OneDrive Anleitung 2.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Power Point Präsi Outdoor Laptop.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Power Point Präsi Outdoor Laptop.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Präsentationen
+
+INFO:root:--------------------------------------------------
+Die Datei Power Point Präsi Outdoor Laptop.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Power Point Präsi Outdoor Laptop.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Präsentationen\Power Point Präsi Outdoor Laptop.docx
+--------------------------------------------------
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:--------------------------------------------------
+Die Datei Praktikant.docx wurde erfolgreich umbenannt:
+Alter Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Praktikant.docx
+Neuer Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Praktikant_Aufgaben_Switch_WLAN-Access-Point-Dokumentation.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Registratin Anleiteung.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Registratin Anleiteung.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Registratin Anleiteung.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Registratin Anleiteung.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Registratin Anleiteung.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Sonderbericht 27.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Sonderbericht 27.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Berichte\Sonderberichte
+
+INFO:root:--------------------------------------------------
+Die Datei Sonderbericht 27.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Sonderbericht 27.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Berichte\Sonderberichte\Sonderbericht 27.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Spam-Phishing Email.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Spam-Phishing Email.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Sicherheit
+
+INFO:root:--------------------------------------------------
+Die Datei Spam-Phishing Email.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Spam-Phishing Email.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Sicherheit\Spam-Phishing Email.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Test von Deep Research.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Test von Deep Research.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI\Tests
+
+INFO:root:--------------------------------------------------
+Die Datei Test von Deep Research.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Test von Deep Research.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\KI\Tests\Test von Deep Research.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Ticket Center Anleitung.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ticket Center Anleitung.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Ticket-Center
+
+INFO:root:--------------------------------------------------
+Die Datei Ticket Center Anleitung.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ticket Center Anleitung.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\IT\Anleitungen\Ticket-Center\Ticket Center Anleitung.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Ziel der Veranstaltung.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ziel der Veranstaltung.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Veranstaltungen
+
+INFO:root:--------------------------------------------------
+Die Datei Ziel der Veranstaltung.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ziel der Veranstaltung.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Veranstaltungen\Ziel der Veranstaltung.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Öhlschläger LF2 - 1. Lehrjahr.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Öhlschläger LF2 - 1. Lehrjahr.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Lernfelder
+
+INFO:root:--------------------------------------------------
+Die Datei Öhlschläger LF2 - 1. Lehrjahr.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Öhlschläger LF2 - 1. Lehrjahr.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Ausbildung\Lernfelder\Öhlschläger LF2 - 1. Lehrjahr.docx
+--------------------------------------------------
+INFO:root:Pfad existiert, Datei wird bearbeitet.
+INFO:root:--------------------------------------------------
+Die Datei Überraschung für Jorrit.docx wurde erfolgreich umbenannt:
+Alter Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Überraschung für Jorrit.docx
+Neuer Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie (2)\Analyse_Abstieg_Werder_Bremen_2024-25.docx
+--------------------------------------------------
+INFO:root:Dateivorschläge sollen nicht ausgeführt werden. Programm wird beendet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 56
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch 25.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4n 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 56
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch 25.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4n 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 56
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch 25.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4n 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 56
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch 25.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4n 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 56
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch 25.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4n 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 56
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch 25.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4n 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 56
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch 25.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4n 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 56
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch 25.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4n 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:--------------------------------------
+ERROR:root:Schema-Validierung fehlgeschlagen.
+ERROR:root:'08-03-2025' is not a 'date'
+
+Failed validating 'format' in schema['properties']['aufgaben']['items']['properties']['erstellungsdatum']:
+    {'type': 'string', 'format': 'date'}
+
+On instance['aufgaben'][23]['erstellungsdatum']:
+    '08-03-2025'
+ERROR:root:--------------------------------------
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 56
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch 25.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4n 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
