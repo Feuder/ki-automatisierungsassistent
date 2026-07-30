@@ -2210,3 +2210,233 @@ ERROR:root:'utf-8' codec can't decode byte 0xaf in position 10: invalid start by
 INFO:root:Unclear wird genauer untersucht.
 ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
 ERROR:root:'utf-8' codec can't decode byte 0xd0 in position 0: invalid continuation byte
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Keine Dateien im Eingabeordner gefunden.
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Keine Dateien im Eingabeordner gefunden.
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 6
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Angebot_Geraete_Liste_Professionell_Final.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung - Erklärung Intune.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Account Verifizieren.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Dynamische Sperre einrichten.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Jira.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Mitarbeiter Bereich 1 (2).docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Mitarbeiter Bereich Android Startbildschirm.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Mitarbeiter Bereich.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung SharePoint2.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung_+Ticket+Center.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung_Zugriff_auf_Laufwerk_erteilen.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokument 1.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokument 2.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokument.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch Aufgabe vom 25.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Entschuldigung für die Schule.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Fehler.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: FO-T-1A Praktikumsbericht August.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Formular Sonderbericht. JVF Westerstede vs Brake.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: In Edge auf die 3 Punkte oben rechts.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Inhaltsangabe_Deutsch_1-Lehrjahr.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT Notfall-Protkoll.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Jira Agenten Anleitung.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Jira Registrieren.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Jira.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: KI Veranstaltung Themen .docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: KI Workshop.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: KI.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4 vom 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Militärische Standards.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: OneDrive Anleitung 2.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Power Point Präsi Outdoor Laptop.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Praktikant.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Sonderbericht 27.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Spam-Phishing Email.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Test von Deep Research.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Ticket Center Anleitung.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Ziel der Veranstaltung.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Öhlschläger LF2 - 1. Lehrjahr.docx
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Überraschung für Jorrit.docx
+INFO:root:Es wurden keine Dateien gefunden
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+ERROR:root:Der Input Pfad wurde nicht gefunden
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch Aufgabe vom 25.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4 vom 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch Aufgabe vom 25.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4 vom 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch Aufgabe vom 25.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4 vom 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:Programm startet
+INFO:root:Ausgabe wurde geprüft, oder erstellt
+INFO:root:Call_metadata wurde aufgerufen
+INFO:root:Anzahl Gefundener Dateien: 55
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 02_Neuzugänge.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Anleitung Zuweisungsänderung.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Aufgaben LF1.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Dokumentvorlage blanco mit Haskamp-Logo.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch am 11.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Englisch Aufgabe vom 25.01.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+WARNING:root:Aktuelle Datei ist nicht kompatibel: LF 4 vom 18.2.odt
+WARNING:root:Aktuelle Datei ist nicht kompatibel: Registratin Anleiteung.doc
+INFO:root:Dokument ist eine docx Dokument und wird auch gescant
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ERROR:root:--------------------------------------
+ERROR:root:Schema-Validierung fehlgeschlagen.
+ERROR:root:'30-07-2026' is not a 'date'
+
+Failed validating 'format' in schema['properties']['aufgaben']['items']['properties']['erstellungsdatum']:
+    {'type': 'string', 'format': 'date'}
+
+On instance['aufgaben'][15]['erstellungsdatum']:
+    '30-07-2026'

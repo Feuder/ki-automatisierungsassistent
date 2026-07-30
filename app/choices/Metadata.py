@@ -1,6 +1,7 @@
 from pathlib import Path
 import logging
 
+from config.settings import dateiformat_validieren
 
 def call_metadata(relevantes_Objekt):
     logging.info("Call_metadata wurde aufgerufen")
@@ -17,6 +18,12 @@ def call_metadata(relevantes_Objekt):
     # Metadaten der einzelnen Dateien sammeln
     for f in dateien:
         f = Path(f).resolve()
+
+        if not dateiformat_validieren(f.suffix.lower()):
+            logging.warning(
+                f"Aktuelle Datei ist nicht kompatibel: {f.name}"
+            )
+            continue
 
         groesse = f.stat().st_size
         gesamtgroesse += groesse

@@ -58,3 +58,17 @@ def get_fehler_moodel():
         raise SystemExit
     
     return GPT_VERSION
+
+def dateiformat_validieren(dateiendung: str) -> bool:
+    valid_format = {
+        ".txt",
+        ".md",
+        ".csv",
+        ".json",
+        ".xml",
+        ".py",
+        ".log",
+        ".docx",
+    }
+
+    return dateiendung in valid_format

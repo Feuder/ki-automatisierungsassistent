@@ -8,6 +8,7 @@ from utils.text_reader import datei_inhalt
 from utils.folder_scanner import ordnerinhaltunteror, ordnerinhaltohne
 from utils.File_actions.file_actions import move_file, rename_file, move_and_rename_file
 from utils.Validate_Path import validere_Pfad
+from choices.Metadata import call_metadata
 from pathlib import Path
 
 #-------Hier wird überprüft ob die Pfade alle in Ordnung sind-------
@@ -55,8 +56,9 @@ if not dateien:
 relevantes_Objekt = {
     "pfad": pfad,
     "dateien": dateien,
-    "Metadaten": call_metadata(relevantes_Objekt)
 }
+
+relevantes_Objekt["Metadaten"] = call_metadata(relevantes_Objekt)
 
 #Hier wird ausgewählt, was der User machen möchte
 print("Was möchtest du machen?:\n" \
@@ -81,7 +83,8 @@ while True:
 
 if userstartwahl == "1":
     #Hier werden nur die Metadaten abgerufen und ausgegeben
-    print(relevantes_Objekt["bericht"])
+    for i in relevantes_Objekt["bericht"]:
+        print(i)
 
 elif userstartwahl == "2" or userstartwahl == "3":
 
