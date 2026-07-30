@@ -122,24 +122,6 @@ elif userstartwahl == "4":
 
 elif userstartwahl == "5":
 
-    while True:
-        wahlpfad = input("Gebe den zu zu Optimierenden Pfad ein:\n")
-
-        wahlpfad = Path(wahlpfad)
-
-        if not wahlpfad.exists():
-            print("Den angegebenen Ordner gibt es nicht. Gebe einen anderen Pfad an!\n")
-            logging.error("Der angebene Pfad wurde nicht gefunden!\n")
-        elif wahlpfad.is_file():
-            print("Der angebene Pfad führt zu einer Datei und kann nicht Analyisert werden!\n")
-            logging.warning("Der angebene Pfad führt zu einer Datei und kann nicht Analyisert werden!")
-        elif wahlpfad.is_dir() and not any(wahlpfad.iterdir()):
-            print("Der Ordner ist leer und kann nicht Analysiert werden\n")
-            logging.warning("Der angebenene Ordner ist leer und kann nicht Analysiert werden!")
-        else:
-            logging.info("Es wurde ein Unterordner oder eine Datei gefunden")
-            break
-
     print("Sollen Unterordner mit einbezogen sein? j/n\n")
 
     while True:
@@ -148,10 +130,9 @@ elif userstartwahl == "5":
         if unterorderentsch == "j" or unterorderentsch == "n":
             if unterorderentsch == "j":
 
-                ordnerstat, inhalt = ordnerinhaltunteror(wahlpfad)
+                ordnerstat, inhalt = ordnerinhaltunteror(pfad)
             else:
-
-                ordnerstat, inhalt = ordnerinhaltohne(wahlpfad)
+                ordnerstat, inhalt = ordnerinhaltohne(pfad)
             break
         else:
             print("Gebe nur j/n ein!")
@@ -189,7 +170,7 @@ elif userstartwahl == "5":
     gültige_daten = []
 
     for eintrag in überprüfte_daten:
-        if validere_Pfad(eintrag, wahlpfad):
+        if validere_Pfad(eintrag, pfad):
             gültige_daten.append(eintrag)
         else:
             print("Es wurde ein Vorschlag entfernt! Es gab einen Fehler bei der Erstellung des Vorschlages.")
@@ -205,13 +186,13 @@ elif userstartwahl == "5":
             try:
                 logging.info("Unclear wird genauer untersucht.")
 
-                neuer_vorschlag_response = Datei_anylsieren(eintrag, inhalt, wahlpfad)
+                neuer_vorschlag_response = Datei_anylsieren(eintrag, inhalt, pfad)
                 neuer_vorschlag = json.loads(neuer_vorschlag_response)
 
                 if "datei_vorschläge" in neuer_vorschlag:
                     neuer_vorschlag = neuer_vorschlag["datei_vorschläge"][0]
 
-                if validere_Pfad(neuer_vorschlag, wahlpfad):
+                if validere_Pfad(neuer_vorschlag, pfad):
                     überprüfte_daten[index] = neuer_vorschlag
                     logging.info("Unclear-Vorschlag wurde erfolgreich ersetzt.")
                 else:
@@ -403,8 +384,8 @@ elif userstartwahl == "5":
                     if i["action_type"] == "move_suggestion":
 
                         datei_name = i["original_name"]
-                        alter_pfad = Path(wahlpfad) / i["relative_path"]
-                        neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
+                        alter_pfad = Path(pfad) / i["relative_path"]
+                        neuer_pfad = Path(pfad) / i["suggested_folder"]
 
                         logging.info(
                             f"\n"
@@ -431,7 +412,7 @@ elif userstartwahl == "5":
                     elif i["action_type"] == "rename_suggestion":
 
                         datei_name = i["original_name"]
-                        alter_pfad = Path(wahlpfad) / i["relative_path"]
+                        alter_pfad = Path(pfad) / i["relative_path"]
                         neuer_name =    i["suggested_new_name"]
 
                         if alter_pfad.exists():
@@ -449,9 +430,9 @@ elif userstartwahl == "5":
                     elif i["action_type"] == "rename_and_move_suggestion":
                         
                         datei_name = i["original_name"]
-                        alter_pfad = Path(wahlpfad) / i["relative_path"]
+                        alter_pfad = Path(pfad) / i["relative_path"]
                         neuer_name =    i["suggested_new_name"]
-                        neuer_pfad = Path(wahlpfad) / i["suggested_folder"]
+                        neuer_pfad = Path(pfad) / i["suggested_folder"]
 
                         if alter_pfad.exists() and neuer_name != "":
                             verschobener_pfad = neuer_pfad / datei_name
