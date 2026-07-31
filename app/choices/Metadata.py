@@ -3,26 +3,23 @@ import logging
 
 from config.settings import dateiformat_validieren
 
-def call_metadata(relevantes_Objekt):
-    logging.info("Call_metadata wurde aufgerufen")
+logger = logging.getLogger(__name__)
 
+def call_metadata(relevantes_Objekt):
     pfad = Path(relevantes_Objekt["pfad"]).resolve()
     dateien = relevantes_Objekt["dateien"]
+    logger.info("call_metadata() gestartet | Pfad: %s | Dateianzahl: %s", pfad, len(dateien))
 
     bericht = []
     datei_metadaten = []
     gesamtgroesse = 0   
-
-    logging.info(f"Anzahl Gefundener Dateien: {len(dateien)}")
 
     # Metadaten der einzelnen Dateien sammeln
     for f in dateien:
         f = Path(f).resolve()
 
         if not dateiformat_validieren(f.suffix.lower()):
-            logging.warning(
-                f"Aktuelle Datei ist nicht kompatibel: {f.name}"
-            )
+            logger.warning("Datei übersprungen, ungültiges Format: %s | Suffix: %s", f, f.suffix.lower())
             continue
 
         groesse = f.stat().st_size
@@ -65,9 +62,10 @@ def call_metadata(relevantes_Objekt):
             )
     else:
         bericht.append("Es wurden keine Dateien gefunden.")
-        logging.info("Es wurden keine Dateien gefunden")
+        logger.info("Keine kompatiblen Dateien im Pfad gefunden: %s", pfad)
 
     # Bericht ebenfalls in das Dict schreiben
     relevantes_Objekt["bericht"] = bericht
+    logger.info("call_metadata() beendet | Pfad: %s | Erfasste Dateien: %s", pfad, len(datei_metadaten))
 
     return relevantes_Objekt

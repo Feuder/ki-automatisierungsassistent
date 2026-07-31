@@ -3,9 +3,11 @@ import logging
 from utils.text_reader import datei_inhalt
 from ai.ai_client import KI_anfrage, ki_task_erstellen
 
+logger = logging.getLogger(__name__)
+
 def extract_content(userstartwahl, relevantes_Objekt):
-    logging.info("extract_content wurde aufgerufen")
     dateien = relevantes_Objekt["dateien"]
+    logger.info("extract_content() gestartet | Auswahl: %s | Dateianzahl: %s", userstartwahl, len(dateien))
     dateianzahl = []
 
 
@@ -33,7 +35,7 @@ def extract_content(userstartwahl, relevantes_Objekt):
             pass
         except Exception:   
             print("Es gab einen Fehler bei der Dateiaussuche")
-            logging.error("Es gab einen Fehler bei der Dateiaussuche")
+            logger.error("Fehler bei der Dateiauswahl | Auswahl: %s | Verfügbare Dateien: %s", userstartwahl, len(dateien))
             raise SystemExit
 
     print()
@@ -50,12 +52,12 @@ def extract_content(userstartwahl, relevantes_Objekt):
     return ausgabe
 
 def zusammenfassen(inhalt):
-    logging.info("zusammenfassung wurde durch extract_content aufgerufen und wird nun zusammengefasst")
+    logger.info("zusammenfassen() gestartet | Inhaltlänge: %s", len(inhalt))
 
     ki_response = KI_anfrage(inhalt)
     return ki_response
 
 def aufgabe_erstellen(inhalt):
-    logging.info("aufgabe_erstellen wurde durch extract_content aufgerufen, Aufgaben werden nun erstellt")
+    logger.info("aufgabe_erstellen() gestartet | Inhaltlänge: %s", len(inhalt))
     ki_response = ki_task_erstellen(inhalt)
     return ki_response

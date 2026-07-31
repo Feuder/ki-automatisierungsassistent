@@ -1,6 +1,8 @@
 import logging
 from pathlib import Path
 
+logger = logging.getLogger(__name__)
+
 
 def validere_Pfad(i, basis_pfad):
     basis_pfad = Path(basis_pfad).resolve()

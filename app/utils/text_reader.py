@@ -3,11 +3,13 @@ import logging
 from pathlib import Path
 from docx import Document
 
+logger = logging.getLogger(__name__)
+
 def datei_inhalt(dateipfad: Path) -> str:
     dateiendung = dateipfad.suffix.lower()
 
     if dateiendung == ".docx":
-        logging.info("Dokument ist eine docx Dokument und wird auch gescant")
+        logger.info("datei_inhalt() | DOCX erkannt | Datei: %s", dateipfad)
         dokument = Document(dateipfad)
         abschnitte: list[str] = []
 
@@ -31,7 +33,7 @@ def datei_inhalt(dateipfad: Path) -> str:
         text = "\n".join(abschnitte).strip()
 
     else:
-        logging.info("Datei hat 'sonstiges' als Dateipfad")
+        logger.info("datei_inhalt() | Textdatei gelesen | Datei: %s", dateipfad)
         text = dateipfad.read_text(
             encoding="utf-8",
             errors="strict",
