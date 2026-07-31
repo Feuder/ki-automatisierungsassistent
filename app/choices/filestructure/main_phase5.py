@@ -1,6 +1,7 @@
 import logging
 import json
 from ai.ai_client import dateiablage_vorschlag, dateiablage_vorschlag_erklärung, Datei_anylsieren
+from Testing.test_response_ki import test_dateiablage_vorschlag
 from utils.folder_scanner import ordnerinhaltunteror, ordnerinhaltohne
 from utils.File_actions.file_actions import move_file, rename_file, move_and_rename_file
 from utils.Validate_Path import validere_Pfad
@@ -30,8 +31,9 @@ def phase_5(pfad, report_ordner):
     inhalt = "\n".join("".join(i) for i in inhalt)
     
     logging.info("Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet\n")
-    ki_response = dateiablage_vorschlag(inhalt, anweisung) # Hier wurde erstmal eine statische reingemacht, um Zeit und Kosten für das Testen zu sparen
-    #ki_response =  str(test_dateiablage_vorschlag(inhalt))
+    ki_response = dateiablage_vorschlag(inhalt, anweisung) #Hiermit wird die Anfrage an die KI gesendet, um Vorschläge für die Dateistruktur zu erhalten.
+    
+    #ki_response =  str(test_dateiablage_vorschlag(inhalt))# Hier wurde erstmal eine statische reingemacht, um Zeit und Kosten für das Testen zu sparen
 
     if ki_response:
         logging.info("KI Antwort erhalten und erfolgreich zurück bekommen\n")
