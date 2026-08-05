@@ -158,6 +158,7 @@ def move_and_rename_file(datei_name, alter_pfad, neuer_pfad, neuer_name):
                 f"{f}")
         logging.error("Es gab einen Fehler bei der verschiebung der Datei:\n" \
                     f"{f}")
+    
 
     try:
         rename_staus = rename_file(datei_name, neuer_name, alter_pfad)
@@ -173,4 +174,21 @@ def move_and_rename_file(datei_name, alter_pfad, neuer_pfad, neuer_name):
     else:
         return False
 
-        
+def create_backup(alter_pfad):
+    logging.info("Es wurde die funktion  'create_backup()' aufgerufen")
+
+    copy_pfad = alter_pfad
+    back_up_pfad = alter_pfad.parent
+
+    try:
+        if shutil.copytree(copy_pfad, back_up_pfad): return True
+        else: return False
+
+    except FileNotFoundError:
+        print("Es gab ein Problem bei der Erstellung des Backupordner")
+        logging.ERROR("Es gab ein Problem bei der Erstellung des Backupordners")
+        return False
+    except Exception as f:
+        print("Es gab ein Allgemeines Problem bei der Erstellung eines Backupordners")
+        logging. error(f"Es gab ein Problem bei der erstellung des Backupordners: {f}")
+        return False
