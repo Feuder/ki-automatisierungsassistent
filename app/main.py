@@ -5,6 +5,7 @@ from ai.ai_client import ordnerbericht
 from choices.Metadata import call_metadata
 from choices.filestructure.main_phase5 import phase_5
 from choices.summerize_tasks_Content import extract_content
+from utils.File_actions.file_actions import restore_backup
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
@@ -122,6 +123,31 @@ elif userstartwahl == "5":
     except Exception as f:
         print(f)
 
+print("Die Dateien wurden erfolgreich verschoben!")
+print("Es wurde ein Backup erstellt. Möchtest du diesen wiederherstellen oder anpassungen an der Strukur vornehmen?")
+
+print("\n"/
+        "1. Alte Strukur wiederherstellen"
+        "2. Änderungen anfordern"
+        "3. Nichts")
+
+auwahl = [1,2,3]
+
+while True:
+    wahl = str(input()).strip()
+
+    if wahl in auwahl:
+        break    
+    else:
+        print("Gebe nur eine Zahl zwischen 1 und 3 an!")
+
+match wahl:
+    case "1":
+        restore_backup()
+    case "2":
+        pass
+    case "3":
+        raise SystemExit
 #----Ab hier werden die ausgaben der Antworten getätigt.----
 
 if ki_response is not None:

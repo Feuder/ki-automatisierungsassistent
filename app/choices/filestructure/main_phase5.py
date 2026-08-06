@@ -264,83 +264,86 @@ def phase_5(pfad, report_ordner):
                 else:
                     print("Gebe nur j/n ein!")
 
+            if create_backup(pfad):
+                for i in ausgewählte_vorschlagen_komp:
+                    try:     
+                        datei_name = i["original_name"]
+                        alter_pfad = Path(pfad) / i["relative_path"]
+                        neuer_pfad = Path(pfad) / i["suggested_folder"]
+                                       
+                        if i["erledigt"] == "False":
 
-            for i in ausgewählte_vorschlagen_komp:
+                            if i["action_type"] == "move_suggestion":
 
-                if create_backup(alter_pfad):
-                
-                    if i["erledigt"] == "False":
-
-                        if i["action_type"] == "move_suggestion":
-
-                            datei_name = i["original_name"]
-                            alter_pfad = Path(pfad) / i["relative_path"]
-                            neuer_pfad = Path(pfad) / i["suggested_folder"]
-
-                            logging.info(
-                                f"\n"
-                                f"{'-' * 50}\n"
-                                f"Aktuelles Objekt: {datei_name}\n"
-                                f"Der aktuelle Pfad: {alter_pfad}\n"
-                                f"Der neue geplante Pfad: {neuer_pfad}\n"
-                                ""
-                            )
-
-                            if alter_pfad.exists():
-
-                                if move_file(datei_name, alter_pfad, neuer_pfad):
-                                    i["erledigt"] = "True"
-
-                            else:
-                                logging.warning("" \
-                                "Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
-                                f"{datei_name}\n" \
-                                f"{alter_pfad}" \
-                                ""
+                                logging.info(
+                                    f"\n"
+                                    f"{'-' * 50}\n"
+                                    f"Aktuelles Objekt: {datei_name}\n"
+                                    f"Der aktuelle Pfad: {alter_pfad}\n"
+                                    f"Der neue geplante Pfad: {neuer_pfad}\n"
+                                    ""
                                 )
 
-                        elif i["action_type"] == "rename_suggestion":
+                                if alter_pfad.exists():
 
-                            datei_name = i["original_name"]
-                            alter_pfad = Path(pfad) / i["relative_path"]
-                            neuer_name =    i["suggested_new_name"]
+                                    if move_file(datei_name, alter_pfad, neuer_pfad):
+                                        i["erledigt"] = "True"
 
-                            if alter_pfad.exists():
-                                logging.info("Pfad existiert, Datei wird bearbeitet.")
+                                else:
+                                    logging.warning("" \
+                                    "Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
+                                    f"{datei_name}\n" \
+                                    f"{alter_pfad}" \
+                                    ""
+                                    )
 
-                                if rename_file(datei_name, neuer_name, alter_pfad):
-                                    i["erledigt"] = "True"
-                            
-                            else:
-                                logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
-                                f"{datei_name}\n" \
-                                f"{alter_pfad}\n" \
-                                )
+                            elif i["action_type"] == "rename_suggestion":
+
+                                datei_name = i["original_name"]
+                                alter_pfad = Path(pfad) / i["relative_path"]
+                                neuer_name =    i["suggested_new_name"]
+
+                                if alter_pfad.exists():
+                                    logging.info("Pfad existiert, Datei wird bearbeitet.")
+
+                                    if rename_file(datei_name, neuer_name, alter_pfad):
+                                        i["erledigt"] = "True"
                                 
-                        elif i["action_type"] == "rename_and_move_suggestion":
-                            
-                            datei_name = i["original_name"]
-                            alter_pfad = Path(pfad) / i["relative_path"]
-                            neuer_name =    i["suggested_new_name"]
-                            neuer_pfad = Path(pfad) / i["suggested_folder"]
-
-                            if alter_pfad.exists() and neuer_name != "":
-                                verschobener_pfad = neuer_pfad / datei_name
-                            
-                            if move_and_rename_file:
-                                logging.info("Datei erfolgreich verschoben")
+                                else:
+                                    logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden:" \
+                                    f"{datei_name}\n" \
+                                    f"{alter_pfad}\n" \
+                                    )
                                     
+                            elif i["action_type"] == "rename_and_move_suggestion":
+                                
+                                datei_name = i["original_name"]
+                                alter_pfad = Path(pfad) / i["relative_path"]
+                                neuer_name =    i["suggested_new_name"]
+                                neuer_pfad = Path(pfad) / i["suggested_folder"]
+
+                                if alter_pfad.exists() and neuer_name != "":
+                                    verschobener_pfad = neuer_pfad / datei_name
+                                
+                                if move_and_rename_file:
+                                    logging.info("Datei erfolgreich verschoben")
+                                        
+                                else:
+                                    logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden, oder der neue Name ist leer:" \
+                                    f"{datei_name}\n" \
+                                    f"{alter_pfad}" \
+                                    f"{neuer_name}"
+                                    )
                             else:
-                                logging.warning("Bei dem aktuellen Objekt wurde der alte Pfad nicht gefunden, oder der neue Name ist leer:" \
-                                f"{datei_name}\n" \
-                                f"{alter_pfad}" \
-                                f"{neuer_name}"
-                                )
-                        else:
-                            logging.warning("Es konnte keine Änderung getätigt werden. Es wird übersprungen")
-                        
-                        if i["erledigt"] == "True":
-                            eingetragene_aktionen.append(i)
+                                logging.warning("Es konnte keine Änderung getätigt werden. Es wird übersprungen")
+                            
+                            if i["erledigt"] == "True":
+                                eingetragene_aktionen.append(i)
+                    except Exception as f:
+                        print("Es gab einen Fehler bei den Action-Types")
+                        logging.error("Es gab einen Fehler bei den Actions-Type")
+                        logging.error(f)
+                        raise SystemExit
 
             roh_daten["datei_vorschläge"] = json_daten
 
@@ -363,9 +366,6 @@ def phase_5(pfad, report_ordner):
             if neu_input == "j":
                 print("Die anderen Änderungen werden angezeigt:")
                 break
-            elif neu_input == "n":
-                print("Änderungen wurden getätigt. Programm wird nun beendet")
-                raise SystemExit
             else:
                 print("Gebe nur j/n an!\n")
                 neu_input = input().strip()   

@@ -1,0 +1,943 @@
+INFO:__main__:Programm startet
+INFO:__main__:Ordnerstrukturen und Ausgabepfade geprüft
+INFO:choices.Metadata:call_metadata() gestartet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | Dateianzahl: 56
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\02_Neuzugänge.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Zuweisungsänderung.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Aufgaben LF1.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo 2.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Englisch 25.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Englisch am 11.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LF 4n 18.2.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Registratin Anleiteung.doc | Suffix: .doc
+INFO:choices.Metadata:call_metadata() beendet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | Erfasste Dateien: 43
+INFO:utils.folder_scanner:Funktion ordnerinhaltunteror() gestartet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie
+INFO:utils.folder_scanner:Ordneranalyse: Alle Unterordner werden berücksichtigt | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | MaxTiefe: 5 | AktiveTiefe: 3
+INFO:utils.folder_scanner:Ordnerstatistik aufgebaut | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | Dateien: 59 | Tiefe: 3
+INFO:utils.folder_scanner:Ordnerinhaltunteror() beendet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Es wird geprüft, ob es unklare Dateien gibt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | DOCX erkannt | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokument 1.docx
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 1.docx
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 1.docx
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | DOCX erkannt | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokument 2.docx
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 2.docx
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 2.docx
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | DOCX erkannt | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokument.docx
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | DOCX erkannt | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Fehler.docx
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | DOCX erkannt | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Praktikant.docx
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:__main__:Programm startet
+INFO:__main__:Ordnerstrukturen und Ausgabepfade geprüft
+INFO:choices.Metadata:call_metadata() gestartet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | Dateianzahl: 56
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\02_Neuzugänge.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Zuweisungsänderung.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Aufgaben LF1.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo 2.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Englisch 25.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Englisch am 11.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LF 4n 18.2.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Registratin Anleiteung.doc | Suffix: .doc
+INFO:choices.Metadata:call_metadata() beendet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | Erfasste Dateien: 43
+INFO:utils.folder_scanner:Funktion ordnerinhaltunteror() gestartet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie
+INFO:utils.folder_scanner:Ordneranalyse: Alle Unterordner werden berücksichtigt | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | MaxTiefe: 5 | AktiveTiefe: 3
+INFO:utils.folder_scanner:Ordnerstatistik aufgebaut | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | Dateien: 59 | Tiefe: 3
+INFO:utils.folder_scanner:Ordnerinhaltunteror() beendet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Es wird geprüft, ob es unklare Dateien gibt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | Textdatei gelesen | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\02_Neuzugänge.doc
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:'utf-8' codec can't decode byte 0xd0 in position 0: invalid continuation byte
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | DOCX erkannt | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokument 1.docx
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 1.docx
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 1.docx
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | DOCX erkannt | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokument 2.docx
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 2.docx
+ERROR:root:Fehler bei der Nachanalyse einer unclear-Datei.
+ERROR:root:Es wurde kein Textinhalt gefunden: Dokument 2.docx
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | DOCX erkannt | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokument.docx
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | DOCX erkannt | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Fehler.docx
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | DOCX erkannt | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Inhaltsangabe.docx
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | DOCX erkannt | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI.docx
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Unclear wird genauer untersucht.
+INFO:utils.text_reader:datei_inhalt() | DOCX erkannt | Datei: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Überraschung für Jorrit.docx
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:Unclear-Vorschlag wurde erfolgreich ersetzt.
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Angebot_Geraete_Liste_Professionell_Final.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Anleitung - Erklärung Intune.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Anleitung Account Verifizieren.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Anleitung Dynamische Sperre einrichten.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Anleitung Jira.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Anleitung Mitarbeiter Bereich 1 (2).docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Anleitung Mitarbeiter Bereich Android Startbildschirm.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Anleitung Mitarbeiter Bereich.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Anleitung SharePoint2.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Anleitung Zuweisungsänderung.doc'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Anleitung_+Ticket+Center.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Anleitung_Zugriff_auf_Laufwerk_erteilen.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Aufgaben LF1.odt'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Dokument.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Dokumentvorlage blanco mit Haskamp-Logo 2.doc'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Dokumentvorlage blanco mit Haskamp-Logo.doc'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Dokumentvorlage blanco mit Haskamp-Logo.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Englisch 25.odt'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Englisch am 11.odt'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Entschuldigung für die Schule.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Fehler.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\FO-T-1A Praktikumsbericht August.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Formular Sonderbericht. JVF Westerstede vs Brake.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\In Edge auf die 3 Punkte oben rechts.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Inhaltsangabe.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\IT Notfall-Protkoll.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Jira Agenten Anleitung.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Jira Registrieren.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Jira.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\KI Veranstaltung Themen .docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\KI Workshop.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\KI.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\LF 4n 18.2.odt'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Militärische Standards.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\OneDrive Anleitung 2.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Power Point Präsi Outdoor Laptop.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Praktikant.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Registratin Anleiteung.doc'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Sonderbericht 27.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Spam-Phishing Email.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Test von Deep Research.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Ticket Center Anleitung.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Workflow zur Automatisierung eingehender Vertriebsanfragen (003).docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Ziel der Veranstaltung.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Öhlschläger LF2.docx'
+INFO:root:Es wurde die funktion  'create_backup()' aufgerufen
+ERROR:root:Es gab ein Problem bei der erstellung des Backupordners: [WinError 267] Der Verzeichnisname ist ungültig: 'C:\\Users\\CGR\\OneDrive - HASKAMP\\Dokumente\\M365(Office)\\Word-Datein - Kopie\\Überraschung für Jorrit.docx'
+INFO:__main__:Programm startet
+INFO:__main__:Ordnerstrukturen und Ausgabepfade geprüft
+INFO:choices.Metadata:call_metadata() gestartet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | Dateianzahl: 56
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\02_Neuzugänge.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Zuweisungsänderung.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Aufgaben LF1.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo 2.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Englisch 25.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Englisch am 11.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LF 4n 18.2.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Registratin Anleiteung.doc | Suffix: .doc
+INFO:choices.Metadata:call_metadata() beendet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | Erfasste Dateien: 43
+INFO:utils.folder_scanner:Funktion ordnerinhaltunteror() gestartet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie
+INFO:utils.folder_scanner:Ordneranalyse: Alle Unterordner werden berücksichtigt | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | MaxTiefe: 5 | AktiveTiefe: 3
+INFO:utils.folder_scanner:Ordnerstatistik aufgebaut | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | Dateien: 59 | Tiefe: 3
+INFO:utils.folder_scanner:Ordnerinhaltunteror() beendet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Es wird geprüft, ob es unklare Dateien gibt.
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Programm endet
+INFO:root:----------------------------------------------------------------------------------------------------
+INFO:root:
+INFO:__main__:Programm startet
+INFO:__main__:Ordnerstrukturen und Ausgabepfade geprüft
+INFO:choices.Metadata:call_metadata() gestartet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | Dateianzahl: 56
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\02_Neuzugänge.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Zuweisungsänderung.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Aufgaben LF1.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo 2.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Englisch 25.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Englisch am 11.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc | Suffix: .doc
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LF 4n 18.2.odt | Suffix: .odt
+WARNING:choices.Metadata:Datei übersprungen, ungültiges Format: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Registratin Anleiteung.doc | Suffix: .doc
+INFO:choices.Metadata:call_metadata() beendet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | Erfasste Dateien: 43
+INFO:utils.folder_scanner:Funktion ordnerinhaltunteror() gestartet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie
+INFO:utils.folder_scanner:Ordneranalyse: Alle Unterordner werden berücksichtigt | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | MaxTiefe: 5 | AktiveTiefe: 3
+INFO:utils.folder_scanner:Ordnerstatistik aufgebaut | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie | Dateien: 59 | Tiefe: 3
+INFO:utils.folder_scanner:Ordnerinhaltunteror() beendet | Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie
+INFO:root:Anfrage an die KI wird gesendet. Es wird auf die Antwort gewartet
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:root:Das JSON-Schema wurde erfolgreich validiert.
+INFO:root:KI Antwort erhalten und erfolgreich zurück bekommen
+
+INFO:root:Es wird geprüft, ob es unklare Dateien gibt.
+INFO:root:Die Vorgeschlagenen Vorschläge sollen umgesetzt werden
+INFO:root:Die Funktion 'create_backup()' wurde aufgerufen.
+INFO:root:Backup wurde erstellt: 'C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie' -> 'C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie_Backup'
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: 02_Neuzugänge.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\02_Neuzugänge.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige
+
+INFO:root:--------------------------------------------------
+Die Datei 02_Neuzugänge.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\02_Neuzugänge.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige\02_Neuzugänge.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule
+
+INFO:root:--------------------------------------------------
+Die Datei 3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule\3b_IT_LS_2.1_IB_Phasen des Verkaufsgesprächs_S.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule
+
+INFO:root:--------------------------------------------------
+Die Datei 3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule\3d_IT_LS_2.1_AB_Durchführung des Verkaufsgesprächs_mit Rollenkarten (1).doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Angebot_Geraete_Liste_Professionell_Final.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Angebot_Geraete_Liste_Professionell_Final.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Angebote
+
+INFO:root:--------------------------------------------------
+Die Datei Angebot_Geraete_Liste_Professionell_Final.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Angebot_Geraete_Liste_Professionell_Final.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Angebote\Angebot_Geraete_Liste_Professionell_Final.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung - Erklärung Intune.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung - Erklärung Intune.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung - Erklärung Intune.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung - Erklärung Intune.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Anleitung - Erklärung Intune.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Account Verifizieren.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Account Verifizieren.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Account Verifizieren.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Account Verifizieren.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Anleitung Account Verifizieren.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Dynamische Sperre einrichten.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Dynamische Sperre einrichten.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Dynamische Sperre einrichten.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Dynamische Sperre einrichten.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Anleitung Dynamische Sperre einrichten.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Jira.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Jira.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Jira
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Jira.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Jira.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Jira\Anleitung Jira.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Mitarbeiter Bereich 1 (2).docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Mitarbeiter Bereich 1 (2).docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Mitarbeiter Bereich 1 (2).docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Mitarbeiter Bereich 1 (2).docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Anleitung Mitarbeiter Bereich 1 (2).docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Mitarbeiter Bereich Android Startbildschirm.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Mitarbeiter Bereich Android Startbildschirm.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Mitarbeiter Bereich Android Startbildschirm.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Mitarbeiter Bereich Android Startbildschirm.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Anleitung Mitarbeiter Bereich Android Startbildschirm.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Anleitung Mitarbeiter Bereich IOS Startbildschirm.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Mitarbeiter Bereich.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Mitarbeiter Bereich.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Mitarbeiter Bereich.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Mitarbeiter Bereich.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Anleitung Mitarbeiter Bereich.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung SharePoint2.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung SharePoint2.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung SharePoint2.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung SharePoint2.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Anleitung SharePoint2.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung Zuweisungsänderung.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Zuweisungsänderung.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung Zuweisungsänderung.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung Zuweisungsänderung.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Anleitung Zuweisungsänderung.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung_+Ticket+Center.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung_+Ticket+Center.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Ticket Center
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung_+Ticket+Center.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung_+Ticket+Center.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Ticket Center\Anleitung_+Ticket+Center.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Anleitung_Zugriff_auf_Laufwerk_erteilen.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung_Zugriff_auf_Laufwerk_erteilen.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Anleitung_Zugriff_auf_Laufwerk_erteilen.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitung_Zugriff_auf_Laufwerk_erteilen.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Anleitung_Zugriff_auf_Laufwerk_erteilen.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Aufgaben LF1.odt
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Aufgaben LF1.odt
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule
+
+INFO:root:--------------------------------------------------
+Die Datei Aufgaben LF1.odt wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Aufgaben LF1.odt
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule\Aufgaben LF1.odt
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokument 1.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokument 1.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige
+
+INFO:root:--------------------------------------------------
+Die Datei Dokument 1.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokument 1.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige\Dokument 1.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokument 2.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokument 2.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige
+
+INFO:root:--------------------------------------------------
+Die Datei Dokument 2.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokument 2.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige\Dokument 2.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokument.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokument.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige
+
+INFO:root:--------------------------------------------------
+Die Datei Dokument.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokument.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige\Dokument.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vorlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vorlagen\Dokumentvorlage blanco mit Haskamp-Logo - Kopie (2).docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vorlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vorlagen\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vorlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vorlagen\Dokumentvorlage blanco mit Haskamp-Logo - Kopie.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vorlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Dokumentvorlage blanco mit Haskamp-Logo 2.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vorlagen\Dokumentvorlage blanco mit Haskamp-Logo 2.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokumentvorlage blanco mit Haskamp-Logo.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vorlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Dokumentvorlage blanco mit Haskamp-Logo.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vorlagen\Dokumentvorlage blanco mit Haskamp-Logo.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Dokumentvorlage blanco mit Haskamp-Logo.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vorlagen
+
+INFO:root:--------------------------------------------------
+Die Datei Dokumentvorlage blanco mit Haskamp-Logo.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Dokumentvorlage blanco mit Haskamp-Logo.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vorlagen\Dokumentvorlage blanco mit Haskamp-Logo.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Englisch 25.odt
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Englisch 25.odt
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule
+
+INFO:root:--------------------------------------------------
+Die Datei Englisch 25.odt wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Englisch 25.odt
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule\Englisch 25.odt
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Englisch am 11.odt
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Englisch am 11.odt
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule
+
+INFO:root:--------------------------------------------------
+Die Datei Englisch am 11.odt wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Englisch am 11.odt
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule\Englisch am 11.odt
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Entschuldigung für die Schule.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Entschuldigung für die Schule.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule
+
+INFO:root:--------------------------------------------------
+Die Datei Entschuldigung für die Schule.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Entschuldigung für die Schule.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule\Entschuldigung für die Schule.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Fehler.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Fehler.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige
+
+INFO:root:--------------------------------------------------
+Die Datei Fehler.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Fehler.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige\Fehler.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: FO-T-1A Praktikumsbericht August.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\FO-T-1A Praktikumsbericht August.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Praktikum
+
+INFO:root:--------------------------------------------------
+Die Datei FO-T-1A Praktikumsbericht August.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\FO-T-1A Praktikumsbericht August.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Praktikum\FO-T-1A Praktikumsbericht August.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Formular Sonderbericht. JVF Westerstede vs Brake.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Formular Sonderbericht. JVF Westerstede vs Brake.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Berichte
+
+INFO:root:--------------------------------------------------
+Die Datei Formular Sonderbericht. JVF Westerstede vs Brake.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Formular Sonderbericht. JVF Westerstede vs Brake.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Berichte\Formular Sonderbericht. JVF Westerstede vs Brake.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: In Edge auf die 3 Punkte oben rechts.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\In Edge auf die 3 Punkte oben rechts.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei In Edge auf die 3 Punkte oben rechts.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\In Edge auf die 3 Punkte oben rechts.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\In Edge auf die 3 Punkte oben rechts.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Inhaltsangabe.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Inhaltsangabe.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige
+
+INFO:root:--------------------------------------------------
+Die Datei Inhaltsangabe.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Inhaltsangabe.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige\Inhaltsangabe.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: IT Notfall-Protkoll.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\IT Notfall-Protkoll.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\IT
+
+INFO:root:--------------------------------------------------
+Die Datei IT Notfall-Protkoll.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\IT Notfall-Protkoll.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\IT\IT Notfall-Protkoll.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule
+
+INFO:root:--------------------------------------------------
+Die Datei IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule\IT_LS_2.1_IB2_Erfolgsfaktoren Verkaufsgespräch.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Jira Agenten Anleitung.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Jira Agenten Anleitung.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Jira
+
+INFO:root:--------------------------------------------------
+Die Datei Jira Agenten Anleitung.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Jira Agenten Anleitung.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Jira\Jira Agenten Anleitung.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Jira Registrieren.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Jira Registrieren.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Jira
+
+INFO:root:--------------------------------------------------
+Die Datei Jira Registrieren.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Jira Registrieren.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Jira\Jira Registrieren.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Jira.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Jira.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Jira
+
+INFO:root:--------------------------------------------------
+Die Datei Jira.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Jira.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Jira\Jira.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: KI Veranstaltung Themen .docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI Veranstaltung Themen .docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Veranstaltungen\KI
+
+INFO:root:--------------------------------------------------
+Die Datei KI Veranstaltung Themen .docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI Veranstaltung Themen .docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Veranstaltungen\KI\KI Veranstaltung Themen .docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: KI Workshop.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI Workshop.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Veranstaltungen\KI
+
+INFO:root:--------------------------------------------------
+Die Datei KI Workshop.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI Workshop.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Veranstaltungen\KI\KI Workshop.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: KI.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige
+
+INFO:root:--------------------------------------------------
+Die Datei KI.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige\KI.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: LF 4n 18.2.odt
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LF 4n 18.2.odt
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule
+
+INFO:root:--------------------------------------------------
+Die Datei LF 4n 18.2.odt wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LF 4n 18.2.odt
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule\LF 4n 18.2.odt
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Militärische Standards.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Militärische Standards.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige
+
+INFO:root:--------------------------------------------------
+Die Datei Militärische Standards.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Militärische Standards.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige\Militärische Standards.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: OneDrive Anleitung 2.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\OneDrive Anleitung 2.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei OneDrive Anleitung 2.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\OneDrive Anleitung 2.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\OneDrive Anleitung 2.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Power Point Präsi Outdoor Laptop.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Power Point Präsi Outdoor Laptop.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Präsentationen
+
+INFO:root:--------------------------------------------------
+Die Datei Power Point Präsi Outdoor Laptop.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Power Point Präsi Outdoor Laptop.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Präsentationen\Power Point Präsi Outdoor Laptop.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Praktikant.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Praktikant.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Praktikum
+
+INFO:root:--------------------------------------------------
+Die Datei Praktikant.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Praktikant.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Praktikum\Praktikant.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Registratin Anleiteung.doc
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Registratin Anleiteung.doc
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen
+
+INFO:root:--------------------------------------------------
+Die Datei Registratin Anleiteung.doc wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Registratin Anleiteung.doc
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Registratin Anleiteung.doc
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Sonderbericht 27.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonderbericht 27.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Berichte
+
+INFO:root:--------------------------------------------------
+Die Datei Sonderbericht 27.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonderbericht 27.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Berichte\Sonderbericht 27.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Spam-Phishing Email.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Spam-Phishing Email.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\IT
+
+INFO:root:--------------------------------------------------
+Die Datei Spam-Phishing Email.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Spam-Phishing Email.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\IT\Spam-Phishing Email.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Test von Deep Research.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Test von Deep Research.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige
+
+INFO:root:--------------------------------------------------
+Die Datei Test von Deep Research.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Test von Deep Research.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige\Test von Deep Research.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Ticket Center Anleitung.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Ticket Center Anleitung.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Ticket Center
+
+INFO:root:--------------------------------------------------
+Die Datei Ticket Center Anleitung.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Ticket Center Anleitung.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Anleitungen\Ticket Center\Ticket Center Anleitung.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Workflow zur Automatisierung eingehender Vertriebsanfragen (003).docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Workflow zur Automatisierung eingehender Vertriebsanfragen (003).docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vertrieb
+
+INFO:root:--------------------------------------------------
+Die Datei Workflow zur Automatisierung eingehender Vertriebsanfragen (003).docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Workflow zur Automatisierung eingehender Vertriebsanfragen (003).docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Vertrieb\Workflow zur Automatisierung eingehender Vertriebsanfragen (003).docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Ziel der Veranstaltung.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Ziel der Veranstaltung.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Veranstaltungen
+
+INFO:root:--------------------------------------------------
+Die Datei Ziel der Veranstaltung.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Ziel der Veranstaltung.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Veranstaltungen\Ziel der Veranstaltung.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Öhlschläger LF2.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Öhlschläger LF2.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule
+
+INFO:root:--------------------------------------------------
+Die Datei Öhlschläger LF2.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Öhlschläger LF2.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Schule\Öhlschläger LF2.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Überraschung für Jorrit.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Überraschung für Jorrit.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige
+
+INFO:root:--------------------------------------------------
+Die Datei Überraschung für Jorrit.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Überraschung für Jorrit.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\Sonstige\Überraschung für Jorrit.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: Promt Hinweise und auszuführende Aufgaben.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LV Analyse Tool Prompts\V1 - 1. Custom GPT\Promt Hinweise und auszuführende Aufgaben.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI\Prompts
+
+INFO:root:--------------------------------------------------
+Die Datei Promt Hinweise und auszuführende Aufgaben.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LV Analyse Tool Prompts\V1 - 1. Custom GPT\Promt Hinweise und auszuführende Aufgaben.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI\Prompts\Promt Hinweise und auszuführende Aufgaben.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: V7-Custom GPT.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LV Analyse Tool Prompts\V7 - 2. Custom GPT + Skills\V7-Custom GPT.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI\Prompts
+
+INFO:root:--------------------------------------------------
+Die Datei V7-Custom GPT.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LV Analyse Tool Prompts\V7 - 2. Custom GPT + Skills\V7-Custom GPT.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI\Prompts\V7-Custom GPT.docx
+--------------------------------------------------
+INFO:root:
+--------------------------------------------------
+Aktuelles Objekt: V7-Skill datei.docx
+Der aktuelle Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LV Analyse Tool Prompts\V7 - 2. Custom GPT + Skills\V7-Skill datei.docx
+Der neue geplante Pfad: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI\Prompts
+
+INFO:root:--------------------------------------------------
+Die Datei V7-Skill datei.docx wurde erfolgreich verschoben:
+Alter Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\LV Analyse Tool Prompts\V7 - 2. Custom GPT + Skills\V7-Skill datei.docx
+Neuer Speicherort: C:\Users\CGR\OneDrive - HASKAMP\Dokumente\M365(Office)\Word-Datein - Kopie\KI\Prompts\V7-Skill datei.docx
+--------------------------------------------------

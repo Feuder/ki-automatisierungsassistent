@@ -174,21 +174,49 @@ def move_and_rename_file(datei_name, alter_pfad, neuer_pfad, neuer_name):
     else:
         return False
 
-def create_backup(alter_pfad):
-    logging.info("Es wurde die funktion  'create_backup()' aufgerufen")
+def create_backup(alter_pfad: Path) -> bool:
 
-    copy_pfad = alter_pfad
-    back_up_pfad = alter_pfad.parent
+    logging.info("Die Funktion 'create_backup()' wurde aufgerufen.")
+
+    alter_pfad = Path(alter_pfad)
+    quell_ordner = alter_pfad.parent if alter_pfad.is_file() else alter_pfad
+
+    backup_pfad = quell_ordner.with_name(f"{quell_ordner.name}_Backup")
 
     try:
-        if shutil.copytree(copy_pfad, back_up_pfad): return True
-        else: return False
+        shutil.copytree(
+            quell_ordner,
+            backup_pfad,
+            dirs_exist_ok=False
+        )
+
+        logging.info(
+            "Backup wurde erstellt: '%s' -> '%s'",
+            quell_ordner,
+            backup_pfad
+        )
+        return True
+
+    except FileExistsError:
+        logging.error(
+            "Der Backupordner existiert bereits: '%s'",
+            backup_pfad
+        )
+        return False
 
     except FileNotFoundError:
-        print("Es gab ein Problem bei der Erstellung des Backupordner")
-        logging.ERROR("Es gab ein Problem bei der Erstellung des Backupordners")
+        logging.error(
+            "Der Quellordner wurde nicht gefunden: '%s'",
+            quell_ordner
+        )
         return False
-    except Exception as f:
-        print("Es gab ein Allgemeines Problem bei der Erstellung eines Backupordners")
-        logging. error(f"Es gab ein Problem bei der erstellung des Backupordners: {f}")
+
+    except Exception as fehler:
+        logging.exception(
+            "Allgemeiner Fehler beim Erstellen des Backupordners: %s",
+            fehler
+        )
         return False
+
+def restore_backup():
+    pass
